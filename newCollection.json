@@ -72,7 +72,7 @@
     {
         "id": "64994bafedd3b9b22ecf75c2",
         "name": "JSObject1",
-        "pageId": "BaseDetails",
+        "pageId": "Training",
         "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tmyFun1: () => {\n\tlet result = List1.items.map((e)=> {\n\nreturn {\n\t\t\tquestion: e.Input1.text,\n\t\t\tid: e.Input4.text,\n\t\t\tresult: e.Input2.text,\n\t\t\turl: Table1.selectedRow.url,\n\t\t\tpinecone: Checkbox1.isChecked,\n\t\t\tidBase: Table1.selectedRow._id,\n\t\t}\n\t})\n\nreturn result\t\n\n},\n\tmyFun2:  () => {\n\tlet result = List2.items.map((e)=> {\n\t\treturn {\n\t\t\tquestion: e.Input1Copy.text,\n\t\t\tresult: e.Input2Copy.text,\n\t\t\tid: e.Input5.text,\n\t\t\turl: Table2.selectedRow.name,\n\t\t\tpinecone: Checkbox1Copy.isChecked,\n\t\t\tidBase: Table2.selectedRow._id,\n\t\t}\n\t})\nreturn result\t\t\n\t},\n\n\tmyFun3:  () => {\n\tlet result = List3.items.map((e)=> {\n\t\treturn {\n\t\t\tquestion: e.Input1Copy1.text,\n\t\t\tresult: e.Input2Copy1.text,\n\t\t\tid: e.Input6.text,\n\t\t\turl: Table2.selectedRow.name,\n\t\t\tpinecone: Checkbox1Copy1.isChecked,\n\t\t\tidBase: Table3.selectedRow._id,\n\t\t}\n\t})\nreturn result\t\t\n\t},\n\tmyFun4:  () => {\n\tlet result = List3Copy.items.map((e)=> {\n\t\treturn {\n\t\t\tquestion: e.Input1Copy1Copy.text,\n\t\t\tresult: e.Input2Copy1Copy.text,\n\t\t\tid: e.Input6Copy.text,\n\t\t\turl: Table2.selectedRow.name,\n\t\t\tpinecone: Checkbox4.isChecked,\n\t\t\tidBase: Table4.selectedRow._id,\n\t\t}\n\t})\n\t\t\tconsole.log(result)\n\nreturn result\t\t\n\t}\n}",
         "variables": [
             {
@@ -245,8 +245,8 @@
     {
         "id": "64a1c91cedd3b9b22ecf75de",
         "name": "JSObject2",
-        "pageId": "BaseDetails",
-        "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tmyFun2: async (id) => {\n await storeValue('idToDeleteOb', id)\n await deleteObject.run()\n\t\tgetPDF.run()\n\t\tgetLink.run()\n\t\tgetFiles.run()\n\t\tgetFAQ.run()\t\n\t\tgetManual.run()\n\t}\n}",
+        "pageId": "Training",
+        "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tmyFun2: async (id) => {\n await storeValue('idToDeleteOb', id)\n await deleteObject.run()\n\t\tgetLink.run()\n\t\tgetFiles.run()\n\t\tgetFAQ.run()\t\n\t\tgetManual.run()\n\t}\n}",
         "variables": [
             {
                 "name": "myVar1",
@@ -262,9 +262,9 @@
                 "name": "myFun2",
                 "collectionId": "64a1c91cedd3b9b22ecf75de",
                 "executeOnLoad": false,
-                "pageId": "BaseDetails",
+                "pageId": "Training",
                 "actionConfiguration": {
-                    "body": "async (id) => {\n await storeValue('idToDeleteOb', id)\n await deleteObject.run()\n\t\tgetPDF.run()\n\t\tgetLink.run()\n\t\tgetFiles.run()\n\t\tgetFAQ.run()\t\n\t\tgetManual.run()\n\t}",
+                    "body": "async (id) => {\n await storeValue('idToDeleteOb', id)\n await deleteObject.run()\n\t\tgetLink.run()\n\t\tgetFiles.run()\n\t\tgetFAQ.run()\t\n\t\tgetManual.run()\n\t}",
                     "isAsync": true,
                     "timeoutInMillisecond": 10000,
                     "jsArguments": [

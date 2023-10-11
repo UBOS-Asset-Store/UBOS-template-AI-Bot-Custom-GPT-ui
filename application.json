@@ -5,7 +5,7 @@
     "organizationId": "Org",
     "isPublic": true,
     "createdAt": "2023-03-02T13:50:57.853Z",
-    "updatedAt": "2023-09-05T15:02:48.450Z",
+    "updatedAt": "2023-10-11T20:41:42.734Z",
     "deleted": false,
     "pages": [
         {
@@ -45,19 +45,23 @@
             "isDefault": false
         },
         {
-            "_id": "Knowledge Base",
+            "_id": "Training",
             "isDefault": false
         },
         {
-            "_id": "BaseDetails",
-            "isDefault": false
-        },
-        {
-            "_id": "App settings",
+            "_id": "Setup",
             "isDefault": false
         },
         {
             "_id": "Vectors",
+            "isDefault": false
+        },
+        {
+            "_id": "Bots",
+            "isDefault": false
+        },
+        {
+            "_id": "Dashboard",
             "isDefault": false
         }
     ],
@@ -92,11 +96,9 @@
     "is_custom_auth": true,
     "auth_mode_setting": {
         "login_id": "Login",
-        "auth_node": "${env.get(\"nodeUrl\")}/check_token",
+        "auth_node": "https://noderedai-64d37e2e7bbbcb100000019c.ubos.tech/check_token",
         "registry_id": "Registration",
-        "other_pages": [
-            "Info"
-        ]
+        "other_pages": []
     },
     "settings_data": {
         "httpIns": [
