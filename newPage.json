@@ -12331,8 +12331,8 @@
                                                                 "parentRowSpace": 10,
                                                                 "leftColumn": 0,
                                                                 "rightColumn": 64,
-                                                                "topRow": 18,
-                                                                "bottomRow": 65,
+                                                                "topRow": 19,
+                                                                "bottomRow": 66,
                                                                 "parentId": "k2agajmtvu",
                                                                 "dynamicTriggerPathList": [
                                                                     {
@@ -12422,8 +12422,8 @@
                                                                 "parentRowSpace": 10,
                                                                 "leftColumn": 0,
                                                                 "rightColumn": 64,
-                                                                "topRow": 14,
-                                                                "bottomRow": 18,
+                                                                "topRow": 15,
+                                                                "bottomRow": 19,
                                                                 "parentId": "k2agajmtvu"
                                                             },
                                                             {
@@ -12531,8 +12531,8 @@
                                                                 "parentRowSpace": 10,
                                                                 "leftColumn": 41,
                                                                 "rightColumn": 59,
-                                                                "topRow": 9,
-                                                                "bottomRow": 13,
+                                                                "topRow": 10,
+                                                                "bottomRow": 14,
                                                                 "parentId": "k2agajmtvu",
                                                                 "borderRadius": "ROUNDED",
                                                                 "dynamicBindingPathList": [],
@@ -12590,7 +12590,7 @@
                                                         "leftColumn": 0,
                                                         "rightColumn": 282.046875,
                                                         "topRow": 0,
-                                                        "bottomRow": 670,
+                                                        "bottomRow": 680,
                                                         "parentId": "mw49kdef9m",
                                                         "dynamicBindingPathList": [],
                                                         "dynamicTriggerPathList": []
@@ -12617,7 +12617,7 @@
                                                                 "widgetName": "Table5",
                                                                 "searchKey": "",
                                                                 "textSize": "PARAGRAPH",
-                                                                "horizontalAlignment": "CENTER",
+                                                                "horizontalAlignment": "LEFT",
                                                                 "verticalAlignment": "CENTER",
                                                                 "totalRecordsCount": 0,
                                                                 "defaultPageSize": 0,
@@ -12677,7 +12677,7 @@
                                                                         "index": 0,
                                                                         "width": 150,
                                                                         "id": "_id",
-                                                                        "horizontalAlignment": "CENTER",
+                                                                        "horizontalAlignment": "LEFT",
                                                                         "verticalAlignment": "CENTER",
                                                                         "columnType": "text",
                                                                         "textSize": "PARAGRAPH",
@@ -12694,13 +12694,13 @@
                                                                         "index": 1,
                                                                         "width": 150,
                                                                         "id": "name",
-                                                                        "horizontalAlignment": "CENTER",
+                                                                        "horizontalAlignment": "LEFT",
                                                                         "verticalAlignment": "CENTER",
                                                                         "columnType": "text",
                                                                         "textSize": "PARAGRAPH",
                                                                         "enableFilter": true,
                                                                         "enableSort": true,
-                                                                        "isVisible": false,
+                                                                        "isVisible": true,
                                                                         "isDisabled": false,
                                                                         "isCellVisible": true,
                                                                         "isDerived": false,
@@ -12711,7 +12711,7 @@
                                                                         "index": 1,
                                                                         "width": 150,
                                                                         "id": "knowledgeBaseId",
-                                                                        "horizontalAlignment": "CENTER",
+                                                                        "horizontalAlignment": "LEFT",
                                                                         "verticalAlignment": "CENTER",
                                                                         "columnType": "text",
                                                                         "textSize": "PARAGRAPH",
@@ -12728,7 +12728,7 @@
                                                                         "index": 2,
                                                                         "width": 150,
                                                                         "id": "url",
-                                                                        "horizontalAlignment": "CENTER",
+                                                                        "horizontalAlignment": "LEFT",
                                                                         "verticalAlignment": "CENTER",
                                                                         "columnType": "text",
                                                                         "textSize": "PARAGRAPH",
@@ -12745,7 +12745,7 @@
                                                                         "index": 3,
                                                                         "width": 150,
                                                                         "id": "type",
-                                                                        "horizontalAlignment": "CENTER",
+                                                                        "horizontalAlignment": "LEFT",
                                                                         "verticalAlignment": "CENTER",
                                                                         "columnType": "text",
                                                                         "textSize": "PARAGRAPH",
@@ -12762,7 +12762,7 @@
                                                                         "index": 5,
                                                                         "width": 150,
                                                                         "id": "vectors",
-                                                                        "horizontalAlignment": "CENTER",
+                                                                        "horizontalAlignment": "LEFT",
                                                                         "verticalAlignment": "CENTER",
                                                                         "columnType": "text",
                                                                         "textSize": "PARAGRAPH",
@@ -12779,7 +12779,7 @@
                                                                         "index": 6,
                                                                         "width": 150,
                                                                         "id": "status",
-                                                                        "horizontalAlignment": "CENTER",
+                                                                        "horizontalAlignment": "LEFT",
                                                                         "verticalAlignment": "CENTER",
                                                                         "columnType": "text",
                                                                         "textSize": "PARAGRAPH",
@@ -12796,7 +12796,7 @@
                                                                         "index": 7,
                                                                         "width": 150,
                                                                         "id": "deleted",
-                                                                        "horizontalAlignment": "CENTER",
+                                                                        "horizontalAlignment": "LEFT",
                                                                         "verticalAlignment": "CENTER",
                                                                         "columnType": "text",
                                                                         "textSize": "PARAGRAPH",
@@ -12813,9 +12813,9 @@
                                                                         "index": 8,
                                                                         "width": 150,
                                                                         "id": "createdAt",
-                                                                        "horizontalAlignment": "CENTER",
+                                                                        "horizontalAlignment": "LEFT",
                                                                         "verticalAlignment": "CENTER",
-                                                                        "columnType": "text",
+                                                                        "columnType": "date",
                                                                         "textSize": "PARAGRAPH",
                                                                         "enableFilter": true,
                                                                         "enableSort": true,
@@ -12824,7 +12824,9 @@
                                                                         "isCellVisible": true,
                                                                         "isDerived": false,
                                                                         "label": "createdAt",
-                                                                        "computedValue": "{{Table5.sanitizedTableData.map((currentRow) => ( currentRow.createdAt))}}"
+                                                                        "computedValue": "{{Table5.sanitizedTableData.map((currentRow) => ( currentRow.createdAt))}}",
+                                                                        "iconName": "",
+                                                                        "outputFormat": "YYYY-MM-DD"
                                                                     },
                                                                     "customColumn1": {
                                                                         "index": 9,
@@ -12846,7 +12848,7 @@
                                                                         "iconName": "eye-open",
                                                                         "buttonLabel": "{{Table5.sanitizedTableData.map((currentRow) => ( 'Edit'))}}",
                                                                         "onClick": "{{navigateTo('Vectors',{'id': currentRow._id},'NEW_WINDOW')}}",
-                                                                        "horizontalAlignment": "CENTER",
+                                                                        "horizontalAlignment": "LEFT",
                                                                         "borderRadius": "CIRCLE"
                                                                     },
                                                                     "customColumn2": {
@@ -12870,7 +12872,7 @@
                                                                         "menuButtonLabel": "{{Table5.sanitizedTableData.map((currentRow) => ( 'Open Menu'))}}",
                                                                         "buttonLabel": "{{Table5.sanitizedTableData.map((currentRow) => ( 'Delete'))}}",
                                                                         "onClick": "{{JSObject2.myFun2(Table5.selectedRow._id)}}",
-                                                                        "horizontalAlignment": "CENTER",
+                                                                        "horizontalAlignment": "LEFT",
                                                                         "borderRadius": "CIRCLE"
                                                                     }
                                                                 },
@@ -12895,7 +12897,7 @@
                                                                         "iconName": "eye-open",
                                                                         "buttonLabel": "{{Table5.sanitizedTableData.map((currentRow) => ( 'Edit'))}}",
                                                                         "onClick": "{{navigateTo('Vectors',{'id': currentRow._id},'NEW_WINDOW')}}",
-                                                                        "horizontalAlignment": "CENTER"
+                                                                        "horizontalAlignment": "LEFT"
                                                                     },
                                                                     "customColumn2": {
                                                                         "index": 10,
@@ -12918,7 +12920,7 @@
                                                                         "menuButtonLabel": "{{Table5.sanitizedTableData.map((currentRow) => ( 'Open Menu'))}}",
                                                                         "buttonLabel": "{{Table5.sanitizedTableData.map((currentRow) => ( 'Delete'))}}",
                                                                         "onClick": "{{JSObject2.myFun2(Table5.selectedRow._id)}}",
-                                                                        "horizontalAlignment": "CENTER"
+                                                                        "horizontalAlignment": "LEFT"
                                                                     }
                                                                 },
                                                                 "tableData": "{{getKnowlegeFiles.data.Manual}}",
@@ -13018,7 +13020,8 @@
                                                                 "bottomRow": 15,
                                                                 "parentId": "lzfnfil2re",
                                                                 "dynamicBindingPathList": [],
-                                                                "dynamicTriggerPathList": []
+                                                                "dynamicTriggerPathList": [],
+                                                                "labelTextSize": "HEADING3"
                                                             },
                                                             {
                                                                 "isVisible": true,
@@ -13055,7 +13058,8 @@
                                                                 "bottomRow": 15,
                                                                 "parentId": "lzfnfil2re",
                                                                 "dynamicBindingPathList": [],
-                                                                "dynamicTriggerPathList": []
+                                                                "dynamicTriggerPathList": [],
+                                                                "labelTextSize": "HEADING3"
                                                             },
                                                             {
                                                                 "isVisible": true,
@@ -13078,10 +13082,10 @@
                                                                 "isLoading": false,
                                                                 "parentColumnSpace": 8.1826171875,
                                                                 "parentRowSpace": 10,
-                                                                "leftColumn": 60,
+                                                                "leftColumn": 59,
                                                                 "rightColumn": 62,
-                                                                "topRow": 9,
-                                                                "bottomRow": 13,
+                                                                "topRow": 11,
+                                                                "bottomRow": 15,
                                                                 "parentId": "lzfnfil2re",
                                                                 "dynamicBindingPathList": [],
                                                                 "dynamicTriggerPathList": [
@@ -13126,7 +13130,7 @@
                                                             },
                                                             {
                                                                 "isVisible": true,
-                                                                "text": "\n\nCreate <a href=\"#\" style=\"text-decoration: none;\"> <span >&#9432;</span>\n    </a> \n\n\n",
+                                                                "text": "\n\nTraining bot manualy <a href=\"#\" style=\"text-decoration: none;\"> <span >&#9432;</span>\n    </a> \n \n\n",
                                                                 "fontSize": "HEADING2",
                                                                 "fontStyle": "BOLD",
                                                                 "textAlign": "LEFT",
