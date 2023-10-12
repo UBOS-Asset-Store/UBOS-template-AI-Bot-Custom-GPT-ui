@@ -10766,7 +10766,7 @@
                                                     }
                                                 ],
                                                 "borderRadius": "ROUNDED",
-                                                "onClick": "{{divideFile.run(() => (getFiles.run(),closeModal(\"Modal5\")), () => {})}}",
+                                                "onClick": "{{divideFile.run(() => (getKnowlegeFiles.run(),closeModal(\"Modal5\")), () => {})}}",
                                                 "dynamicPropertyPathList": [
                                                     {
                                                         "key": "onClick"
@@ -13074,8 +13074,8 @@
                                 "shouldScrollContents": true
                             },
                             {
-                                "width": 524,
-                                "height": 308,
+                                "width": 426,
+                                "height": 316,
                                 "canEscapeKeyClose": true,
                                 "animateLoading": true,
                                 "detachFromLayout": true,
@@ -13145,7 +13145,7 @@
                                                 "renderMode": "CANVAS",
                                                 "isLoading": false,
                                                 "leftColumn": 0,
-                                                "rightColumn": 40,
+                                                "rightColumn": 57,
                                                 "topRow": 0,
                                                 "bottomRow": 4,
                                                 "parentId": "dsxsfdlk2c",
@@ -13175,7 +13175,7 @@
                                                 "renderMode": "CANVAS",
                                                 "isLoading": false,
                                                 "leftColumn": 0,
-                                                "rightColumn": 12,
+                                                "rightColumn": 15,
                                                 "topRow": 25,
                                                 "bottomRow": 29,
                                                 "parentId": "dsxsfdlk2c",
@@ -13206,7 +13206,7 @@
                                                 "widgetId": "v0i2bnqfv8",
                                                 "renderMode": "CANVAS",
                                                 "isLoading": false,
-                                                "leftColumn": 51,
+                                                "leftColumn": 48,
                                                 "rightColumn": 63,
                                                 "topRow": 25,
                                                 "bottomRow": 29,
@@ -13218,7 +13218,7 @@
                                                     }
                                                 ],
                                                 "borderRadius": "ROUNDED",
-                                                "onClick": "{{divide_link.run(() => ( closeModal(\"Modal4\"),getLink.run()), () => {})}}",
+                                                "onClick": "{{divide_link.run(() => ( closeModal(\"Modal4\"),getKnowlegeFiles.run()), () => {})}}",
                                                 "dynamicPropertyPathList": [
                                                     {
                                                         "key": "onClick"
@@ -13233,10 +13233,6 @@
                                                 "labelAlignment": "left",
                                                 "labelWidth": 5,
                                                 "options": [
-                                                    {
-                                                        "label": "Points",
-                                                        "value": "Points"
-                                                    },
                                                     {
                                                         "label": "Paragraphs",
                                                         "value": "Paragraphs"
@@ -13260,7 +13256,7 @@
                                                 "parentColumnSpace": 8,
                                                 "parentRowSpace": 10,
                                                 "leftColumn": 1,
-                                                "rightColumn": 38,
+                                                "rightColumn": 57,
                                                 "topRow": 6,
                                                 "bottomRow": 12,
                                                 "parentId": "dsxsfdlk2c",
@@ -13294,7 +13290,7 @@
                                                 "parentColumnSpace": 8,
                                                 "parentRowSpace": 10,
                                                 "leftColumn": 1,
-                                                "rightColumn": 40,
+                                                "rightColumn": 57,
                                                 "topRow": 15,
                                                 "bottomRow": 19,
                                                 "parentId": "dsxsfdlk2c",
@@ -13303,7 +13299,7 @@
                                                 "dynamicPropertyPathList": []
                                             }
                                         ],
-                                        "minHeight": 308,
+                                        "minHeight": 316,
                                         "widgetId": "dsxsfdlk2c",
                                         "renderMode": "CANVAS",
                                         "isLoading": false,
