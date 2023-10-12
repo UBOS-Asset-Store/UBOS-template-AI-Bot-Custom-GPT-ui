@@ -10064,7 +10064,7 @@
                         "snapColumns": 64,
                         "widgetId": "0",
                         "topRow": 0,
-                        "bottomRow": 1120,
+                        "bottomRow": 890,
                         "parentRowSpace": 1,
                         "type": "CANVAS_WIDGET",
                         "detachFromLayout": true,
@@ -11301,8 +11301,8 @@
                                                 "parentRowSpace": 10,
                                                 "leftColumn": 0,
                                                 "rightColumn": 64,
-                                                "topRow": 22,
-                                                "bottomRow": 87,
+                                                "topRow": 21,
+                                                "bottomRow": 71,
                                                 "parentId": "gjtqa9136u",
                                                 "children": [
                                                     {
@@ -11320,6 +11320,37 @@
                                                         "tabId": "tab1",
                                                         "tabName": "Links ",
                                                         "children": [
+                                                            {
+                                                                "isVisible": true,
+                                                                "text": "\n\nAdd link  <a href=\"#\" style=\"text-decoration: none;\"> <span >&#9432;</span>\n    </a> \n\n\n",
+                                                                "fontSize": "HEADING2",
+                                                                "fontStyle": "BOLD",
+                                                                "textAlign": "LEFT",
+                                                                "textColor": "#231F20",
+                                                                "truncateButtonColor": "#FFC13D",
+                                                                "widgetName": "Text4Copy1",
+                                                                "shouldTruncate": false,
+                                                                "overflow": "NONE",
+                                                                "version": 1,
+                                                                "animateLoading": true,
+                                                                "type": "TEXT_WIDGET",
+                                                                "hideCard": false,
+                                                                "displayName": "Text",
+                                                                "key": "gtk8nhpvy1",
+                                                                "iconSVG": "/static/media/icon.97c59b52.svg",
+                                                                "widgetId": "ia01tcelpo",
+                                                                "renderMode": "CANVAS",
+                                                                "isLoading": false,
+                                                                "parentColumnSpace": 8.0693359375,
+                                                                "parentRowSpace": 10,
+                                                                "leftColumn": 0,
+                                                                "rightColumn": 27,
+                                                                "topRow": 4,
+                                                                "bottomRow": 11,
+                                                                "parentId": "ihc06jbcex",
+                                                                "dynamicBindingPathList": [],
+                                                                "dynamicTriggerPathList": []
+                                                            },
                                                             {
                                                                 "isVisible": true,
                                                                 "animateLoading": true,
@@ -11671,8 +11702,8 @@
                                                                 "parentRowSpace": 10,
                                                                 "leftColumn": 0,
                                                                 "rightColumn": 64,
-                                                                "topRow": 12,
-                                                                "bottomRow": 56,
+                                                                "topRow": 27,
+                                                                "bottomRow": 60,
                                                                 "parentId": "ihc06jbcex",
                                                                 "dynamicTriggerPathList": [
                                                                     {
@@ -11719,8 +11750,8 @@
                                                                 "parentRowSpace": 10,
                                                                 "leftColumn": 0,
                                                                 "rightColumn": 20,
-                                                                "topRow": 4,
-                                                                "bottomRow": 8,
+                                                                "topRow": 17,
+                                                                "bottomRow": 21,
                                                                 "parentId": "ihc06jbcex",
                                                                 "dynamicBindingPathList": [],
                                                                 "dynamicTriggerPathList": []
@@ -11748,10 +11779,10 @@
                                                                 "isLoading": false,
                                                                 "parentColumnSpace": 12.345703125,
                                                                 "parentRowSpace": 10,
-                                                                "leftColumn": 21,
-                                                                "rightColumn": 33,
-                                                                "topRow": 4,
-                                                                "bottomRow": 8,
+                                                                "leftColumn": 22,
+                                                                "rightColumn": 34,
+                                                                "topRow": 17,
+                                                                "bottomRow": 21,
                                                                 "parentId": "ihc06jbcex",
                                                                 "dynamicBindingPathList": [],
                                                                 "dynamicTriggerPathList": [
@@ -11798,8 +11829,8 @@
                                                                 "parentRowSpace": 10,
                                                                 "leftColumn": 0,
                                                                 "rightColumn": 20,
-                                                                "topRow": 0,
-                                                                "bottomRow": 4,
+                                                                "topRow": 11,
+                                                                "bottomRow": 15,
                                                                 "parentId": "ihc06jbcex",
                                                                 "dynamicBindingPathList": [],
                                                                 "dynamicTriggerPathList": [
@@ -11840,8 +11871,8 @@
                                                                 "parentRowSpace": 10,
                                                                 "leftColumn": 52,
                                                                 "rightColumn": 64,
-                                                                "topRow": 4,
-                                                                "bottomRow": 8,
+                                                                "topRow": 9,
+                                                                "bottomRow": 13,
                                                                 "parentId": "ihc06jbcex",
                                                                 "borderRadius": "ROUNDED",
                                                                 "dynamicBindingPathList": [
@@ -11889,8 +11920,8 @@
                                                                 "parentRowSpace": 10,
                                                                 "leftColumn": 0,
                                                                 "rightColumn": 64,
-                                                                "topRow": 8,
-                                                                "bottomRow": 12,
+                                                                "topRow": 22,
+                                                                "bottomRow": 26,
                                                                 "parentId": "ihc06jbcex"
                                                             }
                                                         ],
@@ -11903,7 +11934,7 @@
                                                         "leftColumn": 0,
                                                         "rightColumn": 282.046875,
                                                         "topRow": 0,
-                                                        "bottomRow": 580,
+                                                        "bottomRow": 620,
                                                         "parentId": "mw49kdef9m",
                                                         "dynamicBindingPathList": [],
                                                         "dynamicTriggerPathList": []
@@ -12270,8 +12301,8 @@
                                                                 "parentRowSpace": 10,
                                                                 "leftColumn": 0,
                                                                 "rightColumn": 64,
-                                                                "topRow": 12,
-                                                                "bottomRow": 59,
+                                                                "topRow": 18,
+                                                                "bottomRow": 65,
                                                                 "parentId": "k2agajmtvu",
                                                                 "dynamicTriggerPathList": [
                                                                     {
@@ -12312,8 +12343,8 @@
                                                                 "parentRowSpace": 10,
                                                                 "leftColumn": 52,
                                                                 "rightColumn": 64,
-                                                                "topRow": 1,
-                                                                "bottomRow": 5,
+                                                                "topRow": 4,
+                                                                "bottomRow": 8,
                                                                 "parentId": "k2agajmtvu",
                                                                 "dynamicBindingPathList": [
                                                                     {
@@ -12361,8 +12392,8 @@
                                                                 "parentRowSpace": 10,
                                                                 "leftColumn": 0,
                                                                 "rightColumn": 64,
-                                                                "topRow": 8,
-                                                                "bottomRow": 12,
+                                                                "topRow": 14,
+                                                                "bottomRow": 18,
                                                                 "parentId": "k2agajmtvu"
                                                             },
                                                             {
@@ -12393,8 +12424,8 @@
                                                                 "parentRowSpace": 10,
                                                                 "leftColumn": 0,
                                                                 "rightColumn": 20,
-                                                                "topRow": 0,
-                                                                "bottomRow": 7,
+                                                                "topRow": 7,
+                                                                "bottomRow": 14,
                                                                 "parentId": "k2agajmtvu",
                                                                 "uploadButtonText": "Upload",
                                                                 "dynamicBindingPathList": [
@@ -12413,6 +12444,37 @@
                                                                         "key": "completeRes"
                                                                     }
                                                                 ]
+                                                            },
+                                                            {
+                                                                "isVisible": true,
+                                                                "text": "\n\nUpload file .txt .pdf <a href=\"#\" style=\"text-decoration: none;\"> <span >&#9432;</span>\n    </a> \n\n\n",
+                                                                "fontSize": "HEADING2",
+                                                                "fontStyle": "BOLD",
+                                                                "textAlign": "LEFT",
+                                                                "textColor": "#231F20",
+                                                                "truncateButtonColor": "#FFC13D",
+                                                                "widgetName": "Text4",
+                                                                "shouldTruncate": false,
+                                                                "overflow": "NONE",
+                                                                "version": 1,
+                                                                "animateLoading": true,
+                                                                "type": "TEXT_WIDGET",
+                                                                "hideCard": false,
+                                                                "displayName": "Text",
+                                                                "key": "gtk8nhpvy1",
+                                                                "iconSVG": "/static/media/icon.97c59b52.svg",
+                                                                "widgetId": "v30kzl1ryv",
+                                                                "renderMode": "CANVAS",
+                                                                "isLoading": false,
+                                                                "parentColumnSpace": 8.0693359375,
+                                                                "parentRowSpace": 10,
+                                                                "leftColumn": 0,
+                                                                "rightColumn": 27,
+                                                                "topRow": 0,
+                                                                "bottomRow": 7,
+                                                                "parentId": "k2agajmtvu",
+                                                                "dynamicBindingPathList": [],
+                                                                "dynamicTriggerPathList": []
                                                             }
                                                         ],
                                                         "minHeight": 400,
@@ -12424,7 +12486,7 @@
                                                         "leftColumn": 0,
                                                         "rightColumn": 282.046875,
                                                         "topRow": 0,
-                                                        "bottomRow": 610,
+                                                        "bottomRow": 670,
                                                         "parentId": "mw49kdef9m",
                                                         "dynamicBindingPathList": [],
                                                         "dynamicTriggerPathList": []
@@ -12797,8 +12859,8 @@
                                                                 "parentRowSpace": 10,
                                                                 "leftColumn": 0,
                                                                 "rightColumn": 64,
-                                                                "topRow": 12,
-                                                                "bottomRow": 56,
+                                                                "topRow": 19,
+                                                                "bottomRow": 40,
                                                                 "parentId": "lzfnfil2re",
                                                                 "dynamicTriggerPathList": [
                                                                     {
@@ -12848,8 +12910,8 @@
                                                                 "parentRowSpace": 10,
                                                                 "leftColumn": 0,
                                                                 "rightColumn": 27,
-                                                                "topRow": 1,
-                                                                "bottomRow": 8,
+                                                                "topRow": 8,
+                                                                "bottomRow": 15,
                                                                 "parentId": "lzfnfil2re",
                                                                 "dynamicBindingPathList": [],
                                                                 "dynamicTriggerPathList": []
@@ -12885,8 +12947,8 @@
                                                                 "parentRowSpace": 10,
                                                                 "leftColumn": 27,
                                                                 "rightColumn": 58,
-                                                                "topRow": 1,
-                                                                "bottomRow": 8,
+                                                                "topRow": 8,
+                                                                "bottomRow": 15,
                                                                 "parentId": "lzfnfil2re",
                                                                 "dynamicBindingPathList": [],
                                                                 "dynamicTriggerPathList": []
@@ -12914,8 +12976,8 @@
                                                                 "parentRowSpace": 10,
                                                                 "leftColumn": 60,
                                                                 "rightColumn": 62,
-                                                                "topRow": 4,
-                                                                "bottomRow": 8,
+                                                                "topRow": 9,
+                                                                "bottomRow": 13,
                                                                 "parentId": "lzfnfil2re",
                                                                 "dynamicBindingPathList": [],
                                                                 "dynamicTriggerPathList": [
@@ -12954,9 +13016,40 @@
                                                                 "parentRowSpace": 10,
                                                                 "leftColumn": 0,
                                                                 "rightColumn": 64,
-                                                                "topRow": 8,
-                                                                "bottomRow": 12,
+                                                                "topRow": 15,
+                                                                "bottomRow": 19,
                                                                 "parentId": "lzfnfil2re"
+                                                            },
+                                                            {
+                                                                "isVisible": true,
+                                                                "text": "\n\nCreate <a href=\"#\" style=\"text-decoration: none;\"> <span >&#9432;</span>\n    </a> \n\n\n",
+                                                                "fontSize": "HEADING2",
+                                                                "fontStyle": "BOLD",
+                                                                "textAlign": "LEFT",
+                                                                "textColor": "#231F20",
+                                                                "truncateButtonColor": "#FFC13D",
+                                                                "widgetName": "Text4Copy2",
+                                                                "shouldTruncate": false,
+                                                                "overflow": "NONE",
+                                                                "version": 1,
+                                                                "animateLoading": true,
+                                                                "type": "TEXT_WIDGET",
+                                                                "hideCard": false,
+                                                                "displayName": "Text",
+                                                                "key": "gtk8nhpvy1",
+                                                                "iconSVG": "/static/media/icon.97c59b52.svg",
+                                                                "widgetId": "pz64p6jvbq",
+                                                                "renderMode": "CANVAS",
+                                                                "isLoading": false,
+                                                                "parentColumnSpace": 8.0693359375,
+                                                                "parentRowSpace": 10,
+                                                                "leftColumn": 0,
+                                                                "rightColumn": 27,
+                                                                "topRow": 0,
+                                                                "bottomRow": 8,
+                                                                "parentId": "lzfnfil2re",
+                                                                "dynamicBindingPathList": [],
+                                                                "dynamicTriggerPathList": []
                                                             }
                                                         ],
                                                         "minHeight": 630,
@@ -12980,7 +13073,12 @@
                                                         "key": "onTabSelected"
                                                     }
                                                 ],
-                                                "onTabSelected": ""
+                                                "onTabSelected": "",
+                                                "dynamicPropertyPathList": [
+                                                    {
+                                                        "key": "onTabSelected"
+                                                    }
+                                                ]
                                             },
                                             {
                                                 "isVisible": true,
@@ -13047,7 +13145,7 @@
                                         "leftColumn": 0,
                                         "rightColumn": 319.5,
                                         "topRow": 0,
-                                        "bottomRow": 890,
+                                        "bottomRow": 730,
                                         "parentId": "c79nhhvksf"
                                     }
                                 ],
@@ -13067,7 +13165,7 @@
                                 "leftColumn": 6,
                                 "rightColumn": 64,
                                 "topRow": 7,
-                                "bottomRow": 92,
+                                "bottomRow": 87,
                                 "parentId": "0",
                                 "dynamicBindingPathList": [],
                                 "dynamicTriggerPathList": [],
@@ -13377,6 +13475,7 @@
                         "Image1Copy1",
                         "Tabs1",
                         "Canvas18",
+                        "Text4Copy1",
                         "Table1",
                         "link",
                         "Button3",
@@ -13388,12 +13487,14 @@
                         "Button14",
                         "Divider3",
                         "FileSender2",
+                        "Text4",
                         "Canvas28",
                         "Table5",
                         "manualques",
                         "manualanswer",
                         "IconButton3",
                         "Divider6",
+                        "Text4Copy2",
                         "Container6",
                         "Canvas26",
                         "Modal4",
