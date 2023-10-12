@@ -11277,16 +11277,9 @@
                                                         "isVisible": true,
                                                         "index": 1
                                                     },
-                                                    "tab2qhklme4le": {
-                                                        "id": "tab2qhklme4le",
-                                                        "index": 2,
-                                                        "label": " FAQ",
-                                                        "widgetId": "r4buglj1n3",
-                                                        "isVisible": true
-                                                    },
                                                     "tabzk5phhc34h": {
                                                         "id": "tabzk5phhc34h",
-                                                        "index": 3,
+                                                        "index": 2,
                                                         "label": "Additional",
                                                         "widgetId": "lzfnfil2re",
                                                         "isVisible": true
@@ -12428,527 +12421,6 @@
                                                     },
                                                     {
                                                         "isVisible": true,
-                                                        "widgetName": "Canvas20",
-                                                        "version": 1,
-                                                        "detachFromLayout": true,
-                                                        "type": "CANVAS_WIDGET",
-                                                        "hideCard": true,
-                                                        "displayName": "Canvas",
-                                                        "key": "91uuxp5y6l",
-                                                        "tabId": "tab2qhklme4le",
-                                                        "tabName": " FAQ",
-                                                        "containerStyle": "none",
-                                                        "canExtend": false,
-                                                        "children": [
-                                                            {
-                                                                "isVisible": true,
-                                                                "animateLoading": true,
-                                                                "defaultSelectedRow": "",
-                                                                "label": "Data",
-                                                                "widgetName": "Table3",
-                                                                "searchKey": "",
-                                                                "textSize": "PARAGRAPH",
-                                                                "horizontalAlignment": "LEFT",
-                                                                "verticalAlignment": "CENTER",
-                                                                "totalRecordsCount": 0,
-                                                                "defaultPageSize": 0,
-                                                                "isShowLoading": true,
-                                                                "dynamicBindingPathList": [
-                                                                    {
-                                                                        "key": "primaryColumns.status.computedValue"
-                                                                    },
-                                                                    {
-                                                                        "key": "tableData"
-                                                                    },
-                                                                    {
-                                                                        "key": "primaryColumns._id.computedValue"
-                                                                    },
-                                                                    {
-                                                                        "key": "primaryColumns.knowledgeBaseId.computedValue"
-                                                                    },
-                                                                    {
-                                                                        "key": "primaryColumns.name.computedValue"
-                                                                    },
-                                                                    {
-                                                                        "key": "primaryColumns.type.computedValue"
-                                                                    },
-                                                                    {
-                                                                        "key": "primaryColumns.file.computedValue"
-                                                                    },
-                                                                    {
-                                                                        "key": "primaryColumns.vectors.computedValue"
-                                                                    },
-                                                                    {
-                                                                        "key": "primaryColumns.deleted.computedValue"
-                                                                    },
-                                                                    {
-                                                                        "key": "primaryColumns.createdAt.computedValue"
-                                                                    },
-                                                                    {
-                                                                        "key": "derivedColumns.customColumn1.buttonLabel"
-                                                                    },
-                                                                    {
-                                                                        "key": "primaryColumns.customColumn1.buttonLabel"
-                                                                    },
-                                                                    {
-                                                                        "key": "derivedColumns.customColumn2.buttonLabel"
-                                                                    },
-                                                                    {
-                                                                        "key": "primaryColumns.customColumn2.buttonLabel"
-                                                                    },
-                                                                    {
-                                                                        "key": "derivedColumns.customColumn2.isDisabled"
-                                                                    },
-                                                                    {
-                                                                        "key": "primaryColumns.customColumn2.isDisabled"
-                                                                    }
-                                                                ],
-                                                                "primaryColumns": {
-                                                                    "status": {
-                                                                        "index": 2,
-                                                                        "width": 150,
-                                                                        "id": "status",
-                                                                        "horizontalAlignment": "LEFT",
-                                                                        "verticalAlignment": "CENTER",
-                                                                        "columnType": "text",
-                                                                        "textSize": "PARAGRAPH",
-                                                                        "enableFilter": true,
-                                                                        "enableSort": true,
-                                                                        "isVisible": true,
-                                                                        "isCellVisible": true,
-                                                                        "isDerived": false,
-                                                                        "label": "status",
-                                                                        "computedValue": "{{Table4Copy.sanitizedTableData.map((currentRow) => ( currentRow.status))}}",
-                                                                        "buttonColor": "#03B365",
-                                                                        "menuColor": "#03B365",
-                                                                        "labelColor": "#FFFFFF"
-                                                                    },
-                                                                    "_id": {
-                                                                        "index": 0,
-                                                                        "width": 150,
-                                                                        "id": "_id",
-                                                                        "horizontalAlignment": "LEFT",
-                                                                        "verticalAlignment": "CENTER",
-                                                                        "columnType": "text",
-                                                                        "textSize": "PARAGRAPH",
-                                                                        "enableFilter": true,
-                                                                        "enableSort": true,
-                                                                        "isVisible": false,
-                                                                        "isDisabled": false,
-                                                                        "isCellVisible": true,
-                                                                        "isDerived": false,
-                                                                        "label": "_id",
-                                                                        "computedValue": "{{Table4Copy.sanitizedTableData.map((currentRow) => ( currentRow._id))}}"
-                                                                    },
-                                                                    "knowledgeBaseId": {
-                                                                        "index": 1,
-                                                                        "width": 150,
-                                                                        "id": "knowledgeBaseId",
-                                                                        "horizontalAlignment": "LEFT",
-                                                                        "verticalAlignment": "CENTER",
-                                                                        "columnType": "text",
-                                                                        "textSize": "PARAGRAPH",
-                                                                        "enableFilter": true,
-                                                                        "enableSort": true,
-                                                                        "isVisible": false,
-                                                                        "isDisabled": false,
-                                                                        "isCellVisible": true,
-                                                                        "isDerived": false,
-                                                                        "label": "knowledgeBaseId",
-                                                                        "computedValue": "{{Table4Copy.sanitizedTableData.map((currentRow) => ( currentRow.knowledgeBaseId))}}"
-                                                                    },
-                                                                    "name": {
-                                                                        "index": 2,
-                                                                        "width": 150,
-                                                                        "id": "name",
-                                                                        "horizontalAlignment": "LEFT",
-                                                                        "verticalAlignment": "CENTER",
-                                                                        "columnType": "text",
-                                                                        "textSize": "PARAGRAPH",
-                                                                        "enableFilter": true,
-                                                                        "enableSort": true,
-                                                                        "isVisible": true,
-                                                                        "isDisabled": false,
-                                                                        "isCellVisible": true,
-                                                                        "isDerived": false,
-                                                                        "label": "name",
-                                                                        "computedValue": "{{Table4Copy.sanitizedTableData.map((currentRow) => ( currentRow.name))}}"
-                                                                    },
-                                                                    "type": {
-                                                                        "index": 3,
-                                                                        "width": 150,
-                                                                        "id": "type",
-                                                                        "horizontalAlignment": "LEFT",
-                                                                        "verticalAlignment": "CENTER",
-                                                                        "columnType": "text",
-                                                                        "textSize": "PARAGRAPH",
-                                                                        "enableFilter": true,
-                                                                        "enableSort": true,
-                                                                        "isVisible": false,
-                                                                        "isDisabled": false,
-                                                                        "isCellVisible": true,
-                                                                        "isDerived": false,
-                                                                        "label": "type",
-                                                                        "computedValue": "{{Table4Copy.sanitizedTableData.map((currentRow) => ( currentRow.type))}}"
-                                                                    },
-                                                                    "file": {
-                                                                        "index": 4,
-                                                                        "width": 150,
-                                                                        "id": "file",
-                                                                        "horizontalAlignment": "LEFT",
-                                                                        "verticalAlignment": "CENTER",
-                                                                        "columnType": "text",
-                                                                        "textSize": "PARAGRAPH",
-                                                                        "enableFilter": true,
-                                                                        "enableSort": true,
-                                                                        "isVisible": true,
-                                                                        "isDisabled": false,
-                                                                        "isCellVisible": true,
-                                                                        "isDerived": false,
-                                                                        "label": "file",
-                                                                        "computedValue": "{{Table4Copy.sanitizedTableData.map((currentRow) => ( currentRow.file))}}"
-                                                                    },
-                                                                    "vectors": {
-                                                                        "index": 5,
-                                                                        "width": 150,
-                                                                        "id": "vectors",
-                                                                        "horizontalAlignment": "LEFT",
-                                                                        "verticalAlignment": "CENTER",
-                                                                        "columnType": "text",
-                                                                        "textSize": "PARAGRAPH",
-                                                                        "enableFilter": true,
-                                                                        "enableSort": true,
-                                                                        "isVisible": false,
-                                                                        "isDisabled": false,
-                                                                        "isCellVisible": true,
-                                                                        "isDerived": false,
-                                                                        "label": "vectors",
-                                                                        "computedValue": "{{Table4Copy.sanitizedTableData.map((currentRow) => ( currentRow.vectors))}}"
-                                                                    },
-                                                                    "deleted": {
-                                                                        "index": 7,
-                                                                        "width": 150,
-                                                                        "id": "deleted",
-                                                                        "horizontalAlignment": "LEFT",
-                                                                        "verticalAlignment": "CENTER",
-                                                                        "columnType": "text",
-                                                                        "textSize": "PARAGRAPH",
-                                                                        "enableFilter": true,
-                                                                        "enableSort": true,
-                                                                        "isVisible": false,
-                                                                        "isDisabled": false,
-                                                                        "isCellVisible": true,
-                                                                        "isDerived": false,
-                                                                        "label": "deleted",
-                                                                        "computedValue": "{{Table4Copy.sanitizedTableData.map((currentRow) => ( currentRow.deleted))}}"
-                                                                    },
-                                                                    "createdAt": {
-                                                                        "index": 8,
-                                                                        "width": 150,
-                                                                        "id": "createdAt",
-                                                                        "horizontalAlignment": "LEFT",
-                                                                        "verticalAlignment": "CENTER",
-                                                                        "columnType": "text",
-                                                                        "textSize": "PARAGRAPH",
-                                                                        "enableFilter": true,
-                                                                        "enableSort": true,
-                                                                        "isVisible": true,
-                                                                        "isDisabled": false,
-                                                                        "isCellVisible": true,
-                                                                        "isDerived": false,
-                                                                        "label": "createdAt",
-                                                                        "computedValue": "{{Table4Copy.sanitizedTableData.map((currentRow) => ( currentRow.createdAt))}}"
-                                                                    },
-                                                                    "customColumn1": {
-                                                                        "index": 9,
-                                                                        "width": 150,
-                                                                        "id": "customColumn1",
-                                                                        "columnType": "iconButton",
-                                                                        "enableFilter": true,
-                                                                        "enableSort": true,
-                                                                        "isVisible": true,
-                                                                        "isDisabled": false,
-                                                                        "isCellVisible": true,
-                                                                        "isDerived": true,
-                                                                        "label": "",
-                                                                        "computedValue": "",
-                                                                        "buttonStyle": "rgb(3, 179, 101)",
-                                                                        "buttonColor": "#DD4B34",
-                                                                        "menuColor": "#03B365",
-                                                                        "labelColor": "#FFFFFF",
-                                                                        "iconName": "trash",
-                                                                        "buttonLabel": "{{Table3.sanitizedTableData.map((currentRow) => ( 'Delete'))}}",
-                                                                        "onClick": "{{JSObject2.myFun2(Table3.selectedRow._id)}}",
-                                                                        "borderRadius": "CIRCLE",
-                                                                        "buttonVariant": "PRIMARY"
-                                                                    },
-                                                                    "customColumn2": {
-                                                                        "index": 10,
-                                                                        "width": 150,
-                                                                        "id": "customColumn2",
-                                                                        "columnType": "iconButton",
-                                                                        "enableFilter": true,
-                                                                        "enableSort": true,
-                                                                        "isVisible": true,
-                                                                        "isDisabled": "{{Table3.sanitizedTableData.map((currentRow) => ( currentRow.status === 'Source saved'))}}",
-                                                                        "isCellVisible": true,
-                                                                        "isDerived": true,
-                                                                        "label": "",
-                                                                        "computedValue": "",
-                                                                        "buttonStyle": "rgb(3, 179, 101)",
-                                                                        "buttonColor": "#3b82ff",
-                                                                        "menuColor": "#03B365",
-                                                                        "labelColor": "#FFFFFF",
-                                                                        "iconName": "eye-open",
-                                                                        "buttonLabel": "{{Table3.sanitizedTableData.map((currentRow) => ( 'Edit vectors'))}}",
-                                                                        "onClick": "{{navigateTo('Vectors',{'id': currentRow._id},'NEW_WINDOW')}}",
-                                                                        "borderRadius": "CIRCLE",
-                                                                        "buttonVariant": "PRIMARY"
-                                                                    }
-                                                                },
-                                                                "derivedColumns": {
-                                                                    "customColumn1": {
-                                                                        "index": 9,
-                                                                        "width": 150,
-                                                                        "id": "customColumn1",
-                                                                        "columnType": "iconButton",
-                                                                        "enableFilter": true,
-                                                                        "enableSort": true,
-                                                                        "isVisible": true,
-                                                                        "isDisabled": false,
-                                                                        "isCellVisible": true,
-                                                                        "isDerived": true,
-                                                                        "label": "",
-                                                                        "computedValue": "",
-                                                                        "buttonStyle": "rgb(3, 179, 101)",
-                                                                        "buttonColor": "#DD4B34",
-                                                                        "menuColor": "#03B365",
-                                                                        "labelColor": "#FFFFFF",
-                                                                        "iconName": "trash",
-                                                                        "buttonLabel": "{{Table3.sanitizedTableData.map((currentRow) => ( 'Delete'))}}"
-                                                                    },
-                                                                    "customColumn2": {
-                                                                        "index": 10,
-                                                                        "width": 150,
-                                                                        "id": "customColumn2",
-                                                                        "columnType": "iconButton",
-                                                                        "enableFilter": true,
-                                                                        "enableSort": true,
-                                                                        "isVisible": true,
-                                                                        "isDisabled": "{{Table3.sanitizedTableData.map((currentRow) => ( currentRow.status === 'Source saved'))}}",
-                                                                        "isCellVisible": true,
-                                                                        "isDerived": true,
-                                                                        "label": "",
-                                                                        "computedValue": "",
-                                                                        "buttonStyle": "rgb(3, 179, 101)",
-                                                                        "buttonColor": "#3b82ff",
-                                                                        "menuColor": "#03B365",
-                                                                        "labelColor": "#FFFFFF",
-                                                                        "iconName": "eye-open",
-                                                                        "buttonLabel": "{{Table3.sanitizedTableData.map((currentRow) => ( 'Edit vectors'))}}",
-                                                                        "onClick": "{{navigateTo('Vectors',{'id': currentRow._id})}}"
-                                                                    }
-                                                                },
-                                                                "tableData": "{{getFAQ.data}}",
-                                                                "columnSizeMap": {
-                                                                    "task": 245,
-                                                                    "step": 62,
-                                                                    "status": 95,
-                                                                    "name": 102,
-                                                                    "createdAt": 200,
-                                                                    "customColumn1": 82,
-                                                                    "customColumn2": 117,
-                                                                    "file": 99
-                                                                },
-                                                                "columnOrder": [
-                                                                    "file",
-                                                                    "name",
-                                                                    "status",
-                                                                    "createdAt",
-                                                                    "customColumn2",
-                                                                    "customColumn1",
-                                                                    "_id",
-                                                                    "knowledgeBaseId",
-                                                                    "type",
-                                                                    "vectors",
-                                                                    "deleted"
-                                                                ],
-                                                                "enableClientSideSearch": true,
-                                                                "isVisibleSearch": true,
-                                                                "isVisibleFilters": true,
-                                                                "isVisibleDownload": true,
-                                                                "isVisiblePagination": true,
-                                                                "isSortable": true,
-                                                                "delimiter": ",",
-                                                                "version": 3,
-                                                                "type": "TABLE_WIDGET",
-                                                                "hideCard": false,
-                                                                "displayName": "Table",
-                                                                "key": "aqgbh459bw",
-                                                                "iconSVG": "/static/media/icon.db8a9cbd.svg",
-                                                                "widgetId": "ijl87b27jt",
-                                                                "renderMode": "CANVAS",
-                                                                "isLoading": false,
-                                                                "parentColumnSpace": 13.6201171875,
-                                                                "parentRowSpace": 10,
-                                                                "leftColumn": 0,
-                                                                "rightColumn": 64,
-                                                                "topRow": 13,
-                                                                "bottomRow": 72,
-                                                                "parentId": "r4buglj1n3",
-                                                                "dynamicTriggerPathList": [
-                                                                    {
-                                                                        "key": "primaryColumns.customColumn1.onClick"
-                                                                    },
-                                                                    {
-                                                                        "key": "primaryColumns.customColumn2.onClick"
-                                                                    }
-                                                                ],
-                                                                "dynamicPropertyPathList": [
-                                                                    {
-                                                                        "key": "primaryColumns.customColumn2.isDisabled"
-                                                                    }
-                                                                ]
-                                                            },
-                                                            {
-                                                                "isVisible": true,
-                                                                "animateLoading": true,
-                                                                "text": "Divide file",
-                                                                "buttonColor": "#3268a8",
-                                                                "buttonVariant": "PRIMARY",
-                                                                "placement": "CENTER",
-                                                                "widgetName": "Button15",
-                                                                "isDisabled": "{{!Table3.selectedRow._id || Table3.selectedRow.status === \"Saved in Pinecone\"}}",
-                                                                "isDefaultClickDisabled": true,
-                                                                "recaptchaType": "V3",
-                                                                "version": 1,
-                                                                "classStyle": "",
-                                                                "type": "BUTTON_WIDGET",
-                                                                "hideCard": false,
-                                                                "displayName": "Button",
-                                                                "key": "cmp9hg65sy",
-                                                                "iconSVG": "/static/media/icon.cca02633.svg",
-                                                                "widgetId": "wj07arix0n",
-                                                                "renderMode": "CANVAS",
-                                                                "isLoading": false,
-                                                                "parentColumnSpace": 11.439453125,
-                                                                "parentRowSpace": 10,
-                                                                "leftColumn": 52,
-                                                                "rightColumn": 64,
-                                                                "topRow": 1,
-                                                                "bottomRow": 5,
-                                                                "parentId": "r4buglj1n3",
-                                                                "dynamicBindingPathList": [
-                                                                    {
-                                                                        "key": "isDisabled"
-                                                                    },
-                                                                    {
-                                                                        "key": "tooltip"
-                                                                    }
-                                                                ],
-                                                                "dynamicTriggerPathList": [
-                                                                    {
-                                                                        "key": "onClick"
-                                                                    }
-                                                                ],
-                                                                "borderRadius": "ROUNDED",
-                                                                "onClick": "{{showModal('Modal6')}}",
-                                                                "dynamicPropertyPathList": [
-                                                                    {
-                                                                        "key": "isDisabled"
-                                                                    }
-                                                                ],
-                                                                "tooltip": "{{Button15.isDisabled ? \"Please select a file that is not already saved to Pinecone\" : ''}}"
-                                                            },
-                                                            {
-                                                                "isVisible": true,
-                                                                "widgetName": "Divider4",
-                                                                "orientation": "horizontal",
-                                                                "capType": "nc",
-                                                                "capSide": 0,
-                                                                "strokeStyle": "solid",
-                                                                "dividerColor": "#EBEBEB",
-                                                                "thickness": 2,
-                                                                "version": 1,
-                                                                "animateLoading": true,
-                                                                "classStyle": "",
-                                                                "type": "DIVIDER_WIDGET",
-                                                                "hideCard": false,
-                                                                "displayName": "Divider",
-                                                                "key": "hpew7lo0h7",
-                                                                "iconSVG": "/static/media/icon.cbe8f608.svg",
-                                                                "widgetId": "gbe5smrrgb",
-                                                                "renderMode": "CANVAS",
-                                                                "isLoading": false,
-                                                                "parentColumnSpace": 11.439453125,
-                                                                "parentRowSpace": 10,
-                                                                "leftColumn": 0,
-                                                                "rightColumn": 64,
-                                                                "topRow": 8,
-                                                                "bottomRow": 12,
-                                                                "parentId": "r4buglj1n3"
-                                                            },
-                                                            {
-                                                                "isVisible": true,
-                                                                "widgetName": "FileSender3",
-                                                                "valueRes": null,
-                                                                "classStyle": "",
-                                                                "textStyle": "LABEL",
-                                                                "uploadUrl": "{{main.env.nodeUrl}}/updateObjectsBase?id={{main.URL.queryParams._id}}&type=FAQ",
-                                                                "validType": "",
-                                                                "textAlign": "LEFT",
-                                                                "response": null,
-                                                                "files": [],
-                                                                "types": [],
-                                                                "titles": [],
-                                                                "completeRes": "{{getFAQ.run()}}",
-                                                                "version": 1,
-                                                                "type": "FILESENDER_WIDGET",
-                                                                "hideCard": false,
-                                                                "displayName": "FileSender",
-                                                                "key": "5tksykewfx",
-                                                                "iconSVG": "/static/media/icon.7c5ad9c3.svg",
-                                                                "isCanvas": false,
-                                                                "widgetId": "u7mlioqohz",
-                                                                "renderMode": "CANVAS",
-                                                                "isLoading": false,
-                                                                "parentColumnSpace": 13.3125,
-                                                                "parentRowSpace": 10,
-                                                                "leftColumn": 0,
-                                                                "rightColumn": 20,
-                                                                "topRow": 0,
-                                                                "bottomRow": 7,
-                                                                "parentId": "r4buglj1n3",
-                                                                "uploadButtonText": "Upload",
-                                                                "dynamicBindingPathList": [
-                                                                    {
-                                                                        "key": "uploadUrl"
-                                                                    }
-                                                                ],
-                                                                "dynamicTriggerPathList": [
-                                                                    {
-                                                                        "key": "completeRes"
-                                                                    }
-                                                                ],
-                                                                "text": "Upload"
-                                                            }
-                                                        ],
-                                                        "minHeight": 550,
-                                                        "widgetId": "r4buglj1n3",
-                                                        "renderMode": "CANVAS",
-                                                        "isLoading": false,
-                                                        "parentColumnSpace": 1,
-                                                        "parentRowSpace": 1,
-                                                        "leftColumn": 0,
-                                                        "rightColumn": 752.125,
-                                                        "topRow": 1,
-                                                        "bottomRow": 740,
-                                                        "parentId": "mw49kdef9m",
-                                                        "dynamicBindingPathList": [],
-                                                        "dynamicTriggerPathList": []
-                                                    },
-                                                    {
-                                                        "isVisible": true,
                                                         "widgetName": "Canvas28",
                                                         "version": 1,
                                                         "detachFromLayout": true,
@@ -13052,7 +12524,7 @@
                                                                         "textSize": "PARAGRAPH",
                                                                         "enableFilter": true,
                                                                         "enableSort": true,
-                                                                        "isVisible": true,
+                                                                        "isVisible": false,
                                                                         "isDisabled": false,
                                                                         "isCellVisible": true,
                                                                         "isDerived": false,
@@ -13284,12 +12756,12 @@
                                                                 },
                                                                 "columnOrder": [
                                                                     "name",
-                                                                    "createdAt",
                                                                     "status",
                                                                     "type",
                                                                     "_id",
                                                                     "knowledgeBaseId",
                                                                     "url",
+                                                                    "createdAt",
                                                                     "vectors",
                                                                     "deleted",
                                                                     "customColumn1",
@@ -13365,7 +12837,7 @@
                                                                 "parentColumnSpace": 8.1826171875,
                                                                 "parentRowSpace": 10,
                                                                 "leftColumn": 0,
-                                                                "rightColumn": 25,
+                                                                "rightColumn": 27,
                                                                 "topRow": 1,
                                                                 "bottomRow": 8,
                                                                 "parentId": "lzfnfil2re",
@@ -13401,8 +12873,8 @@
                                                                 "isLoading": false,
                                                                 "parentColumnSpace": 8.1826171875,
                                                                 "parentRowSpace": 10,
-                                                                "leftColumn": 25,
-                                                                "rightColumn": 49,
+                                                                "leftColumn": 27,
+                                                                "rightColumn": 58,
                                                                 "topRow": 1,
                                                                 "bottomRow": 8,
                                                                 "parentId": "lzfnfil2re",
@@ -13430,9 +12902,9 @@
                                                                 "isLoading": false,
                                                                 "parentColumnSpace": 8.1826171875,
                                                                 "parentRowSpace": 10,
-                                                                "leftColumn": 61,
-                                                                "rightColumn": 64,
-                                                                "topRow": 3,
+                                                                "leftColumn": 60,
+                                                                "rightColumn": 62,
+                                                                "topRow": 4,
                                                                 "bottomRow": 8,
                                                                 "parentId": "lzfnfil2re",
                                                                 "dynamicBindingPathList": [],
@@ -13442,43 +12914,6 @@
                                                                     }
                                                                 ],
                                                                 "onClick": "{{saveVector.run(() => getManual.run(), () => {})}}"
-                                                            },
-                                                            {
-                                                                "isVisible": true,
-                                                                "label": "Name",
-                                                                "labelPosition": "Top",
-                                                                "labelAlignment": "left",
-                                                                "labelWidth": 5,
-                                                                "widgetName": "manuallname",
-                                                                "version": 2,
-                                                                "defaultText": "",
-                                                                "iconAlign": "left",
-                                                                "autoFocus": false,
-                                                                "labelStyle": "",
-                                                                "resetOnSubmit": true,
-                                                                "isRequired": false,
-                                                                "isDisabled": false,
-                                                                "animateLoading": true,
-                                                                "classStyle": "",
-                                                                "inputType": "TEXT",
-                                                                "buttonPosition": "right",
-                                                                "type": "INPUT_WIDGET_V2",
-                                                                "hideCard": false,
-                                                                "displayName": "Input",
-                                                                "key": "we6df5gfdp",
-                                                                "iconSVG": "/static/media/icon.9f505595.svg",
-                                                                "widgetId": "zt13y8uvs9",
-                                                                "renderMode": "CANVAS",
-                                                                "isLoading": false,
-                                                                "parentColumnSpace": 11.439453125,
-                                                                "parentRowSpace": 10,
-                                                                "leftColumn": 49,
-                                                                "rightColumn": 60,
-                                                                "topRow": 1,
-                                                                "bottomRow": 8,
-                                                                "parentId": "lzfnfil2re",
-                                                                "dynamicBindingPathList": [],
-                                                                "dynamicTriggerPathList": []
                                                             },
                                                             {
                                                                 "isVisible": true,
@@ -13942,17 +13377,11 @@
                         "Button14",
                         "Divider3",
                         "FileSender2",
-                        "Canvas20",
-                        "Table3",
-                        "Button15",
-                        "Divider4",
-                        "FileSender3",
                         "Canvas28",
                         "Table5",
                         "manualques",
                         "manualanswer",
                         "IconButton3",
-                        "manuallname",
                         "Divider6",
                         "Container6",
                         "Canvas26",
