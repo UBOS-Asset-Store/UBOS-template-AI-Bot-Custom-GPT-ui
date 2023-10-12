@@ -6779,298 +6779,6 @@
         ]
     },
     {
-        "_id": "64994367edd3b9b22ecf75c0",
-        "applicationId": "jetsondashboard",
-        "organizationId": "Org",
-        "pluginType": "API",
-        "pluginId": "API",
-        "Action": {
-            "name": "getLink",
-            "datasource": {
-                "name": "DEFAULT_REST_DATASOURCE",
-                "datasourceConfiguration": {
-                    "url": "{{main.env.nodeUrl}}/getKnowlegeObjectLink"
-                },
-                "invalids": [],
-                "isValid": true,
-                "pluginId": "API",
-                "messages": []
-            },
-            "executeOnLoad": false,
-            "pageId": "Training",
-            "actionConfiguration": {
-                "timeoutInMillisecond": 10000,
-                "encodeParamsToggle": true,
-                "httpMethod": "GET",
-                "headers": [],
-                "queryParameters": [],
-                "bodyFormData": [],
-                "formData": {
-                    "apiContentType": "none"
-                },
-                "pluginSpecifiedTemplates": [
-                    {
-                        "value": true
-                    }
-                ],
-                "path": ""
-            },
-            "dynamicBindingPathList": [
-                {
-                    "key": "datasourceUrl"
-                }
-            ],
-            "isValid": true,
-            "invalids": [],
-            "jsonPathKeys": [
-                "main.env.nodeUrl"
-            ],
-            "userSetOnLoad": false,
-            "confirmBeforeExecute": false
-        },
-        "createdAt": "2023-06-26T07:51:03.064Z",
-        "updatedAt": "2023-10-11T22:07:52.873Z",
-        "deleted": false,
-        "policies": [
-            {
-                "permission": "read:actions",
-                "groups": [],
-                "users": []
-            },
-            {
-                "permission": "manage:actions",
-                "groups": [],
-                "users": []
-            },
-            {
-                "permission": "execute:actions",
-                "groups": [],
-                "users": []
-            }
-        ]
-    },
-    {
-        "name": "myFun1",
-        "pageId": "Training",
-        "executeOnLoad": false,
-        "actionConfiguration": {
-            "body": "() => {\n\tlet result = List1.items.map((e)=> {\n\nreturn {\n\t\t\tquestion: e.Input1.text,\n\t\t\tid: e.Input4.text,\n\t\t\tresult: e.Input2.text,\n\t\t\turl: Table1.selectedRow.url,\n\t\t\tpinecone: Checkbox1.isChecked,\n\t\t\tidBase: Table1.selectedRow._id,\n\t\t}\n\t})\n\nreturn result\t\n\n}",
-            "isAsync": false,
-            "timeoutInMillisecond": 10000,
-            "jsArguments": [],
-            "paginationType": "NONE",
-            "encodeParamsToggle": true
-        },
-        "clientSideExecution": true,
-        "_id": "64994bafedd3b9b22ecf75c3",
-        "id": "64994bafedd3b9b22ecf75c3",
-        "collectionId": "64994bafedd3b9b22ecf75c2",
-        "confirmBeforeExecute": false,
-        "applicationId": "jetsondashboard",
-        "datasource": {
-            "isValid": true,
-            "messages": [],
-            "name": "UNUSED_DATASOURCE",
-            "new": true,
-            "pluginId": "",
-            "userPermissions": []
-        },
-        "dynamicBindingPathList": [
-            {
-                "key": "body"
-            }
-        ],
-        "fullyQualifiedName": "JSObject1.myFun1",
-        "isValid": true,
-        "jsonPathKeys": [
-            "() => {\n\t\t//write code here\n\t}"
-        ],
-        "pluginType": "JS"
-    },
-    {
-        "name": "myFun2",
-        "pageId": "Training",
-        "executeOnLoad": false,
-        "actionConfiguration": {
-            "body": "() => {\n\tlet result = List2.items.map((e)=> {\n\t\treturn {\n\t\t\tquestion: e.Input1Copy.text,\n\t\t\tresult: e.Input2Copy.text,\n\t\t\tid: e.Input5.text,\n\t\t\turl: Table2.selectedRow.name,\n\t\t\tpinecone: Checkbox1Copy.isChecked,\n\t\t\tidBase: Table2.selectedRow._id,\n\t\t}\n\t})\nreturn result\t\t\n\t}",
-            "isAsync": false,
-            "timeoutInMillisecond": 10000,
-            "jsArguments": [],
-            "paginationType": "NONE",
-            "encodeParamsToggle": true
-        },
-        "clientSideExecution": true,
-        "_id": "64994bafedd3b9b22ecf75c4",
-        "id": "64994bafedd3b9b22ecf75c4",
-        "collectionId": "64994bafedd3b9b22ecf75c2",
-        "confirmBeforeExecute": false,
-        "applicationId": "jetsondashboard",
-        "datasource": {
-            "isValid": true,
-            "messages": [],
-            "name": "UNUSED_DATASOURCE",
-            "new": true,
-            "pluginId": "",
-            "userPermissions": []
-        },
-        "dynamicBindingPathList": [
-            {
-                "key": "body"
-            }
-        ],
-        "fullyQualifiedName": "JSObject1.myFun2",
-        "isValid": true,
-        "jsonPathKeys": [
-            "async () => {\n\t\t//use async-await or promises\n\t}"
-        ],
-        "pluginType": "JS"
-    },
-    {
-        "_id": "64998084edd3b9b22ecf75c9",
-        "applicationId": "jetsondashboard",
-        "organizationId": "Org",
-        "pluginType": "API",
-        "pluginId": "API",
-        "Action": {
-            "name": "getFAQ",
-            "datasource": {
-                "name": "DEFAULT_REST_DATASOURCE",
-                "datasourceConfiguration": {
-                    "url": "{{main.env.nodeUrl}}/getKnowlegeObjectFAQ"
-                },
-                "invalids": [],
-                "isValid": true,
-                "pluginId": "API",
-                "messages": []
-            },
-            "executeOnLoad": true,
-            "pageId": "Training",
-            "actionConfiguration": {
-                "timeoutInMillisecond": 10000,
-                "encodeParamsToggle": true,
-                "httpMethod": "GET",
-                "headers": [],
-                "queryParameters": [],
-                "bodyFormData": [],
-                "formData": {
-                    "apiContentType": "none"
-                },
-                "pluginSpecifiedTemplates": [
-                    {
-                        "value": true
-                    }
-                ],
-                "path": ""
-            },
-            "dynamicBindingPathList": [
-                {
-                    "key": "datasourceUrl"
-                }
-            ],
-            "isValid": true,
-            "invalids": [],
-            "jsonPathKeys": [
-                "main.env.nodeUrl",
-                "main.URL.queryParams._id"
-            ],
-            "userSetOnLoad": false,
-            "confirmBeforeExecute": false
-        },
-        "createdAt": "2023-06-26T12:11:48.959Z",
-        "updatedAt": "2023-10-11T22:10:36.189Z",
-        "deleted": false,
-        "policies": [
-            {
-                "permission": "read:actions",
-                "groups": [],
-                "users": []
-            },
-            {
-                "permission": "manage:actions",
-                "groups": [],
-                "users": []
-            },
-            {
-                "permission": "execute:actions",
-                "groups": [],
-                "users": []
-            }
-        ]
-    },
-    {
-        "_id": "6499823aedd3b9b22ecf75ca",
-        "applicationId": "jetsondashboard",
-        "organizationId": "Org",
-        "pluginType": "API",
-        "pluginId": "API",
-        "Action": {
-            "name": "getFiles",
-            "datasource": {
-                "name": "DEFAULT_REST_DATASOURCE",
-                "datasourceConfiguration": {
-                    "url": "{{main.env.nodeUrl}}/getKnowlegeObjectFiles"
-                },
-                "invalids": [],
-                "isValid": true,
-                "pluginId": "API",
-                "messages": []
-            },
-            "executeOnLoad": true,
-            "pageId": "Training",
-            "actionConfiguration": {
-                "timeoutInMillisecond": 10000,
-                "encodeParamsToggle": true,
-                "httpMethod": "GET",
-                "headers": [],
-                "queryParameters": [],
-                "bodyFormData": [],
-                "formData": {
-                    "apiContentType": "none"
-                },
-                "pluginSpecifiedTemplates": [
-                    {
-                        "value": true
-                    }
-                ],
-                "path": ""
-            },
-            "dynamicBindingPathList": [
-                {
-                    "key": "datasourceUrl"
-                }
-            ],
-            "isValid": true,
-            "invalids": [],
-            "jsonPathKeys": [
-                "main.env.nodeUrl",
-                "getIDbase.data[0]._id",
-                "main.env.nodeUrl,2023-06-26T12:19:06.346Z,2023-10-11T21:38:10.509Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl,2023-06-26T12:19:06.346Z,2023-10-11T21:42:12.077Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl"
-            ],
-            "userSetOnLoad": false,
-            "confirmBeforeExecute": false
-        },
-        "createdAt": "2023-06-26T12:19:06.346Z",
-        "updatedAt": "2023-10-11T21:42:17.623Z",
-        "deleted": false,
-        "policies": [
-            {
-                "permission": "read:actions",
-                "groups": [],
-                "users": []
-            },
-            {
-                "permission": "manage:actions",
-                "groups": [],
-                "users": []
-            },
-            {
-                "permission": "execute:actions",
-                "groups": [],
-                "users": []
-            }
-        ]
-    },
-    {
         "_id": "649a9b3fedd3b9b22ecf75cf",
         "applicationId": "jetsondashboard",
         "organizationId": "Org",
@@ -7653,42 +7361,6 @@
         ]
     },
     {
-        "name": "myFun4",
-        "collectionId": "64994bafedd3b9b22ecf75c2",
-        "executeOnLoad": false,
-        "pageId": "Training",
-        "actionConfiguration": {
-            "body": "() => {\n\tlet result = List3Copy.items.map((e)=> {\n\t\treturn {\n\t\t\tquestion: e.Input1Copy1Copy.text,\n\t\t\tresult: e.Input2Copy1Copy.text,\n\t\t\tid: e.Input6Copy.text,\n\t\t\turl: Table2.selectedRow.name,\n\t\t\tpinecone: Checkbox4.isChecked,\n\t\t\tidBase: Table4.selectedRow._id,\n\t\t}\n\t})\n\t\t\tconsole.log(result)\n\nreturn result\t\t\n\t}",
-            "isAsync": false,
-            "timeoutInMillisecond": 10000,
-            "jsArguments": [],
-            "paginationType": "NONE",
-            "encodeParamsToggle": true
-        },
-        "_id": "64a1c5d9edd3b9b22ecf75dc",
-        "id": "64a1c5d9edd3b9b22ecf75dc",
-        "applicationId": "jetsondashboard",
-        "datasource": {
-            "isValid": true,
-            "messages": [],
-            "name": "UNUSED_DATASOURCE",
-            "new": true,
-            "pluginId": "",
-            "userPermissions": []
-        },
-        "dynamicBindingPathList": [
-            {
-                "key": "body"
-            }
-        ],
-        "fullyQualifiedName": "JSObject1.myFun4",
-        "isValid": true,
-        "jsonPathKeys": [
-            "() => {\n\tlet result = List2.items.map((e)=> {\n\t\treturn {\n\t\t\tquestion: e.Input1Copy.text,\n\t\t\tresult: e.Input2Copy.text,\n\t\t\tid: e.Input5.text,\n\t\t\turl: Table2.selectedRow.name,\n\t\t\tpinecone: Checkbox1Copy.isChecked,\n\t\t\tidBase: Table2.selectedRow._id,\n\t\t}\n\t})\nreturn result\t\t\n\t}"
-        ],
-        "pluginType": "JS"
-    },
-    {
         "_id": "64a1cdb2edd3b9b22ecf75e2",
         "applicationId": "jetsondashboard",
         "organizationId": "Org",
@@ -7774,48 +7446,12 @@
         ]
     },
     {
-        "name": "myFun3",
-        "collectionId": "64994bafedd3b9b22ecf75c2",
-        "executeOnLoad": false,
-        "pageId": "Training",
-        "actionConfiguration": {
-            "body": "() => {\n\tlet result = List3.items.map((e)=> {\n\t\treturn {\n\t\t\tquestion: e.Input1Copy1.text,\n\t\t\tresult: e.Input2Copy1.text,\n\t\t\tid: e.Input6.text,\n\t\t\turl: Table2.selectedRow.name,\n\t\t\tpinecone: Checkbox1Copy1.isChecked,\n\t\t\tidBase: Table3.selectedRow._id,\n\t\t}\n\t})\nreturn result\t\t\n\t}",
-            "isAsync": false,
-            "timeoutInMillisecond": 10000,
-            "jsArguments": [],
-            "paginationType": "NONE",
-            "encodeParamsToggle": true
-        },
-        "_id": "64a28581edd3b9b22ecf75e3",
-        "id": "64a28581edd3b9b22ecf75e3",
-        "applicationId": "jetsondashboard",
-        "datasource": {
-            "isValid": true,
-            "messages": [],
-            "name": "UNUSED_DATASOURCE",
-            "new": true,
-            "pluginId": "",
-            "userPermissions": []
-        },
-        "dynamicBindingPathList": [
-            {
-                "key": "body"
-            }
-        ],
-        "fullyQualifiedName": "JSObject1.myFun3",
-        "isValid": true,
-        "jsonPathKeys": [
-            "() => {\n\tlet result = List2.items.map((e)=> {\n\t\treturn {\n\t\t\tquestion: e.Input1Copy.text,\n\t\t\tresult: e.Input2Copy.text,\n\t\t\tid: e.Input5.text,\n\t\t\turl: Table2.selectedRow.name,\n\t\t\tpinecone: Checkbox1Copy.isChecked,\n\t\t\tidBase: Table2.selectedRow._id,\n\t\t}\n\t})\nreturn result\t\t\n\t}"
-        ],
-        "pluginType": "JS"
-    },
-    {
         "name": "myFun2",
         "collectionId": "64a1c91cedd3b9b22ecf75de",
         "executeOnLoad": false,
         "pageId": "Training",
         "actionConfiguration": {
-            "body": "async (id) => {\n await storeValue('idToDeleteOb', id)\n await deleteObject.run()\n\t\tgetLink.run()\n\t\tgetFiles.run()\n\t\tgetFAQ.run()\t\n\t\tgetManual.run()\n\t}",
+            "body": "async (id) => {\n await storeValue('idToDeleteOb', id)\n await deleteObject.run()\n\tgetKnowlegeFiles.run()\n\t}",
             "isAsync": true,
             "timeoutInMillisecond": 10000,
             "jsArguments": [
@@ -8855,78 +8491,6 @@
         ]
     },
     {
-        "_id": "64f5dd37c2384a9dd0af7c2a",
-        "applicationId": "jetsondashboard",
-        "organizationId": "Org",
-        "pluginType": "API",
-        "pluginId": "API",
-        "Action": {
-            "name": "getManual",
-            "datasource": {
-                "name": "DEFAULT_REST_DATASOURCE",
-                "datasourceConfiguration": {
-                    "url": "{{main.env.nodeUrl}}/getKnowlegeObjectManual"
-                },
-                "invalids": [],
-                "isValid": true,
-                "pluginId": "API",
-                "messages": []
-            },
-            "executeOnLoad": false,
-            "pageId": "Training",
-            "actionConfiguration": {
-                "timeoutInMillisecond": 10000,
-                "encodeParamsToggle": true,
-                "httpMethod": "GET",
-                "headers": [],
-                "queryParameters": [],
-                "bodyFormData": [],
-                "formData": {
-                    "apiContentType": "none"
-                },
-                "pluginSpecifiedTemplates": [
-                    {
-                        "value": true
-                    }
-                ],
-                "path": ""
-            },
-            "dynamicBindingPathList": [
-                {
-                    "key": "datasourceUrl"
-                }
-            ],
-            "isValid": true,
-            "invalids": [],
-            "jsonPathKeys": [
-                "main.env.nodeUrl",
-                "main.URL.queryParams._id"
-            ],
-            "userSetOnLoad": false,
-            "confirmBeforeExecute": false
-        },
-        "createdAt": "2023-09-04T13:35:51.147Z",
-        "updatedAt": "2023-10-11T22:10:20.133Z",
-        "deleted": false,
-        "policies": [
-            {
-                "permission": "read:actions",
-                "groups": [],
-                "users": []
-            },
-            {
-                "permission": "manage:actions",
-                "groups": [],
-                "users": []
-            },
-            {
-                "permission": "execute:actions",
-                "groups": [],
-                "users": []
-            }
-        ]
-    },
-    {
         "_id": "64f71168c2384a9dd0af7c2b",
         "applicationId": "jetsondashboard",
         "organizationId": "Org",
@@ -9061,6 +8625,76 @@
         },
         "createdAt": "2023-10-11T19:42:54.215Z",
         "updatedAt": "2023-10-11T22:08:21.837Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ]
+    },
+    {
+        "_id": "6527f351ff0d1890fd5b921a",
+        "applicationId": "jetsondashboard",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "Action": {
+            "name": "getKnowlegeFiles",
+            "datasource": {
+                "name": "DEFAULT_REST_DATASOURCE",
+                "datasourceConfiguration": {
+                    "url": "{{main.env.nodeUrl}}/getKnowlegeObjects"
+                },
+                "invalids": [],
+                "isValid": true,
+                "pluginId": "API",
+                "messages": []
+            },
+            "executeOnLoad": false,
+            "pageId": "Training",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "GET",
+                "headers": [],
+                "queryParameters": [],
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ]
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "datasourceUrl"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "main.env.nodeUrl"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        },
+        "createdAt": "2023-10-12T13:23:29.623Z",
+        "updatedAt": "2023-10-12T13:25:21.758Z",
         "deleted": false,
         "policies": [
             {

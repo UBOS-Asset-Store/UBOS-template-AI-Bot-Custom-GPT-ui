@@ -10926,7 +10926,7 @@
                                                         "children": [
                                                             {
                                                                 "isVisible": true,
-                                                                "text": "Files FAQ:       <span style=\"font-weight:600;\">{{getFAQ.data.length}}</span>",
+                                                                "text": "Files FAQ:       <span style=\"font-weight:600;\">{{getKnowlegeFiles.data.FAQ.length}}</span>",
                                                                 "fontSize": "HEADING3",
                                                                 "fontStyle": "BOLD",
                                                                 "textAlign": "LEFT",
@@ -10963,7 +10963,7 @@
                                                             },
                                                             {
                                                                 "isVisible": true,
-                                                                "text": "Files:       <span style=\"font-weight:600;\">{{getFiles.data.length}}</span>",
+                                                                "text": "Files:       <span style=\"font-weight:600;\">{{getKnowlegeFiles.data.Files.length}}</span>",
                                                                 "fontSize": "HEADING3",
                                                                 "fontStyle": "BOLD",
                                                                 "textAlign": "LEFT",
@@ -11000,7 +11000,7 @@
                                                             },
                                                             {
                                                                 "isVisible": true,
-                                                                "text": "Links:       <span style=\"font-weight:600;\">{{getLink.data.length}}</span>",
+                                                                "text": "Links:       <span style=\"font-weight:600;\">{{getKnowlegeFiles.data.Link.length}}</span>",
                                                                 "fontSize": "HEADING3",
                                                                 "fontStyle": "BOLD",
                                                                 "textAlign": "LEFT",
@@ -11098,7 +11098,7 @@
                                                                     }
                                                                 ],
                                                                 "borderRadius": "ROUNDED",
-                                                                "onClick": "{{getLink.run();getFiles.run();getFAQ.run();getManual.run()}}",
+                                                                "onClick": "{{getKnowlegeFiles.run()}}",
                                                                 "dynamicPropertyPathList": [
                                                                     {
                                                                         "key": "onClick"
@@ -11628,7 +11628,7 @@
                                                                         "iconName": "eye-open"
                                                                     }
                                                                 },
-                                                                "tableData": "{{getLink.data}}",
+                                                                "tableData": "{{getKnowlegeFiles.data.Link}}",
                                                                 "columnSizeMap": {
                                                                     "task": 245,
                                                                     "step": 62,
@@ -11760,7 +11760,12 @@
                                                                     }
                                                                 ],
                                                                 "borderRadius": "ROUNDED",
-                                                                "onClick": "{{saveLink.run(() => getLink.run(), () => {})}}"
+                                                                "onClick": "{{saveLink.run(() => getKnowlegeFiles.run(), () => {})}}",
+                                                                "dynamicPropertyPathList": [
+                                                                    {
+                                                                        "key": "onClick"
+                                                                    }
+                                                                ]
                                                             },
                                                             {
                                                                 "isVisible": true,
@@ -12226,7 +12231,7 @@
                                                                         "buttonLabel": "{{Table2.sanitizedTableData.map((currentRow) => ( 'Edit vectors'))}}"
                                                                     }
                                                                 },
-                                                                "tableData": "{{getFiles.data}}",
+                                                                "tableData": "{{[...getKnowlegeFiles.data.Files ,...getKnowlegeFiles.data.FAQ]}}",
                                                                 "columnSizeMap": {
                                                                     "task": 245,
                                                                     "step": 62,
@@ -12373,7 +12378,7 @@
                                                                 "files": [],
                                                                 "types": [],
                                                                 "titles": [],
-                                                                "completeRes": "{{getFiles.run()}}",
+                                                                "completeRes": "{{getKnowlegeFiles.run()}}",
                                                                 "version": 1,
                                                                 "type": "FILESENDER_WIDGET",
                                                                 "hideCard": false,
@@ -12402,7 +12407,12 @@
                                                                         "key": "completeRes"
                                                                     }
                                                                 ],
-                                                                "text": "Upload"
+                                                                "text": "Upload",
+                                                                "dynamicPropertyPathList": [
+                                                                    {
+                                                                        "key": "completeRes"
+                                                                    }
+                                                                ]
                                                             }
                                                         ],
                                                         "minHeight": 400,
@@ -12745,7 +12755,7 @@
                                                                         "horizontalAlignment": "CENTER"
                                                                     }
                                                                 },
-                                                                "tableData": "{{getManual.data}}",
+                                                                "tableData": "{{getKnowlegeFiles.data.Manual}}",
                                                                 "columnSizeMap": {
                                                                     "task": 245,
                                                                     "step": 62,
@@ -12913,7 +12923,12 @@
                                                                         "key": "onClick"
                                                                     }
                                                                 ],
-                                                                "onClick": "{{saveVector.run(() => getManual.run(), () => {})}}"
+                                                                "onClick": "{{saveVector.run(() => getKnowlegeFiles.run(), () => {})}}",
+                                                                "dynamicPropertyPathList": [
+                                                                    {
+                                                                        "key": "onClick"
+                                                                    }
+                                                                ]
                                                             },
                                                             {
                                                                 "isVisible": true,
@@ -13411,30 +13426,6 @@
                                 "timeoutInMillisecond": 10000
                             },
                             {
-                                "_id": "64998084edd3b9b22ecf75c9",
-                                "id": "64998084edd3b9b22ecf75c9",
-                                "confirmBeforeExecute": false,
-                                "name": "getFAQ",
-                                "pluginType": "API",
-                                "jsonPathKeys": [
-                                    "main.env.nodeUrl",
-                                    "main.URL.queryParams._id"
-                                ],
-                                "timeoutInMillisecond": 10000
-                            },
-                            {
-                                "_id": "6499823aedd3b9b22ecf75ca",
-                                "id": "6499823aedd3b9b22ecf75ca",
-                                "confirmBeforeExecute": false,
-                                "name": "getFile",
-                                "pluginType": "API",
-                                "jsonPathKeys": [
-                                    "main.env.nodeUrl",
-                                    "main.URL.queryParams._id"
-                                ],
-                                "timeoutInMillisecond": 10000
-                            },
-                            {
                                 "_id": "64f5dd37c2384a9dd0af7c2a",
                                 "id": "64f5dd37c2384a9dd0af7c2a",
                                 "confirmBeforeExecute": false,
@@ -13451,6 +13442,17 @@
                                 "id": "6526fabeff0d1890fd5b9219",
                                 "confirmBeforeExecute": false,
                                 "name": "getIDbase",
+                                "pluginType": "API",
+                                "jsonPathKeys": [
+                                    "main.env.nodeUrl"
+                                ],
+                                "timeoutInMillisecond": 10000
+                            },
+                            {
+                                "_id": "6527f351ff0d1890fd5b921a",
+                                "id": "6527f351ff0d1890fd5b921a",
+                                "confirmBeforeExecute": false,
+                                "name": "_getKnowlegeFiles",
                                 "pluginType": "API",
                                 "jsonPathKeys": [
                                     "main.env.nodeUrl"
