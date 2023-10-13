@@ -13564,30 +13564,6 @@
                     "layoutOnLoadActions": [
                         [
                             {
-                                "_id": "64994367edd3b9b22ecf75c0",
-                                "id": "64994367edd3b9b22ecf75c0",
-                                "confirmBeforeExecute": false,
-                                "name": "getLink",
-                                "pluginType": "API",
-                                "jsonPathKeys": [
-                                    "main.env.nodeUrl",
-                                    "main.URL.queryParams._id"
-                                ],
-                                "timeoutInMillisecond": 10000
-                            },
-                            {
-                                "_id": "64f5dd37c2384a9dd0af7c2a",
-                                "id": "64f5dd37c2384a9dd0af7c2a",
-                                "confirmBeforeExecute": false,
-                                "name": "getManual",
-                                "pluginType": "API",
-                                "jsonPathKeys": [
-                                    "main.env.nodeUrl",
-                                    "main.URL.queryParams._id"
-                                ],
-                                "timeoutInMillisecond": 10000
-                            },
-                            {
                                 "_id": "6526fabeff0d1890fd5b9219",
                                 "id": "6526fabeff0d1890fd5b9219",
                                 "confirmBeforeExecute": false,
