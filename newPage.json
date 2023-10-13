@@ -14205,20 +14205,7 @@
                                                                 "labelPosition": "Top",
                                                                 "labelAlignment": "left",
                                                                 "labelWidth": 5,
-                                                                "options": [
-                                                                    {
-                                                                        "label": "Blue",
-                                                                        "value": "BLUE"
-                                                                    },
-                                                                    {
-                                                                        "label": "Green",
-                                                                        "value": "GREEN"
-                                                                    },
-                                                                    {
-                                                                        "label": "Red",
-                                                                        "value": "RED"
-                                                                    }
-                                                                ],
+                                                                "options": "[\n  {\n    \"label\": \"Assistant\",\n    \"value\": \"BLUE\"\n  },\n  {\n    \"label\": \"Sales consultant\",\n    \"value\": \"GREEN\"\n  },\n  {\n    \"label\": \"Technical support\",\n    \"value\": \"RED\"\n  }\n]",
                                                                 "serverSideFiltering": false,
                                                                 "widgetName": "Select1",
                                                                 "defaultOptionValue": "GREEN",
@@ -14349,20 +14336,7 @@
                                                                 "labelPosition": "Top",
                                                                 "labelAlignment": "left",
                                                                 "labelWidth": 5,
-                                                                "options": [
-                                                                    {
-                                                                        "label": "Blue",
-                                                                        "value": "BLUE"
-                                                                    },
-                                                                    {
-                                                                        "label": "Green",
-                                                                        "value": "GREEN"
-                                                                    },
-                                                                    {
-                                                                        "label": "Red",
-                                                                        "value": "RED"
-                                                                    }
-                                                                ],
+                                                                "options": "[\n  {\n    \"label\": \"Small\",\n    \"value\": \"BLUE\"\n  },\n  {\n    \"label\": \"Large\",\n    \"value\": \"GREEN\"\n  },\n  {\n    \"label\": \"Medium\",\n    \"value\": \"RED\"\n  }\n]",
                                                                 "serverSideFiltering": false,
                                                                 "widgetName": "Select4",
                                                                 "defaultOptionValue": "GREEN",
