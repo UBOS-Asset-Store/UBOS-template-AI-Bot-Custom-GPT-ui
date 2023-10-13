@@ -10957,7 +10957,7 @@
                                                             },
                                                             {
                                                                 "isVisible": true,
-                                                                "text": "Total files: <span style=\"font-weight:600;\">{{getKnowlegeFiles.data.Files.length + getKnowlegeFiles.data.FAQ.length}}</span>",
+                                                                "text": "Total files: <span style=\"font-weight:600;\">{{getKnowlegeFiles.data.sortdata.Files.length + getKnowlegeFiles.data.sortdata.FAQ.length}}</span>",
                                                                 "fontSize": "HEADING2",
                                                                 "fontStyle": "BOLD",
                                                                 "textAlign": "LEFT",
@@ -10994,7 +10994,7 @@
                                                             },
                                                             {
                                                                 "isVisible": true,
-                                                                "text": "Total links:  <span style=\"font-weight:600;\">{{getKnowlegeFiles.data.Link.length}}</span>",
+                                                                "text": "Total links:  <span style=\"font-weight:600;\">{{getKnowlegeFiles.data.sortdata.Link.length}}</span>",
                                                                 "fontSize": "HEADING2",
                                                                 "fontStyle": "BOLD",
                                                                 "textAlign": "LEFT",
@@ -11121,7 +11121,7 @@
                                                             },
                                                             {
                                                                 "isVisible": true,
-                                                                "text": "Total characters : 463081",
+                                                                "text": "Total characters :{{getKnowlegeFiles.data.total}}",
                                                                 "fontSize": "HEADING2",
                                                                 "fontStyle": "BOLD",
                                                                 "textAlign": "RIGHT",
@@ -11147,7 +11147,11 @@
                                                                 "topRow": 1,
                                                                 "bottomRow": 5,
                                                                 "parentId": "ctmnt266ey",
-                                                                "dynamicBindingPathList": [],
+                                                                "dynamicBindingPathList": [
+                                                                    {
+                                                                        "key": "text"
+                                                                    }
+                                                                ],
                                                                 "dynamicTriggerPathList": []
                                                             }
                                                         ],
@@ -11589,7 +11593,7 @@
                                                                         "iconName": "eye-open"
                                                                     }
                                                                 },
-                                                                "tableData": "{{getKnowlegeFiles.data.Link}}",
+                                                                "tableData": "{{getKnowlegeFiles.data.sortdata.Link}}",
                                                                 "columnSizeMap": {
                                                                     "task": 245,
                                                                     "step": 62,
@@ -12291,7 +12295,7 @@
                                                                         "buttonLabel": "{{Table2.sanitizedTableData.map((currentRow) => ( 'Edit vectors'))}}"
                                                                     }
                                                                 },
-                                                                "tableData": "{{[...getKnowlegeFiles.data.Files ,...getKnowlegeFiles.data.FAQ]}}",
+                                                                "tableData": "{{[...getKnowlegeFiles.data.sortdata.Files ,...getKnowlegeFiles.data.sortdata.FAQ]}}",
                                                                 "columnSizeMap": {
                                                                     "task": 245,
                                                                     "step": 62,
@@ -12923,7 +12927,7 @@
                                                                         "horizontalAlignment": "LEFT"
                                                                     }
                                                                 },
-                                                                "tableData": "{{getKnowlegeFiles.data.Manual}}",
+                                                                "tableData": "{{getKnowlegeFiles.data.sortdata.Manual}}",
                                                                 "columnSizeMap": {
                                                                     "task": 245,
                                                                     "step": 62,
