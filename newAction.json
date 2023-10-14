@@ -7158,10 +7158,10 @@
             },
             "dynamicBindingPathList": [
                 {
-                    "key": "queryParameters[0].value"
+                    "key": "datasourceUrl"
                 },
                 {
-                    "key": "datasourceUrl"
+                    "key": "queryParameters[0].value"
                 }
             ],
             "isValid": true,
@@ -7174,7 +7174,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-06-29T11:49:37.661Z",
-        "updatedAt": "2023-10-13T00:19:26.386Z",
+        "updatedAt": "2023-10-14T19:01:20.853Z",
         "deleted": false,
         "policies": [
             {
@@ -8279,6 +8279,91 @@
         },
         "createdAt": "2023-10-12T13:23:29.623Z",
         "updatedAt": "2023-10-12T20:16:14.146Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ]
+    },
+    {
+        "_id": "652ae56dff0d1890fd5b921b",
+        "applicationId": "jetsondashboard",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "Action": {
+            "name": "deleteVector",
+            "datasource": {
+                "name": "DEFAULT_REST_DATASOURCE",
+                "datasourceConfiguration": {
+                    "url": "{{main.env.nodeUrl}}/deleteVector"
+                },
+                "invalids": [],
+                "isValid": true,
+                "pluginId": "API",
+                "messages": []
+            },
+            "executeOnLoad": false,
+            "pageId": "Training",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "DELETE",
+                "headers": [
+                    {
+                        "key": "content-type",
+                        "value": "text/plain"
+                    }
+                ],
+                "queryParameters": [
+                    {
+                        "key": "id",
+                        "value": "{{Table5.selectedRow.id}}"
+                    }
+                ],
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ],
+                "body": ""
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "datasourceUrl"
+                },
+                {
+                    "key": "queryParameters[0].value"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "main.env.nodeUrl",
+                "Table5.selectedRow.id"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        },
+        "createdAt": "2023-10-14T19:01:01.037Z",
+        "updatedAt": "2023-10-14T19:04:24.189Z",
         "deleted": false,
         "policies": [
             {

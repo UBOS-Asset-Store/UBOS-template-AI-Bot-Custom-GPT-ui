@@ -12615,33 +12615,6 @@
                                                                         "key": "tableData"
                                                                     },
                                                                     {
-                                                                        "key": "primaryColumns._id.computedValue"
-                                                                    },
-                                                                    {
-                                                                        "key": "primaryColumns.name.computedValue"
-                                                                    },
-                                                                    {
-                                                                        "key": "primaryColumns.knowledgeBaseId.computedValue"
-                                                                    },
-                                                                    {
-                                                                        "key": "primaryColumns.url.computedValue"
-                                                                    },
-                                                                    {
-                                                                        "key": "primaryColumns.type.computedValue"
-                                                                    },
-                                                                    {
-                                                                        "key": "primaryColumns.vectors.computedValue"
-                                                                    },
-                                                                    {
-                                                                        "key": "primaryColumns.status.computedValue"
-                                                                    },
-                                                                    {
-                                                                        "key": "primaryColumns.deleted.computedValue"
-                                                                    },
-                                                                    {
-                                                                        "key": "primaryColumns.createdAt.computedValue"
-                                                                    },
-                                                                    {
                                                                         "key": "derivedColumns.customColumn1.buttonLabel"
                                                                     },
                                                                     {
@@ -12658,62 +12631,76 @@
                                                                     },
                                                                     {
                                                                         "key": "primaryColumns.customColumn2.buttonLabel"
+                                                                    },
+                                                                    {
+                                                                        "key": "primaryColumns.url.computedValue"
+                                                                    },
+                                                                    {
+                                                                        "key": "primaryColumns.question.computedValue"
+                                                                    },
+                                                                    {
+                                                                        "key": "primaryColumns.result.computedValue"
+                                                                    },
+                                                                    {
+                                                                        "key": "primaryColumns.id.computedValue"
+                                                                    },
+                                                                    {
+                                                                        "key": "primaryColumns.pinecone.computedValue"
+                                                                    },
+                                                                    {
+                                                                        "key": "primaryColumns.metadata.computedValue"
                                                                     }
                                                                 ],
                                                                 "primaryColumns": {
-                                                                    "_id": {
-                                                                        "index": 0,
+                                                                    "customColumn1": {
+                                                                        "index": 9,
                                                                         "width": 150,
-                                                                        "id": "_id",
-                                                                        "horizontalAlignment": "LEFT",
-                                                                        "verticalAlignment": "CENTER",
-                                                                        "columnType": "text",
-                                                                        "textSize": "PARAGRAPH",
-                                                                        "enableFilter": true,
-                                                                        "enableSort": true,
-                                                                        "isVisible": false,
-                                                                        "isDisabled": false,
-                                                                        "isCellVisible": true,
-                                                                        "isDerived": false,
-                                                                        "label": "_id",
-                                                                        "computedValue": "{{Table5.sanitizedTableData.map((currentRow) => ( currentRow._id))}}"
-                                                                    },
-                                                                    "name": {
-                                                                        "index": 1,
-                                                                        "width": 150,
-                                                                        "id": "name",
-                                                                        "horizontalAlignment": "LEFT",
-                                                                        "verticalAlignment": "CENTER",
-                                                                        "columnType": "text",
-                                                                        "textSize": "PARAGRAPH",
+                                                                        "id": "customColumn1",
+                                                                        "columnType": "iconButton",
                                                                         "enableFilter": true,
                                                                         "enableSort": true,
                                                                         "isVisible": true,
                                                                         "isDisabled": false,
                                                                         "isCellVisible": true,
-                                                                        "isDerived": false,
-                                                                        "label": "name",
-                                                                        "computedValue": "{{Table5.sanitizedTableData.map((currentRow) => ( currentRow.name))}}"
-                                                                    },
-                                                                    "knowledgeBaseId": {
-                                                                        "index": 1,
-                                                                        "width": 150,
-                                                                        "id": "knowledgeBaseId",
+                                                                        "isDerived": true,
+                                                                        "label": "",
+                                                                        "computedValue": "",
+                                                                        "buttonStyle": "rgb(3, 179, 101)",
+                                                                        "buttonColor": "#3b82ff",
+                                                                        "menuColor": "#03B365",
+                                                                        "labelColor": "#FFFFFF",
+                                                                        "iconName": "eye-open",
+                                                                        "buttonLabel": "{{Table5.sanitizedTableData.map((currentRow) => ( 'Edit'))}}",
+                                                                        "onClick": "{{navigateTo('Vectors',{'id': getKnowlegeFiles.data.sortdata.Manual[0]._id},'NEW_WINDOW')}}",
                                                                         "horizontalAlignment": "LEFT",
-                                                                        "verticalAlignment": "CENTER",
-                                                                        "columnType": "text",
-                                                                        "textSize": "PARAGRAPH",
+                                                                        "borderRadius": "CIRCLE"
+                                                                    },
+                                                                    "customColumn2": {
+                                                                        "index": 10,
+                                                                        "width": 150,
+                                                                        "id": "customColumn2",
+                                                                        "columnType": "iconButton",
                                                                         "enableFilter": true,
                                                                         "enableSort": true,
-                                                                        "isVisible": false,
+                                                                        "isVisible": true,
                                                                         "isDisabled": false,
                                                                         "isCellVisible": true,
-                                                                        "isDerived": false,
-                                                                        "label": "knowledgeBaseId",
-                                                                        "computedValue": "{{Table5.sanitizedTableData.map((currentRow) => ( currentRow.knowledgeBaseId))}}"
+                                                                        "isDerived": true,
+                                                                        "label": "",
+                                                                        "computedValue": "",
+                                                                        "buttonStyle": "rgb(3, 179, 101)",
+                                                                        "buttonColor": "#DD4B34",
+                                                                        "menuColor": "#03B365",
+                                                                        "labelColor": "#FFFFFF",
+                                                                        "iconName": "trash",
+                                                                        "menuButtonLabel": "{{Table5.sanitizedTableData.map((currentRow) => ( 'Open Menu'))}}",
+                                                                        "buttonLabel": "{{Table5.sanitizedTableData.map((currentRow) => ( 'Delete'))}}",
+                                                                        "onClick": "{{deleteVector.run();getKnowlegeFiles.run()}}",
+                                                                        "horizontalAlignment": "LEFT",
+                                                                        "borderRadius": "CIRCLE"
                                                                     },
                                                                     "url": {
-                                                                        "index": 2,
+                                                                        "index": 0,
                                                                         "width": 150,
                                                                         "id": "url",
                                                                         "horizontalAlignment": "LEFT",
@@ -12729,10 +12716,44 @@
                                                                         "label": "url",
                                                                         "computedValue": "{{Table5.sanitizedTableData.map((currentRow) => ( currentRow.url))}}"
                                                                     },
-                                                                    "type": {
+                                                                    "question": {
+                                                                        "index": 1,
+                                                                        "width": 150,
+                                                                        "id": "question",
+                                                                        "horizontalAlignment": "LEFT",
+                                                                        "verticalAlignment": "CENTER",
+                                                                        "columnType": "text",
+                                                                        "textSize": "PARAGRAPH",
+                                                                        "enableFilter": true,
+                                                                        "enableSort": true,
+                                                                        "isVisible": true,
+                                                                        "isDisabled": false,
+                                                                        "isCellVisible": true,
+                                                                        "isDerived": false,
+                                                                        "label": "Question",
+                                                                        "computedValue": "{{Table5.sanitizedTableData.map((currentRow) => ( currentRow.question))}}"
+                                                                    },
+                                                                    "result": {
+                                                                        "index": 2,
+                                                                        "width": 150,
+                                                                        "id": "result",
+                                                                        "horizontalAlignment": "LEFT",
+                                                                        "verticalAlignment": "CENTER",
+                                                                        "columnType": "text",
+                                                                        "textSize": "PARAGRAPH",
+                                                                        "enableFilter": true,
+                                                                        "enableSort": true,
+                                                                        "isVisible": true,
+                                                                        "isDisabled": false,
+                                                                        "isCellVisible": true,
+                                                                        "isDerived": false,
+                                                                        "label": "Answer",
+                                                                        "computedValue": "{{Table5.sanitizedTableData.map((currentRow) => ( currentRow.result))}}"
+                                                                    },
+                                                                    "id": {
                                                                         "index": 3,
                                                                         "width": 150,
-                                                                        "id": "type",
+                                                                        "id": "id",
                                                                         "horizontalAlignment": "LEFT",
                                                                         "verticalAlignment": "CENTER",
                                                                         "columnType": "text",
@@ -12743,13 +12764,30 @@
                                                                         "isDisabled": false,
                                                                         "isCellVisible": true,
                                                                         "isDerived": false,
-                                                                        "label": "type",
-                                                                        "computedValue": "{{Table5.sanitizedTableData.map((currentRow) => ( currentRow.type))}}"
+                                                                        "label": "id",
+                                                                        "computedValue": "{{Table5.sanitizedTableData.map((currentRow) => ( currentRow.id))}}"
                                                                     },
-                                                                    "vectors": {
+                                                                    "pinecone": {
+                                                                        "index": 4,
+                                                                        "width": 150,
+                                                                        "id": "pinecone",
+                                                                        "horizontalAlignment": "LEFT",
+                                                                        "verticalAlignment": "CENTER",
+                                                                        "columnType": "text",
+                                                                        "textSize": "PARAGRAPH",
+                                                                        "enableFilter": true,
+                                                                        "enableSort": true,
+                                                                        "isVisible": false,
+                                                                        "isDisabled": false,
+                                                                        "isCellVisible": true,
+                                                                        "isDerived": false,
+                                                                        "label": "pinecone",
+                                                                        "computedValue": "{{Table5.sanitizedTableData.map((currentRow) => ( currentRow.pinecone))}}"
+                                                                    },
+                                                                    "metadata": {
                                                                         "index": 5,
                                                                         "width": 150,
-                                                                        "id": "vectors",
+                                                                        "id": "metadata",
                                                                         "horizontalAlignment": "LEFT",
                                                                         "verticalAlignment": "CENTER",
                                                                         "columnType": "text",
@@ -12760,108 +12798,8 @@
                                                                         "isDisabled": false,
                                                                         "isCellVisible": true,
                                                                         "isDerived": false,
-                                                                        "label": "vectors",
-                                                                        "computedValue": "{{Table5.sanitizedTableData.map((currentRow) => ( currentRow.vectors))}}"
-                                                                    },
-                                                                    "status": {
-                                                                        "index": 6,
-                                                                        "width": 150,
-                                                                        "id": "status",
-                                                                        "horizontalAlignment": "LEFT",
-                                                                        "verticalAlignment": "CENTER",
-                                                                        "columnType": "text",
-                                                                        "textSize": "PARAGRAPH",
-                                                                        "enableFilter": true,
-                                                                        "enableSort": true,
-                                                                        "isVisible": true,
-                                                                        "isDisabled": false,
-                                                                        "isCellVisible": true,
-                                                                        "isDerived": false,
-                                                                        "label": "status",
-                                                                        "computedValue": "{{Table5.sanitizedTableData.map((currentRow) => ( currentRow.status))}}"
-                                                                    },
-                                                                    "deleted": {
-                                                                        "index": 7,
-                                                                        "width": 150,
-                                                                        "id": "deleted",
-                                                                        "horizontalAlignment": "LEFT",
-                                                                        "verticalAlignment": "CENTER",
-                                                                        "columnType": "text",
-                                                                        "textSize": "PARAGRAPH",
-                                                                        "enableFilter": true,
-                                                                        "enableSort": true,
-                                                                        "isVisible": false,
-                                                                        "isDisabled": false,
-                                                                        "isCellVisible": true,
-                                                                        "isDerived": false,
-                                                                        "label": "deleted",
-                                                                        "computedValue": "{{Table5.sanitizedTableData.map((currentRow) => ( currentRow.deleted))}}"
-                                                                    },
-                                                                    "createdAt": {
-                                                                        "index": 8,
-                                                                        "width": 150,
-                                                                        "id": "createdAt",
-                                                                        "horizontalAlignment": "LEFT",
-                                                                        "verticalAlignment": "CENTER",
-                                                                        "columnType": "date",
-                                                                        "textSize": "PARAGRAPH",
-                                                                        "enableFilter": true,
-                                                                        "enableSort": true,
-                                                                        "isVisible": true,
-                                                                        "isDisabled": false,
-                                                                        "isCellVisible": true,
-                                                                        "isDerived": false,
-                                                                        "label": "createdAt",
-                                                                        "computedValue": "{{Table5.sanitizedTableData.map((currentRow) => ( currentRow.createdAt))}}",
-                                                                        "iconName": "",
-                                                                        "outputFormat": "YYYY-MM-DD"
-                                                                    },
-                                                                    "customColumn1": {
-                                                                        "index": 9,
-                                                                        "width": 150,
-                                                                        "id": "customColumn1",
-                                                                        "columnType": "iconButton",
-                                                                        "enableFilter": true,
-                                                                        "enableSort": true,
-                                                                        "isVisible": true,
-                                                                        "isDisabled": false,
-                                                                        "isCellVisible": true,
-                                                                        "isDerived": true,
-                                                                        "label": "    ",
-                                                                        "computedValue": "",
-                                                                        "buttonStyle": "rgb(3, 179, 101)",
-                                                                        "buttonColor": "#3b82ff",
-                                                                        "menuColor": "#03B365",
-                                                                        "labelColor": "#FFFFFF",
-                                                                        "iconName": "eye-open",
-                                                                        "buttonLabel": "{{Table5.sanitizedTableData.map((currentRow) => ( 'Edit'))}}",
-                                                                        "onClick": "{{navigateTo('Vectors',{'id': currentRow._id},'NEW_WINDOW')}}",
-                                                                        "horizontalAlignment": "LEFT",
-                                                                        "borderRadius": "CIRCLE"
-                                                                    },
-                                                                    "customColumn2": {
-                                                                        "index": 10,
-                                                                        "width": 150,
-                                                                        "id": "customColumn2",
-                                                                        "columnType": "iconButton",
-                                                                        "enableFilter": true,
-                                                                        "enableSort": true,
-                                                                        "isVisible": true,
-                                                                        "isDisabled": false,
-                                                                        "isCellVisible": true,
-                                                                        "isDerived": true,
-                                                                        "label": " ",
-                                                                        "computedValue": "",
-                                                                        "buttonStyle": "rgb(3, 179, 101)",
-                                                                        "buttonColor": "#DD4B34",
-                                                                        "menuColor": "#03B365",
-                                                                        "labelColor": "#FFFFFF",
-                                                                        "iconName": "trash",
-                                                                        "menuButtonLabel": "{{Table5.sanitizedTableData.map((currentRow) => ( 'Open Menu'))}}",
-                                                                        "buttonLabel": "{{Table5.sanitizedTableData.map((currentRow) => ( 'Delete'))}}",
-                                                                        "onClick": "{{JSObject2.myFun2(Table5.selectedRow._id)}}",
-                                                                        "horizontalAlignment": "LEFT",
-                                                                        "borderRadius": "CIRCLE"
+                                                                        "label": "metadata",
+                                                                        "computedValue": "{{Table5.sanitizedTableData.map((currentRow) => ( currentRow.metadata))}}"
                                                                     }
                                                                 },
                                                                 "derivedColumns": {
@@ -12876,7 +12814,7 @@
                                                                         "isDisabled": false,
                                                                         "isCellVisible": true,
                                                                         "isDerived": true,
-                                                                        "label": "    ",
+                                                                        "label": "Question",
                                                                         "computedValue": "",
                                                                         "buttonStyle": "rgb(3, 179, 101)",
                                                                         "buttonColor": "#3b82ff",
@@ -12898,7 +12836,7 @@
                                                                         "isDisabled": false,
                                                                         "isCellVisible": true,
                                                                         "isDerived": true,
-                                                                        "label": " ",
+                                                                        "label": " Answer",
                                                                         "computedValue": "",
                                                                         "buttonStyle": "rgb(3, 179, 101)",
                                                                         "buttonColor": "#DD4B34",
@@ -12911,32 +12849,32 @@
                                                                         "horizontalAlignment": "LEFT"
                                                                     }
                                                                 },
-                                                                "tableData": "{{getKnowlegeFiles.data.sortdata.Manual}}",
+                                                                "tableData": "{{getKnowlegeFiles.data.sortdata.Manual[0].vectors.map(e => ({ ...e.metadata, ...e }))}}\n",
                                                                 "columnSizeMap": {
                                                                     "task": 245,
                                                                     "step": 62,
                                                                     "status": 157,
                                                                     "name": 130,
                                                                     "createdAt": 203,
-                                                                    "customColumn1": 118
+                                                                    "customColumn1": 60,
+                                                                    "question": 578,
+                                                                    "result": 517,
+                                                                    "customColumn2": 60
                                                                 },
                                                                 "columnOrder": [
-                                                                    "name",
-                                                                    "status",
-                                                                    "type",
-                                                                    "_id",
-                                                                    "knowledgeBaseId",
-                                                                    "url",
-                                                                    "createdAt",
-                                                                    "vectors",
-                                                                    "deleted",
+                                                                    "result",
+                                                                    "question",
                                                                     "customColumn1",
-                                                                    "customColumn2"
+                                                                    "customColumn2",
+                                                                    "url",
+                                                                    "id",
+                                                                    "pinecone",
+                                                                    "metadata"
                                                                 ],
                                                                 "enableClientSideSearch": true,
                                                                 "isVisibleSearch": true,
                                                                 "isVisibleFilters": true,
-                                                                "isVisibleDownload": true,
+                                                                "isVisibleDownload": false,
                                                                 "isVisiblePagination": true,
                                                                 "isSortable": true,
                                                                 "delimiter": ",",
@@ -13043,7 +12981,7 @@
                                                                 "leftColumn": 29,
                                                                 "rightColumn": 60,
                                                                 "topRow": 8,
-                                                                "bottomRow": 15,
+                                                                "bottomRow": 16,
                                                                 "parentId": "lzfnfil2re",
                                                                 "dynamicBindingPathList": [],
                                                                 "dynamicTriggerPathList": [],
@@ -13074,7 +13012,7 @@
                                                                 "leftColumn": 60,
                                                                 "rightColumn": 64,
                                                                 "topRow": 11,
-                                                                "bottomRow": 15,
+                                                                "bottomRow": 16,
                                                                 "parentId": "lzfnfil2re",
                                                                 "dynamicBindingPathList": [],
                                                                 "dynamicTriggerPathList": [
