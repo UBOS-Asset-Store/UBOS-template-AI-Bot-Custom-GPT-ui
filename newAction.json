@@ -6735,7 +6735,7 @@
                         "value": true
                     }
                 ],
-                "body": "{\n\t\"link\":{{JSON.stringify(link.text)}},\n\t\"name\": {{JSON.stringify(nameLink.text)}},\n\t\"id\": \"{{getIDbase.data[0]._id}}\",\n\t\"type\": \"Link\"\n}",
+                "body": "{\n\t\"link\":{{JSON.stringify(link.text)}},\n\t\"name\": {{JSON.stringify(link.text)}},\n\t\"id\": \"{{getIDbase.data[0]._id}}\",\n\t\"type\": \"Link\"\n}",
                 "path": ""
             },
             "dynamicBindingPathList": [
@@ -6758,7 +6758,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-06-26T07:44:29.057Z",
-        "updatedAt": "2023-10-12T20:16:12.330Z",
+        "updatedAt": "2023-10-13T23:53:59.994Z",
         "deleted": false,
         "policies": [
             {
