@@ -11728,6 +11728,9 @@
                                                                     },
                                                                     {
                                                                         "key": "primaryColumns.customColumn4.onClick"
+                                                                    },
+                                                                    {
+                                                                        "key": "primaryColumns.customColumn3.onClick"
                                                                     }
                                                                 ],
                                                                 "multiRowSelection": false
@@ -12013,6 +12016,12 @@
                                                                     },
                                                                     {
                                                                         "key": "primaryColumns.totaCharacters.computedValue"
+                                                                    },
+                                                                    {
+                                                                        "key": "derivedColumns.customColumn3.buttonLabel"
+                                                                    },
+                                                                    {
+                                                                        "key": "primaryColumns.customColumn3.buttonLabel"
                                                                     }
                                                                 ],
                                                                 "primaryColumns": {
@@ -12029,7 +12038,7 @@
                                                                         "isVisible": true,
                                                                         "isCellVisible": true,
                                                                         "isDerived": false,
-                                                                        "label": "status",
+                                                                        "label": "Training Status",
                                                                         "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.status))}}",
                                                                         "buttonColor": "#03B365",
                                                                         "menuColor": "#03B365",
@@ -12079,7 +12088,7 @@
                                                                         "textSize": "PARAGRAPH",
                                                                         "enableFilter": true,
                                                                         "enableSort": true,
-                                                                        "isVisible": true,
+                                                                        "isVisible": false,
                                                                         "isDisabled": false,
                                                                         "isCellVisible": true,
                                                                         "isDerived": false,
@@ -12117,7 +12126,7 @@
                                                                         "isDisabled": false,
                                                                         "isCellVisible": true,
                                                                         "isDerived": false,
-                                                                        "label": "file",
+                                                                        "label": "File Name",
                                                                         "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.file))}}"
                                                                     },
                                                                     "vectors": {
@@ -12168,7 +12177,7 @@
                                                                         "isDisabled": false,
                                                                         "isCellVisible": true,
                                                                         "isDerived": false,
-                                                                        "label": "createdAt",
+                                                                        "label": "Date Trained",
                                                                         "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.createdAt))}}",
                                                                         "iconName": "",
                                                                         "outputFormat": "YYYY-MM-DD"
@@ -12193,7 +12202,8 @@
                                                                         "iconName": "trash",
                                                                         "buttonLabel": "{{Table2.sanitizedTableData.map((currentRow) => ( 'Delete'))}}",
                                                                         "onClick": "{{JSObject2.myFun2(Table2.selectedRow._id)}}",
-                                                                        "borderRadius": "CIRCLE"
+                                                                        "borderRadius": "CIRCLE",
+                                                                        "buttonVariant": "TERTIARY"
                                                                     },
                                                                     "customColumn2": {
                                                                         "index": 10,
@@ -12215,7 +12225,7 @@
                                                                         "iconName": "eye-open",
                                                                         "buttonLabel": "{{Table2.sanitizedTableData.map((currentRow) => ( 'Edit vectors'))}}",
                                                                         "onClick": "{{navigateTo('Vectors',{'id': currentRow._id},'NEW_WINDOW')}}",
-                                                                        "buttonVariant": "SECONDARY",
+                                                                        "buttonVariant": "TERTIARY",
                                                                         "borderRadius": "CIRCLE"
                                                                     },
                                                                     "totaCharacters": {
@@ -12232,8 +12242,51 @@
                                                                         "isDisabled": false,
                                                                         "isCellVisible": true,
                                                                         "isDerived": false,
-                                                                        "label": "totaCharacters",
+                                                                        "label": "Total Characters",
                                                                         "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.totaCharacters))}}"
+                                                                    },
+                                                                    "customColumn3": {
+                                                                        "index": 12,
+                                                                        "width": 150,
+                                                                        "id": "customColumn3",
+                                                                        "columnType": "iconButton",
+                                                                        "enableFilter": true,
+                                                                        "enableSort": true,
+                                                                        "isVisible": true,
+                                                                        "isDisabled": false,
+                                                                        "isCellVisible": true,
+                                                                        "isDerived": true,
+                                                                        "label": "",
+                                                                        "computedValue": "",
+                                                                        "buttonStyle": "rgb(3, 179, 101)",
+                                                                        "buttonColor": "#008080 ",
+                                                                        "menuColor": "#03B365",
+                                                                        "labelColor": "#FFFFFF",
+                                                                        "iconName": "refresh",
+                                                                        "buttonLabel": "{{Table2.sanitizedTableData.map((currentRow) => ( 'Action'))}}",
+                                                                        "buttonVariant": "TERTIARY",
+                                                                        "onClick": "{{getKnowlegeFiles.run()}}"
+                                                                    },
+                                                                    "customColumn4": {
+                                                                        "index": 13,
+                                                                        "width": 150,
+                                                                        "id": "customColumn4",
+                                                                        "columnType": "iconButton",
+                                                                        "enableFilter": true,
+                                                                        "enableSort": true,
+                                                                        "isVisible": true,
+                                                                        "isDisabled": false,
+                                                                        "isCellVisible": true,
+                                                                        "isDerived": true,
+                                                                        "label": "",
+                                                                        "computedValue": "",
+                                                                        "buttonStyle": "rgb(3, 179, 101)",
+                                                                        "buttonColor": "#215484",
+                                                                        "menuColor": "#03B365",
+                                                                        "labelColor": "#FFFFFF",
+                                                                        "iconName": "changes",
+                                                                        "buttonVariant": "TERTIARY",
+                                                                        "onClick": "{{showModal('Modal5')}}"
                                                                     }
                                                                 },
                                                                 "derivedColumns": {
@@ -12277,32 +12330,84 @@
                                                                         "labelColor": "#FFFFFF",
                                                                         "iconName": "eye-open",
                                                                         "buttonLabel": "{{Table2.sanitizedTableData.map((currentRow) => ( 'Edit vectors'))}}"
+                                                                    },
+                                                                    "customColumn3": {
+                                                                        "index": 12,
+                                                                        "width": 150,
+                                                                        "id": "customColumn3",
+                                                                        "columnType": "iconButton",
+                                                                        "enableFilter": true,
+                                                                        "enableSort": true,
+                                                                        "isVisible": true,
+                                                                        "isDisabled": false,
+                                                                        "isCellVisible": true,
+                                                                        "isDerived": true,
+                                                                        "label": "",
+                                                                        "computedValue": "",
+                                                                        "buttonStyle": "rgb(3, 179, 101)",
+                                                                        "buttonColor": "#008080 ",
+                                                                        "menuColor": "#03B365",
+                                                                        "labelColor": "#FFFFFF",
+                                                                        "iconName": "refresh",
+                                                                        "buttonLabel": "{{Table2.sanitizedTableData.map((currentRow) => ( 'Action'))}}",
+                                                                        "buttonVariant": "TERTIARY",
+                                                                        "onClick": "{{getKnowlegeFiles.run()}}"
+                                                                    },
+                                                                    "customColumn4": {
+                                                                        "index": 13,
+                                                                        "width": 150,
+                                                                        "id": "customColumn4",
+                                                                        "columnType": "iconButton",
+                                                                        "enableFilter": true,
+                                                                        "enableSort": true,
+                                                                        "isVisible": true,
+                                                                        "isDisabled": false,
+                                                                        "isCellVisible": true,
+                                                                        "isDerived": true,
+                                                                        "label": "",
+                                                                        "computedValue": "",
+                                                                        "buttonStyle": "rgb(3, 179, 101)",
+                                                                        "buttonColor": "#215484",
+                                                                        "menuColor": "#03B365",
+                                                                        "labelColor": "#FFFFFF",
+                                                                        "iconName": "changes",
+                                                                        "buttonVariant": "TERTIARY",
+                                                                        "onClick": "{{showModal('Modal5')}}"
                                                                     }
                                                                 },
                                                                 "tableData": "{{[...getKnowlegeFiles.data.sortdata.Files ,...getKnowlegeFiles.data.sortdata.FAQ]}}",
                                                                 "columnSizeMap": {
                                                                     "task": 245,
                                                                     "step": 62,
-                                                                    "status": 133
+                                                                    "status": 140,
+                                                                    "customColumn4": 60,
+                                                                    "customColumn3": 60,
+                                                                    "customColumn2": 60,
+                                                                    "customColumn1": 60,
+                                                                    "totaCharacters": 228,
+                                                                    "createdAt": 157,
+                                                                    "file": 305
                                                                 },
                                                                 "columnOrder": [
+                                                                    "file",
+                                                                    "createdAt",
+                                                                    "status",
+                                                                    "totaCharacters",
+                                                                    "customColumn1",
+                                                                    "customColumn2",
+                                                                    "customColumn3",
+                                                                    "customColumn4",
                                                                     "_id",
                                                                     "knowledgeBaseId",
                                                                     "name",
                                                                     "type",
-                                                                    "file",
                                                                     "vectors",
-                                                                    "status",
-                                                                    "deleted",
-                                                                    "createdAt",
-                                                                    "totaCharacters",
-                                                                    "customColumn1",
-                                                                    "customColumn2"
+                                                                    "deleted"
                                                                 ],
                                                                 "enableClientSideSearch": true,
                                                                 "isVisibleSearch": true,
                                                                 "isVisibleFilters": true,
-                                                                "isVisibleDownload": true,
+                                                                "isVisibleDownload": false,
                                                                 "isVisiblePagination": true,
                                                                 "isSortable": true,
                                                                 "delimiter": ",",
@@ -12328,63 +12433,25 @@
                                                                     },
                                                                     {
                                                                         "key": "primaryColumns.customColumn2.onClick"
+                                                                    },
+                                                                    {
+                                                                        "key": "primaryColumns.customColumn3.onClick"
+                                                                    },
+                                                                    {
+                                                                        "key": "primaryColumns.customColumn4.onClick"
                                                                     }
                                                                 ],
                                                                 "dynamicPropertyPathList": [
                                                                     {
                                                                         "key": "primaryColumns.customColumn2.isDisabled"
-                                                                    }
-                                                                ]
-                                                            },
-                                                            {
-                                                                "isVisible": false,
-                                                                "animateLoading": true,
-                                                                "text": "Divide file",
-                                                                "buttonColor": "#215484",
-                                                                "buttonVariant": "PRIMARY",
-                                                                "placement": "CENTER",
-                                                                "widgetName": "Button14",
-                                                                "isDisabled": "{{!Table2.selectedRow._id || Table2.selectedRow.status === \"Saved in Pinecone\"}}",
-                                                                "isDefaultClickDisabled": true,
-                                                                "recaptchaType": "V3",
-                                                                "version": 1,
-                                                                "classStyle": "",
-                                                                "type": "BUTTON_WIDGET",
-                                                                "hideCard": false,
-                                                                "displayName": "Button",
-                                                                "key": "cmp9hg65sy",
-                                                                "iconSVG": "/static/media/icon.cca02633.svg",
-                                                                "widgetId": "q8rbujgw7x",
-                                                                "renderMode": "CANVAS",
-                                                                "isLoading": false,
-                                                                "parentColumnSpace": 11.439453125,
-                                                                "parentRowSpace": 10,
-                                                                "leftColumn": 48,
-                                                                "rightColumn": 63,
-                                                                "topRow": 9,
-                                                                "bottomRow": 13,
-                                                                "parentId": "k2agajmtvu",
-                                                                "dynamicBindingPathList": [
-                                                                    {
-                                                                        "key": "isDisabled"
                                                                     },
                                                                     {
-                                                                        "key": "tooltip"
-                                                                    }
-                                                                ],
-                                                                "dynamicTriggerPathList": [
+                                                                        "key": "primaryColumns.customColumn3.onClick"
+                                                                    },
                                                                     {
-                                                                        "key": "onClick"
+                                                                        "key": "primaryColumns.customColumn4.onClick"
                                                                     }
-                                                                ],
-                                                                "borderRadius": "ROUNDED",
-                                                                "onClick": "{{showModal('Modal5')}}",
-                                                                "dynamicPropertyPathList": [
-                                                                    {
-                                                                        "key": "isDisabled"
-                                                                    }
-                                                                ],
-                                                                "tooltip": "{{Button14.isDisabled ? \"Please select a file that is not already saved to Pinecone\" : ''}}"
+                                                                ]
                                                             },
                                                             {
                                                                 "isVisible": true,
@@ -12468,7 +12535,7 @@
                                                                 "isVisible": true,
                                                                 "text": "\n\nAdd all the files on which you want to train your bot (.txt .pdf .doc)<a href=\"#\" style=\"text-decoration: none;\"> <span >&#9432;</span>\n    </a> \n\n\n",
                                                                 "fontSize": "PARAGRAPH",
-                                                                "fontStyle": "",
+                                                                "fontStyle": "BOLD",
                                                                 "textAlign": "LEFT",
                                                                 "textColor": "#999",
                                                                 "truncateButtonColor": "#FFC13D",
@@ -12488,7 +12555,7 @@
                                                                 "parentColumnSpace": 8.0693359375,
                                                                 "parentRowSpace": 10,
                                                                 "leftColumn": 0,
-                                                                "rightColumn": 51,
+                                                                "rightColumn": 55,
                                                                 "topRow": 4,
                                                                 "bottomRow": 8,
                                                                 "parentId": "k2agajmtvu",
@@ -12496,7 +12563,7 @@
                                                                 "dynamicTriggerPathList": []
                                                             },
                                                             {
-                                                                "isVisible": true,
+                                                                "isVisible": false,
                                                                 "animateLoading": true,
                                                                 "text": "Сheck status of deviding",
                                                                 "buttonColor": "#215484",
@@ -13498,7 +13565,6 @@
                         "Text8",
                         "Canvas19",
                         "Table2",
-                        "Button14",
                         "Divider3",
                         "FileSender2",
                         "Text4",
@@ -13943,7 +14009,7 @@
                                                 "leftColumn": 0,
                                                 "rightColumn": 64,
                                                 "topRow": 21,
-                                                "bottomRow": 69,
+                                                "bottomRow": 67,
                                                 "parentId": "apv38t0vkk",
                                                 "dynamicBindingPathList": [],
                                                 "dynamicTriggerPathList": []
@@ -14246,7 +14312,7 @@
                                                 "leftColumn": 0,
                                                 "rightColumn": 64,
                                                 "topRow": 107,
-                                                "bottomRow": 156,
+                                                "bottomRow": 154,
                                                 "parentId": "apv38t0vkk",
                                                 "dynamicBindingPathList": [],
                                                 "dynamicTriggerPathList": []
@@ -14574,7 +14640,7 @@
                                                 "leftColumn": 0,
                                                 "rightColumn": 64,
                                                 "topRow": 164,
-                                                "bottomRow": 208,
+                                                "bottomRow": 207,
                                                 "parentId": "apv38t0vkk",
                                                 "dynamicBindingPathList": [],
                                                 "dynamicTriggerPathList": []
@@ -14719,7 +14785,7 @@
                                                                 "labelPosition": "Top",
                                                                 "labelAlignment": "left",
                                                                 "labelWidth": 5,
-                                                                "options": "[\n  {\n    \"label\": \"GPT-3.5\",\n    \"value\": \"GPT-3.5\"\n  },\n  {\n    \"label\": \"GPT-4\",\n    \"value\": \"GPT-4\"\n  }\n]",
+                                                                "options": "[\n  {\n    \"label\": \"gpt-3.5-turbo\",\n    \"value\": \"gpt-3.5-turbo\"\n  },\n\t  {\n    \"label\": \"gpt-3.5-turbo-16k\",\n    \"value\": \"gpt-3.5-turbo-16k\"\n  },\n  {\n    \"label\": \"gpt-4\",\n    \"value\": \"gpt-4\"\n  },\n\t {\n    \"label\": \"gpt-4-32k\",\n    \"value\": \"gpt-4-32k\"\n  }\n]",
                                                                 "serverSideFiltering": false,
                                                                 "widgetName": "Select6",
                                                                 "defaultOptionValue": "GPT-4",
@@ -15155,7 +15221,7 @@
                                         "leftColumn": 0,
                                         "rightColumn": 319.5,
                                         "topRow": 0,
-                                        "bottomRow": 2100,
+                                        "bottomRow": 2090,
                                         "parentId": "xubwbxbrib"
                                     }
                                 ],
@@ -15175,7 +15241,7 @@
                                 "leftColumn": 6,
                                 "rightColumn": 64,
                                 "topRow": 7,
-                                "bottomRow": 219,
+                                "bottomRow": 217,
                                 "parentId": "0",
                                 "dynamicBindingPathList": [],
                                 "dynamicTriggerPathList": [],
