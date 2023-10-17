@@ -8388,7 +8388,7 @@
         "pageId": "Bots",
         "executeOnLoad": true,
         "actionConfiguration": {
-            "body": "()=> {\n\tstoreValue('btn',\"hide\");\nstoreValue('btn_one',\"hide\");\n\tstoreValue('btn_two',\"hide\");\n\tstoreValue('btn_free',\"hide\");\n\tstoreValue('btn_action',\"btn_right\");\n\tstoreValue('btn_action_one',\"btn_right\");\n\t\tstoreValue('btn_action_two',\"btn_right\");\n\t\tstoreValue('btn_action_one',\"btn_right\");\n}",
+            "body": "()=> {\n\tstoreValue('btn',\"hide\");\nstoreValue('btn_one',\"hide\");\n\tstoreValue('btn_two',\"hide\");\n\tstoreValue('btn_free',\"hide\");\n\tstoreValue('btn_action',\"btn_left\");\n\tstoreValue('btn_action_one',\"btn_left\");\n\t\tstoreValue('btn_action_two',\"btn_left\");\n\t\tstoreValue('btn_action_free',\"btn_left\");\n}",
             "isAsync": true,
             "timeoutInMillisecond": 10000,
             "jsArguments": [],
@@ -8428,7 +8428,7 @@
         "executeOnLoad": false,
         "pageId": "Bots",
         "actionConfiguration": {
-            "body": "(el,el2) => {\n\tstoreValue(el,\"activ\")\n\t\tstoreValue(el2,\"btn_right\");\n\t}",
+            "body": "(el,el2) => {\n\tstoreValue(el,\"activ\")\n\tstoreValue(el2,\"btn_right\");\n\t}",
             "isAsync": true,
             "timeoutInMillisecond": 10000,
             "jsArguments": [

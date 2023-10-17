@@ -235,7 +235,7 @@
         "id": "652d7479ff0d1890fd5b921c",
         "name": "JSObject1",
         "pageId": "Bots",
-        "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tmyFun1: (el,el2) => {\n\tstoreValue(el,\"activ\")\n\t\tstoreValue(el2,\"btn_right\");\n\t},\nmyFun2: ()=> {\n\tstoreValue('btn',\"hide\");\nstoreValue('btn_one',\"hide\");\n\tstoreValue('btn_two',\"hide\");\n\tstoreValue('btn_free',\"hide\");\n\tstoreValue('btn_action',\"btn_right\");\n\tstoreValue('btn_action_one',\"btn_right\");\n\t\tstoreValue('btn_action_two',\"btn_right\");\n\t\tstoreValue('btn_action_one',\"btn_right\");\n},\nmyFun3: (el,el2)=> {\n\nstoreValue(el,\"hide\");\nstoreValue(el2,\"btn_left\");}}",
+        "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tmyFun1: (el,el2) => {\n\tstoreValue(el,\"activ\")\n\tstoreValue(el2,\"btn_right\");\n\t},\nmyFun2: ()=> {\n\tstoreValue('btn',\"hide\");\nstoreValue('btn_one',\"hide\");\n\tstoreValue('btn_two',\"hide\");\n\tstoreValue('btn_free',\"hide\");\n\tstoreValue('btn_action',\"btn_left\");\n\tstoreValue('btn_action_one',\"btn_left\");\n\t\tstoreValue('btn_action_two',\"btn_left\");\n\t\tstoreValue('btn_action_free',\"btn_left\");\n},\nmyFun3: (el,el2)=> {\n\nstoreValue(el,\"hide\");\nstoreValue(el2,\"btn_left\");}}",
         "variables": [
             {
                 "name": "myVar1",
@@ -296,7 +296,7 @@
                 "executeOnLoad": false,
                 "pageId": "Bots",
                 "actionConfiguration": {
-                    "body": "(el,el2) => {\n\tstoreValue(el,\"activ\")\n\t\tstoreValue(el2,\"btn_right\");\n\t}",
+                    "body": "(el,el2) => {\n\tstoreValue(el,\"activ\")\n\tstoreValue(el2,\"btn_right\");\n\t}",
                     "isAsync": true,
                     "timeoutInMillisecond": 10000,
                     "jsArguments": [
@@ -338,7 +338,7 @@
                 "pageId": "Bots",
                 "executeOnLoad": true,
                 "actionConfiguration": {
-                    "body": "()=> {\n\tstoreValue('btn',\"hide\");\nstoreValue('btn_one',\"hide\");\n\tstoreValue('btn_two',\"hide\");\n\tstoreValue('btn_free',\"hide\");\n\tstoreValue('btn_action',\"btn_right\");\n\tstoreValue('btn_action_one',\"btn_right\");\n\t\tstoreValue('btn_action_two',\"btn_right\");\n\t\tstoreValue('btn_action_one',\"btn_right\");\n}",
+                    "body": "()=> {\n\tstoreValue('btn',\"hide\");\nstoreValue('btn_one',\"hide\");\n\tstoreValue('btn_two',\"hide\");\n\tstoreValue('btn_free',\"hide\");\n\tstoreValue('btn_action',\"btn_left\");\n\tstoreValue('btn_action_one',\"btn_left\");\n\t\tstoreValue('btn_action_two',\"btn_left\");\n\t\tstoreValue('btn_action_free',\"btn_left\");\n}",
                     "isAsync": true,
                     "timeoutInMillisecond": 10000,
                     "jsArguments": [],

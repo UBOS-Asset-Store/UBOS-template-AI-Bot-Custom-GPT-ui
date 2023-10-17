@@ -10957,7 +10957,7 @@
                                                             },
                                                             {
                                                                 "isVisible": true,
-                                                                "text": "Total files: {{getKnowlegeFiles.data.sortdata.Files.length + getKnowlegeFiles.data.sortdata.FAQ.length}}",
+                                                                "text": "Total files: <span class=\"training_span\">{{getKnowlegeFiles.data.sortdata.Files.length + getKnowlegeFiles.data.sortdata.FAQ.length}}</span>",
                                                                 "fontSize": "HEADING2",
                                                                 "fontStyle": "BOLD",
                                                                 "textAlign": "LEFT",
@@ -10995,7 +10995,7 @@
                                                             },
                                                             {
                                                                 "isVisible": true,
-                                                                "text": "Total links:  {{getKnowlegeFiles.data.sortdata.Link.length}}",
+                                                                "text": "Total links: <span class=\"training_span\">{{getKnowlegeFiles.data.sortdata.Link.length}}</span> ",
                                                                 "fontSize": "HEADING2",
                                                                 "fontStyle": "BOLD",
                                                                 "textAlign": "LEFT",
@@ -11095,7 +11095,7 @@
                                                             },
                                                             {
                                                                 "isVisible": true,
-                                                                "text": "Total characters : {{getKnowlegeFiles.data.total}}  ",
+                                                                "text": "Total characters : <span class=\"training_span\">{{getKnowlegeFiles.data.total}} </span>  ",
                                                                 "fontSize": "HEADING2",
                                                                 "fontStyle": "BOLD",
                                                                 "textAlign": "LEFT",
@@ -17425,7 +17425,7 @@
                         "snapColumns": 64,
                         "widgetId": "0",
                         "topRow": 0,
-                        "bottomRow": 1660,
+                        "bottomRow": 1570,
                         "parentRowSpace": 1,
                         "type": "CANVAS_WIDGET",
                         "detachFromLayout": true,
@@ -17870,8 +17870,8 @@
                                                                 "parentRowSpace": 10,
                                                                 "leftColumn": 0,
                                                                 "rightColumn": 64,
-                                                                "topRow": 31,
-                                                                "bottomRow": 39,
+                                                                "topRow": 33,
+                                                                "bottomRow": 41,
                                                                 "parentId": "e384lkw4ie",
                                                                 "dynamicBindingPathList": [],
                                                                 "dynamicTriggerPathList": []
@@ -18037,8 +18037,8 @@
                                                                 "parentRowSpace": 10,
                                                                 "leftColumn": 0,
                                                                 "rightColumn": 64,
-                                                                "topRow": 64,
-                                                                "bottomRow": 72,
+                                                                "topRow": 68,
+                                                                "bottomRow": 76,
                                                                 "parentId": "e384lkw4ie",
                                                                 "dynamicBindingPathList": [],
                                                                 "dynamicTriggerPathList": []
@@ -18204,8 +18204,8 @@
                                                                 "parentRowSpace": 10,
                                                                 "leftColumn": 0,
                                                                 "rightColumn": 64,
-                                                                "topRow": 96,
-                                                                "bottomRow": 104,
+                                                                "topRow": 103,
+                                                                "bottomRow": 111,
                                                                 "parentId": "e384lkw4ie",
                                                                 "dynamicBindingPathList": [],
                                                                 "dynamicTriggerPathList": []
@@ -18216,8 +18216,8 @@
                                                                 "widgetName": "Container6",
                                                                 "containerStyle": "card",
                                                                 "borderColor": "transparent",
-                                                                "borderWidth": "0",
-                                                                "borderRadius": "0",
+                                                                "borderWidth": "1",
+                                                                "borderRadius": "10",
                                                                 "boxShadow": "NONE",
                                                                 "animateLoading": true,
                                                                 "children": [
@@ -18235,7 +18235,7 @@
                                                                         "children": [
                                                                             {
                                                                                 "isVisible": true,
-                                                                                "label": "Label",
+                                                                                "label": "Phone Number ID",
                                                                                 "labelPosition": "Top",
                                                                                 "labelAlignment": "left",
                                                                                 "labelWidth": 5,
@@ -18272,7 +18272,7 @@
                                                                             },
                                                                             {
                                                                                 "isVisible": true,
-                                                                                "label": "Label",
+                                                                                "label": "Access Token",
                                                                                 "labelPosition": "Top",
                                                                                 "labelAlignment": "left",
                                                                                 "labelWidth": 5,
@@ -18311,8 +18311,8 @@
                                                                                 "isVisible": true,
                                                                                 "animateLoading": true,
                                                                                 "text": "Save",
-                                                                                "buttonColor": "#03B365",
-                                                                                "buttonVariant": "PRIMARY",
+                                                                                "buttonColor": "#215484",
+                                                                                "buttonVariant": "SECONDARY",
                                                                                 "placement": "CENTER",
                                                                                 "widgetName": "Button4",
                                                                                 "isDisabled": false,
@@ -18330,14 +18330,16 @@
                                                                                 "isLoading": false,
                                                                                 "parentColumnSpace": 8.4140625,
                                                                                 "parentRowSpace": 10,
-                                                                                "leftColumn": 48,
+                                                                                "leftColumn": 54,
                                                                                 "rightColumn": 64,
                                                                                 "topRow": 18,
                                                                                 "bottomRow": 22,
                                                                                 "parentId": "gjzw4rse76",
                                                                                 "dynamicBindingPathList": [],
                                                                                 "dynamicTriggerPathList": [],
-                                                                                "borderRadius": "ROUNDED"
+                                                                                "borderRadius": "ROUNDED",
+                                                                                "iconName": "plus",
+                                                                                "iconAlign": "left"
                                                                             }
                                                                         ],
                                                                         "minHeight": 400,
@@ -18368,8 +18370,8 @@
                                                                 "parentRowSpace": 10,
                                                                 "leftColumn": 0,
                                                                 "rightColumn": 64,
-                                                                "topRow": 40,
-                                                                "bottomRow": 64,
+                                                                "topRow": 41,
+                                                                "bottomRow": 65,
                                                                 "parentId": "e384lkw4ie",
                                                                 "dynamicBindingPathList": [
                                                                     {
@@ -18384,8 +18386,8 @@
                                                                 "widgetName": "Container6Copy1",
                                                                 "containerStyle": "card",
                                                                 "borderColor": "transparent",
-                                                                "borderWidth": "0",
-                                                                "borderRadius": "0",
+                                                                "borderWidth": "1",
+                                                                "borderRadius": "10",
                                                                 "boxShadow": "NONE",
                                                                 "animateLoading": true,
                                                                 "children": [
@@ -18479,8 +18481,8 @@
                                                                                 "isVisible": true,
                                                                                 "animateLoading": true,
                                                                                 "text": "Save",
-                                                                                "buttonColor": "#03B365",
-                                                                                "buttonVariant": "PRIMARY",
+                                                                                "buttonColor": "#215484",
+                                                                                "buttonVariant": "SECONDARY",
                                                                                 "placement": "CENTER",
                                                                                 "widgetName": "Button1",
                                                                                 "isDisabled": false,
@@ -18498,7 +18500,7 @@
                                                                                 "isLoading": false,
                                                                                 "parentColumnSpace": 8.4140625,
                                                                                 "parentRowSpace": 10,
-                                                                                "leftColumn": 48,
+                                                                                "leftColumn": 54,
                                                                                 "rightColumn": 64,
                                                                                 "topRow": 17,
                                                                                 "bottomRow": 21,
@@ -18515,7 +18517,9 @@
                                                                                     {
                                                                                         "key": "onClick"
                                                                                     }
-                                                                                ]
+                                                                                ],
+                                                                                "iconName": "plus",
+                                                                                "iconAlign": "left"
                                                                             }
                                                                         ],
                                                                         "minHeight": 400,
@@ -18562,8 +18566,8 @@
                                                                 "widgetName": "Container7",
                                                                 "containerStyle": "card",
                                                                 "borderColor": "transparent",
-                                                                "borderWidth": "0",
-                                                                "borderRadius": "0",
+                                                                "borderWidth": "1",
+                                                                "borderRadius": "10",
                                                                 "boxShadow": "NONE",
                                                                 "animateLoading": true,
                                                                 "children": [
@@ -18581,7 +18585,7 @@
                                                                         "children": [
                                                                             {
                                                                                 "isVisible": true,
-                                                                                "label": "Label",
+                                                                                "label": "Phone Number ID",
                                                                                 "labelPosition": "Top",
                                                                                 "labelAlignment": "left",
                                                                                 "labelWidth": 5,
@@ -18618,7 +18622,7 @@
                                                                             },
                                                                             {
                                                                                 "isVisible": true,
-                                                                                "label": "Label",
+                                                                                "label": "Access Token",
                                                                                 "labelPosition": "Top",
                                                                                 "labelAlignment": "left",
                                                                                 "labelWidth": 5,
@@ -18657,8 +18661,8 @@
                                                                                 "isVisible": true,
                                                                                 "animateLoading": true,
                                                                                 "text": "Save",
-                                                                                "buttonColor": "#03B365",
-                                                                                "buttonVariant": "PRIMARY",
+                                                                                "buttonColor": "#215484",
+                                                                                "buttonVariant": "SECONDARY",
                                                                                 "placement": "CENTER",
                                                                                 "widgetName": "Button2",
                                                                                 "isDisabled": false,
@@ -18676,14 +18680,16 @@
                                                                                 "isLoading": false,
                                                                                 "parentColumnSpace": 8.4140625,
                                                                                 "parentRowSpace": 10,
-                                                                                "leftColumn": 48,
+                                                                                "leftColumn": 54,
                                                                                 "rightColumn": 64,
                                                                                 "topRow": 19,
                                                                                 "bottomRow": 23,
                                                                                 "parentId": "b75ce8oypi",
                                                                                 "dynamicBindingPathList": [],
                                                                                 "dynamicTriggerPathList": [],
-                                                                                "borderRadius": "ROUNDED"
+                                                                                "borderRadius": "ROUNDED",
+                                                                                "iconName": "plus",
+                                                                                "iconAlign": "left"
                                                                             }
                                                                         ],
                                                                         "minHeight": 400,
@@ -18714,8 +18720,8 @@
                                                                 "parentRowSpace": 10,
                                                                 "leftColumn": 0,
                                                                 "rightColumn": 64,
-                                                                "topRow": 104,
-                                                                "bottomRow": 129,
+                                                                "topRow": 111,
+                                                                "bottomRow": 136,
                                                                 "parentId": "e384lkw4ie",
                                                                 "dynamicBindingPathList": [
                                                                     {
@@ -18730,8 +18736,8 @@
                                                                 "widgetName": "Container7Copy",
                                                                 "containerStyle": "card",
                                                                 "borderColor": "transparent",
-                                                                "borderWidth": "0",
-                                                                "borderRadius": "0",
+                                                                "borderWidth": "1",
+                                                                "borderRadius": "10",
                                                                 "boxShadow": "NONE",
                                                                 "animateLoading": true,
                                                                 "children": [
@@ -18749,7 +18755,7 @@
                                                                         "children": [
                                                                             {
                                                                                 "isVisible": true,
-                                                                                "label": "Label",
+                                                                                "label": "Phone Number ID",
                                                                                 "labelPosition": "Top",
                                                                                 "labelAlignment": "left",
                                                                                 "labelWidth": 5,
@@ -18786,7 +18792,7 @@
                                                                             },
                                                                             {
                                                                                 "isVisible": true,
-                                                                                "label": "Label",
+                                                                                "label": "Access Token",
                                                                                 "labelPosition": "Top",
                                                                                 "labelAlignment": "left",
                                                                                 "labelWidth": 5,
@@ -18825,8 +18831,8 @@
                                                                                 "isVisible": true,
                                                                                 "animateLoading": true,
                                                                                 "text": "Save",
-                                                                                "buttonColor": "#03B365",
-                                                                                "buttonVariant": "PRIMARY",
+                                                                                "buttonColor": "#215484",
+                                                                                "buttonVariant": "SECONDARY",
                                                                                 "placement": "CENTER",
                                                                                 "widgetName": "Button3",
                                                                                 "isDisabled": false,
@@ -18844,14 +18850,16 @@
                                                                                 "isLoading": false,
                                                                                 "parentColumnSpace": 8.4140625,
                                                                                 "parentRowSpace": 10,
-                                                                                "leftColumn": 48,
+                                                                                "leftColumn": 54,
                                                                                 "rightColumn": 64,
                                                                                 "topRow": 18,
                                                                                 "bottomRow": 22,
                                                                                 "parentId": "awrp309oi8",
                                                                                 "borderRadius": "ROUNDED",
                                                                                 "dynamicBindingPathList": [],
-                                                                                "dynamicTriggerPathList": []
+                                                                                "dynamicTriggerPathList": [],
+                                                                                "iconName": "plus",
+                                                                                "iconAlign": "left"
                                                                             }
                                                                         ],
                                                                         "minHeight": 400,
@@ -18882,8 +18890,8 @@
                                                                 "parentRowSpace": 10,
                                                                 "leftColumn": 0,
                                                                 "rightColumn": 64,
-                                                                "topRow": 72,
-                                                                "bottomRow": 96,
+                                                                "topRow": 76,
+                                                                "bottomRow": 100,
                                                                 "parentId": "e384lkw4ie",
                                                                 "dynamicBindingPathList": [
                                                                     {
@@ -18902,7 +18910,7 @@
                                                         "leftColumn": 0,
                                                         "rightColumn": 216.9375,
                                                         "topRow": 0,
-                                                        "bottomRow": 1310,
+                                                        "bottomRow": 1380,
                                                         "parentId": "2vwgn3ow4m"
                                                     }
                                                 ],
@@ -18922,7 +18930,7 @@
                                                 "leftColumn": 0,
                                                 "rightColumn": 64,
                                                 "topRow": 8,
-                                                "bottomRow": 157,
+                                                "bottomRow": 146,
                                                 "parentId": "ygwa9pgk95",
                                                 "dynamicBindingPathList": [],
                                                 "dynamicTriggerPathList": []
@@ -18937,12 +18945,12 @@
                                         "leftColumn": 0,
                                         "rightColumn": 350.25,
                                         "topRow": 0,
-                                        "bottomRow": 1590,
+                                        "bottomRow": 1480,
                                         "parentId": "t4d9euh0xn"
                                     }
                                 ],
                                 "version": 1,
-                                "classStyle": "",
+                                "classStyle": "scroll_section",
                                 "type": "CONTAINER_WIDGET",
                                 "hideCard": false,
                                 "displayName": "Container",
@@ -18956,11 +18964,12 @@
                                 "parentRowSpace": 10,
                                 "leftColumn": 8,
                                 "rightColumn": 64,
-                                "topRow": 6,
-                                "bottomRow": 164,
+                                "topRow": 7,
+                                "bottomRow": 155,
                                 "parentId": "0",
                                 "dynamicBindingPathList": [],
-                                "dynamicTriggerPathList": []
+                                "dynamicTriggerPathList": [],
+                                "shouldScrollContents": false
                             }
                         ],
                         "snapRows": 75,
