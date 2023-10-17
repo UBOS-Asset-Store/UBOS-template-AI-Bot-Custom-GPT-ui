@@ -18249,7 +18249,7 @@
                                                                                 "isRequired": false,
                                                                                 "isDisabled": false,
                                                                                 "animateLoading": true,
-                                                                                "classStyle": "",
+                                                                                "classStyle": " input_bots",
                                                                                 "inputType": "TEXT",
                                                                                 "buttonPosition": "right",
                                                                                 "type": "INPUT_WIDGET_V2",
@@ -18268,7 +18268,8 @@
                                                                                 "bottomRow": 7,
                                                                                 "parentId": "gjzw4rse76",
                                                                                 "dynamicBindingPathList": [],
-                                                                                "dynamicTriggerPathList": []
+                                                                                "dynamicTriggerPathList": [],
+                                                                                "placeholderText": "Type your WhatsApp Phone Number ID"
                                                                             },
                                                                             {
                                                                                 "isVisible": true,
@@ -18286,7 +18287,7 @@
                                                                                 "isRequired": false,
                                                                                 "isDisabled": false,
                                                                                 "animateLoading": true,
-                                                                                "classStyle": "",
+                                                                                "classStyle": " input_bots",
                                                                                 "inputType": "TEXT",
                                                                                 "buttonPosition": "right",
                                                                                 "type": "INPUT_WIDGET_V2",
@@ -18305,12 +18306,13 @@
                                                                                 "bottomRow": 16,
                                                                                 "parentId": "gjzw4rse76",
                                                                                 "dynamicBindingPathList": [],
-                                                                                "dynamicTriggerPathList": []
+                                                                                "dynamicTriggerPathList": [],
+                                                                                "placeholderText": "Type your WhatsApp Access token"
                                                                             },
                                                                             {
                                                                                 "isVisible": true,
                                                                                 "animateLoading": true,
-                                                                                "text": "Save",
+                                                                                "text": " ",
                                                                                 "buttonColor": "#215484",
                                                                                 "buttonVariant": "SECONDARY",
                                                                                 "placement": "CENTER",
@@ -18419,7 +18421,7 @@
                                                                                 "isRequired": false,
                                                                                 "isDisabled": false,
                                                                                 "animateLoading": true,
-                                                                                "classStyle": " ",
+                                                                                "classStyle": " input_bots",
                                                                                 "inputType": "TEXT",
                                                                                 "buttonPosition": "right",
                                                                                 "type": "INPUT_WIDGET_V2",
@@ -18439,7 +18441,8 @@
                                                                                 "parentId": "q07hk2y2v2",
                                                                                 "dynamicBindingPathList": [],
                                                                                 "dynamicTriggerPathList": [],
-                                                                                "placeholderText": "6688964973:AAGZYQRcAxKzUmsDD1Yz8cAK68lidf****"
+                                                                                "placeholderText": "Type your Telegram bot token ",
+                                                                                "labelTextSize": "HEADING3"
                                                                             },
                                                                             {
                                                                                 "isVisible": true,
@@ -18457,7 +18460,7 @@
                                                                                 "isRequired": false,
                                                                                 "isDisabled": false,
                                                                                 "animateLoading": true,
-                                                                                "classStyle": "",
+                                                                                "classStyle": " input_bots",
                                                                                 "inputType": "TEXT",
                                                                                 "buttonPosition": "right",
                                                                                 "type": "INPUT_WIDGET_V2",
@@ -18477,13 +18480,15 @@
                                                                                 "parentId": "q07hk2y2v2",
                                                                                 "dynamicBindingPathList": [],
                                                                                 "dynamicTriggerPathList": [],
-                                                                                "placeholderText": "Ubos_Bot",
-                                                                                "maxChars": ""
+                                                                                "placeholderText": "Type your Telegram bot name ",
+                                                                                "maxChars": "",
+                                                                                "labelTextSize": "HEADING3",
+                                                                                "tooltip": ""
                                                                             },
                                                                             {
                                                                                 "isVisible": true,
                                                                                 "animateLoading": true,
-                                                                                "text": "Save",
+                                                                                "text": "",
                                                                                 "buttonColor": "#215484",
                                                                                 "buttonVariant": "SECONDARY",
                                                                                 "placement": "CENTER",
@@ -18526,11 +18531,11 @@
                                                                             },
                                                                             {
                                                                                 "isVisible": true,
-                                                                                "text": "Guide on how to set up a telegram bot <a href=\"#\" style=\"text-decoration: none;\"> <span >&#9432;</span>\n    </a> ",
+                                                                                "text": "\nGuide on how to set up a telegram bot <a href=\"#\" style=\"text-decoration: none;\"> <span >&#9432;</span>\n    </a> ",
                                                                                 "fontSize": "PARAGRAPH",
                                                                                 "fontStyle": "",
                                                                                 "textAlign": "LEFT",
-                                                                                "textColor": "#999",
+                                                                                "textColor": "#666",
                                                                                 "truncateButtonColor": "#FFC13D",
                                                                                 "widgetName": "Text5",
                                                                                 "shouldTruncate": false,
@@ -18585,7 +18590,7 @@
                                                                 "leftColumn": 0,
                                                                 "rightColumn": 64,
                                                                 "topRow": 8,
-                                                                "bottomRow": 35,
+                                                                "bottomRow": 34,
                                                                 "parentId": "e384lkw4ie",
                                                                 "dynamicBindingPathList": [
                                                                     {
@@ -18633,7 +18638,7 @@
                                                                                 "isRequired": false,
                                                                                 "isDisabled": false,
                                                                                 "animateLoading": true,
-                                                                                "classStyle": "",
+                                                                                "classStyle": " input_bots",
                                                                                 "inputType": "TEXT",
                                                                                 "buttonPosition": "right",
                                                                                 "type": "INPUT_WIDGET_V2",
@@ -18652,7 +18657,8 @@
                                                                                 "bottomRow": 8,
                                                                                 "parentId": "b75ce8oypi",
                                                                                 "dynamicBindingPathList": [],
-                                                                                "dynamicTriggerPathList": []
+                                                                                "dynamicTriggerPathList": [],
+                                                                                "placeholderText": "Type your Messanger Phone Number ID"
                                                                             },
                                                                             {
                                                                                 "isVisible": true,
@@ -18670,7 +18676,7 @@
                                                                                 "isRequired": false,
                                                                                 "isDisabled": false,
                                                                                 "animateLoading": true,
-                                                                                "classStyle": "",
+                                                                                "classStyle": " input_bots",
                                                                                 "inputType": "TEXT",
                                                                                 "buttonPosition": "right",
                                                                                 "type": "INPUT_WIDGET_V2",
@@ -18689,12 +18695,13 @@
                                                                                 "bottomRow": 17,
                                                                                 "parentId": "b75ce8oypi",
                                                                                 "dynamicBindingPathList": [],
-                                                                                "dynamicTriggerPathList": []
+                                                                                "dynamicTriggerPathList": [],
+                                                                                "placeholderText": "Type your Messanger Access token"
                                                                             },
                                                                             {
                                                                                 "isVisible": true,
                                                                                 "animateLoading": true,
-                                                                                "text": "Save",
+                                                                                "text": "",
                                                                                 "buttonColor": "#215484",
                                                                                 "buttonVariant": "SECONDARY",
                                                                                 "placement": "CENTER",
@@ -18803,7 +18810,7 @@
                                                                                 "isRequired": false,
                                                                                 "isDisabled": false,
                                                                                 "animateLoading": true,
-                                                                                "classStyle": "",
+                                                                                "classStyle": " input_bots",
                                                                                 "inputType": "TEXT",
                                                                                 "buttonPosition": "right",
                                                                                 "type": "INPUT_WIDGET_V2",
@@ -18822,7 +18829,8 @@
                                                                                 "bottomRow": 7,
                                                                                 "parentId": "awrp309oi8",
                                                                                 "dynamicBindingPathList": [],
-                                                                                "dynamicTriggerPathList": []
+                                                                                "dynamicTriggerPathList": [],
+                                                                                "placeholderText": "Type your WhatsApp Phone Number ID"
                                                                             },
                                                                             {
                                                                                 "isVisible": true,
@@ -18840,7 +18848,7 @@
                                                                                 "isRequired": false,
                                                                                 "isDisabled": false,
                                                                                 "animateLoading": true,
-                                                                                "classStyle": "",
+                                                                                "classStyle": " input_bots",
                                                                                 "inputType": "TEXT",
                                                                                 "buttonPosition": "right",
                                                                                 "type": "INPUT_WIDGET_V2",
@@ -18859,12 +18867,13 @@
                                                                                 "bottomRow": 16,
                                                                                 "parentId": "awrp309oi8",
                                                                                 "dynamicBindingPathList": [],
-                                                                                "dynamicTriggerPathList": []
+                                                                                "dynamicTriggerPathList": [],
+                                                                                "placeholderText": "Type your Instagram Access token"
                                                                             },
                                                                             {
                                                                                 "isVisible": true,
                                                                                 "animateLoading": true,
-                                                                                "text": "Save",
+                                                                                "text": "",
                                                                                 "buttonColor": "#215484",
                                                                                 "buttonVariant": "SECONDARY",
                                                                                 "placement": "CENTER",

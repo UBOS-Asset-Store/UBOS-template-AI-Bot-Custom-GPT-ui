@@ -5,7 +5,7 @@
     "organizationId": "Org",
     "isPublic": true,
     "createdAt": "2023-03-02T13:50:57.853Z",
-    "updatedAt": "2023-10-14T02:01:24.432Z",
+    "updatedAt": "2023-10-17T17:15:00.858Z",
     "deleted": false,
     "pages": [
         {
@@ -88,7 +88,7 @@
         }
     ],
     "global_setting": {
-        "favicon": "https://ubraine.com/wp-content/uploads/2018/09/cropped-ubraine_favicon-32x32.png",
+        "favicon": "",
         "title": "UBOS",
         "css": "${env.get(\"nodeUrl\")}/css"
     },
