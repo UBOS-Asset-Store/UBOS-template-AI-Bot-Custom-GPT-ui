@@ -5,7 +5,7 @@
     "organizationId": "Org",
     "isPublic": true,
     "createdAt": "2023-03-02T13:50:57.853Z",
-    "updatedAt": "2023-10-17T17:15:00.858Z",
+    "updatedAt": "2023-10-18T17:54:41.808Z",
     "deleted": false,
     "pages": [
         {
@@ -96,7 +96,7 @@
     "is_custom_auth": true,
     "auth_mode_setting": {
         "login_id": "Login",
-        "auth_node": "https://noderedai-64d37e2e7bbbcb100000019c.ubos.tech/check_token",
+        "auth_node": "https://aibotnr-652fe5afec075a11000001a8.ubos.tech/check_token",
         "registry_id": "Registration",
         "other_pages": []
     },
