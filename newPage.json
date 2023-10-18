@@ -13966,7 +13966,7 @@
                                                     }
                                                 ],
                                                 "version": 1,
-                                                "classStyle": "",
+                                                "classStyle": "{{main.store.activ_setup && main.store.activ_setup===\"pinecone\" ? \"activ_setup\": \"hide\"}}",
                                                 "type": "CONTAINER_WIDGET",
                                                 "hideCard": false,
                                                 "displayName": "Container",
@@ -13983,7 +13983,11 @@
                                                 "topRow": 26,
                                                 "bottomRow": 64,
                                                 "parentId": "apv38t0vkk",
-                                                "dynamicBindingPathList": [],
+                                                "dynamicBindingPathList": [
+                                                    {
+                                                        "key": "classStyle"
+                                                    }
+                                                ],
                                                 "dynamicTriggerPathList": []
                                             },
                                             {
@@ -14081,7 +14085,8 @@
                                                                 "parentId": "0au237itvf",
                                                                 "dynamicBindingPathList": [],
                                                                 "dynamicTriggerPathList": [],
-                                                                "labelStyle": "BOLD"
+                                                                "labelStyle": "BOLD",
+                                                                "classStyle": "select_input "
                                                             },
                                                             {
                                                                 "isVisible": true,
@@ -14116,7 +14121,8 @@
                                                                 "parentId": "0au237itvf",
                                                                 "dynamicBindingPathList": [],
                                                                 "dynamicTriggerPathList": [],
-                                                                "labelStyle": "BOLD"
+                                                                "labelStyle": "BOLD",
+                                                                "classStyle": "select_input "
                                                             },
                                                             {
                                                                 "isVisible": true,
@@ -14151,7 +14157,8 @@
                                                                 "parentId": "0au237itvf",
                                                                 "dynamicBindingPathList": [],
                                                                 "dynamicTriggerPathList": [],
-                                                                "labelStyle": "BOLD"
+                                                                "labelStyle": "BOLD",
+                                                                "classStyle": "select_input "
                                                             },
                                                             {
                                                                 "isVisible": true,
@@ -14186,7 +14193,8 @@
                                                                 "parentId": "0au237itvf",
                                                                 "dynamicBindingPathList": [],
                                                                 "dynamicTriggerPathList": [],
-                                                                "labelStyle": "BOLD"
+                                                                "labelStyle": "BOLD",
+                                                                "classStyle": "select_input "
                                                             },
                                                             {
                                                                 "isVisible": true,
@@ -14269,7 +14277,7 @@
                                                     }
                                                 ],
                                                 "version": 1,
-                                                "classStyle": "",
+                                                "classStyle": "{{main.store.activ_setup && main.store.activ_setup===\"model\" ? \"activ_setup\": \"hide\"}}",
                                                 "type": "CONTAINER_WIDGET",
                                                 "hideCard": false,
                                                 "displayName": "Container",
@@ -14286,7 +14294,11 @@
                                                 "topRow": 99,
                                                 "bottomRow": 145,
                                                 "parentId": "apv38t0vkk",
-                                                "dynamicBindingPathList": [],
+                                                "dynamicBindingPathList": [
+                                                    {
+                                                        "key": "classStyle"
+                                                    }
+                                                ],
                                                 "dynamicTriggerPathList": []
                                             },
                                             {
@@ -14507,7 +14519,7 @@
                                                     }
                                                 ],
                                                 "version": 1,
-                                                "classStyle": "",
+                                                "classStyle": "{{main.store.activ_setup && main.store.activ_setup===\"chat\" ? \"activ_setup\": \"hide\"}}",
                                                 "type": "CONTAINER_WIDGET",
                                                 "hideCard": false,
                                                 "displayName": "Container",
@@ -14524,7 +14536,11 @@
                                                 "topRow": 153,
                                                 "bottomRow": 195,
                                                 "parentId": "apv38t0vkk",
-                                                "dynamicBindingPathList": [],
+                                                "dynamicBindingPathList": [
+                                                    {
+                                                        "key": "classStyle"
+                                                    }
+                                                ],
                                                 "dynamicTriggerPathList": []
                                             },
                                             {
@@ -14667,7 +14683,8 @@
                                                                 "parentId": "xjdjm9acl0",
                                                                 "dynamicBindingPathList": [],
                                                                 "dynamicTriggerPathList": [],
-                                                                "labelStyle": "BOLD"
+                                                                "labelStyle": "BOLD",
+                                                                "classStyle": "select_input"
                                                             },
                                                             {
                                                                 "isVisible": true,
@@ -14718,7 +14735,7 @@
                                                     }
                                                 ],
                                                 "version": 1,
-                                                "classStyle": "",
+                                                "classStyle": "{{main.store.activ_setup && main.store.activ_setup===\"gpt\" ? \"activ_setup\": \"hide\"}}",
                                                 "type": "CONTAINER_WIDGET",
                                                 "hideCard": false,
                                                 "displayName": "Container",
@@ -14735,7 +14752,11 @@
                                                 "topRow": 72,
                                                 "bottomRow": 91,
                                                 "parentId": "apv38t0vkk",
-                                                "dynamicBindingPathList": [],
+                                                "dynamicBindingPathList": [
+                                                    {
+                                                        "key": "classStyle"
+                                                    }
+                                                ],
                                                 "dynamicTriggerPathList": []
                                             },
                                             {
@@ -15149,8 +15170,23 @@
                                                                 "topRow": 0,
                                                                 "bottomRow": 6,
                                                                 "parentId": "7itsap68x5",
-                                                                "dynamicBindingPathList": [],
-                                                                "dynamicTriggerPathList": []
+                                                                "dynamicBindingPathList": [
+                                                                    {
+                                                                        "key": "classStyle"
+                                                                    }
+                                                                ],
+                                                                "dynamicTriggerPathList": [
+                                                                    {
+                                                                        "key": "onClick"
+                                                                    }
+                                                                ],
+                                                                "classStyle": "{{main.store.activ_setup&& main.store.activ_setup===\"pinecone\" ?\"btn_right\" : \"btn_left\"}}",
+                                                                "onClick": "{{main.store.activ_setup && main.store.activ_setup ===\"pinecone\"?JSObject1.myFun4(\"activ_setup\",\"\"):JSObject1.myFun4(\"activ_setup\",\"pinecone\")}}",
+                                                                "dynamicPropertyPathList": [
+                                                                    {
+                                                                        "key": "onClick"
+                                                                    }
+                                                                ]
                                                             }
                                                         ],
                                                         "minHeight": 400,
@@ -15236,8 +15272,23 @@
                                                                 "topRow": 0,
                                                                 "bottomRow": 6,
                                                                 "parentId": "ije3j53qiu",
-                                                                "dynamicBindingPathList": [],
-                                                                "dynamicTriggerPathList": []
+                                                                "dynamicBindingPathList": [
+                                                                    {
+                                                                        "key": "classStyle"
+                                                                    }
+                                                                ],
+                                                                "dynamicTriggerPathList": [
+                                                                    {
+                                                                        "key": "onClick"
+                                                                    }
+                                                                ],
+                                                                "classStyle": "{{main.store.activ_setup&& main.store.activ_setup===\"gpt\" ?\"btn_right\" : \"btn_left\"}}",
+                                                                "onClick": "{{main.store.activ_setup && main.store.activ_setup ===\"gpt\"?JSObject1.myFun4(\"activ_setup\",\"\"):JSObject1.myFun4(\"activ_setup\",\"gpt\")}}",
+                                                                "dynamicPropertyPathList": [
+                                                                    {
+                                                                        "key": "onClick"
+                                                                    }
+                                                                ]
                                                             },
                                                             {
                                                                 "isVisible": true,
@@ -15542,8 +15593,23 @@
                                                                 "topRow": 0,
                                                                 "bottomRow": 6,
                                                                 "parentId": "vy5g7n58rr",
-                                                                "dynamicBindingPathList": [],
-                                                                "dynamicTriggerPathList": []
+                                                                "dynamicBindingPathList": [
+                                                                    {
+                                                                        "key": "classStyle"
+                                                                    }
+                                                                ],
+                                                                "dynamicTriggerPathList": [
+                                                                    {
+                                                                        "key": "onClick"
+                                                                    }
+                                                                ],
+                                                                "classStyle": "{{main.store.activ_setup&& main.store.activ_setup===\"model\" ?\"btn_right\" : \"btn_left\"}}",
+                                                                "onClick": "{{main.store.activ_setup && main.store.activ_setup ===\"model\"?JSObject1.myFun4(\"activ_setup\",\"\"):JSObject1.myFun4(\"activ_setup\",\"model\")}}",
+                                                                "dynamicPropertyPathList": [
+                                                                    {
+                                                                        "key": "onClick"
+                                                                    }
+                                                                ]
                                                             },
                                                             {
                                                                 "isVisible": true,
@@ -15848,8 +15914,23 @@
                                                                 "topRow": 0,
                                                                 "bottomRow": 6,
                                                                 "parentId": "1qrodk4vmi",
-                                                                "dynamicBindingPathList": [],
-                                                                "dynamicTriggerPathList": []
+                                                                "dynamicBindingPathList": [
+                                                                    {
+                                                                        "key": "classStyle"
+                                                                    }
+                                                                ],
+                                                                "dynamicTriggerPathList": [
+                                                                    {
+                                                                        "key": "onClick"
+                                                                    }
+                                                                ],
+                                                                "classStyle": "{{main.store.activ_setup&& main.store.activ_setup===\"chat\" ?\"btn_right\" : \"btn_left\"}}",
+                                                                "onClick": "{{main.store.activ_setup && main.store.activ_setup ===\"chat\"?JSObject1.myFun4(\"activ_setup\",\"\"):JSObject1.myFun4(\"activ_setup\",\"chat\")}}",
+                                                                "dynamicPropertyPathList": [
+                                                                    {
+                                                                        "key": "onClick"
+                                                                    }
+                                                                ]
                                                             },
                                                             {
                                                                 "isVisible": true,
@@ -15972,7 +16053,7 @@
                                     }
                                 ],
                                 "version": 1,
-                                "classStyle": "scroll_section",
+                                "classStyle": "scroll_section main",
                                 "type": "CONTAINER_WIDGET",
                                 "hideCard": false,
                                 "displayName": "Container",
