@@ -8384,66 +8384,27 @@
         ]
     },
     {
-        "name": "myFun2",
-        "pageId": "Bots",
-        "executeOnLoad": true,
-        "actionConfiguration": {
-            "body": "()=> {\n\tstoreValue('btn',\"hide\");\nstoreValue('btn_one',\"hide\");\n\tstoreValue('btn_two',\"hide\");\n\tstoreValue('btn_free',\"hide\");\n\tstoreValue('btn_action',\"btn_left\");\n\tstoreValue('btn_action_one',\"btn_left\");\n\t\tstoreValue('btn_action_two',\"btn_left\");\n\t\tstoreValue('btn_action_free',\"btn_left\");\n}",
-            "isAsync": true,
-            "timeoutInMillisecond": 10000,
-            "jsArguments": [],
-            "paginationType": "NONE",
-            "encodeParamsToggle": true
-        },
-        "clientSideExecution": true,
-        "_id": "652d7479ff0d1890fd5b921e",
-        "id": "652d7479ff0d1890fd5b921e",
-        "collectionId": "652d7479ff0d1890fd5b921c",
-        "confirmBeforeExecute": false,
-        "applicationId": "jetsondashboard",
-        "datasource": {
-            "isValid": true,
-            "messages": [],
-            "name": "UNUSED_DATASOURCE",
-            "new": true,
-            "pluginId": "",
-            "userPermissions": []
-        },
-        "dynamicBindingPathList": [
-            {
-                "key": "body"
-            }
-        ],
-        "fullyQualifiedName": "JSObject1.myFun2",
-        "isValid": true,
-        "jsonPathKeys": [
-            "async () => {\n\t\t//use async-await or promises\n\t}"
-        ],
-        "pluginType": "JS",
-        "executeOnClose": true
-    },
-    {
-        "name": "myFun1",
+        "name": "myFun4",
         "collectionId": "652d7479ff0d1890fd5b921c",
         "executeOnLoad": false,
         "pageId": "Bots",
         "actionConfiguration": {
-            "body": "(el,el2) => {\n\tstoreValue(el,\"activ\")\n\tstoreValue(el2,\"btn_right\");\n\t}",
+            "body": "(i,cl)=>{\n\tstoreValue(i,cl)\n}",
             "isAsync": true,
             "timeoutInMillisecond": 10000,
             "jsArguments": [
                 {
-                    "name": "el"
+                    "name": "i"
                 },
                 {
-                    "name": "el2"
+                    "name": "cl"
                 }
             ],
             "paginationType": "NONE",
             "encodeParamsToggle": true
         },
-        "_id": "652d7e0fff0d1890fd5b921f",
-        "id": "652d7e0fff0d1890fd5b921f",
+        "_id": "652fc596ff0d1890fd5b9221",
+        "id": "652fc596ff0d1890fd5b9221",
         "applicationId": "jetsondashboard",
         "datasource": {
             "isValid": true,
@@ -8458,53 +8419,10 @@
                 "key": "body"
             }
         ],
-        "fullyQualifiedName": "JSObject1.myFun1",
+        "fullyQualifiedName": "JSObject1.myFun4",
         "isValid": true,
         "jsonPathKeys": [
-            "() => {\n\t\t//write code here\n\t}"
-        ],
-        "pluginType": "JS"
-    },
-    {
-        "name": "myFun3",
-        "collectionId": "652d7479ff0d1890fd5b921c",
-        "executeOnLoad": false,
-        "pageId": "Bots",
-        "actionConfiguration": {
-            "body": "(el,el2)=> {\n\nstoreValue(el,\"hide\");\nstoreValue(el2,\"btn_left\");}",
-            "isAsync": true,
-            "timeoutInMillisecond": 10000,
-            "jsArguments": [
-                {
-                    "name": "el"
-                },
-                {
-                    "name": "el2"
-                }
-            ],
-            "paginationType": "NONE",
-            "encodeParamsToggle": true
-        },
-        "_id": "652d935bff0d1890fd5b9220",
-        "id": "652d935bff0d1890fd5b9220",
-        "applicationId": "jetsondashboard",
-        "datasource": {
-            "isValid": true,
-            "messages": [],
-            "name": "UNUSED_DATASOURCE",
-            "new": true,
-            "pluginId": "",
-            "userPermissions": []
-        },
-        "dynamicBindingPathList": [
-            {
-                "key": "body"
-            }
-        ],
-        "fullyQualifiedName": "JSObject1.myFun3",
-        "isValid": true,
-        "jsonPathKeys": [
-            "(el)=> {\n\nstoreValue(el,\"hide\")}"
+            "(i,cl)=>{\n\tsroreValue(i,cl)\n}"
         ],
         "pluginType": "JS"
     }

@@ -11179,7 +11179,7 @@
                                                         "index": 0
                                                     },
                                                     "tab2": {
-                                                        "label": "File Upload",
+                                                        "label": "File ",
                                                         "id": "tab2",
                                                         "widgetId": "k2agajmtvu",
                                                         "isVisible": true,
@@ -11188,7 +11188,7 @@
                                                     "tabzk5phhc34h": {
                                                         "id": "tabzk5phhc34h",
                                                         "index": 2,
-                                                        "label": "FAQ's",
+                                                        "label": "FAQ",
                                                         "widgetId": "lzfnfil2re",
                                                         "isVisible": true
                                                     }
@@ -11951,7 +11951,7 @@
                                                         "isDisabled": false,
                                                         "shouldScrollContents": false,
                                                         "tabId": "tab2",
-                                                        "tabName": "File Upload",
+                                                        "tabName": "File ",
                                                         "children": [
                                                             {
                                                                 "isVisible": true,
@@ -12260,7 +12260,7 @@
                                                                         "label": "",
                                                                         "computedValue": "",
                                                                         "buttonStyle": "rgb(3, 179, 101)",
-                                                                        "buttonColor": "#008080 ",
+                                                                        "buttonColor": " #215484",
                                                                         "menuColor": "#03B365",
                                                                         "labelColor": "#FFFFFF",
                                                                         "iconName": "refresh",
@@ -12282,7 +12282,7 @@
                                                                         "label": "",
                                                                         "computedValue": "",
                                                                         "buttonStyle": "rgb(3, 179, 101)",
-                                                                        "buttonColor": "#215484",
+                                                                        "buttonColor": "#008080",
                                                                         "menuColor": "#03B365",
                                                                         "labelColor": "#FFFFFF",
                                                                         "iconName": "changes",
@@ -12346,7 +12346,7 @@
                                                                         "label": "",
                                                                         "computedValue": "",
                                                                         "buttonStyle": "rgb(3, 179, 101)",
-                                                                        "buttonColor": "#008080 ",
+                                                                        "buttonColor": " #215484",
                                                                         "menuColor": "#03B365",
                                                                         "labelColor": "#FFFFFF",
                                                                         "iconName": "refresh",
@@ -12368,7 +12368,7 @@
                                                                         "label": "",
                                                                         "computedValue": "",
                                                                         "buttonStyle": "rgb(3, 179, 101)",
-                                                                        "buttonColor": "#215484",
+                                                                        "buttonColor": "#008080",
                                                                         "menuColor": "#03B365",
                                                                         "labelColor": "#FFFFFF",
                                                                         "iconName": "changes",
@@ -12394,10 +12394,10 @@
                                                                     "createdAt",
                                                                     "status",
                                                                     "totaCharacters",
-                                                                    "customColumn1",
                                                                     "customColumn2",
-                                                                    "customColumn3",
+                                                                    "customColumn1",
                                                                     "customColumn4",
+                                                                    "customColumn3",
                                                                     "_id",
                                                                     "knowledgeBaseId",
                                                                     "name",
@@ -12662,7 +12662,7 @@
                                                         "displayName": "Canvas",
                                                         "key": "jsymva9gxe",
                                                         "tabId": "tabzk5phhc34h",
-                                                        "tabName": "FAQ's",
+                                                        "tabName": "FAQ",
                                                         "containerStyle": "none",
                                                         "canExtend": false,
                                                         "children": [
@@ -12742,7 +12742,8 @@
                                                                         "buttonLabel": "{{Table5.sanitizedTableData.map((currentRow) => ( 'Edit'))}}",
                                                                         "onClick": "{{navigateTo('Vectors',{'id': getKnowlegeFiles.data.sortdata.Manual[0]._id},'NEW_WINDOW')}}",
                                                                         "horizontalAlignment": "LEFT",
-                                                                        "borderRadius": "CIRCLE"
+                                                                        "borderRadius": "CIRCLE",
+                                                                        "buttonVariant": "TERTIARY"
                                                                     },
                                                                     "customColumn2": {
                                                                         "index": 10,
@@ -12766,7 +12767,8 @@
                                                                         "buttonLabel": "{{Table5.sanitizedTableData.map((currentRow) => ( 'Delete'))}}",
                                                                         "onClick": "{{deleteVector.run();getKnowlegeFiles.run()}} ",
                                                                         "horizontalAlignment": "LEFT",
-                                                                        "borderRadius": "CIRCLE"
+                                                                        "borderRadius": "CIRCLE",
+                                                                        "buttonVariant": "TERTIARY"
                                                                     },
                                                                     "url": {
                                                                         "index": 0,
@@ -17425,7 +17427,7 @@
                         "snapColumns": 64,
                         "widgetId": "0",
                         "topRow": 0,
-                        "bottomRow": 1570,
+                        "bottomRow": 1610,
                         "parentRowSpace": 1,
                         "type": "CANVAS_WIDGET",
                         "detachFromLayout": true,
@@ -17666,13 +17668,13 @@
                                                                                         "key": "onClick"
                                                                                     }
                                                                                 ],
-                                                                                "onClick": "{{main.store.btn ===\"activ\" ? JSObject1.myFun3('btn','btn_action') :JSObject1.myFun1('btn','btn_action')}}",
+                                                                                "onClick": "{{main.store.activ && main.store.activ ===\"telegram\"?JSObject1.myFun4(\"activ\",\"\"):JSObject1.myFun4(\"activ\",\"telegram\")}}",
                                                                                 "dynamicPropertyPathList": [
                                                                                     {
                                                                                         "key": "onClick"
                                                                                     }
                                                                                 ],
-                                                                                "classStyle": "{{main.store.btn_action}}"
+                                                                                "classStyle": "{{main.store.activ && main.store.activ===\"telegram\" ?\"btn_right\" : \"btn_left\"}}"
                                                                             }
                                                                         ],
                                                                         "minHeight": 400,
@@ -17801,13 +17803,13 @@
                                                                                         "key": "onClick"
                                                                                     }
                                                                                 ],
-                                                                                "onClick": "{{main.store.btn_one ===\"activ\" ? JSObject1.myFun3('btn_one','btn_action_one') : JSObject1.myFun1('btn_one','btn_action_one')}} ",
+                                                                                "onClick": "{{main.store.activ && main.store.activ ===\"whatsapp\"?JSObject1.myFun4(\"activ\",\"\"):JSObject1.myFun4(\"activ\",\"whatsapp\")}}",
                                                                                 "dynamicPropertyPathList": [
                                                                                     {
                                                                                         "key": "onClick"
                                                                                     }
                                                                                 ],
-                                                                                "classStyle": "{{main.store.btn_action_one}}"
+                                                                                "classStyle": "{{main.store.activ && main.store.activ===\"whatsapp\" ?\"btn_right\" : \"btn_left\"}}"
                                                                             },
                                                                             {
                                                                                 "isVisible": true,
@@ -17968,8 +17970,8 @@
                                                                                         "key": "onClick"
                                                                                     }
                                                                                 ],
-                                                                                "classStyle": "{{main.store.btn_action_two}}",
-                                                                                "onClick": "{{main.store.btn_two ===\"activ\" ? JSObject1.myFun3('btn_two','btn_action_two') : JSObject1.myFun1('btn_two','btn_action_two')}}",
+                                                                                "classStyle": "{{main.store.activ && main.store.activ===\"instagram\" ?\"btn_right\" : \"btn_left\"}}",
+                                                                                "onClick": " {{main.store.activ && main.store.activ ===\"instagram\"?JSObject1.myFun4(\"activ\",\"\"):JSObject1.myFun4(\"activ\",\"instagram\")}}",
                                                                                 "dynamicPropertyPathList": [
                                                                                     {
                                                                                         "key": "onClick"
@@ -18037,8 +18039,8 @@
                                                                 "parentRowSpace": 10,
                                                                 "leftColumn": 0,
                                                                 "rightColumn": 64,
-                                                                "topRow": 68,
-                                                                "bottomRow": 76,
+                                                                "topRow": 70,
+                                                                "bottomRow": 78,
                                                                 "parentId": "e384lkw4ie",
                                                                 "dynamicBindingPathList": [],
                                                                 "dynamicTriggerPathList": []
@@ -18135,8 +18137,8 @@
                                                                                         "key": "onClick"
                                                                                     }
                                                                                 ],
-                                                                                "classStyle": "{{main.store.btn_action_free}}",
-                                                                                "onClick": "{{main.store.btn_free ===\"activ\" ? JSObject1.myFun3('btn_free','btn_action_free') : JSObject1.myFun1('btn_free','btn_action_free')}}",
+                                                                                "classStyle": "{{main.store.activ && main.store.activ===\"ms\" ?\"btn_right\" : \"btn_left\"}}",
+                                                                                "onClick": " {{main.store.activ && main.store.activ ===\"ms\"?JSObject1.myFun4(\"activ\",\"\"):JSObject1.myFun4(\"activ\",\"ms\")}}",
                                                                                 "dynamicPropertyPathList": [
                                                                                     {
                                                                                         "key": "onClick"
@@ -18204,8 +18206,8 @@
                                                                 "parentRowSpace": 10,
                                                                 "leftColumn": 0,
                                                                 "rightColumn": 64,
-                                                                "topRow": 103,
-                                                                "bottomRow": 111,
+                                                                "topRow": 105,
+                                                                "bottomRow": 113,
                                                                 "parentId": "e384lkw4ie",
                                                                 "dynamicBindingPathList": [],
                                                                 "dynamicTriggerPathList": []
@@ -18264,8 +18266,8 @@
                                                                                 "parentRowSpace": 10,
                                                                                 "leftColumn": 0,
                                                                                 "rightColumn": 64,
-                                                                                "topRow": 0,
-                                                                                "bottomRow": 7,
+                                                                                "topRow": 4,
+                                                                                "bottomRow": 11,
                                                                                 "parentId": "gjzw4rse76",
                                                                                 "dynamicBindingPathList": [],
                                                                                 "dynamicTriggerPathList": [],
@@ -18302,8 +18304,8 @@
                                                                                 "parentRowSpace": 10,
                                                                                 "leftColumn": 0,
                                                                                 "rightColumn": 64,
-                                                                                "topRow": 9,
-                                                                                "bottomRow": 16,
+                                                                                "topRow": 12,
+                                                                                "bottomRow": 19,
                                                                                 "parentId": "gjzw4rse76",
                                                                                 "dynamicBindingPathList": [],
                                                                                 "dynamicTriggerPathList": [],
@@ -18334,14 +18336,45 @@
                                                                                 "parentRowSpace": 10,
                                                                                 "leftColumn": 54,
                                                                                 "rightColumn": 64,
-                                                                                "topRow": 18,
-                                                                                "bottomRow": 22,
+                                                                                "topRow": 20,
+                                                                                "bottomRow": 24,
                                                                                 "parentId": "gjzw4rse76",
                                                                                 "dynamicBindingPathList": [],
                                                                                 "dynamicTriggerPathList": [],
                                                                                 "borderRadius": "ROUNDED",
                                                                                 "iconName": "plus",
                                                                                 "iconAlign": "left"
+                                                                            },
+                                                                            {
+                                                                                "isVisible": true,
+                                                                                "text": "\nGuide on how to set up a telegram bot <a href=\"#\" style=\"text-decoration: none;\"> <span >&#9432;</span>\n    </a> ",
+                                                                                "fontSize": "PARAGRAPH",
+                                                                                "fontStyle": "",
+                                                                                "textAlign": "LEFT",
+                                                                                "textColor": "#666",
+                                                                                "truncateButtonColor": "#FFC13D",
+                                                                                "widgetName": "Text6",
+                                                                                "shouldTruncate": false,
+                                                                                "overflow": "NONE",
+                                                                                "version": 1,
+                                                                                "animateLoading": true,
+                                                                                "type": "TEXT_WIDGET",
+                                                                                "hideCard": false,
+                                                                                "displayName": "Text",
+                                                                                "key": "4aik62wr2j",
+                                                                                "iconSVG": "/static/media/icon.97c59b52.svg",
+                                                                                "widgetId": "rv61o3m16d",
+                                                                                "renderMode": "CANVAS",
+                                                                                "isLoading": false,
+                                                                                "parentColumnSpace": 9.439453125,
+                                                                                "parentRowSpace": 10,
+                                                                                "leftColumn": 0,
+                                                                                "rightColumn": 64,
+                                                                                "topRow": 0,
+                                                                                "bottomRow": 4,
+                                                                                "parentId": "gjzw4rse76",
+                                                                                "dynamicBindingPathList": [],
+                                                                                "dynamicTriggerPathList": []
                                                                             }
                                                                         ],
                                                                         "minHeight": 400,
@@ -18358,7 +18391,7 @@
                                                                     }
                                                                 ],
                                                                 "version": 1,
-                                                                "classStyle": "{{main.store.btn_one}}",
+                                                                "classStyle": "{{main.store.activ && main.store.activ===\"whatsapp\" ? \"activ\": \"hide\"}} ",
                                                                 "type": "CONTAINER_WIDGET",
                                                                 "hideCard": false,
                                                                 "displayName": "Container",
@@ -18373,7 +18406,7 @@
                                                                 "leftColumn": 0,
                                                                 "rightColumn": 64,
                                                                 "topRow": 44,
-                                                                "bottomRow": 68,
+                                                                "bottomRow": 70,
                                                                 "parentId": "e384lkw4ie",
                                                                 "dynamicBindingPathList": [
                                                                     {
@@ -18575,7 +18608,7 @@
                                                                     }
                                                                 ],
                                                                 "version": 1,
-                                                                "classStyle": "{{main.store.btn}}",
+                                                                "classStyle": "{{main.store.activ && main.store.activ===\"telegram\" ? \"activ\": \"hide\"}}",
                                                                 "type": "CONTAINER_WIDGET",
                                                                 "hideCard": false,
                                                                 "displayName": "Container",
@@ -18653,8 +18686,8 @@
                                                                                 "parentRowSpace": 10,
                                                                                 "leftColumn": 0,
                                                                                 "rightColumn": 64,
-                                                                                "topRow": 1,
-                                                                                "bottomRow": 8,
+                                                                                "topRow": 4,
+                                                                                "bottomRow": 11,
                                                                                 "parentId": "b75ce8oypi",
                                                                                 "dynamicBindingPathList": [],
                                                                                 "dynamicTriggerPathList": [],
@@ -18691,8 +18724,8 @@
                                                                                 "parentRowSpace": 10,
                                                                                 "leftColumn": 0,
                                                                                 "rightColumn": 64,
-                                                                                "topRow": 10,
-                                                                                "bottomRow": 17,
+                                                                                "topRow": 12,
+                                                                                "bottomRow": 19,
                                                                                 "parentId": "b75ce8oypi",
                                                                                 "dynamicBindingPathList": [],
                                                                                 "dynamicTriggerPathList": [],
@@ -18723,14 +18756,45 @@
                                                                                 "parentRowSpace": 10,
                                                                                 "leftColumn": 54,
                                                                                 "rightColumn": 64,
-                                                                                "topRow": 19,
-                                                                                "bottomRow": 23,
+                                                                                "topRow": 20,
+                                                                                "bottomRow": 24,
                                                                                 "parentId": "b75ce8oypi",
                                                                                 "dynamicBindingPathList": [],
                                                                                 "dynamicTriggerPathList": [],
                                                                                 "borderRadius": "ROUNDED",
                                                                                 "iconName": "plus",
                                                                                 "iconAlign": "left"
+                                                                            },
+                                                                            {
+                                                                                "isVisible": true,
+                                                                                "text": "\nGuide on how to set up a telegram bot <a href=\"#\" style=\"text-decoration: none;\"> <span >&#9432;</span>\n    </a> ",
+                                                                                "fontSize": "PARAGRAPH",
+                                                                                "fontStyle": "",
+                                                                                "textAlign": "LEFT",
+                                                                                "textColor": "#666",
+                                                                                "truncateButtonColor": "#FFC13D",
+                                                                                "widgetName": "Text8",
+                                                                                "shouldTruncate": false,
+                                                                                "overflow": "NONE",
+                                                                                "version": 1,
+                                                                                "animateLoading": true,
+                                                                                "type": "TEXT_WIDGET",
+                                                                                "hideCard": false,
+                                                                                "displayName": "Text",
+                                                                                "key": "4aik62wr2j",
+                                                                                "iconSVG": "/static/media/icon.97c59b52.svg",
+                                                                                "widgetId": "oit1db4cbu",
+                                                                                "renderMode": "CANVAS",
+                                                                                "isLoading": false,
+                                                                                "parentColumnSpace": 9.439453125,
+                                                                                "parentRowSpace": 10,
+                                                                                "leftColumn": 0,
+                                                                                "rightColumn": 64,
+                                                                                "topRow": 0,
+                                                                                "bottomRow": 4,
+                                                                                "parentId": "b75ce8oypi",
+                                                                                "dynamicBindingPathList": [],
+                                                                                "dynamicTriggerPathList": []
                                                                             }
                                                                         ],
                                                                         "minHeight": 400,
@@ -18747,7 +18811,7 @@
                                                                     }
                                                                 ],
                                                                 "version": 1,
-                                                                "classStyle": "{{main.store.btn_free}}",
+                                                                "classStyle": "{{main.store.activ && main.store.activ===\"ms\" ? \"activ\": \"hide\"}}",
                                                                 "type": "CONTAINER_WIDGET",
                                                                 "hideCard": false,
                                                                 "displayName": "Container",
@@ -18761,8 +18825,8 @@
                                                                 "parentRowSpace": 10,
                                                                 "leftColumn": 0,
                                                                 "rightColumn": 64,
-                                                                "topRow": 111,
-                                                                "bottomRow": 136,
+                                                                "topRow": 113,
+                                                                "bottomRow": 139,
                                                                 "parentId": "e384lkw4ie",
                                                                 "dynamicBindingPathList": [
                                                                     {
@@ -18825,8 +18889,8 @@
                                                                                 "parentRowSpace": 10,
                                                                                 "leftColumn": 0,
                                                                                 "rightColumn": 64,
-                                                                                "topRow": 0,
-                                                                                "bottomRow": 7,
+                                                                                "topRow": 4,
+                                                                                "bottomRow": 11,
                                                                                 "parentId": "awrp309oi8",
                                                                                 "dynamicBindingPathList": [],
                                                                                 "dynamicTriggerPathList": [],
@@ -18863,8 +18927,8 @@
                                                                                 "parentRowSpace": 10,
                                                                                 "leftColumn": 0,
                                                                                 "rightColumn": 64,
-                                                                                "topRow": 9,
-                                                                                "bottomRow": 16,
+                                                                                "topRow": 12,
+                                                                                "bottomRow": 19,
                                                                                 "parentId": "awrp309oi8",
                                                                                 "dynamicBindingPathList": [],
                                                                                 "dynamicTriggerPathList": [],
@@ -18895,14 +18959,45 @@
                                                                                 "parentRowSpace": 10,
                                                                                 "leftColumn": 54,
                                                                                 "rightColumn": 64,
-                                                                                "topRow": 18,
-                                                                                "bottomRow": 22,
+                                                                                "topRow": 20,
+                                                                                "bottomRow": 24,
                                                                                 "parentId": "awrp309oi8",
                                                                                 "borderRadius": "ROUNDED",
                                                                                 "dynamicBindingPathList": [],
                                                                                 "dynamicTriggerPathList": [],
                                                                                 "iconName": "plus",
                                                                                 "iconAlign": "left"
+                                                                            },
+                                                                            {
+                                                                                "isVisible": true,
+                                                                                "text": "\nGuide on how to set up a telegram bot <a href=\"#\" style=\"text-decoration: none;\"> <span >&#9432;</span>\n    </a> ",
+                                                                                "fontSize": "PARAGRAPH",
+                                                                                "fontStyle": "",
+                                                                                "textAlign": "LEFT",
+                                                                                "textColor": "#666",
+                                                                                "truncateButtonColor": "#FFC13D",
+                                                                                "widgetName": "Text7",
+                                                                                "shouldTruncate": false,
+                                                                                "overflow": "NONE",
+                                                                                "version": 1,
+                                                                                "animateLoading": true,
+                                                                                "type": "TEXT_WIDGET",
+                                                                                "hideCard": false,
+                                                                                "displayName": "Text",
+                                                                                "key": "4aik62wr2j",
+                                                                                "iconSVG": "/static/media/icon.97c59b52.svg",
+                                                                                "widgetId": "bxo8wgbtcz",
+                                                                                "renderMode": "CANVAS",
+                                                                                "isLoading": false,
+                                                                                "parentColumnSpace": 9.439453125,
+                                                                                "parentRowSpace": 10,
+                                                                                "leftColumn": 0,
+                                                                                "rightColumn": 64,
+                                                                                "topRow": 0,
+                                                                                "bottomRow": 4,
+                                                                                "parentId": "awrp309oi8",
+                                                                                "dynamicBindingPathList": [],
+                                                                                "dynamicTriggerPathList": []
                                                                             }
                                                                         ],
                                                                         "minHeight": 400,
@@ -18919,7 +19014,7 @@
                                                                     }
                                                                 ],
                                                                 "version": 1,
-                                                                "classStyle": "{{main.store.btn_two}}",
+                                                                "classStyle": "{{main.store.activ && main.store.activ===\"instagram\" ? \"activ\": \"hide\"}}",
                                                                 "type": "CONTAINER_WIDGET",
                                                                 "hideCard": false,
                                                                 "displayName": "Container",
@@ -18933,8 +19028,8 @@
                                                                 "parentRowSpace": 10,
                                                                 "leftColumn": 0,
                                                                 "rightColumn": 64,
-                                                                "topRow": 76,
-                                                                "bottomRow": 100,
+                                                                "topRow": 78,
+                                                                "bottomRow": 104,
                                                                 "parentId": "e384lkw4ie",
                                                                 "dynamicBindingPathList": [
                                                                     {
@@ -18953,7 +19048,7 @@
                                                         "leftColumn": 0,
                                                         "rightColumn": 216.9375,
                                                         "topRow": 0,
-                                                        "bottomRow": 1380,
+                                                        "bottomRow": 1410,
                                                         "parentId": "2vwgn3ow4m"
                                                     }
                                                 ],
@@ -18971,12 +19066,13 @@
                                                 "parentColumnSpace": 9.0390625,
                                                 "parentRowSpace": 10,
                                                 "leftColumn": 0,
-                                                "rightColumn": 64,
+                                                "rightColumn": 63,
                                                 "topRow": 8,
-                                                "bottomRow": 146,
+                                                "bottomRow": 150,
                                                 "parentId": "ygwa9pgk95",
                                                 "dynamicBindingPathList": [],
-                                                "dynamicTriggerPathList": []
+                                                "dynamicTriggerPathList": [],
+                                                "shouldScrollContents": false
                                             }
                                         ],
                                         "minHeight": 400,
@@ -18988,7 +19084,7 @@
                                         "leftColumn": 0,
                                         "rightColumn": 350.25,
                                         "topRow": 0,
-                                        "bottomRow": 1480,
+                                        "bottomRow": 1520,
                                         "parentId": "t4d9euh0xn"
                                     }
                                 ],
@@ -19008,7 +19104,7 @@
                                 "leftColumn": 8,
                                 "rightColumn": 64,
                                 "topRow": 7,
-                                "bottomRow": 155,
+                                "bottomRow": 159,
                                 "parentId": "0",
                                 "dynamicBindingPathList": [],
                                 "dynamicTriggerPathList": [],
@@ -19053,6 +19149,7 @@
                         "Input4",
                         "Input5",
                         "Button4",
+                        "Text6",
                         "Container6Copy1",
                         "Canvas19Copy1",
                         "Input1",
@@ -19064,45 +19161,21 @@
                         "Input8",
                         "Input9",
                         "Button2",
+                        "Text8",
                         "Container7Copy",
                         "Canvas20Copy",
                         "Input6",
                         "Input7",
-                        "Button3"
+                        "Button3",
+                        "Text7"
                     ],
                     "deleted": false,
                     "policies": [],
                     "layoutOnLoadActions": [
-                        [
-                            {
-                                "_id": "652d7479ff0d1890fd5b921e",
-                                "id": "652d7479ff0d1890fd5b921e",
-                                "collectionId": "652d7479ff0d1890fd5b921c",
-                                "confirmBeforeExecute": false,
-                                "name": "myFun2",
-                                "pluginType": "JS",
-                                "jsonPathKeys": [
-                                    "async () => {\n\t\t//use async-await or promises\n\t}"
-                                ],
-                                "timeoutInMillisecond": 10000
-                            }
-                        ]
+                        []
                     ],
                     "layoutOnCloseActions": [
-                        [
-                            {
-                                "_id": "652d7479ff0d1890fd5b921e",
-                                "id": "652d7479ff0d1890fd5b921e",
-                                "confirmBeforeExecute": false,
-                                "collectionId": "652d7479ff0d1890fd5b921c",
-                                "name": "myFun2",
-                                "pluginType": "JS",
-                                "jsonPathKeys": [
-                                    "async () => {\n\t\t//use async-await or promises\n\t}"
-                                ],
-                                "timeoutInMillisecond": 10000
-                            }
-                        ]
+                        []
                     ]
                 }
             ]
