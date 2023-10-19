@@ -6674,7 +6674,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-06-23T15:04:52.846Z",
-        "updatedAt": "2023-10-18T21:21:43.970Z",
+        "updatedAt": "2023-10-19T09:11:53.373Z",
         "deleted": false,
         "policies": [
             {
@@ -6964,7 +6964,7 @@
             "executeOnLoad": false,
             "pageId": "Vectors",
             "actionConfiguration": {
-                "timeoutInMillisecond": 10000,
+                "timeoutInMillisecond": "130000",
                 "encodeParamsToggle": true,
                 "httpMethod": "GET",
                 "headers": [],
@@ -7003,7 +7003,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-06-29T11:11:20.546Z",
-        "updatedAt": "2023-10-18T21:36:48.432Z",
+        "updatedAt": "2023-10-19T08:58:44.486Z",
         "deleted": false,
         "policies": [
             {
@@ -7173,7 +7173,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-06-29T11:49:37.661Z",
-        "updatedAt": "2023-10-18T21:37:17.200Z",
+        "updatedAt": "2023-10-19T08:55:21.864Z",
         "deleted": false,
         "policies": [
             {
