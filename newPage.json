@@ -16245,19 +16245,7 @@
                     "deleted": false,
                     "policies": [],
                     "layoutOnLoadActions": [
-                        [
-                            {
-                                "_id": "64cb9392edd3b9b22ecf75f0",
-                                "id": "64cb9392edd3b9b22ecf75f0",
-                                "confirmBeforeExecute": false,
-                                "name": "getCredentialsMeta",
-                                "pluginType": "API",
-                                "jsonPathKeys": [
-                                    "main.env.nodeUrl"
-                                ],
-                                "timeoutInMillisecond": 10000
-                            }
-                        ]
+                        []
                     ],
                     "layoutOnCloseActions": [
                         []
