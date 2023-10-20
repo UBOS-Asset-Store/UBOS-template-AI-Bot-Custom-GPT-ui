@@ -63,6 +63,10 @@
         {
             "_id": "Dashboard",
             "isDefault": false
+        },
+        {
+            "_id": "Knowledge base",
+            "isDefault": false
         }
     ],
     "policies": [

@@ -6551,7 +6551,7 @@
             "datasource": {
                 "name": "DEFAULT_REST_DATASOURCE",
                 "datasourceConfiguration": {
-                    "url": "{{main.env.nodeUrl}}/getCredentialsPinecone"
+                    "url": "https://aibotnr-652fe5afec075a11000001a8.ubos.tech"
                 },
                 "invalids": [],
                 "isValid": true,
@@ -6561,7 +6561,7 @@
             "executeOnLoad": false,
             "pageId": "Setup",
             "actionConfiguration": {
-                "timeoutInMillisecond": 10000,
+                "timeoutInMillisecond": "10000",
                 "encodeParamsToggle": true,
                 "httpMethod": "GET",
                 "headers": [],
@@ -6574,7 +6574,8 @@
                     {
                         "value": true
                     }
-                ]
+                ],
+                "path": "/getCredentialsAll"
             },
             "dynamicBindingPathList": [
                 {
@@ -6583,14 +6584,12 @@
             ],
             "isValid": true,
             "invalids": [],
-            "jsonPathKeys": [
-                "main.env.nodeUrl"
-            ],
+            "jsonPathKeys": [],
             "userSetOnLoad": false,
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-06-23T15:03:56.857Z",
-        "updatedAt": "2023-10-20T13:30:13.950Z",
+        "updatedAt": "2023-10-20T20:43:16.452Z",
         "deleted": false,
         "policies": [
             {
