@@ -13817,7 +13817,7 @@
                                                                                 "labelWidth": 5,
                                                                                 "widgetName": "pineconeapi",
                                                                                 "version": 2,
-                                                                                "defaultText": "{{getAll.data.pinecone.pipecone_api? getAll.data.pinecone.pipecone_api:\"\"}}",
+                                                                                "defaultText": "{{getAll.data.pipecone_api? getAll.data.pipecone_api:\"\"}}",
                                                                                 "iconAlign": "left",
                                                                                 "autoFocus": false,
                                                                                 "labelStyle": "BOLD",
@@ -13860,7 +13860,7 @@
                                                                                 "labelWidth": 5,
                                                                                 "widgetName": "env",
                                                                                 "version": 2,
-                                                                                "defaultText": "{{getAll.data.pinecone.pipecone_env ?getAll.data.pinecone.pipecone_env :\"\"}}",
+                                                                                "defaultText": "{{getAll.data.pipecone_env ?getAll.data.pipecone_env :\"\"}}",
                                                                                 "iconAlign": "left",
                                                                                 "autoFocus": false,
                                                                                 "labelStyle": "BOLD",
@@ -13905,7 +13905,7 @@
                                                                                 "labelWidth": 5,
                                                                                 "widgetName": "indexx",
                                                                                 "version": 2,
-                                                                                "defaultText": "{{getAll.data.pinecone.pipecone_index?getAll.data.pinecone.pipecone_index:\"\"}}",
+                                                                                "defaultText": "{{getAll.data.pipecone_index?getAll.data.pipecone_index:\"\"}}",
                                                                                 "iconAlign": "left",
                                                                                 "autoFocus": false,
                                                                                 "labelStyle": "BOLD",
@@ -13948,7 +13948,7 @@
                                                                                 "labelWidth": 5,
                                                                                 "widgetName": "Input_pineconeUrl",
                                                                                 "version": 2,
-                                                                                "defaultText": "{{getAll.data.pinecone.pipecone_url?getAll.data.pinecone.pipecone_url:\"\"}}",
+                                                                                "defaultText": "{{getAll.data.pipecone_url?getAll.data.pipecone_url:\"\"}}",
                                                                                 "iconAlign": "left",
                                                                                 "autoFocus": false,
                                                                                 "labelStyle": "BOLD",
@@ -14681,7 +14681,7 @@
                                                                                 "labelWidth": 5,
                                                                                 "widgetName": "openai",
                                                                                 "version": 2,
-                                                                                "defaultText": "{{getAll.data.openai.openai_api ?getAll.data.openai.openai_api :\"\"}}",
+                                                                                "defaultText": "{{getAll1.data.openai_api ?getAll1.data.openai_api :\"\"}}",
                                                                                 "iconAlign": "left",
                                                                                 "autoFocus": false,
                                                                                 "labelStyle": "BOLD",
@@ -14767,7 +14767,7 @@
                                                                                 "options": "[\n  {\n    \"label\": \"gpt-3.5-turbo\",\n    \"value\": \"gpt-3.5-turbo\"\n  },\n\t  {\n    \"label\": \"gpt-3.5-turbo-16k\",\n    \"value\": \"gpt-3.5-turbo-16k\"\n  },\n  {\n    \"label\": \"gpt-4\",\n    \"value\": \"gpt-4\"\n  },\n\t {\n    \"label\": \"gpt-4-32k\",\n    \"value\": \"gpt-4-32k\"\n  }\n]",
                                                                                 "serverSideFiltering": false,
                                                                                 "widgetName": "modelopenai",
-                                                                                "defaultOptionValue": "{{getAll.data.openai.openai_api_model?getAll.data.openai.openai_api_model:\"\"}}",
+                                                                                "defaultOptionValue": "{{getAll1.data.openai_api_model?getAll1.data.openai_api_model:\"\"}}",
                                                                                 "version": 1,
                                                                                 "isFilterable": true,
                                                                                 "isRequired": false,
@@ -16333,6 +16333,17 @@
                                     "main.env.nodeUrl"
                                 ],
                                 "timeoutInMillisecond": "20000"
+                            },
+                            {
+                                "_id": "6533bca759328d8a63c5e7cb",
+                                "id": "6533bca759328d8a63c5e7cb",
+                                "confirmBeforeExecute": false,
+                                "name": "getAll1",
+                                "pluginType": "API",
+                                "jsonPathKeys": [
+                                    "main.env.nodeUrl"
+                                ],
+                                "timeoutInMillisecond": 10000
                             }
                         ]
                     ],
