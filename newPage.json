@@ -20366,7 +20366,7 @@
                                                                 "counterClosewise": false,
                                                                 "steps": 1,
                                                                 "progressType": "linear",
-                                                                "progress": "20",
+                                                                "progress": "25",
                                                                 "version": 1,
                                                                 "type": "PROGRESS_WIDGET",
                                                                 "hideCard": false,
@@ -21362,7 +21362,7 @@
                                                             },
                                                             {
                                                                 "isVisible": true,
-                                                                "text": "0",
+                                                                "text": "{{getTotalConversation.data}}",
                                                                 "fontSize": "HEADING1",
                                                                 "fontStyle": "BOLD",
                                                                 "textAlign": "CENTER",
@@ -21388,7 +21388,11 @@
                                                                 "topRow": 4,
                                                                 "bottomRow": 9,
                                                                 "parentId": "gndmqmfxpy",
-                                                                "dynamicBindingPathList": [],
+                                                                "dynamicBindingPathList": [
+                                                                    {
+                                                                        "key": "text"
+                                                                    }
+                                                                ],
                                                                 "dynamicTriggerPathList": [],
                                                                 "classStyle": "dashboard_text"
                                                             }
@@ -21855,7 +21859,19 @@
                     "deleted": false,
                     "policies": [],
                     "layoutOnLoadActions": [
-                        []
+                        [
+                            {
+                                "_id": "6536ddec59328d8a63c5e7d7",
+                                "id": "6536ddec59328d8a63c5e7d7",
+                                "confirmBeforeExecute": false,
+                                "name": "getTotalConversation",
+                                "pluginType": "API",
+                                "jsonPathKeys": [
+                                    "main.env.nodeUrl"
+                                ],
+                                "timeoutInMillisecond": 10000
+                            }
+                        ]
                     ],
                     "layoutOnCloseActions": [
                         []

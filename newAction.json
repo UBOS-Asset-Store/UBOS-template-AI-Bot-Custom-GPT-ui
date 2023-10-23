@@ -8265,7 +8265,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-10-23T11:00:40.737Z",
-        "updatedAt": "2023-10-23T13:04:15.798Z",
+        "updatedAt": "2023-10-23T20:26:26.431Z",
         "deleted": false,
         "policies": [
             {
@@ -9028,6 +9028,76 @@
         },
         "createdAt": "2023-10-23T19:04:10.116Z",
         "updatedAt": "2023-10-23T19:05:58.647Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ]
+    },
+    {
+        "_id": "6536ddec59328d8a63c5e7d7",
+        "applicationId": "jetsondashboard",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "Action": {
+            "name": "getTotalConversation",
+            "datasource": {
+                "name": "DEFAULT_REST_DATASOURCE",
+                "datasourceConfiguration": {
+                    "url": "{{main.env.nodeUrl}}/getTotalConversation"
+                },
+                "invalids": [],
+                "isValid": true,
+                "pluginId": "API",
+                "messages": []
+            },
+            "executeOnLoad": false,
+            "pageId": "Dashboard",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "GET",
+                "headers": [],
+                "queryParameters": [],
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ]
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "datasourceUrl"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "main.env.nodeUrl"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        },
+        "createdAt": "2023-10-23T20:56:12.548Z",
+        "updatedAt": "2023-10-23T20:56:36.513Z",
         "deleted": false,
         "policies": [
             {
