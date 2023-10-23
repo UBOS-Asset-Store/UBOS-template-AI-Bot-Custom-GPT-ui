@@ -14020,7 +14020,7 @@
                                                                                 ],
                                                                                 "iconName": "saved",
                                                                                 "iconAlign": "left",
-                                                                                "onClick": "{{saveCredentialsPinecone.run(() => showAlert(saveCredentialsPinecone.data,'info'), () => showAlert(saveCredentialsPinecone.data,'info'))}}",
+                                                                                "onClick": "{{saveCredentialsPinecone.runableable(() => showAlert(saveCredentialsPinecone.data,'info'), () => showAlert(saveCredentialsPinecone.data,'info'))}}",
                                                                                 "dynamicPropertyPathList": [
                                                                                     {
                                                                                         "key": "onClick"
@@ -14126,7 +14126,7 @@
                                                                                 "labelPosition": "Top",
                                                                                 "labelAlignment": "left",
                                                                                 "labelWidth": 5,
-                                                                                "widgetName": "promptinp",
+                                                                                "widgetName": "prompt_custom",
                                                                                 "version": 2,
                                                                                 "defaultText": "",
                                                                                 "iconAlign": "left",
@@ -14162,13 +14162,13 @@
                                                                             {
                                                                                 "isVisible": true,
                                                                                 "placeholderText": "Select option",
-                                                                                "labelText": "Answer us",
+                                                                                "labelText": "Answer as",
                                                                                 "labelPosition": "Top",
                                                                                 "labelAlignment": "left",
                                                                                 "labelWidth": 5,
                                                                                 "options": "[\n  {\n    \"label\": \"Assistant\",\n    \"value\": \"BLUE\"\n  },\n  {\n    \"label\": \"Sales consultant\",\n    \"value\": \"GREEN\"\n  },\n  {\n    \"label\": \"Technical support\",\n    \"value\": \"RED\"\n  }\n]",
                                                                                 "serverSideFiltering": false,
-                                                                                "widgetName": "Select1",
+                                                                                "widgetName": "answer_us",
                                                                                 "defaultOptionValue": "GREEN",
                                                                                 "version": 1,
                                                                                 "isFilterable": true,
@@ -14204,7 +14204,7 @@
                                                                                 "labelWidth": 5,
                                                                                 "options": "[\n  {\n    \"label\": \"Formal\",\n    \"value\": \"BLUE\"\n  },\n  {\n    \"label\": \"Informal\",\n    \"value\": \"GREEN\"\n  }\n]",
                                                                                 "serverSideFiltering": false,
-                                                                                "widgetName": "Select2",
+                                                                                "widgetName": "tone",
                                                                                 "defaultOptionValue": "GREEN",
                                                                                 "version": 1,
                                                                                 "isFilterable": true,
@@ -14240,7 +14240,7 @@
                                                                                 "labelWidth": 5,
                                                                                 "options": "[\n  {\n    \"label\": \"Portuguese\",\n    \"value\": \"BLUE\"\n  },\n  {\n    \"label\": \"English\",\n    \"value\": \"GREEN\"\n  },\n  {\n    \"label\": \"Ukrainian\",\n    \"value\": \"RED\"\n  }\n]",
                                                                                 "serverSideFiltering": false,
-                                                                                "widgetName": "Select3",
+                                                                                "widgetName": "language",
                                                                                 "defaultOptionValue": "GREEN",
                                                                                 "version": 1,
                                                                                 "isFilterable": true,
@@ -14276,7 +14276,7 @@
                                                                                 "labelWidth": 5,
                                                                                 "options": "[\n  {\n    \"label\": \"Small\",\n    \"value\": \"BLUE\"\n  },\n  {\n    \"label\": \"Large\",\n    \"value\": \"GREEN\"\n  },\n  {\n    \"label\": \"Medium\",\n    \"value\": \"RED\"\n  }\n]",
                                                                                 "serverSideFiltering": false,
-                                                                                "widgetName": "Select4",
+                                                                                "widgetName": "answer_length",
                                                                                 "defaultOptionValue": "GREEN",
                                                                                 "version": 1,
                                                                                 "isFilterable": true,
@@ -14437,7 +14437,7 @@
                                                                                 "labelPosition": "Top",
                                                                                 "labelAlignment": "left",
                                                                                 "labelWidth": 5,
-                                                                                "widgetName": "Input1",
+                                                                                "widgetName": "welcome",
                                                                                 "version": 2,
                                                                                 "defaultText": "",
                                                                                 "iconAlign": "left",
@@ -14475,7 +14475,7 @@
                                                                                 "labelPosition": "Top",
                                                                                 "labelAlignment": "left",
                                                                                 "labelWidth": 5,
-                                                                                "widgetName": "Input2",
+                                                                                "widgetName": "unable",
                                                                                 "version": 2,
                                                                                 "defaultText": "",
                                                                                 "iconAlign": "left",
@@ -14513,7 +14513,7 @@
                                                                                 "labelPosition": "Top",
                                                                                 "labelAlignment": "left",
                                                                                 "labelWidth": 5,
-                                                                                "widgetName": "Input3",
+                                                                                "widgetName": "respond",
                                                                                 "version": 2,
                                                                                 "defaultText": "",
                                                                                 "iconAlign": "left",
@@ -14750,7 +14750,7 @@
                                                                                         "key": "onClick"
                                                                                     }
                                                                                 ],
-                                                                                "onClick": "{{navigateTo('https://community.ubos.tech/vika/customersupportchatbot-1ac8', {},'NEW_WINDOW')}}",
+                                                                                "onClick": "{{navigateTo('https://communableableity.ubos.tech/vika/customersupportchatbot-1ac8', {},'NEW_WINDOW')}}",
                                                                                 "dynamicPropertyPathList": [
                                                                                     {
                                                                                         "key": "onClick"
@@ -14764,7 +14764,7 @@
                                                                                 "labelPosition": "Top",
                                                                                 "labelAlignment": "left",
                                                                                 "labelWidth": 5,
-                                                                                "options": "[\n  {\n    \"label\": \"gpt-3.5-turbo\",\n    \"value\": \"gpt-3.5-turbo\"\n  },\n\t  {\n    \"label\": \"gpt-3.5-turbo-16k\",\n    \"value\": \"gpt-3.5-turbo-16k\"\n  },\n  {\n    \"label\": \"gpt-4\",\n    \"value\": \"gpt-4\"\n  },\n\t {\n    \"label\": \"gpt-4-32k\",\n    \"value\": \"gpt-4-32k\"\n  }\n]",
+                                                                                "options": "[\n  {\n    \"label\": \"gpt-3.5-turbo-0613\",\n    \"value\": \"gpt-3.5-turbo-0613\"\n  },\n\t  {\n    \"label\": \"gpt-3.5-turbo-16k\",\n    \"value\": \"gpt-3.5-turbo-16k\"\n  },\n  {\n    \"label\": \"gpt-4\",\n    \"value\": \"gpt-4\"\n  },\n\t {\n    \"label\": \"gpt-4-32k\",\n    \"value\": \"gpt-4-32k\"\n  }\n]",
                                                                                 "serverSideFiltering": false,
                                                                                 "widgetName": "modelopenai",
                                                                                 "defaultOptionValue": "{{getAll1.data.openai_api_model?getAll1.data.openai_api_model:\"\"}}",
@@ -14834,7 +14834,7 @@
                                                                                 ],
                                                                                 "iconName": "saved",
                                                                                 "iconAlign": "left",
-                                                                                "onClick": "{{saveCredentialsOpenAi.run(() => showAlert(saveCredentialsOpenAi.data,'info'), () => showAlert(saveCredentialsOpenAi.data,'info'))}}",
+                                                                                "onClick": "{{saveCredentialsOpenAi.runableable(() => showAlert(saveCredentialsOpenAi.data,'info'), () => showAlert(saveCredentialsOpenAi.data,'info'))}}",
                                                                                 "dynamicPropertyPathList": [
                                                                                     {
                                                                                         "key": "onClick"
@@ -15150,7 +15150,7 @@
                                                                                     }
                                                                                 ],
                                                                                 "classStyle": "{{main.store.activ_setup&& main.store.activ_setup===\"pinecone\" ?\"btn_right\" : \"btn_left\"}}",
-                                                                                "onClick": "{{main.store.activ_setup && main.store.activ_setup ===\"pinecone\"?JSObject1.myFun4(\"activ_setup\",\"\"):JSObject1.myFun4(\"activ_setup\",\"pinecone\")}}",
+                                                                                "onClick": "{{main.store.activ_setup && main.store.activ_setup ===\"pinecone\"?JSObject1.myFunableable4(\"activ_setup\",\"\"):JSObject1.myFunableable4(\"activ_setup\",\"pinecone\")}}",
                                                                                 "dynamicPropertyPathList": [
                                                                                     {
                                                                                         "key": "onClick"
@@ -15252,7 +15252,7 @@
                                                                                     }
                                                                                 ],
                                                                                 "classStyle": "{{main.store.activ_setup&& main.store.activ_setup===\"gpt\" ?\"btn_right\" : \"btn_left\"}}",
-                                                                                "onClick": "{{main.store.activ_setup && main.store.activ_setup ===\"gpt\"?JSObject1.myFun4(\"activ_setup\",\"\"):JSObject1.myFun4(\"activ_setup\",\"gpt\")}}",
+                                                                                "onClick": "{{main.store.activ_setup && main.store.activ_setup ===\"gpt\"?JSObject1.myFunableable4(\"activ_setup\",\"\"):JSObject1.myFunableable4(\"activ_setup\",\"gpt\")}}",
                                                                                 "dynamicPropertyPathList": [
                                                                                     {
                                                                                         "key": "onClick"
@@ -15574,7 +15574,7 @@
                                                                                     }
                                                                                 ],
                                                                                 "classStyle": "{{main.store.activ_setup&& main.store.activ_setup===\"model\" ?\"btn_right\" : \"btn_left\"}}",
-                                                                                "onClick": "{{main.store.activ_setup && main.store.activ_setup ===\"model\"?JSObject1.myFun4(\"activ_setup\",\"\"):JSObject1.myFun4(\"activ_setup\",\"model\")}}",
+                                                                                "onClick": "{{main.store.activ_setup && main.store.activ_setup ===\"model\"?JSObject1.myFunableable4(\"activ_setup\",\"\"):JSObject1.myFunableable4(\"activ_setup\",\"model\")}}",
                                                                                 "dynamicPropertyPathList": [
                                                                                     {
                                                                                         "key": "onClick"
@@ -15896,7 +15896,7 @@
                                                                                     }
                                                                                 ],
                                                                                 "classStyle": "{{main.store.activ_setup&& main.store.activ_setup===\"chat\" ?\"btn_right\" : \"btn_left\"}}",
-                                                                                "onClick": "{{main.store.activ_setup && main.store.activ_setup ===\"chat\"?JSObject1.myFun4(\"activ_setup\",\"\"):JSObject1.myFun4(\"activ_setup\",\"chat\")}}",
+                                                                                "onClick": "{{main.store.activ_setup && main.store.activ_setup ===\"chat\"?JSObject1.myFunableable4(\"activ_setup\",\"\"):JSObject1.myFunableable4(\"activ_setup\",\"chat\")}}",
                                                                                 "dynamicPropertyPathList": [
                                                                                     {
                                                                                         "key": "onClick"
@@ -16257,11 +16257,11 @@
                         "Text14",
                         "Container7",
                         "Canvas24",
-                        "promptinp",
-                        "Select1",
-                        "Select2",
-                        "Select3",
-                        "Select4",
+                        "prompt_custom",
+                        "answer_us",
+                        "tone",
+                        "language",
+                        "answer_length",
                         "Button5",
                         "Text15",
                         "Container8",
