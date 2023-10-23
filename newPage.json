@@ -21211,7 +21211,7 @@
                                                             },
                                                             {
                                                                 "isVisible": true,
-                                                                "text": "0",
+                                                                "text": "{{getTotalUsers.data}}",
                                                                 "fontSize": "HEADING1",
                                                                 "fontStyle": "BOLD",
                                                                 "textAlign": "CENTER",
@@ -21237,7 +21237,11 @@
                                                                 "topRow": 4,
                                                                 "bottomRow": 9,
                                                                 "parentId": "386lbqsdsn",
-                                                                "dynamicBindingPathList": [],
+                                                                "dynamicBindingPathList": [
+                                                                    {
+                                                                        "key": "text"
+                                                                    }
+                                                                ],
                                                                 "dynamicTriggerPathList": [],
                                                                 "classStyle": "dashboard_text"
                                                             }
@@ -21865,6 +21869,17 @@
                                 "id": "6536ddec59328d8a63c5e7d7",
                                 "confirmBeforeExecute": false,
                                 "name": "getTotalConversation",
+                                "pluginType": "API",
+                                "jsonPathKeys": [
+                                    "main.env.nodeUrl"
+                                ],
+                                "timeoutInMillisecond": 10000
+                            },
+                            {
+                                "_id": "6536de8f59328d8a63c5e7d8",
+                                "id": "6536de8f59328d8a63c5e7d8",
+                                "confirmBeforeExecute": false,
+                                "name": "getTotalUsers",
                                 "pluginType": "API",
                                 "jsonPathKeys": [
                                     "main.env.nodeUrl"
