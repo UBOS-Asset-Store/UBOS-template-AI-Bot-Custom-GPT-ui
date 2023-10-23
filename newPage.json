@@ -14464,7 +14464,7 @@
                                                                                 "labelWidth": 5,
                                                                                 "widgetName": "welcome",
                                                                                 "version": 2,
-                                                                                "defaultText": "",
+                                                                                "defaultText": "{{getAll3.data.welcome}}",
                                                                                 "iconAlign": "left",
                                                                                 "autoFocus": false,
                                                                                 "labelStyle": "BOLD",
@@ -14490,7 +14490,11 @@
                                                                                 "topRow": 5,
                                                                                 "bottomRow": 35,
                                                                                 "parentId": "iu2exaup8n",
-                                                                                "dynamicBindingPathList": [],
+                                                                                "dynamicBindingPathList": [
+                                                                                    {
+                                                                                        "key": "defaultText"
+                                                                                    }
+                                                                                ],
                                                                                 "dynamicTriggerPathList": [],
                                                                                 "placeholderText": "Hey, I am conversational chatbot trained using Generative AI. How can I help you today?"
                                                                             },
@@ -14502,7 +14506,7 @@
                                                                                 "labelWidth": 5,
                                                                                 "widgetName": "unable",
                                                                                 "version": 2,
-                                                                                "defaultText": "",
+                                                                                "defaultText": "{{getAll3.data.unable}}",
                                                                                 "iconAlign": "left",
                                                                                 "autoFocus": false,
                                                                                 "labelStyle": "BOLD",
@@ -14528,7 +14532,11 @@
                                                                                 "topRow": 5,
                                                                                 "bottomRow": 35,
                                                                                 "parentId": "iu2exaup8n",
-                                                                                "dynamicBindingPathList": [],
+                                                                                "dynamicBindingPathList": [
+                                                                                    {
+                                                                                        "key": "defaultText"
+                                                                                    }
+                                                                                ],
                                                                                 "dynamicTriggerPathList": [],
                                                                                 "placeholderText": "I'm sorry, but I am only trained on chatbots or conversational AI. Hence, I can only answer questions from that domain. Can you please ask anything relevant for that domain or you can contact my admin to enhance my capabilities for your own use case. ubos@ubos.tech"
                                                                             },
@@ -14540,7 +14548,7 @@
                                                                                 "labelWidth": 5,
                                                                                 "widgetName": "respond",
                                                                                 "version": 2,
-                                                                                "defaultText": "",
+                                                                                "defaultText": "{{getAll3.data.respond}}",
                                                                                 "iconAlign": "left",
                                                                                 "autoFocus": false,
                                                                                 "labelStyle": "BOLD",
@@ -14566,7 +14574,11 @@
                                                                                 "topRow": 5,
                                                                                 "bottomRow": 35,
                                                                                 "parentId": "iu2exaup8n",
-                                                                                "dynamicBindingPathList": [],
+                                                                                "dynamicBindingPathList": [
+                                                                                    {
+                                                                                        "key": "defaultText"
+                                                                                    }
+                                                                                ],
                                                                                 "dynamicTriggerPathList": [],
                                                                                 "placeholderText": "I am not quite used to such language. I request you to be professional in our communication."
                                                                             },
@@ -14631,10 +14643,16 @@
                                                                                 "parentId": "iu2exaup8n",
                                                                                 "borderRadius": "ROUNDED",
                                                                                 "dynamicBindingPathList": [],
-                                                                                "dynamicTriggerPathList": [],
+                                                                                "dynamicTriggerPathList": [
+                                                                                    {
+                                                                                        "key": "onClick"
+                                                                                    }
+                                                                                ],
                                                                                 "iconName": "saved",
                                                                                 "iconAlign": "left",
-                                                                                "boxShadowColor": ""
+                                                                                "boxShadowColor": "",
+                                                                                "onClick": "{{saveCredentialsMessages.run(() => showAlert(saveCredentialsMessages.data.payload,'success'), () => {})}}",
+                                                                                "dynamicPropertyPathList": []
                                                                             }
                                                                         ],
                                                                         "minHeight": 400,
@@ -16375,6 +16393,17 @@
                                 "id": "6536659159328d8a63c5e7ce",
                                 "confirmBeforeExecute": false,
                                 "name": "getAll2",
+                                "pluginType": "API",
+                                "jsonPathKeys": [
+                                    "main.env.nodeUrl"
+                                ],
+                                "timeoutInMillisecond": 10000
+                            },
+                            {
+                                "_id": "65366d5259328d8a63c5e7cf",
+                                "id": "65366d5259328d8a63c5e7cf",
+                                "confirmBeforeExecute": false,
+                                "name": "getAll3",
                                 "pluginType": "API",
                                 "jsonPathKeys": [
                                     "main.env.nodeUrl"

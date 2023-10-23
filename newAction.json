@@ -8042,7 +8042,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-10-20T08:48:38.778Z",
-        "updatedAt": "2023-10-23T11:01:21.472Z",
+        "updatedAt": "2023-10-23T12:56:20.474Z",
         "deleted": false,
         "policies": [
             {
@@ -8214,7 +8214,7 @@
             "datasource": {
                 "name": "DEFAULT_REST_DATASOURCE",
                 "datasourceConfiguration": {
-                    "url": "{{main.env.nodeUrl}}"
+                    "url": "{{main.env.nodeUrl}}/saveCredentialsMsg"
                 },
                 "invalids": [],
                 "isValid": true,
@@ -8234,7 +8234,7 @@
                     }
                 ],
                 "queryParameters": [],
-                "body": "",
+                "body": "{\"welcome\":{{JSON.stringify(welcome.text)}},\n\"unable\":{{JSON.stringify(unable.text)}},\n \"respond\":{{JSON.stringify(respond.text)}}\n}",
                 "bodyFormData": [],
                 "formData": {
                     "apiContentType": "none"
@@ -8248,18 +8248,24 @@
             "dynamicBindingPathList": [
                 {
                     "key": "datasourceUrl"
+                },
+                {
+                    "key": "body"
                 }
             ],
             "isValid": true,
             "invalids": [],
             "jsonPathKeys": [
-                "main.env.nodeUrl"
+                "main.env.nodeUrl",
+                "JSON.stringify(welcome.text)",
+                "JSON.stringify(unable.text)",
+                "JSON.stringify(respond.text)"
             ],
             "userSetOnLoad": false,
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-10-23T11:00:40.737Z",
-        "updatedAt": "2023-10-23T11:05:04.230Z",
+        "updatedAt": "2023-10-23T13:04:15.798Z",
         "deleted": false,
         "policies": [
             {
@@ -8414,6 +8420,76 @@
         },
         "createdAt": "2023-10-23T12:22:41.184Z",
         "updatedAt": "2023-10-23T12:23:18.874Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ]
+    },
+    {
+        "_id": "65366d5259328d8a63c5e7cf",
+        "applicationId": "jetsondashboard",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "Action": {
+            "name": "getAll3",
+            "datasource": {
+                "name": "DEFAULT_REST_DATASOURCE",
+                "datasourceConfiguration": {
+                    "url": "{{main.env.nodeUrl}}/all3"
+                },
+                "invalids": [],
+                "isValid": true,
+                "pluginId": "API",
+                "messages": []
+            },
+            "executeOnLoad": false,
+            "pageId": "Setup",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "GET",
+                "headers": [],
+                "queryParameters": [],
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ]
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "datasourceUrl"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "main.env.nodeUrl"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        },
+        "createdAt": "2023-10-23T12:55:46.255Z",
+        "updatedAt": "2023-10-23T13:04:34.057Z",
         "deleted": false,
         "policies": [
             {
