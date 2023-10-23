@@ -15121,8 +15121,13 @@
                                                                                 "topRow": 0,
                                                                                 "bottomRow": 6,
                                                                                 "parentId": "7itsap68x5",
-                                                                                "dynamicBindingPathList": [],
-                                                                                "dynamicTriggerPathList": []
+                                                                                "dynamicBindingPathList": [
+                                                                                    {
+                                                                                        "key": "classStyle"
+                                                                                    }
+                                                                                ],
+                                                                                "dynamicTriggerPathList": [],
+                                                                                "classStyle": "{{getCredentialsPinecone.data.pipecone_api!==\"\" &&getCredentialsPinecone.data.pipecone_env !== \"\" &&getCredentialsPinecone.data.pipecone_index!== \"\" &&getCredentialsPinecone.data.pipecone_url!== \"\"? \"done\" :\"\"}}"
                                                                             },
                                                                             {
                                                                                 "isVisible": true,
@@ -15371,8 +15376,13 @@
                                                                                 "topRow": 0,
                                                                                 "bottomRow": 6,
                                                                                 "parentId": "ije3j53qiu",
-                                                                                "dynamicBindingPathList": [],
-                                                                                "dynamicTriggerPathList": []
+                                                                                "dynamicBindingPathList": [
+                                                                                    {
+                                                                                        "key": "classStyle"
+                                                                                    }
+                                                                                ],
+                                                                                "dynamicTriggerPathList": [],
+                                                                                "classStyle": "{{getCredentialsOpenAI.data.openai_api !==\"\" &&getCredentialsOpenAI.data.openai_api_model !== \"\" ? \"done\" :\"\"}}"
                                                                             }
                                                                         ],
                                                                         "minHeight": 400,
@@ -15693,8 +15703,13 @@
                                                                                 "topRow": 0,
                                                                                 "bottomRow": 6,
                                                                                 "parentId": "vy5g7n58rr",
-                                                                                "dynamicBindingPathList": [],
-                                                                                "dynamicTriggerPathList": []
+                                                                                "dynamicBindingPathList": [
+                                                                                    {
+                                                                                        "key": "classStyle"
+                                                                                    }
+                                                                                ],
+                                                                                "dynamicTriggerPathList": [],
+                                                                                "classStyle": "{{getCredentialsPrompts.data.answer_as!==\"\" &&getCredentialsPrompts.data.answer_length !== \"\" &&getCredentialsPrompts.data.language!== \"\" &&getCredentialsPrompts.data.tone!== \"\" &&getCredentialsPrompts.data.prompt_custom!== \"\"? \"done\" :\"\"}}"
                                                                             }
                                                                         ],
                                                                         "minHeight": 400,
@@ -16015,8 +16030,13 @@
                                                                                 "topRow": 0,
                                                                                 "bottomRow": 6,
                                                                                 "parentId": "1qrodk4vmi",
-                                                                                "dynamicBindingPathList": [],
-                                                                                "dynamicTriggerPathList": []
+                                                                                "dynamicBindingPathList": [
+                                                                                    {
+                                                                                        "key": "classStyle"
+                                                                                    }
+                                                                                ],
+                                                                                "dynamicTriggerPathList": [],
+                                                                                "classStyle": "{{getCredentialsMsg.data.respond !==\"\" &&getCredentialsMsg.data.unable !== \"\" &&getCredentialsMsg.data.welcome !== \"\" ? \"done\" :\"\"}}"
                                                                             }
                                                                         ],
                                                                         "minHeight": 400,
@@ -18197,9 +18217,13 @@
                                                                                 "topRow": 0,
                                                                                 "bottomRow": 6,
                                                                                 "parentId": "ebsrmrbzhj",
-                                                                                "dynamicBindingPathList": [],
+                                                                                "dynamicBindingPathList": [
+                                                                                    {
+                                                                                        "key": "classStyle"
+                                                                                    }
+                                                                                ],
                                                                                 "dynamicTriggerPathList": [],
-                                                                                "classStyle": "icon",
+                                                                                "classStyle": "{{getCredentialsTelegram.data.bot_name !==\"\" && getCredentialsTelegram.data.bot_token !== \"\" ? \"done\" :\"\"}}",
                                                                                 "backgroundColor": "",
                                                                                 "borderWidth": ""
                                                                             },
@@ -18410,9 +18434,14 @@
                                                                                 "topRow": 0,
                                                                                 "bottomRow": 6,
                                                                                 "parentId": "hkgul7i340",
-                                                                                "dynamicBindingPathList": [],
+                                                                                "dynamicBindingPathList": [
+                                                                                    {
+                                                                                        "key": "classStyle"
+                                                                                    }
+                                                                                ],
                                                                                 "dynamicTriggerPathList": [],
-                                                                                "backgroundColor": ""
+                                                                                "backgroundColor": "",
+                                                                                "classStyle": "{{getCredentialsWhatsApp.data.whatsApp_phoneId !==\"\" && getCredentialsWhatsApp.data.whatsApp_token !== \"\" ? \"done\" :\"\"}}"
                                                                             }
                                                                         ],
                                                                         "minHeight": 400,
@@ -18577,9 +18606,14 @@
                                                                                 "topRow": 0,
                                                                                 "bottomRow": 6,
                                                                                 "parentId": "2jutikt6g5",
-                                                                                "dynamicBindingPathList": [],
+                                                                                "dynamicBindingPathList": [
+                                                                                    {
+                                                                                        "key": "classStyle"
+                                                                                    }
+                                                                                ],
                                                                                 "dynamicTriggerPathList": [],
-                                                                                "backgroundColor": ""
+                                                                                "backgroundColor": "",
+                                                                                "classStyle": "{{getCredentialsMeta.data.meta_token !==\"\" && getCredentialsMeta.data.response_phoneId !== \"\" ? \"done\" :\"\"}}"
                                                                             }
                                                                         ],
                                                                         "minHeight": 400,
@@ -18744,9 +18778,14 @@
                                                                                 "topRow": 0,
                                                                                 "bottomRow": 6,
                                                                                 "parentId": "uu6tu1cddy",
-                                                                                "dynamicBindingPathList": [],
+                                                                                "dynamicBindingPathList": [
+                                                                                    {
+                                                                                        "key": "classStyle"
+                                                                                    }
+                                                                                ],
                                                                                 "dynamicTriggerPathList": [],
-                                                                                "backgroundColor": ""
+                                                                                "backgroundColor": "",
+                                                                                "classStyle": "{{getCredentialsMeta.data.meta_token !==\"\" && getCredentialsMeta.data.response_phoneId !== \"\" ? \"done\" :\"\"}}"
                                                                             }
                                                                         ],
                                                                         "minHeight": 400,
