@@ -14128,7 +14128,7 @@
                                                                                 "labelWidth": 5,
                                                                                 "widgetName": "prompt_custom",
                                                                                 "version": 2,
-                                                                                "defaultText": "{{getCredentialsPinecone2.data.prompt_custom}}",
+                                                                                "defaultText": "{{getCredentialsPrompts.data.prompt_custom}}",
                                                                                 "iconAlign": "left",
                                                                                 "autoFocus": false,
                                                                                 "labelStyle": "BOLD",
@@ -14173,7 +14173,7 @@
                                                                                 "options": "[\n  {\n    \"label\": \"Assistant\",\n    \"value\": \"Assistant\"\n  },\n  {\n    \"label\": \"Sales consultant\",\n    \"value\": \"Sales consultant\"\n  },\n  {\n    \"label\": \"Technical support\",\n    \"value\": \"Technical support\"\n  }\n]",
                                                                                 "serverSideFiltering": false,
                                                                                 "widgetName": "answer_as",
-                                                                                "defaultOptionValue": "{{getCredentialsPinecone2.data.answer_as}}",
+                                                                                "defaultOptionValue": "{{getCredentialsPrompts.data.answer_as}}",
                                                                                 "version": 1,
                                                                                 "isFilterable": true,
                                                                                 "isRequired": false,
@@ -14213,7 +14213,7 @@
                                                                                 "options": "[\n  {\n    \"label\": \"Formal\",\n    \"value\": \"Formal\"\n  },\n  {\n    \"label\": \"Informal\",\n    \"value\": \"Informal\"\n  }\n]",
                                                                                 "serverSideFiltering": false,
                                                                                 "widgetName": "tone",
-                                                                                "defaultOptionValue": "{{getCredentialsPinecone2.data.tone}}",
+                                                                                "defaultOptionValue": "{{getCredentialsPrompts.data.tone}}",
                                                                                 "version": 1,
                                                                                 "isFilterable": true,
                                                                                 "isRequired": false,
@@ -14253,7 +14253,7 @@
                                                                                 "options": "[\n  {\n    \"label\": \"Portuguese\",\n    \"value\": \"Portuguese\"\n  },\n  {\n    \"label\": \"English\",\n    \"value\": \"English\"\n  },\n  {\n    \"label\": \"Ukrainian\",\n    \"value\": \"Ukrainian\"\n  }\n]",
                                                                                 "serverSideFiltering": false,
                                                                                 "widgetName": "language",
-                                                                                "defaultOptionValue": "{{getCredentialsPinecone2.data.language}}",
+                                                                                "defaultOptionValue": "{{getCredentialsPrompts.data.language}}",
                                                                                 "version": 1,
                                                                                 "isFilterable": true,
                                                                                 "isRequired": false,
@@ -14293,7 +14293,7 @@
                                                                                 "options": "[\n  {\n    \"label\": \"Small\",\n    \"value\": \"Small\"\n  },\n  {\n    \"label\": \"Large\",\n    \"value\": \"Large\"\n  },\n  {\n    \"label\": \"Medium\",\n    \"value\": \"Medium\"\n  }\n]",
                                                                                 "serverSideFiltering": false,
                                                                                 "widgetName": "answer_length",
-                                                                                "defaultOptionValue": "{{getCredentialsPinecone2.data.answer_length}}",
+                                                                                "defaultOptionValue": "{{getCredentialsPrompts.data.answer_length}}",
                                                                                 "version": 1,
                                                                                 "isFilterable": true,
                                                                                 "isRequired": false,
@@ -14464,7 +14464,7 @@
                                                                                 "labelWidth": 5,
                                                                                 "widgetName": "welcome",
                                                                                 "version": 2,
-                                                                                "defaultText": "{{getCredentialsPinecone3.data.welcome}}",
+                                                                                "defaultText": "{{getCredentialsMsg.data.welcome}}",
                                                                                 "iconAlign": "left",
                                                                                 "autoFocus": false,
                                                                                 "labelStyle": "BOLD",
@@ -14506,7 +14506,7 @@
                                                                                 "labelWidth": 5,
                                                                                 "widgetName": "unable",
                                                                                 "version": 2,
-                                                                                "defaultText": "{{getCredentialsPinecone3.data.unable}}",
+                                                                                "defaultText": "{{getCredentialsMsg.data.unable}}",
                                                                                 "iconAlign": "left",
                                                                                 "autoFocus": false,
                                                                                 "labelStyle": "BOLD",
@@ -14548,7 +14548,7 @@
                                                                                 "labelWidth": 5,
                                                                                 "widgetName": "respond",
                                                                                 "version": 2,
-                                                                                "defaultText": "{{getCredentialsPinecone3.data.respond}}",
+                                                                                "defaultText": "{{getCredentialsMsg.data.respond}}",
                                                                                 "iconAlign": "left",
                                                                                 "autoFocus": false,
                                                                                 "labelStyle": "BOLD",
@@ -14724,7 +14724,7 @@
                                                                                 "labelWidth": 5,
                                                                                 "widgetName": "openai",
                                                                                 "version": 2,
-                                                                                "defaultText": "{{getCredentialsPinecone1.data.openai_api ?getCredentialsPinecone1.data.openai_api :\"\"}}",
+                                                                                "defaultText": "{{getCredentialsOpenAI.data.openai_api ?getCredentialsOpenAI.data.openai_api :\"\"}}",
                                                                                 "iconAlign": "left",
                                                                                 "autoFocus": false,
                                                                                 "labelStyle": "BOLD",
@@ -14810,7 +14810,7 @@
                                                                                 "options": "[\n  {\n    \"label\": \"gpt-3.5-turbo-0613\",\n    \"value\": \"gpt-3.5-turbo-0613\"\n  },\n\t  {\n    \"label\": \"gpt-3.5-turbo-16k\",\n    \"value\": \"gpt-3.5-turbo-16k\"\n  },\n  {\n    \"label\": \"gpt-4\",\n    \"value\": \"gpt-4\"\n  },\n\t {\n    \"label\": \"gpt-4-32k\",\n    \"value\": \"gpt-4-32k\"\n  }\n]",
                                                                                 "serverSideFiltering": false,
                                                                                 "widgetName": "modelopenai",
-                                                                                "defaultOptionValue": "{{getCredentialsPinecone1.data.openai_api_model?getCredentialsPinecone1.data.openai_api_model:\"\"}}",
+                                                                                "defaultOptionValue": "{{getCredentialsOpenAI.data.openai_api_model?getCredentialsOpenAI.data.openai_api_model:\"\"}}",
                                                                                 "version": 1,
                                                                                 "isFilterable": true,
                                                                                 "isRequired": false,
@@ -18814,7 +18814,7 @@
                                                                                 "labelWidth": 5,
                                                                                 "widgetName": "whatsApp_id",
                                                                                 "version": 2,
-                                                                                "defaultText": "",
+                                                                                "defaultText": "{{getCredentialsWhatsApp.data.whatsApp_phoneId}}",
                                                                                 "iconAlign": "left",
                                                                                 "autoFocus": false,
                                                                                 "labelStyle": "",
@@ -18840,7 +18840,11 @@
                                                                                 "topRow": 4,
                                                                                 "bottomRow": 11,
                                                                                 "parentId": "gjzw4rse76",
-                                                                                "dynamicBindingPathList": [],
+                                                                                "dynamicBindingPathList": [
+                                                                                    {
+                                                                                        "key": "defaultText"
+                                                                                    }
+                                                                                ],
                                                                                 "dynamicTriggerPathList": [],
                                                                                 "placeholderText": "Type your WhatsApp Phone Number ID"
                                                                             },
@@ -18852,7 +18856,7 @@
                                                                                 "labelWidth": 5,
                                                                                 "widgetName": "whatsApp_token",
                                                                                 "version": 2,
-                                                                                "defaultText": "",
+                                                                                "defaultText": "{{getCredentialsWhatsApp.data.whatsApp_token}}",
                                                                                 "iconAlign": "left",
                                                                                 "autoFocus": false,
                                                                                 "labelStyle": "",
@@ -18878,7 +18882,11 @@
                                                                                 "topRow": 12,
                                                                                 "bottomRow": 19,
                                                                                 "parentId": "gjzw4rse76",
-                                                                                "dynamicBindingPathList": [],
+                                                                                "dynamicBindingPathList": [
+                                                                                    {
+                                                                                        "key": "defaultText"
+                                                                                    }
+                                                                                ],
                                                                                 "dynamicTriggerPathList": [],
                                                                                 "placeholderText": "Type your WhatsApp Access token"
                                                                             },
@@ -19107,7 +19115,7 @@
                                                                                 "labelWidth": 5,
                                                                                 "widgetName": "telegram_token",
                                                                                 "version": 2,
-                                                                                "defaultText": "",
+                                                                                "defaultText": "{{getCredentialsTelegram.data.bot_token}}",
                                                                                 "iconAlign": "left",
                                                                                 "autoFocus": false,
                                                                                 "labelStyle": "",
@@ -19133,7 +19141,11 @@
                                                                                 "topRow": 4,
                                                                                 "bottomRow": 11,
                                                                                 "parentId": "q07hk2y2v2",
-                                                                                "dynamicBindingPathList": [],
+                                                                                "dynamicBindingPathList": [
+                                                                                    {
+                                                                                        "key": "defaultText"
+                                                                                    }
+                                                                                ],
                                                                                 "dynamicTriggerPathList": [],
                                                                                 "placeholderText": "Type your Telegram bot token ",
                                                                                 "labelTextSize": "HEADING3"
@@ -19146,7 +19158,7 @@
                                                                                 "labelWidth": 5,
                                                                                 "widgetName": "telegram_name",
                                                                                 "version": 2,
-                                                                                "defaultText": "",
+                                                                                "defaultText": "{{getCredentialsTelegram.data.bot_name}}",
                                                                                 "iconAlign": "left",
                                                                                 "autoFocus": false,
                                                                                 "labelStyle": "",
@@ -19172,7 +19184,11 @@
                                                                                 "topRow": 12,
                                                                                 "bottomRow": 19,
                                                                                 "parentId": "q07hk2y2v2",
-                                                                                "dynamicBindingPathList": [],
+                                                                                "dynamicBindingPathList": [
+                                                                                    {
+                                                                                        "key": "defaultText"
+                                                                                    }
+                                                                                ],
                                                                                 "dynamicTriggerPathList": [],
                                                                                 "placeholderText": "Type your Telegram bot name ",
                                                                                 "maxChars": "",
@@ -19324,7 +19340,7 @@
                                                                                 "labelWidth": 5,
                                                                                 "widgetName": "ms_id",
                                                                                 "version": 2,
-                                                                                "defaultText": "",
+                                                                                "defaultText": "{{getCredentialsMeta.data.response_phoneId}}",
                                                                                 "iconAlign": "left",
                                                                                 "autoFocus": false,
                                                                                 "labelStyle": "",
@@ -19350,7 +19366,11 @@
                                                                                 "topRow": 4,
                                                                                 "bottomRow": 11,
                                                                                 "parentId": "b75ce8oypi",
-                                                                                "dynamicBindingPathList": [],
+                                                                                "dynamicBindingPathList": [
+                                                                                    {
+                                                                                        "key": "defaultText"
+                                                                                    }
+                                                                                ],
                                                                                 "dynamicTriggerPathList": [],
                                                                                 "placeholderText": "Type your Messanger Phone Number ID"
                                                                             },
@@ -19362,7 +19382,7 @@
                                                                                 "labelWidth": 5,
                                                                                 "widgetName": "ms_token",
                                                                                 "version": 2,
-                                                                                "defaultText": "",
+                                                                                "defaultText": "{{getCredentialsMeta.data.meta_token}}",
                                                                                 "iconAlign": "left",
                                                                                 "autoFocus": false,
                                                                                 "labelStyle": "",
@@ -19388,7 +19408,11 @@
                                                                                 "topRow": 12,
                                                                                 "bottomRow": 19,
                                                                                 "parentId": "b75ce8oypi",
-                                                                                "dynamicBindingPathList": [],
+                                                                                "dynamicBindingPathList": [
+                                                                                    {
+                                                                                        "key": "defaultText"
+                                                                                    }
+                                                                                ],
                                                                                 "dynamicTriggerPathList": [],
                                                                                 "placeholderText": "Type your Messanger Access token"
                                                                             },
@@ -19421,10 +19445,20 @@
                                                                                 "bottomRow": 32,
                                                                                 "parentId": "b75ce8oypi",
                                                                                 "dynamicBindingPathList": [],
-                                                                                "dynamicTriggerPathList": [],
+                                                                                "dynamicTriggerPathList": [
+                                                                                    {
+                                                                                        "key": "onClick"
+                                                                                    }
+                                                                                ],
                                                                                 "borderRadius": "ROUNDED",
                                                                                 "iconName": "saved",
-                                                                                "iconAlign": "left"
+                                                                                "iconAlign": "left",
+                                                                                "onClick": "{{saveCredentialsMetaMS.run(() => getCredentialsMeta.run(()=> showAlert(saveCredentialsMetaMS.data.payload, 'success')), () => {})}}",
+                                                                                "dynamicPropertyPathList": [
+                                                                                    {
+                                                                                        "key": "onClick"
+                                                                                    }
+                                                                                ]
                                                                             },
                                                                             {
                                                                                 "isVisible": true,
@@ -19607,7 +19641,7 @@
                                                                                 "labelWidth": 5,
                                                                                 "widgetName": "insta_id",
                                                                                 "version": 2,
-                                                                                "defaultText": "",
+                                                                                "defaultText": "{{getCredentialsMeta.data.response_phoneId}}",
                                                                                 "iconAlign": "left",
                                                                                 "autoFocus": false,
                                                                                 "labelStyle": "",
@@ -19633,7 +19667,11 @@
                                                                                 "topRow": 4,
                                                                                 "bottomRow": 11,
                                                                                 "parentId": "awrp309oi8",
-                                                                                "dynamicBindingPathList": [],
+                                                                                "dynamicBindingPathList": [
+                                                                                    {
+                                                                                        "key": "defaultText"
+                                                                                    }
+                                                                                ],
                                                                                 "dynamicTriggerPathList": [],
                                                                                 "placeholderText": "Type your WhatsApp Phone Number ID"
                                                                             },
@@ -19645,7 +19683,7 @@
                                                                                 "labelWidth": 5,
                                                                                 "widgetName": "insta_token",
                                                                                 "version": 2,
-                                                                                "defaultText": "",
+                                                                                "defaultText": "{{getCredentialsMeta.data.meta_token}}",
                                                                                 "iconAlign": "left",
                                                                                 "autoFocus": false,
                                                                                 "labelStyle": "",
@@ -19671,7 +19709,11 @@
                                                                                 "topRow": 12,
                                                                                 "bottomRow": 19,
                                                                                 "parentId": "awrp309oi8",
-                                                                                "dynamicBindingPathList": [],
+                                                                                "dynamicBindingPathList": [
+                                                                                    {
+                                                                                        "key": "defaultText"
+                                                                                    }
+                                                                                ],
                                                                                 "dynamicTriggerPathList": [],
                                                                                 "placeholderText": "Type your Instagram Access token"
                                                                             },
@@ -19705,10 +19747,20 @@
                                                                                 "parentId": "awrp309oi8",
                                                                                 "borderRadius": "ROUNDED",
                                                                                 "dynamicBindingPathList": [],
-                                                                                "dynamicTriggerPathList": [],
+                                                                                "dynamicTriggerPathList": [
+                                                                                    {
+                                                                                        "key": "onClick"
+                                                                                    }
+                                                                                ],
                                                                                 "iconName": "saved",
                                                                                 "iconAlign": "left",
-                                                                                "boxShadowColor": ""
+                                                                                "boxShadowColor": "",
+                                                                                "onClick": "{{saveCredentialsMetaInstagram.run(() => getCredentialsMeta.run(()=> showAlert(saveCredentialsMetaInstagram.data.payload, 'success')), () => {})}}",
+                                                                                "dynamicPropertyPathList": [
+                                                                                    {
+                                                                                        "key": "onClick"
+                                                                                    }
+                                                                                ]
                                                                             },
                                                                             {
                                                                                 "isVisible": true,
@@ -20017,6 +20069,17 @@
                                 "id": "65368a0559328d8a63c5e7d1",
                                 "confirmBeforeExecute": false,
                                 "name": "getCredentialsTelegram",
+                                "pluginType": "API",
+                                "jsonPathKeys": [
+                                    "main.env.nodeUrl"
+                                ],
+                                "timeoutInMillisecond": 10000
+                            },
+                            {
+                                "_id": "653690ca59328d8a63c5e7d5",
+                                "id": "653690ca59328d8a63c5e7d5",
+                                "confirmBeforeExecute": false,
+                                "name": "getCredentialsMeta",
                                 "pluginType": "API",
                                 "jsonPathKeys": [
                                     "main.env.nodeUrl"
