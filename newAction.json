@@ -8069,18 +8069,18 @@
         "pluginType": "API",
         "pluginId": "API",
         "Action": {
-            "name": "getAll",
+            "name": "getCredentialsPinecone",
             "datasource": {
                 "name": "DEFAULT_REST_DATASOURCE",
                 "datasourceConfiguration": {
-                    "url": "{{main.env.nodeUrl}}/all"
+                    "url": "{{main.env.nodeUrl}}/getCredentialsPinecone"
                 },
                 "invalids": [],
                 "isValid": true,
                 "pluginId": "API",
                 "messages": []
             },
-            "executeOnLoad": false,
+            "executeOnLoad": true,
             "pageId": "Setup",
             "actionConfiguration": {
                 "timeoutInMillisecond": "10000",
@@ -8113,7 +8113,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-10-21T11:32:48.623Z",
-        "updatedAt": "2023-10-21T11:58:08.377Z",
+        "updatedAt": "2023-10-23T13:47:13.815Z",
         "deleted": false,
         "policies": [
             {
@@ -8140,11 +8140,11 @@
         "pluginType": "API",
         "pluginId": "API",
         "Action": {
-            "name": "getAll1",
+            "name": "getCredentialsOpenAI",
             "datasource": {
                 "name": "DEFAULT_REST_DATASOURCE",
                 "datasourceConfiguration": {
-                    "url": "{{main.env.nodeUrl}}/all1"
+                    "url": "{{main.env.nodeUrl}}/getCredentialsOpenAI"
                 },
                 "invalids": [],
                 "isValid": true,
@@ -8183,7 +8183,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-10-21T11:57:27.253Z",
-        "updatedAt": "2023-10-23T11:01:39.565Z",
+        "updatedAt": "2023-10-23T13:47:36.141Z",
         "deleted": false,
         "policies": [
             {
@@ -8376,11 +8376,11 @@
         "pluginType": "API",
         "pluginId": "API",
         "Action": {
-            "name": "getAll2",
+            "name": "getCredentialsPrompts",
             "datasource": {
                 "name": "DEFAULT_REST_DATASOURCE",
                 "datasourceConfiguration": {
-                    "url": "{{main.env.nodeUrl}}/all2"
+                    "url": "{{main.env.nodeUrl}}/getCredentialsPrompts"
                 },
                 "invalids": [],
                 "isValid": true,
@@ -8419,7 +8419,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-10-23T12:22:41.184Z",
-        "updatedAt": "2023-10-23T12:23:18.874Z",
+        "updatedAt": "2023-10-23T13:48:30.505Z",
         "deleted": false,
         "policies": [
             {
@@ -8446,11 +8446,11 @@
         "pluginType": "API",
         "pluginId": "API",
         "Action": {
-            "name": "getAll3",
+            "name": "getCredentialsMsg",
             "datasource": {
                 "name": "DEFAULT_REST_DATASOURCE",
                 "datasourceConfiguration": {
-                    "url": "{{main.env.nodeUrl}}/all3"
+                    "url": "{{main.env.nodeUrl}}/getCredentialsMsg"
                 },
                 "invalids": [],
                 "isValid": true,
@@ -8489,7 +8489,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-10-23T12:55:46.255Z",
-        "updatedAt": "2023-10-23T13:04:34.057Z",
+        "updatedAt": "2023-10-23T13:49:41.391Z",
         "deleted": false,
         "policies": [
             {
