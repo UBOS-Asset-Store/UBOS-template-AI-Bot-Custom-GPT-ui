@@ -14128,7 +14128,7 @@
                                                                                 "labelWidth": 5,
                                                                                 "widgetName": "prompt_custom",
                                                                                 "version": 2,
-                                                                                "defaultText": "",
+                                                                                "defaultText": "{{getAll2.data.prompt_custom}}",
                                                                                 "iconAlign": "left",
                                                                                 "autoFocus": false,
                                                                                 "labelStyle": "BOLD",
@@ -14154,7 +14154,11 @@
                                                                                 "topRow": 23,
                                                                                 "bottomRow": 39,
                                                                                 "parentId": "0au237itvf",
-                                                                                "dynamicBindingPathList": [],
+                                                                                "dynamicBindingPathList": [
+                                                                                    {
+                                                                                        "key": "defaultText"
+                                                                                    }
+                                                                                ],
                                                                                 "dynamicTriggerPathList": [],
                                                                                 "labelTextColor": "#231F20",
                                                                                 "placeholderText": "Be polite and friendly and use emojis"
@@ -14166,10 +14170,10 @@
                                                                                 "labelPosition": "Top",
                                                                                 "labelAlignment": "left",
                                                                                 "labelWidth": 5,
-                                                                                "options": "[\n  {\n    \"label\": \"Assistant\",\n    \"value\": \"BLUE\"\n  },\n  {\n    \"label\": \"Sales consultant\",\n    \"value\": \"GREEN\"\n  },\n  {\n    \"label\": \"Technical support\",\n    \"value\": \"RED\"\n  }\n]",
+                                                                                "options": "[\n  {\n    \"label\": \"Assistant\",\n    \"value\": \"Assistant\"\n  },\n  {\n    \"label\": \"Sales consultant\",\n    \"value\": \"Sales consultant\"\n  },\n  {\n    \"label\": \"Technical support\",\n    \"value\": \"Technical support\"\n  }\n]",
                                                                                 "serverSideFiltering": false,
-                                                                                "widgetName": "answer_us",
-                                                                                "defaultOptionValue": "GREEN",
+                                                                                "widgetName": "answer_as",
+                                                                                "defaultOptionValue": "{{getAll2.data.answer_as}}",
                                                                                 "version": 1,
                                                                                 "isFilterable": true,
                                                                                 "isRequired": false,
@@ -14190,7 +14194,11 @@
                                                                                 "topRow": 5,
                                                                                 "bottomRow": 12,
                                                                                 "parentId": "0au237itvf",
-                                                                                "dynamicBindingPathList": [],
+                                                                                "dynamicBindingPathList": [
+                                                                                    {
+                                                                                        "key": "defaultOptionValue"
+                                                                                    }
+                                                                                ],
                                                                                 "dynamicTriggerPathList": [],
                                                                                 "labelStyle": "BOLD",
                                                                                 "classStyle": "select_input "
@@ -14202,10 +14210,10 @@
                                                                                 "labelPosition": "Top",
                                                                                 "labelAlignment": "left",
                                                                                 "labelWidth": 5,
-                                                                                "options": "[\n  {\n    \"label\": \"Formal\",\n    \"value\": \"BLUE\"\n  },\n  {\n    \"label\": \"Informal\",\n    \"value\": \"GREEN\"\n  }\n]",
+                                                                                "options": "[\n  {\n    \"label\": \"Formal\",\n    \"value\": \"Formal\"\n  },\n  {\n    \"label\": \"Informal\",\n    \"value\": \"Informal\"\n  }\n]",
                                                                                 "serverSideFiltering": false,
                                                                                 "widgetName": "tone",
-                                                                                "defaultOptionValue": "GREEN",
+                                                                                "defaultOptionValue": "{{getAll2.data.tone}}",
                                                                                 "version": 1,
                                                                                 "isFilterable": true,
                                                                                 "isRequired": false,
@@ -14226,7 +14234,11 @@
                                                                                 "topRow": 5,
                                                                                 "bottomRow": 12,
                                                                                 "parentId": "0au237itvf",
-                                                                                "dynamicBindingPathList": [],
+                                                                                "dynamicBindingPathList": [
+                                                                                    {
+                                                                                        "key": "defaultOptionValue"
+                                                                                    }
+                                                                                ],
                                                                                 "dynamicTriggerPathList": [],
                                                                                 "labelStyle": "BOLD",
                                                                                 "classStyle": "select_input "
@@ -14238,10 +14250,10 @@
                                                                                 "labelPosition": "Top",
                                                                                 "labelAlignment": "left",
                                                                                 "labelWidth": 5,
-                                                                                "options": "[\n  {\n    \"label\": \"Portuguese\",\n    \"value\": \"BLUE\"\n  },\n  {\n    \"label\": \"English\",\n    \"value\": \"GREEN\"\n  },\n  {\n    \"label\": \"Ukrainian\",\n    \"value\": \"RED\"\n  }\n]",
+                                                                                "options": "[\n  {\n    \"label\": \"Portuguese\",\n    \"value\": \"Portuguese\"\n  },\n  {\n    \"label\": \"English\",\n    \"value\": \"English\"\n  },\n  {\n    \"label\": \"Ukrainian\",\n    \"value\": \"Ukrainian\"\n  }\n]",
                                                                                 "serverSideFiltering": false,
                                                                                 "widgetName": "language",
-                                                                                "defaultOptionValue": "GREEN",
+                                                                                "defaultOptionValue": "{{getAll2.data.language}}",
                                                                                 "version": 1,
                                                                                 "isFilterable": true,
                                                                                 "isRequired": false,
@@ -14262,7 +14274,11 @@
                                                                                 "topRow": 14,
                                                                                 "bottomRow": 21,
                                                                                 "parentId": "0au237itvf",
-                                                                                "dynamicBindingPathList": [],
+                                                                                "dynamicBindingPathList": [
+                                                                                    {
+                                                                                        "key": "defaultOptionValue"
+                                                                                    }
+                                                                                ],
                                                                                 "dynamicTriggerPathList": [],
                                                                                 "labelStyle": "BOLD",
                                                                                 "classStyle": "select_input "
@@ -14274,10 +14290,10 @@
                                                                                 "labelPosition": "Top",
                                                                                 "labelAlignment": "left",
                                                                                 "labelWidth": 5,
-                                                                                "options": "[\n  {\n    \"label\": \"Small\",\n    \"value\": \"BLUE\"\n  },\n  {\n    \"label\": \"Large\",\n    \"value\": \"GREEN\"\n  },\n  {\n    \"label\": \"Medium\",\n    \"value\": \"RED\"\n  }\n]",
+                                                                                "options": "[\n  {\n    \"label\": \"Small\",\n    \"value\": \"Small\"\n  },\n  {\n    \"label\": \"Large\",\n    \"value\": \"Large\"\n  },\n  {\n    \"label\": \"Medium\",\n    \"value\": \"Medium\"\n  }\n]",
                                                                                 "serverSideFiltering": false,
                                                                                 "widgetName": "answer_length",
-                                                                                "defaultOptionValue": "GREEN",
+                                                                                "defaultOptionValue": "{{getAll2.data.answer_length}}",
                                                                                 "version": 1,
                                                                                 "isFilterable": true,
                                                                                 "isRequired": false,
@@ -14298,7 +14314,11 @@
                                                                                 "topRow": 5,
                                                                                 "bottomRow": 12,
                                                                                 "parentId": "0au237itvf",
-                                                                                "dynamicBindingPathList": [],
+                                                                                "dynamicBindingPathList": [
+                                                                                    {
+                                                                                        "key": "defaultOptionValue"
+                                                                                    }
+                                                                                ],
                                                                                 "dynamicTriggerPathList": [],
                                                                                 "labelStyle": "BOLD",
                                                                                 "classStyle": "select_input "
@@ -14333,9 +14353,14 @@
                                                                                 "parentId": "0au237itvf",
                                                                                 "borderRadius": "ROUNDED",
                                                                                 "dynamicBindingPathList": [],
-                                                                                "dynamicTriggerPathList": [],
+                                                                                "dynamicTriggerPathList": [
+                                                                                    {
+                                                                                        "key": "onClick"
+                                                                                    }
+                                                                                ],
                                                                                 "iconName": "saved",
-                                                                                "iconAlign": "left"
+                                                                                "iconAlign": "left",
+                                                                                "onClick": "{{saveCredentialsPrompts.run(() => showAlert(saveCredentialsPrompts.data.payload,'success'), () => {})}}"
                                                                             },
                                                                             {
                                                                                 "isVisible": true,
@@ -15150,7 +15175,7 @@
                                                                                     }
                                                                                 ],
                                                                                 "classStyle": "{{main.store.activ_setup&& main.store.activ_setup===\"pinecone\" ?\"btn_right\" : \"btn_left\"}}",
-                                                                                "onClick": "{{main.store.activ_setup && main.store.activ_setup ===\"pinecone\"?JSObject1.myFunableable4(\"activ_setup\",\"\"):JSObject1.myFunableable4(\"activ_setup\",\"pinecone\")}}",
+                                                                                "onClick": "{{main.store.activ_setup && main.store.activ_setup ===\"pinecone\"?JSObject1.myFun4(\"activ_setup\",\"\"):JSObject1.myFun4(\"activ_setup\",\"pinecone\")}}",
                                                                                 "dynamicPropertyPathList": [
                                                                                     {
                                                                                         "key": "onClick"
@@ -15252,7 +15277,7 @@
                                                                                     }
                                                                                 ],
                                                                                 "classStyle": "{{main.store.activ_setup&& main.store.activ_setup===\"gpt\" ?\"btn_right\" : \"btn_left\"}}",
-                                                                                "onClick": "{{main.store.activ_setup && main.store.activ_setup ===\"gpt\"?JSObject1.myFunableable4(\"activ_setup\",\"\"):JSObject1.myFunableable4(\"activ_setup\",\"gpt\")}}",
+                                                                                "onClick": "{{main.store.activ_setup && main.store.activ_setup ===\"gpt\"?JSObject1.myFun4(\"activ_setup\",\"\"):JSObject1.myFun4(\"activ_setup\",\"gpt\")}}",
                                                                                 "dynamicPropertyPathList": [
                                                                                     {
                                                                                         "key": "onClick"
@@ -15574,7 +15599,7 @@
                                                                                     }
                                                                                 ],
                                                                                 "classStyle": "{{main.store.activ_setup&& main.store.activ_setup===\"model\" ?\"btn_right\" : \"btn_left\"}}",
-                                                                                "onClick": "{{main.store.activ_setup && main.store.activ_setup ===\"model\"?JSObject1.myFunableable4(\"activ_setup\",\"\"):JSObject1.myFunableable4(\"activ_setup\",\"model\")}}",
+                                                                                "onClick": "{{main.store.activ_setup && main.store.activ_setup ===\"model\"?JSObject1.myFun4(\"activ_setup\",\"\"):JSObject1.myFun4(\"activ_setup\",\"model\")}}",
                                                                                 "dynamicPropertyPathList": [
                                                                                     {
                                                                                         "key": "onClick"
@@ -15896,7 +15921,7 @@
                                                                                     }
                                                                                 ],
                                                                                 "classStyle": "{{main.store.activ_setup&& main.store.activ_setup===\"chat\" ?\"btn_right\" : \"btn_left\"}}",
-                                                                                "onClick": "{{main.store.activ_setup && main.store.activ_setup ===\"chat\"?JSObject1.myFunableable4(\"activ_setup\",\"\"):JSObject1.myFunableable4(\"activ_setup\",\"chat\")}}",
+                                                                                "onClick": "{{main.store.activ_setup && main.store.activ_setup ===\"chat\"?JSObject1.myFun4(\"activ_setup\",\"\"):JSObject1.myFun4(\"activ_setup\",\"chat\")}}",
                                                                                 "dynamicPropertyPathList": [
                                                                                     {
                                                                                         "key": "onClick"
@@ -16258,7 +16283,7 @@
                         "Container7",
                         "Canvas24",
                         "prompt_custom",
-                        "answer_us",
+                        "answer_as",
                         "tone",
                         "language",
                         "answer_length",
@@ -16266,9 +16291,9 @@
                         "Text15",
                         "Container8",
                         "Canvas25",
-                        "Input1",
-                        "Input2",
-                        "Input3",
+                        "welcome",
+                        "unable",
+                        "respond",
                         "Text11",
                         "Button7",
                         "Container9",
@@ -16339,6 +16364,17 @@
                                 "id": "6533bca759328d8a63c5e7cb",
                                 "confirmBeforeExecute": false,
                                 "name": "getAll1",
+                                "pluginType": "API",
+                                "jsonPathKeys": [
+                                    "main.env.nodeUrl"
+                                ],
+                                "timeoutInMillisecond": 10000
+                            },
+                            {
+                                "_id": "6536659159328d8a63c5e7ce",
+                                "id": "6536659159328d8a63c5e7ce",
+                                "confirmBeforeExecute": false,
+                                "name": "getAll2",
                                 "pluginType": "API",
                                 "jsonPathKeys": [
                                     "main.env.nodeUrl"
@@ -18174,7 +18210,7 @@
                                                                                         "key": "onClick"
                                                                                     }
                                                                                 ],
-                                                                                "onClick": "{{main.store.activ && main.store.activ ===\"telegram\"?JSObject1.myFun4(\"activ\",\"\"):JSObject1.myFun4(\"activ\",\"telegram\")}}",
+                                                                                "onClick": "{{main.store.activ && main.store.activ ===\"telegram\"?JSObject1.myFun3(\"activ\",\"\"):JSObject1.myFun3(\"activ\",\"telegram\")}}",
                                                                                 "dynamicPropertyPathList": [
                                                                                     {
                                                                                         "key": "onClick"
@@ -18309,7 +18345,7 @@
                                                                                         "key": "onClick"
                                                                                     }
                                                                                 ],
-                                                                                "onClick": "{{main.store.activ && main.store.activ ===\"whatsapp\"?JSObject1.myFun4(\"activ\",\"\"):JSObject1.myFun4(\"activ\",\"whatsapp\")}}",
+                                                                                "onClick": "{{main.store.activ && main.store.activ ===\"whatsapp\"?JSObject1.myFun3(\"activ\",\"\"):JSObject1.myFun3(\"activ\",\"whatsapp\")}}",
                                                                                 "dynamicPropertyPathList": [
                                                                                     {
                                                                                         "key": "onClick"
@@ -18477,7 +18513,7 @@
                                                                                     }
                                                                                 ],
                                                                                 "classStyle": "{{main.store.activ && main.store.activ===\"instagram\" ?\"btn_right\" : \"btn_left\"}}",
-                                                                                "onClick": " {{main.store.activ && main.store.activ ===\"instagram\"?JSObject1.myFun4(\"activ\",\"\"):JSObject1.myFun4(\"activ\",\"instagram\")}}",
+                                                                                "onClick": " {{main.store.activ && main.store.activ ===\"instagram\"?JSObject1.myFun3(\"activ\",\"\"):JSObject1.myFun3(\"activ\",\"instagram\")}}",
                                                                                 "dynamicPropertyPathList": [
                                                                                     {
                                                                                         "key": "onClick"
@@ -18643,8 +18679,8 @@
                                                                                         "key": "onClick"
                                                                                     }
                                                                                 ],
-                                                                                "classStyle": "{{main.store.activ && main.store.activ===\"ms\" ?\"btn_right\" : \"btn_left\"}}",
-                                                                                "onClick": " {{main.store.activ && main.store.activ ===\"ms\"?JSObject1.myFun4(\"activ\",\"\"):JSObject1.myFun4(\"activ\",\"ms\")}}",
+                                                                                "classStyle": "{{main.store.activ && main.store.activ ===\"ms\" ?\"btn_right\" : \"btn_left\"}}",
+                                                                                "onClick": " {{main.store.activ && main.store.activ ===\"ms\"?JSObject1.myFun3(\"activ\",\"\"):JSObject1.myFun3(\"activ\",\"ms\")}}",
                                                                                 "dynamicPropertyPathList": [
                                                                                     {
                                                                                         "key": "onClick"

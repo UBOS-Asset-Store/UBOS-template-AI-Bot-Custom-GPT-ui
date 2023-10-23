@@ -235,7 +235,7 @@
         "id": "652d7479ff0d1890fd5b921c",
         "name": "JSObject1",
         "pageId": "Bots",
-        "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\n\n\nmyFun4:(i,cl)=>{\n\tstoreValue(i,cl)\n}\n}",
+        "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\n\n\nmyFun3:(i,cl)=>{\n\tstoreValue(i,cl,false)\n}\n}",
         "variables": [
             {
                 "name": "myVar1",
@@ -248,12 +248,12 @@
         ],
         "actions": [
             {
-                "name": "myFun4",
+                "name": "myFun3",
                 "collectionId": "652d7479ff0d1890fd5b921c",
                 "executeOnLoad": false,
                 "pageId": "Bots",
                 "actionConfiguration": {
-                    "body": "(i,cl)=>{\n\tstoreValue(i,cl)\n}",
+                    "body": "(i,cl)=>{\n\tstoreValue(i,cl,false)\n}",
                     "isAsync": true,
                     "timeoutInMillisecond": 10000,
                     "jsArguments": [
@@ -283,7 +283,7 @@
                         "key": "body"
                     }
                 ],
-                "fullyQualifiedName": "JSObject1.myFun4",
+                "fullyQualifiedName": "JSObject1.myFun3",
                 "isValid": true,
                 "jsonPathKeys": [
                     "(i,cl)=>{\n\tsroreValue(i,cl)\n}"
@@ -303,7 +303,7 @@
         "id": "652ffc7cc002b90d189d7e2c",
         "name": "JSObject1",
         "pageId": "Setup",
-        "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tmyFun1: () => {\n\t\t//write code here\n\t},\nmyFun4:(i,cl)=>{\n\tstoreValue(i,cl)\n}\n}",
+        "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tmyFun1: () => {\n\t\t//write code here\n\t},\nmyFun4:(i,cl)=>{\n\tstoreValue(i,cl,false)\n}\n}",
         "variables": [
             {
                 "name": "myVar1",
@@ -359,15 +359,50 @@
                 "executeOnLoad": false,
                 "pageId": "Setup",
                 "actionConfiguration": {
-                    "body": "(i,cl)=>{\n\tstoreValue(i,cl)\n}",
+                    "body": "(i,cl)=>{\n\tstoreValue(i,cl,false)\n}",
                     "isAsync": true,
-                    "timeoutInMillisecond": 0,
-                    "jsArguments": []
-                }
+                    "timeoutInMillisecond": 10000,
+                    "jsArguments": [
+                        {
+                            "name": "i"
+                        },
+                        {
+                            "name": "cl"
+                        }
+                    ],
+                    "paginationType": "NONE",
+                    "encodeParamsToggle": true
+                },
+                "_id": "652ffc93c002b90d189d7e2f",
+                "id": "652ffc93c002b90d189d7e2f",
+                "applicationId": "jetsondashboard",
+                "datasource": {
+                    "isValid": true,
+                    "messages": [],
+                    "name": "UNUSED_DATASOURCE",
+                    "new": true,
+                    "pluginId": "",
+                    "userPermissions": []
+                },
+                "dynamicBindingPathList": [
+                    {
+                        "key": "body"
+                    }
+                ],
+                "fullyQualifiedName": "JSObject1.myFun4",
+                "isValid": true,
+                "jsonPathKeys": [
+                    "(i,cl)=>{\n\tstoreValue(i,cl)\n}"
+                ],
+                "pluginType": "JS"
             }
         ],
         "applicationId": "jetsondashboard",
         "pluginType": "JS",
-        "_id": "652ffc7cc002b90d189d7e2c"
+        "_id": "652ffc7cc002b90d189d7e2c",
+        "pluginId": "JS",
+        "actionIds": [],
+        "archivedActionIds": [],
+        "archivedActions": []
     }
 ]

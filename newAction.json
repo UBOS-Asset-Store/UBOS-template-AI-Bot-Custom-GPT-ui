@@ -7858,12 +7858,12 @@
         ]
     },
     {
-        "name": "myFun4",
+        "name": "myFun3",
         "collectionId": "652d7479ff0d1890fd5b921c",
         "executeOnLoad": false,
         "pageId": "Bots",
         "actionConfiguration": {
-            "body": "(i,cl)=>{\n\tstoreValue(i,cl)\n}",
+            "body": "(i,cl)=>{\n\tstoreValue(i,cl,false)\n}",
             "isAsync": true,
             "timeoutInMillisecond": 10000,
             "jsArguments": [
@@ -7893,7 +7893,7 @@
                 "key": "body"
             }
         ],
-        "fullyQualifiedName": "JSObject1.myFun4",
+        "fullyQualifiedName": "JSObject1.myFun3",
         "isValid": true,
         "jsonPathKeys": [
             "(i,cl)=>{\n\tsroreValue(i,cl)\n}"
@@ -7944,10 +7944,17 @@
         "executeOnLoad": false,
         "pageId": "Setup",
         "actionConfiguration": {
-            "body": "(i,cl)=>{\n\tstoreValue(i,cl)\n}",
+            "body": "(i,cl)=>{\n\tstoreValue(i,cl,false)\n}",
             "isAsync": true,
             "timeoutInMillisecond": 10000,
-            "jsArguments": [],
+            "jsArguments": [
+                {
+                    "name": "i"
+                },
+                {
+                    "name": "cl"
+                }
+            ],
             "paginationType": "NONE",
             "encodeParamsToggle": true
         },
@@ -8252,7 +8259,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-10-23T11:00:40.737Z",
-        "updatedAt": "2023-10-23T11:01:43.001Z",
+        "updatedAt": "2023-10-23T11:05:04.230Z",
         "deleted": false,
         "policies": [
             {
@@ -8283,7 +8290,7 @@
             "datasource": {
                 "name": "DEFAULT_REST_DATASOURCE",
                 "datasourceConfiguration": {
-                    "url": "{{main.env.nodeUrl}}"
+                    "url": "{{main.env.nodeUrl}}/saveCredentialsPrompts"
                 },
                 "invalids": [],
                 "isValid": true,
@@ -8303,7 +8310,85 @@
                     }
                 ],
                 "queryParameters": [],
-                "body": "",
+                "body": "{\n\t\"answer_length\":{{JSON.stringify(answer_length.selectedOptionLabel)}},\n\t\"answer_as\":{{JSON.stringify(answer_as.selectedOptionLabel)}},\n\t\"tone\":{{JSON.stringify(tone.selectedOptionLabel)}},\n\t\"language\":{{JSON.stringify(language.selectedOptionLabel)}},\n\t\"prompt_custom\":{{JSON.stringify(prompt_custom.text)}}\n}",
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ]
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "body"
+                },
+                {
+                    "key": "datasourceUrl"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "main.env.nodeUrl",
+                "JSON.stringify(answer_length.selectedOptionLabel)",
+                "JSON.stringify(answer_as.selectedOptionLabel)",
+                "JSON.stringify(tone.selectedOptionLabel)",
+                "JSON.stringify(language.selectedOptionLabel)",
+                "JSON.stringify(prompt_custom.text)"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        },
+        "createdAt": "2023-10-23T11:00:45.062Z",
+        "updatedAt": "2023-10-23T12:20:24.843Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ]
+    },
+    {
+        "_id": "6536659159328d8a63c5e7ce",
+        "applicationId": "jetsondashboard",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "Action": {
+            "name": "getAll2",
+            "datasource": {
+                "name": "DEFAULT_REST_DATASOURCE",
+                "datasourceConfiguration": {
+                    "url": "{{main.env.nodeUrl}}/all2"
+                },
+                "invalids": [],
+                "isValid": true,
+                "pluginId": "API",
+                "messages": []
+            },
+            "executeOnLoad": true,
+            "pageId": "Setup",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "GET",
+                "headers": [],
+                "queryParameters": [],
                 "bodyFormData": [],
                 "formData": {
                     "apiContentType": "none"
@@ -8327,8 +8412,8 @@
             "userSetOnLoad": false,
             "confirmBeforeExecute": false
         },
-        "createdAt": "2023-10-23T11:00:45.062Z",
-        "updatedAt": "2023-10-23T11:01:36.089Z",
+        "createdAt": "2023-10-23T12:22:41.184Z",
+        "updatedAt": "2023-10-23T12:23:18.874Z",
         "deleted": false,
         "policies": [
             {
