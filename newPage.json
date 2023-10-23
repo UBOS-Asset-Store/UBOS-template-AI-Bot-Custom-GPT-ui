@@ -18955,13 +18955,13 @@
                                                                                 "labelWidth": 5,
                                                                                 "widgetName": "Webhook_whatsup",
                                                                                 "version": 2,
-                                                                                "defaultText": "",
+                                                                                "defaultText": "{{main.env.nodeUrl}}/whatsApp",
                                                                                 "iconAlign": "left",
                                                                                 "autoFocus": false,
                                                                                 "labelStyle": "",
                                                                                 "resetOnSubmit": true,
                                                                                 "isRequired": false,
-                                                                                "isDisabled": false,
+                                                                                "isDisabled": true,
                                                                                 "animateLoading": true,
                                                                                 "classStyle": "",
                                                                                 "inputType": "TEXT",
@@ -18977,12 +18977,55 @@
                                                                                 "parentColumnSpace": 14.7327880859375,
                                                                                 "parentRowSpace": 10,
                                                                                 "leftColumn": 0,
+                                                                                "rightColumn": 62,
+                                                                                "topRow": 20,
+                                                                                "bottomRow": 27,
+                                                                                "parentId": "gjzw4rse76",
+                                                                                "dynamicBindingPathList": [
+                                                                                    {
+                                                                                        "key": "defaultText"
+                                                                                    }
+                                                                                ],
+                                                                                "dynamicTriggerPathList": []
+                                                                            },
+                                                                            {
+                                                                                "isVisible": true,
+                                                                                "iconName": "duplicate",
+                                                                                "borderRadius": "CIRCLE",
+                                                                                "boxShadow": "NONE",
+                                                                                "buttonColor": "#215484",
+                                                                                "buttonVariant": "TERTIARY",
+                                                                                "isDisabled": false,
+                                                                                "widgetName": "IconButton2",
+                                                                                "version": 1,
+                                                                                "animateLoading": true,
+                                                                                "type": "ICON_BUTTON_WIDGET",
+                                                                                "hideCard": false,
+                                                                                "displayName": "Icon Button",
+                                                                                "key": "fd5phwzvkd",
+                                                                                "iconSVG": "/static/media/icon.1a0c634a.svg",
+                                                                                "widgetId": "jnw54wfsff",
+                                                                                "renderMode": "CANVAS",
+                                                                                "isLoading": false,
+                                                                                "parentColumnSpace": 14.9765625,
+                                                                                "parentRowSpace": 10,
+                                                                                "leftColumn": 62,
                                                                                 "rightColumn": 64,
                                                                                 "topRow": 20,
                                                                                 "bottomRow": 27,
                                                                                 "parentId": "gjzw4rse76",
                                                                                 "dynamicBindingPathList": [],
-                                                                                "dynamicTriggerPathList": []
+                                                                                "dynamicTriggerPathList": [
+                                                                                    {
+                                                                                        "key": "onClick"
+                                                                                    }
+                                                                                ],
+                                                                                "onClick": "{{copyToClipboard(Webhook_whatsup.text);showAlert('Webhook copied', 'success')}}",
+                                                                                "dynamicPropertyPathList": [
+                                                                                    {
+                                                                                        "key": "onClick"
+                                                                                    }
+                                                                                ]
                                                                             }
                                                                         ],
                                                                         "minHeight": 400,
@@ -19412,13 +19455,13 @@
                                                                                 "labelWidth": 5,
                                                                                 "widgetName": "Webhook_msg",
                                                                                 "version": 2,
-                                                                                "defaultText": "",
+                                                                                "defaultText": "{{main.env.nodeUrl}}/messangerBot",
                                                                                 "iconAlign": "left",
                                                                                 "autoFocus": false,
                                                                                 "labelStyle": "",
                                                                                 "resetOnSubmit": true,
                                                                                 "isRequired": false,
-                                                                                "isDisabled": false,
+                                                                                "isDisabled": true,
                                                                                 "animateLoading": true,
                                                                                 "classStyle": "",
                                                                                 "inputType": "TEXT",
@@ -19434,12 +19477,55 @@
                                                                                 "parentColumnSpace": 14.9765625,
                                                                                 "parentRowSpace": 10,
                                                                                 "leftColumn": 0,
+                                                                                "rightColumn": 62,
+                                                                                "topRow": 20,
+                                                                                "bottomRow": 27,
+                                                                                "parentId": "b75ce8oypi",
+                                                                                "dynamicBindingPathList": [
+                                                                                    {
+                                                                                        "key": "defaultText"
+                                                                                    }
+                                                                                ],
+                                                                                "dynamicTriggerPathList": []
+                                                                            },
+                                                                            {
+                                                                                "isVisible": true,
+                                                                                "iconName": "duplicate",
+                                                                                "borderRadius": "CIRCLE",
+                                                                                "boxShadow": "NONE",
+                                                                                "buttonColor": "#215484",
+                                                                                "buttonVariant": "TERTIARY",
+                                                                                "isDisabled": false,
+                                                                                "widgetName": "IconButton4",
+                                                                                "version": 1,
+                                                                                "animateLoading": true,
+                                                                                "type": "ICON_BUTTON_WIDGET",
+                                                                                "hideCard": false,
+                                                                                "displayName": "Icon Button",
+                                                                                "key": "fd5phwzvkd",
+                                                                                "iconSVG": "/static/media/icon.1a0c634a.svg",
+                                                                                "widgetId": "mq31thqx1n",
+                                                                                "renderMode": "CANVAS",
+                                                                                "isLoading": false,
+                                                                                "parentColumnSpace": 14.9765625,
+                                                                                "parentRowSpace": 10,
+                                                                                "leftColumn": 62,
                                                                                 "rightColumn": 64,
                                                                                 "topRow": 20,
                                                                                 "bottomRow": 27,
                                                                                 "parentId": "b75ce8oypi",
                                                                                 "dynamicBindingPathList": [],
-                                                                                "dynamicTriggerPathList": []
+                                                                                "dynamicTriggerPathList": [
+                                                                                    {
+                                                                                        "key": "onClick"
+                                                                                    }
+                                                                                ],
+                                                                                "onClick": "{{copyToClipboard(Webhook_msg.text);showAlert('Webhook copied', 'success')}}",
+                                                                                "dynamicPropertyPathList": [
+                                                                                    {
+                                                                                        "key": "onClick"
+                                                                                    }
+                                                                                ]
                                                                             }
                                                                         ],
                                                                         "minHeight": 400,
@@ -19653,13 +19739,13 @@
                                                                                 "labelWidth": 5,
                                                                                 "widgetName": "Webhook_insta",
                                                                                 "version": 2,
-                                                                                "defaultText": "",
+                                                                                "defaultText": "{{main.env.nodeUrl}}/instagramBot",
                                                                                 "iconAlign": "left",
                                                                                 "autoFocus": false,
                                                                                 "labelStyle": "",
                                                                                 "resetOnSubmit": true,
                                                                                 "isRequired": false,
-                                                                                "isDisabled": false,
+                                                                                "isDisabled": true,
                                                                                 "animateLoading": true,
                                                                                 "classStyle": "",
                                                                                 "inputType": "TEXT",
@@ -19675,12 +19761,55 @@
                                                                                 "parentColumnSpace": 14.7327880859375,
                                                                                 "parentRowSpace": 10,
                                                                                 "leftColumn": 0,
+                                                                                "rightColumn": 62,
+                                                                                "topRow": 20,
+                                                                                "bottomRow": 27,
+                                                                                "parentId": "awrp309oi8",
+                                                                                "dynamicBindingPathList": [
+                                                                                    {
+                                                                                        "key": "defaultText"
+                                                                                    }
+                                                                                ],
+                                                                                "dynamicTriggerPathList": []
+                                                                            },
+                                                                            {
+                                                                                "isVisible": true,
+                                                                                "iconName": "duplicate",
+                                                                                "borderRadius": "CIRCLE",
+                                                                                "boxShadow": "NONE",
+                                                                                "buttonColor": "#215484",
+                                                                                "buttonVariant": "TERTIARY",
+                                                                                "isDisabled": false,
+                                                                                "widgetName": "IconButton3",
+                                                                                "version": 1,
+                                                                                "animateLoading": true,
+                                                                                "type": "ICON_BUTTON_WIDGET",
+                                                                                "hideCard": false,
+                                                                                "displayName": "Icon Button",
+                                                                                "key": "fd5phwzvkd",
+                                                                                "iconSVG": "/static/media/icon.1a0c634a.svg",
+                                                                                "widgetId": "a2ig863g7r",
+                                                                                "renderMode": "CANVAS",
+                                                                                "isLoading": false,
+                                                                                "parentColumnSpace": 14.9765625,
+                                                                                "parentRowSpace": 10,
+                                                                                "leftColumn": 62,
                                                                                 "rightColumn": 64,
                                                                                 "topRow": 20,
                                                                                 "bottomRow": 27,
                                                                                 "parentId": "awrp309oi8",
+                                                                                "onClick": "{{copyToClipboard(Webhook_insta.text);showAlert('Webhook copied', 'success')}}",
+                                                                                "dynamicPropertyPathList": [
+                                                                                    {
+                                                                                        "key": "onClick"
+                                                                                    }
+                                                                                ],
                                                                                 "dynamicBindingPathList": [],
-                                                                                "dynamicTriggerPathList": []
+                                                                                "dynamicTriggerPathList": [
+                                                                                    {
+                                                                                        "key": "onClick"
+                                                                                    }
+                                                                                ]
                                                                             }
                                                                         ],
                                                                         "minHeight": 400,
@@ -19834,6 +19963,7 @@
                         "Button4",
                         "Text6",
                         "Webhook_whatsup",
+                        "IconButton2",
                         "Container6Copy1",
                         "Canvas19Copy1",
                         "Input1",
@@ -19847,13 +19977,15 @@
                         "Button2",
                         "Text8",
                         "Webhook_msg",
+                        "IconButton4",
                         "Container7Copy",
                         "Canvas20Copy",
                         "Input6",
                         "Input7",
                         "Button3",
                         "Text7",
-                        "Webhook_insta"
+                        "Webhook_insta",
+                        "IconButton3"
                     ],
                     "deleted": false,
                     "policies": [],
