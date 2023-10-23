@@ -21521,7 +21521,7 @@
                                                             },
                                                             {
                                                                 "isVisible": true,
-                                                                "text": "0",
+                                                                "text": "{{getKnowlegeDatas.data.totalLink}}",
                                                                 "fontSize": "HEADING1",
                                                                 "fontStyle": "BOLD",
                                                                 "textAlign": "CENTER",
@@ -21547,7 +21547,11 @@
                                                                 "topRow": 4,
                                                                 "bottomRow": 9,
                                                                 "parentId": "t5v0zjfsbn",
-                                                                "dynamicBindingPathList": [],
+                                                                "dynamicBindingPathList": [
+                                                                    {
+                                                                        "key": "text"
+                                                                    }
+                                                                ],
                                                                 "dynamicTriggerPathList": [],
                                                                 "classStyle": "dashboard_text"
                                                             }
@@ -21700,7 +21704,7 @@
                                                             },
                                                             {
                                                                 "isVisible": true,
-                                                                "text": "0",
+                                                                "text": "{{getKnowlegeDatas.data.totalFiles}}",
                                                                 "fontSize": "HEADING1",
                                                                 "fontStyle": "BOLD",
                                                                 "textAlign": "CENTER",
@@ -21726,7 +21730,11 @@
                                                                 "topRow": 4,
                                                                 "bottomRow": 9,
                                                                 "parentId": "4qgmsjo4d9",
-                                                                "dynamicBindingPathList": [],
+                                                                "dynamicBindingPathList": [
+                                                                    {
+                                                                        "key": "text"
+                                                                    }
+                                                                ],
                                                                 "dynamicTriggerPathList": [],
                                                                 "classStyle": "dashboard_text"
                                                             }
@@ -21880,6 +21888,17 @@
                                 "id": "6536de8f59328d8a63c5e7d8",
                                 "confirmBeforeExecute": false,
                                 "name": "getTotalUsers",
+                                "pluginType": "API",
+                                "jsonPathKeys": [
+                                    "main.env.nodeUrl"
+                                ],
+                                "timeoutInMillisecond": 10000
+                            },
+                            {
+                                "_id": "6536df5a59328d8a63c5e7d9",
+                                "id": "6536df5a59328d8a63c5e7d9",
+                                "confirmBeforeExecute": false,
+                                "name": "getKnowlegeDatas",
                                 "pluginType": "API",
                                 "jsonPathKeys": [
                                     "main.env.nodeUrl"
