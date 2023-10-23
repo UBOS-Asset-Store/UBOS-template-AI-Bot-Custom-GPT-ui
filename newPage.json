@@ -18911,10 +18911,20 @@
                                                                                 "bottomRow": 32,
                                                                                 "parentId": "gjzw4rse76",
                                                                                 "dynamicBindingPathList": [],
-                                                                                "dynamicTriggerPathList": [],
+                                                                                "dynamicTriggerPathList": [
+                                                                                    {
+                                                                                        "key": "onClick"
+                                                                                    }
+                                                                                ],
                                                                                 "borderRadius": "ROUNDED",
                                                                                 "iconName": "saved",
-                                                                                "iconAlign": "left"
+                                                                                "iconAlign": "left",
+                                                                                "onClick": "{{saveCredentialsWhatsApp.run(() => getCredentialsWhatsApp.run(()=> showAlert(saveCredentialsTelegram.data.payload, 'success')), () => {})}}",
+                                                                                "dynamicPropertyPathList": [
+                                                                                    {
+                                                                                        "key": "onClick"
+                                                                                    }
+                                                                                ]
                                                                             },
                                                                             {
                                                                                 "isVisible": true,
@@ -19990,7 +20000,30 @@
                     "deleted": false,
                     "policies": [],
                     "layoutOnLoadActions": [
-                        []
+                        [
+                            {
+                                "_id": "65368adb59328d8a63c5e7d2",
+                                "id": "65368adb59328d8a63c5e7d2",
+                                "confirmBeforeExecute": false,
+                                "name": "getCredentialsWhatsApp",
+                                "pluginType": "API",
+                                "jsonPathKeys": [
+                                    "main.env.nodeUrl"
+                                ],
+                                "timeoutInMillisecond": 10000
+                            },
+                            {
+                                "_id": "65368a0559328d8a63c5e7d1",
+                                "id": "65368a0559328d8a63c5e7d1",
+                                "confirmBeforeExecute": false,
+                                "name": "getCredentialsTelegram",
+                                "pluginType": "API",
+                                "jsonPathKeys": [
+                                    "main.env.nodeUrl"
+                                ],
+                                "timeoutInMillisecond": 10000
+                            }
+                        ]
                     ],
                     "layoutOnCloseActions": [
                         []
