@@ -8711,7 +8711,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-10-23T15:01:47.106Z",
-        "updatedAt": "2023-10-23T15:08:20.823Z",
+        "updatedAt": "2023-10-24T21:03:12.395Z",
         "deleted": false,
         "policies": [
             {
@@ -8785,15 +8785,14 @@
             "invalids": [],
             "jsonPathKeys": [
                 "main.env.nodeUrl",
-                "JSON.stringify(whatsApp_id.)",
-                "JSON.stringify(whatsApp_token.text)",
-                "JSON.stringify(whatsApp_id.text)"
+                "JSON.stringify(whatsApp_id.text)",
+                "JSON.stringify(whatsApp_token.text)"
             ],
             "userSetOnLoad": false,
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-10-23T15:01:51.668Z",
-        "updatedAt": "2023-10-23T15:05:42.031Z",
+        "updatedAt": "2023-10-24T21:03:48.246Z",
         "deleted": false,
         "policies": [
             {
@@ -8869,13 +8868,13 @@
                 "main.env.nodeUrl",
                 "JSON.stringify(insta_token.text)",
                 "JSON.stringify(insta_id.text)",
-                "main.env.nodeUrl,2023-10-23T15:27:02.129Z,2023-10-23T19:04:14.523Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl"
+                "main.env.nodeUrl,2023-10-23T15:27:02.129Z,2023-10-23T19:05:28.167Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl"
             ],
             "userSetOnLoad": false,
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-10-23T15:27:02.129Z",
-        "updatedAt": "2023-10-23T19:05:28.167Z",
+        "updatedAt": "2023-10-24T21:03:44.263Z",
         "deleted": false,
         "policies": [
             {
@@ -9238,6 +9237,76 @@
         },
         "createdAt": "2023-10-23T21:02:18.333Z",
         "updatedAt": "2023-10-23T21:12:36.124Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ]
+    },
+    {
+        "_id": "6538183e59328d8a63c5e7de",
+        "applicationId": "jetsondashboard",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "Action": {
+            "name": "getAnalytics",
+            "datasource": {
+                "name": "DEFAULT_REST_DATASOURCE",
+                "datasourceConfiguration": {
+                    "url": "{{main.env.nodeUrl}}/getAnalytics"
+                },
+                "invalids": [],
+                "isValid": true,
+                "pluginId": "API",
+                "messages": []
+            },
+            "executeOnLoad": false,
+            "pageId": "Dashboard",
+            "actionConfiguration": {
+                "timeoutInMillisecond": "50000",
+                "encodeParamsToggle": true,
+                "httpMethod": "GET",
+                "headers": [],
+                "queryParameters": [],
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ]
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "datasourceUrl"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "main.env.nodeUrl"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        },
+        "createdAt": "2023-10-24T19:17:18.874Z",
+        "updatedAt": "2023-10-24T21:37:56.460Z",
         "deleted": false,
         "policies": [
             {

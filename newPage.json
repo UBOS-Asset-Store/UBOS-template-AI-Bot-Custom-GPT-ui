@@ -13309,7 +13309,7 @@
                                     }
                                 ],
                                 "version": 1,
-                                "classStyle": "scroll_section",
+                                "classStyle": "scroll_section main_section",
                                 "type": "CONTAINER_WIDGET",
                                 "hideCard": false,
                                 "displayName": "Container",
@@ -17622,7 +17622,7 @@
                                     }
                                 ],
                                 "version": 1,
-                                "classStyle": "scroll_section",
+                                "classStyle": "scroll_section main_section",
                                 "type": "CONTAINER_WIDGET",
                                 "hideCard": false,
                                 "displayName": "Container",
@@ -19966,7 +19966,7 @@
                                                     }
                                                 ],
                                                 "version": 1,
-                                                "classStyle": "main",
+                                                "classStyle": "main scroll_section",
                                                 "type": "CONTAINER_WIDGET",
                                                 "hideCard": false,
                                                 "displayName": "Container",
@@ -19985,7 +19985,7 @@
                                                 "parentId": "ygwa9pgk95",
                                                 "dynamicBindingPathList": [],
                                                 "dynamicTriggerPathList": [],
-                                                "shouldScrollContents": false
+                                                "shouldScrollContents": true
                                             }
                                         ],
                                         "minHeight": 400,
@@ -20002,7 +20002,7 @@
                                     }
                                 ],
                                 "version": 1,
-                                "classStyle": "scroll_section ",
+                                "classStyle": " main_section",
                                 "type": "CONTAINER_WIDGET",
                                 "hideCard": false,
                                 "displayName": "Container",
@@ -20366,7 +20366,7 @@
                                                                 "counterClosewise": false,
                                                                 "steps": 1,
                                                                 "progressType": "linear",
-                                                                "progress": "25",
+                                                                "progress": "{{getAnalytics.data.total}}",
                                                                 "version": 1,
                                                                 "type": "PROGRESS_WIDGET",
                                                                 "hideCard": false,
@@ -20384,8 +20384,17 @@
                                                                 "topRow": 10,
                                                                 "bottomRow": 14,
                                                                 "parentId": "5szqz7oj3z",
-                                                                "dynamicBindingPathList": [],
-                                                                "dynamicTriggerPathList": []
+                                                                "dynamicBindingPathList": [
+                                                                    {
+                                                                        "key": "progress"
+                                                                    }
+                                                                ],
+                                                                "dynamicTriggerPathList": [],
+                                                                "dynamicPropertyPathList": [
+                                                                    {
+                                                                        "key": "progress"
+                                                                    }
+                                                                ]
                                                             },
                                                             {
                                                                 "isVisible": true,
@@ -20475,7 +20484,7 @@
                                                                         "children": [
                                                                             {
                                                                                 "isVisible": true,
-                                                                                "text": "<span style=\"display: inline-block; width: 30px; height: 30px; text-align: center; line-height: 30px; border-radius: 50%;border-width: 1px; border-color:#231F20;background: #F65A1A\">&#33;</span>",
+                                                                                "text": "{{getAnalytics.data.files.percentage !== \"100\" ?`<span style=\"display: inline-block; width: 30px; height: 30px; text-align: center; line-height: 30px; border-radius: 50%;border-width: 1px; border-color:#231F20;background: #F65A1A\">&#33;</span>`: `<span style=\"display: inline-block; width: 30px; height: 30px; text-align: center; line-height: 30px; border-radius: 50%;border-width: 1px; border-color:#231F20;background:#5FA362;\">&#x2713</span>` }}",
                                                                                 "fontSize": "PARAGRAPH",
                                                                                 "fontStyle": "BOLD",
                                                                                 "textAlign": "LEFT",
@@ -20501,13 +20510,17 @@
                                                                                 "topRow": 0,
                                                                                 "bottomRow": 5,
                                                                                 "parentId": "nu8wfjdjfh",
-                                                                                "dynamicBindingPathList": [],
+                                                                                "dynamicBindingPathList": [
+                                                                                    {
+                                                                                        "key": "text"
+                                                                                    }
+                                                                                ],
                                                                                 "dynamicTriggerPathList": [],
                                                                                 "classStyle": "icon"
                                                                             },
                                                                             {
                                                                                 "isVisible": true,
-                                                                                "text": "<a style=\"color:#231F20\">Train the chatbot with documents/files</a>",
+                                                                                "text": "<a style=\"color:#231F20\">Train the chatbot with documents/files</a> ({{getKnowlegeDatas.data.totalFiles}})",
                                                                                 "fontSize": "HEADING3",
                                                                                 "fontStyle": "BOLD",
                                                                                 "textAlign": "LEFT",
@@ -20534,7 +20547,14 @@
                                                                                 "bottomRow": 5,
                                                                                 "parentId": "nu8wfjdjfh",
                                                                                 "backgroundColor": "",
-                                                                                "dynamicBindingPathList": [],
+                                                                                "dynamicBindingPathList": [
+                                                                                    {
+                                                                                        "key": "text"
+                                                                                    },
+                                                                                    {
+                                                                                        "key": "classStyle"
+                                                                                    }
+                                                                                ],
                                                                                 "dynamicTriggerPathList": [
                                                                                     {
                                                                                         "key": "onClick"
@@ -20542,7 +20562,8 @@
                                                                                 ],
                                                                                 "borderColor": "",
                                                                                 "borderWidth": "",
-                                                                                "onClick": "{{navigateTo('Training', {})}}"
+                                                                                "onClick": "{{navigateTo('Training', {})}}",
+                                                                                "classStyle": "{{getAnalytics.data.files.percentage === \"100\" ?'text_cross' :\"\"}}"
                                                                             }
                                                                         ],
                                                                         "minHeight": 400,
@@ -20727,7 +20748,7 @@
                                                                             },
                                                                             {
                                                                                 "isVisible": true,
-                                                                                "text": "<span style=\"display: inline-block; width: 30px; height: 30px; text-align: center; line-height: 30px; border-radius: 50%;border-width: 1px; border-color:#231F20;background: #F65A1A\">&#33;</span>",
+                                                                                "text": "{{getAnalytics.data.base.percentage !== \"100\" ?`<span style=\"display: inline-block; width: 30px; height: 30px; text-align: center; line-height: 30px; border-radius: 50%;border-width: 1px; border-color:#231F20;background: #F65A1A\">&#33;</span>`: `<span style=\"display: inline-block; width: 30px; height: 30px; text-align: center; line-height: 30px; border-radius: 50%;border-width: 1px; border-color:#231F20;background:#5FA362;\">&#x2713</span>` }}",
                                                                                 "fontSize": "PARAGRAPH",
                                                                                 "fontStyle": "BOLD",
                                                                                 "textAlign": "LEFT",
@@ -20753,13 +20774,17 @@
                                                                                 "topRow": 0,
                                                                                 "bottomRow": 5,
                                                                                 "parentId": "dvkp06brbr",
-                                                                                "dynamicBindingPathList": [],
+                                                                                "dynamicBindingPathList": [
+                                                                                    {
+                                                                                        "key": "text"
+                                                                                    }
+                                                                                ],
                                                                                 "dynamicTriggerPathList": [],
                                                                                 "classStyle": "icon"
                                                                             },
                                                                             {
                                                                                 "isVisible": true,
-                                                                                "text": "<a style=\"color:#231F20\"> Analyze the communication between your Bot and users</a>",
+                                                                                "text": "<a style=\"color:#231F20\"> Create your own knowledge collection and choose the type of database</a>  ({{getAnalytics.data.base.totalFields}} )",
                                                                                 "fontSize": "HEADING3",
                                                                                 "fontStyle": "BOLD",
                                                                                 "textAlign": "LEFT",
@@ -20786,7 +20811,14 @@
                                                                                 "bottomRow": 5,
                                                                                 "parentId": "dvkp06brbr",
                                                                                 "backgroundColor": "",
-                                                                                "dynamicBindingPathList": [],
+                                                                                "dynamicBindingPathList": [
+                                                                                    {
+                                                                                        "key": "text"
+                                                                                    },
+                                                                                    {
+                                                                                        "key": "classStyle"
+                                                                                    }
+                                                                                ],
                                                                                 "dynamicTriggerPathList": [
                                                                                     {
                                                                                         "key": "onClick"
@@ -20794,7 +20826,8 @@
                                                                                 ],
                                                                                 "borderColor": "",
                                                                                 "borderWidth": "",
-                                                                                "onClick": "{{navigateTo('Users', {})}}"
+                                                                                "onClick": "{{navigateTo('Knowledge base', {})}}",
+                                                                                "classStyle": "{{getAnalytics.data.base.percentage === \"100\" ?'text_cross' :\"\"}}"
                                                                             }
                                                                         ],
                                                                         "minHeight": 400,
@@ -20856,7 +20889,7 @@
                                                                         "children": [
                                                                             {
                                                                                 "isVisible": true,
-                                                                                "text": "<span style=\"display: inline-block; width: 30px; height: 30px; text-align: center; line-height: 30px; border-radius: 50%;border-width: 1px; border-color:#231F20;background:#5FA362;\">&#x2713</span> ",
+                                                                                "text": "{{getAnalytics.data.settings.percentage !== \"100\" ?`<span style=\"display: inline-block; width: 30px; height: 30px; text-align: center; line-height: 30px; border-radius: 50%;border-width: 1px; border-color:#231F20;background: #F65A1A\">&#33;</span>`: `<span style=\"display: inline-block; width: 30px; height: 30px; text-align: center; line-height: 30px; border-radius: 50%;border-width: 1px; border-color:#231F20;background:#5FA362;\">&#x2713</span>` }}",
                                                                                 "fontSize": "PARAGRAPH",
                                                                                 "fontStyle": "BOLD",
                                                                                 "textAlign": "LEFT",
@@ -20882,13 +20915,17 @@
                                                                                 "topRow": 0,
                                                                                 "bottomRow": 5,
                                                                                 "parentId": "pk0q6pyduu",
-                                                                                "dynamicBindingPathList": [],
+                                                                                "dynamicBindingPathList": [
+                                                                                    {
+                                                                                        "key": "text"
+                                                                                    }
+                                                                                ],
                                                                                 "dynamicTriggerPathList": [],
                                                                                 "classStyle": "icon"
                                                                             },
                                                                             {
                                                                                 "isVisible": true,
-                                                                                "text": "<a style=\"color:#231F20\">Select the type of bot and its configuration</a>",
+                                                                                "text": "<a style=\"color:#231F20\">Select the type of bot and its configuration</a> ({{getAnalytics.data.settings.filledFields}} from {{getAnalytics.data.settings.totalFields}} )",
                                                                                 "fontSize": "HEADING3",
                                                                                 "fontStyle": "BOLD",
                                                                                 "textAlign": "LEFT",
@@ -20915,7 +20952,14 @@
                                                                                 "bottomRow": 5,
                                                                                 "parentId": "pk0q6pyduu",
                                                                                 "backgroundColor": "",
-                                                                                "dynamicBindingPathList": [],
+                                                                                "dynamicBindingPathList": [
+                                                                                    {
+                                                                                        "key": "text"
+                                                                                    },
+                                                                                    {
+                                                                                        "key": "classStyle"
+                                                                                    }
+                                                                                ],
                                                                                 "dynamicTriggerPathList": [
                                                                                     {
                                                                                         "key": "onClick"
@@ -20923,7 +20967,7 @@
                                                                                 ],
                                                                                 "borderColor": "",
                                                                                 "borderWidth": "",
-                                                                                "classStyle": "text_cross",
+                                                                                "classStyle": "{{getAnalytics.data.settings.percentage === \"100\" ?'text_cross' :\"\"}}",
                                                                                 "onClick": "{{navigateTo('Bots', {})}}"
                                                                             }
                                                                         ],
@@ -20986,7 +21030,7 @@
                                                                         "children": [
                                                                             {
                                                                                 "isVisible": true,
-                                                                                "text": "<span style=\"display: inline-block; width: 30px; height: 30px; text-align: center; line-height: 30px; border-radius: 50%;border-width: 1px; border-color:#231F20;background: #F65A1A\">&#33;</span>",
+                                                                                "text": "{{getAnalytics.data.bots.percentage !== \"100.00\" ?`<span style=\"display: inline-block; width: 30px; height: 30px; text-align: center; line-height: 30px; border-radius: 50%;border-width: 1px; border-color:#231F20;background: #F65A1A\">&#33;</span>`: `<span style=\"display: inline-block; width: 30px; height: 30px; text-align: center; line-height: 30px; border-radius: 50%;border-width: 1px; border-color:#231F20;background:#5FA362;\">&#x2713</span>` }}",
                                                                                 "fontSize": "PARAGRAPH",
                                                                                 "fontStyle": "BOLD",
                                                                                 "textAlign": "LEFT",
@@ -21012,13 +21056,17 @@
                                                                                 "topRow": 0,
                                                                                 "bottomRow": 5,
                                                                                 "parentId": "chaetcwhrn",
-                                                                                "dynamicBindingPathList": [],
+                                                                                "dynamicBindingPathList": [
+                                                                                    {
+                                                                                        "key": "text"
+                                                                                    }
+                                                                                ],
                                                                                 "dynamicTriggerPathList": [],
                                                                                 "classStyle": "icon"
                                                                             },
                                                                             {
                                                                                 "isVisible": true,
-                                                                                "text": "<a style=\"color:#231F20\">Fill in the main settings for your Bot</a>",
+                                                                                "text": "<a style=\"color:#231F20\">Fill in the main settings for your Bot</a> ({{getAnalytics.data.bots.filledFields}} from {{getAnalytics.data.bots.totalFields}} )",
                                                                                 "fontSize": "HEADING3",
                                                                                 "fontStyle": "BOLD",
                                                                                 "textAlign": "LEFT",
@@ -21045,7 +21093,14 @@
                                                                                 "bottomRow": 5,
                                                                                 "parentId": "chaetcwhrn",
                                                                                 "backgroundColor": "",
-                                                                                "dynamicBindingPathList": [],
+                                                                                "dynamicBindingPathList": [
+                                                                                    {
+                                                                                        "key": "text"
+                                                                                    },
+                                                                                    {
+                                                                                        "key": "classStyle"
+                                                                                    }
+                                                                                ],
                                                                                 "dynamicTriggerPathList": [
                                                                                     {
                                                                                         "key": "onClick"
@@ -21053,7 +21108,8 @@
                                                                                 ],
                                                                                 "borderColor": "",
                                                                                 "borderWidth": "",
-                                                                                "onClick": "{{navigateTo('Setup', {})}}"
+                                                                                "onClick": "{{navigateTo('Setup', {})}}",
+                                                                                "classStyle": "{{getAnalytics.data.bots.percentage === \"100\" ?'text_cross' :\"\"}}"
                                                                             }
                                                                         ],
                                                                         "minHeight": 400,
@@ -21788,7 +21844,7 @@
                                     }
                                 ],
                                 "version": 1,
-                                "classStyle": "scroll_section ",
+                                "classStyle": "scroll_section main_section",
                                 "type": "CONTAINER_WIDGET",
                                 "hideCard": false,
                                 "displayName": "Container",
@@ -21904,6 +21960,17 @@
                                     "main.env.nodeUrl"
                                 ],
                                 "timeoutInMillisecond": 10000
+                            },
+                            {
+                                "_id": "6538183e59328d8a63c5e7de",
+                                "id": "6538183e59328d8a63c5e7de",
+                                "confirmBeforeExecute": false,
+                                "name": "getAnalytics",
+                                "pluginType": "API",
+                                "jsonPathKeys": [
+                                    "main.env.nodeUrl"
+                                ],
+                                "timeoutInMillisecond": 10000
                             }
                         ]
                     ],
@@ -21992,7 +22059,7 @@
                                     }
                                 ],
                                 "version": 1,
-                                "classStyle": "scroll_section ",
+                                "classStyle": "main_section",
                                 "type": "CONTAINER_WIDGET",
                                 "hideCard": false,
                                 "displayName": "Container",
