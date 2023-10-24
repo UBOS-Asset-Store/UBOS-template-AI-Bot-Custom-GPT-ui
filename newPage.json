@@ -20238,48 +20238,7 @@
                                                                 "yAxisPosition": "left",
                                                                 "dataLabelsPosition": "top",
                                                                 "columnWidthRatio": 0.6,
-                                                                "chartData": [
-                                                                    {
-                                                                        "type": "1-3",
-                                                                        "value": 0.16,
-                                                                        "color": "#1976D2",
-                                                                        "label": "0.16%",
-                                                                        "borderColor": "#000"
-                                                                    },
-                                                                    {
-                                                                        "type": "4-10",
-                                                                        "value": 0.125,
-                                                                        "color": "#FFEB3B",
-                                                                        "label": "0.125s",
-                                                                        "borderColor": "#F44336"
-                                                                    },
-                                                                    {
-                                                                        "type": "11-30",
-                                                                        "value": 0.24,
-                                                                        "label": "0.24mm"
-                                                                    },
-                                                                    {
-                                                                        "type": "31-60",
-                                                                        "value": 0.19,
-                                                                        "label": "0.19"
-                                                                    },
-                                                                    {
-                                                                        "type": "3-10",
-                                                                        "value": 0.05,
-                                                                        "label": "0.05"
-                                                                    },
-                                                                    {
-                                                                        "type": "10-30",
-                                                                        "value": 0.01,
-                                                                        "label": "0.01"
-                                                                    },
-                                                                    {
-                                                                        "type": "30+",
-                                                                        "value": 0.015,
-                                                                        "color": "#FF5722",
-                                                                        "label": "0.015"
-                                                                    }
-                                                                ],
+                                                                "chartData": "{{bar.data}}",
                                                                 "type": "BARCHART_WIDGET",
                                                                 "hideCard": false,
                                                                 "displayName": "Bar Chart",
@@ -20296,7 +20255,11 @@
                                                                 "topRow": 1,
                                                                 "bottomRow": 42,
                                                                 "parentId": "v7nwltwbjn",
-                                                                "dynamicBindingPathList": [],
+                                                                "dynamicBindingPathList": [
+                                                                    {
+                                                                        "key": "chartData"
+                                                                    }
+                                                                ],
                                                                 "dynamicTriggerPathList": []
                                                             }
                                                         ],
@@ -21966,6 +21929,17 @@
                                 "id": "6538183e59328d8a63c5e7de",
                                 "confirmBeforeExecute": false,
                                 "name": "getAnalytics",
+                                "pluginType": "API",
+                                "jsonPathKeys": [
+                                    "main.env.nodeUrl"
+                                ],
+                                "timeoutInMillisecond": 10000
+                            },
+                            {
+                                "_id": "65383f3d59328d8a63c5e7df",
+                                "id": "65383f3d59328d8a63c5e7df",
+                                "confirmBeforeExecute": false,
+                                "name": "bar",
                                 "pluginType": "API",
                                 "jsonPathKeys": [
                                     "main.env.nodeUrl"
