@@ -20904,7 +20904,7 @@
                                                                         "children": [
                                                                             {
                                                                                 "isVisible": true,
-                                                                                "text": "{{getAnalytics.data.files.percentage !== \"100\" ?`<span style=\"display: inline-block; width: 30px; height: 30px; text-align: center; line-height: 30px; border-radius: 50%;border-width: 1px; border-color:#231F20;background: #F65A1A\">&#33;</span>`: `<span style=\"display: inline-block; width: 30px; height: 30px; text-align: center; line-height: 30px; border-radius: 50%;border-width: 1px; border-color:#231F20;background:#5FA362;\">&#x2713</span>` }}",
+                                                                                "text": "{{getKnowlegeDatas.data.totalFiles !== 0 ?`<span style=\"display: inline-block; width: 30px; height: 30px; text-align: center; line-height: 30px; border-radius: 50%;border-width: 1px; border-color:#231F20;background: #F65A1A\">&#33;</span>`: `<span style=\"display: inline-block; width: 30px; height: 30px; text-align: center; line-height: 30px; border-radius: 50%;border-width: 1px; border-color:#231F20;background:#5FA362;\">&#x2713</span>` }}",
                                                                                 "fontSize": "PARAGRAPH",
                                                                                 "fontStyle": "BOLD",
                                                                                 "textAlign": "LEFT",
@@ -20983,7 +20983,7 @@
                                                                                 "borderColor": "",
                                                                                 "borderWidth": "",
                                                                                 "onClick": "{{navigateTo('Training', {})}}",
-                                                                                "classStyle": "{{getAnalytics.data.files.percentage === \"100\" ?'text_cross' :\"\"}}"
+                                                                                "classStyle": "{{getKnowlegeDatas.data.totalFiles !== '0' ?'text_cross' :\"\"}}"
                                                                             }
                                                                         ],
                                                                         "minHeight": 400,
