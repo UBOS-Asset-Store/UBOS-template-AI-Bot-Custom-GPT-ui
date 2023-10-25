@@ -21303,7 +21303,7 @@
                                                                         "children": [
                                                                             {
                                                                                 "isVisible": true,
-                                                                                "text": "{{getAnalytics.data.settings.percentage !== \"100\" ?`<span style=\"display: inline-block; width: 30px; height: 30px; text-align: center; line-height: 30px; border-radius: 50%;border-width: 1px; border-color:#231F20;background: #F65A1A\">&#33;</span>`: `<span style=\"display: inline-block; width: 30px; height: 30px; text-align: center; line-height: 30px; border-radius: 50%;border-width: 1px; border-color:#231F20;background:#5FA362;\">&#x2713</span>` }}",
+                                                                                "text": "{{getAnalytics.data.bots.percentage !== \"100\" ?`<span style=\"display: inline-block; width: 30px; height: 30px; text-align: center; line-height: 30px; border-radius: 50%;border-width: 1px; border-color:#231F20;background: #F65A1A\">&#33;</span>`: `<span style=\"display: inline-block; width: 30px; height: 30px; text-align: center; line-height: 30px; border-radius: 50%;border-width: 1px; border-color:#231F20;background:#5FA362;\">&#x2713</span>` }}",
                                                                                 "fontSize": "PARAGRAPH",
                                                                                 "fontStyle": "BOLD",
                                                                                 "textAlign": "LEFT",
@@ -21339,7 +21339,7 @@
                                                                             },
                                                                             {
                                                                                 "isVisible": true,
-                                                                                "text": "<a style=\"color:#231F20\">Select the type of bot and its configuration</a> ({{getAnalytics.data.settings.filledFields}} of {{getAnalytics.data.settings.totalFields}} )",
+                                                                                "text": "<a style=\"color:#231F20\">Select the type of bot and its configuration</a> ({{getAnalytics.data.bots.filledFields}} of {{getAnalytics.data.bots.totalFields}} )",
                                                                                 "fontSize": "HEADING3",
                                                                                 "fontStyle": "BOLD",
                                                                                 "textAlign": "LEFT",
@@ -21444,7 +21444,7 @@
                                                                         "children": [
                                                                             {
                                                                                 "isVisible": true,
-                                                                                "text": "{{getAnalytics.data.bots.percentage !== \"100.00\" ?`<span style=\"display: inline-block; width: 30px; height: 30px; text-align: center; line-height: 30px; border-radius: 50%;border-width: 1px; border-color:#231F20;background: #F65A1A\">&#33;</span>`: `<span style=\"display: inline-block; width: 30px; height: 30px; text-align: center; line-height: 30px; border-radius: 50%;border-width: 1px; border-color:#231F20;background:#5FA362;\">&#x2713</span>` }}",
+                                                                                "text": "{{getAnalytics.data.settings.percentage !== \"100\" ?`<span style=\"display: inline-block; width: 30px; height: 30px; text-align: center; line-height: 30px; border-radius: 50%;border-width: 1px; border-color:#231F20;background: #F65A1A\">&#33;</span>`: `<span style=\"display: inline-block; width: 30px; height: 30px; text-align: center; line-height: 30px; border-radius: 50%;border-width: 1px; border-color:#231F20;background:#5FA362;\">&#x2713</span>` }}",
                                                                                 "fontSize": "PARAGRAPH",
                                                                                 "fontStyle": "BOLD",
                                                                                 "textAlign": "LEFT",
@@ -21480,7 +21480,7 @@
                                                                             },
                                                                             {
                                                                                 "isVisible": true,
-                                                                                "text": "<a style=\"color:#231F20\">Fill in the main settings of your Bot</a> ({{getAnalytics.data.bots.filledFields}} of {{getAnalytics.data.bots.totalFields}} )",
+                                                                                "text": "<a style=\"color:#231F20\">Fill in the main settings of your Bot</a> ({{getAnalytics.data.settings.filledFields}} of {{getAnalytics.data.settings.totalFields}} )",
                                                                                 "fontSize": "HEADING3",
                                                                                 "fontStyle": "BOLD",
                                                                                 "textAlign": "LEFT",
@@ -21523,7 +21523,7 @@
                                                                                 "borderColor": "",
                                                                                 "borderWidth": "",
                                                                                 "onClick": "{{navigateTo('Setup', {})}}",
-                                                                                "classStyle": "{{getAnalytics.data.bots.percentage === \"100\" ?'text_cross' :\"\"}}"
+                                                                                "classStyle": "{{getAnalytics.data.settings.percentage === \"100\" ?'text_cross' :\"\"}}"
                                                                             }
                                                                         ],
                                                                         "minHeight": 400,
