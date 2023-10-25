@@ -16881,53 +16881,7 @@
                     "deleted": false,
                     "policies": [],
                     "layoutOnLoadActions": [
-                        [
-                            {
-                                "_id": "6533b6e059328d8a63c5e7ca",
-                                "id": "6533b6e059328d8a63c5e7ca",
-                                "confirmBeforeExecute": false,
-                                "name": "getAll",
-                                "pluginType": "API",
-                                "jsonPathKeys": [
-                                    "main.env.",
-                                    "main.env.nodeUrl"
-                                ],
-                                "timeoutInMillisecond": "20000"
-                            },
-                            {
-                                "_id": "6533bca759328d8a63c5e7cb",
-                                "id": "6533bca759328d8a63c5e7cb",
-                                "confirmBeforeExecute": false,
-                                "name": "getAll1",
-                                "pluginType": "API",
-                                "jsonPathKeys": [
-                                    "main.env.nodeUrl"
-                                ],
-                                "timeoutInMillisecond": 10000
-                            },
-                            {
-                                "_id": "6536659159328d8a63c5e7ce",
-                                "id": "6536659159328d8a63c5e7ce",
-                                "confirmBeforeExecute": false,
-                                "name": "getAll2",
-                                "pluginType": "API",
-                                "jsonPathKeys": [
-                                    "main.env.nodeUrl"
-                                ],
-                                "timeoutInMillisecond": 10000
-                            },
-                            {
-                                "_id": "65366d5259328d8a63c5e7cf",
-                                "id": "65366d5259328d8a63c5e7cf",
-                                "confirmBeforeExecute": false,
-                                "name": "getAll3",
-                                "pluginType": "API",
-                                "jsonPathKeys": [
-                                    "main.env.nodeUrl"
-                                ],
-                                "timeoutInMillisecond": 10000
-                            }
-                        ]
+                        []
                     ],
                     "layoutOnCloseActions": [
                         []
