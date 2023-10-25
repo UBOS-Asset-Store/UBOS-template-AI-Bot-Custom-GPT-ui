@@ -8852,7 +8852,7 @@
                         "value": true
                     }
                 ],
-                "body": "{\"meta_token\":{{JSON.stringify(insta_token.text)}},\n \"response_phoneId\":{{JSON.stringify(insta_id.text)}}\n}"
+                "body": "{\"meta_token\":{{JSON.stringify(insta_token.text)}},\n \"response_pageId\":{{JSON.stringify(insta_id.text)}}\n}"
             },
             "dynamicBindingPathList": [
                 {
@@ -8868,13 +8868,13 @@
                 "main.env.nodeUrl",
                 "JSON.stringify(insta_token.text)",
                 "JSON.stringify(insta_id.text)",
-                "main.env.nodeUrl,2023-10-23T15:27:02.129Z,2023-10-23T19:05:28.167Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl"
+                "main.env.nodeUrl,2023-10-23T15:27:02.129Z,2023-10-25T12:10:23.150Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl"
             ],
             "userSetOnLoad": false,
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-10-23T15:27:02.129Z",
-        "updatedAt": "2023-10-24T21:03:44.263Z",
+        "updatedAt": "2023-10-25T12:10:37.320Z",
         "deleted": false,
         "policies": [
             {
@@ -8995,7 +8995,7 @@
                     }
                 ],
                 "queryParameters": [],
-                "body": "{\"meta_token\":{{JSON.stringify(ms_token.text)}},\n \"response_phoneId\":{{JSON.stringify(ms_id.text)}}\n}",
+                "body": "{\"meta_token\":{{JSON.stringify(ms_token.text)}},\n \"response_pageId\":{{JSON.stringify(ms_id.text)}}\n}",
                 "bodyFormData": [],
                 "formData": {
                     "apiContentType": "none"
@@ -9019,14 +9019,13 @@
             "jsonPathKeys": [
                 "main.env.nodeUrl",
                 "JSON.stringify(ms_token.text)",
-                "JSON.stringify(m.text)",
                 "JSON.stringify(ms_id.text)"
             ],
             "userSetOnLoad": false,
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-10-23T19:04:10.116Z",
-        "updatedAt": "2023-10-23T19:05:58.647Z",
+        "updatedAt": "2023-10-25T12:11:05.500Z",
         "deleted": false,
         "policies": [
             {
