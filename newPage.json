@@ -21381,7 +21381,7 @@
                                                                                 ],
                                                                                 "borderColor": "",
                                                                                 "borderWidth": "",
-                                                                                "classStyle": "{{getAnalytics.data.settings.percentage === \"100\" ?'text_cross' :\"\"}}",
+                                                                                "classStyle": "{{getAnalytics.data.bots.percentage === \"100\" ?'text_cross' :\"\"}}",
                                                                                 "onClick": "{{navigateTo('Bots', {})}}"
                                                                             }
                                                                         ],
