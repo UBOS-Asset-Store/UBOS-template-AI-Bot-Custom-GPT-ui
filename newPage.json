@@ -12229,7 +12229,7 @@
                                                                 "buttonVariant": "SECONDARY",
                                                                 "placement": "CENTER",
                                                                 "widgetName": "Button3",
-                                                                "isDisabled": false,
+                                                                "isDisabled": "{{check_pinecone.data.settings.percentage !== '100'}}",
                                                                 "isDefaultClickDisabled": true,
                                                                 "recaptchaType": "V3",
                                                                 "version": 1,
@@ -12249,7 +12249,14 @@
                                                                 "topRow": 11,
                                                                 "bottomRow": 16,
                                                                 "parentId": "ihc06jbcex",
-                                                                "dynamicBindingPathList": [],
+                                                                "dynamicBindingPathList": [
+                                                                    {
+                                                                        "key": "isDisabled"
+                                                                    },
+                                                                    {
+                                                                        "key": "tooltip"
+                                                                    }
+                                                                ],
                                                                 "dynamicTriggerPathList": [
                                                                     {
                                                                         "key": "onClick"
@@ -12260,9 +12267,12 @@
                                                                 "dynamicPropertyPathList": [
                                                                     {
                                                                         "key": "onClick"
+                                                                    },
+                                                                    {
+                                                                        "key": "isDisabled"
                                                                     }
                                                                 ],
-                                                                "tooltip": "We will be fetching all the webpages and training the ChatGPT model on them."
+                                                                "tooltip": "{{check_pinecone.data.settings.percentage !== '100' ?'Fill in the data on the page \"Setup\"':'We will be fetching all the webpages and training the ChatGPT model on them.'}}"
                                                             },
                                                             {
                                                                 "isVisible": true,
@@ -12914,10 +12924,13 @@
                                                                 "topRow": 8,
                                                                 "bottomRow": 15,
                                                                 "parentId": "k2agajmtvu",
-                                                                "uploadButtonText": "upload",
+                                                                "uploadButtonText": "{{check_pinecone.data.settings.percentage !== '100' ?'Fill data on the page \"Setup\"':'upload'}}",
                                                                 "dynamicBindingPathList": [
                                                                     {
                                                                         "key": "uploadUrl"
+                                                                    },
+                                                                    {
+                                                                        "key": "uploadButtonText"
                                                                     }
                                                                 ],
                                                                 "dynamicTriggerPathList": [
@@ -13420,45 +13433,6 @@
                                                             },
                                                             {
                                                                 "isVisible": true,
-                                                                "iconName": "plus",
-                                                                "borderRadius": "ROUNDED",
-                                                                "boxShadow": "NONE",
-                                                                "buttonColor": "#3268a8",
-                                                                "buttonVariant": "SECONDARY",
-                                                                "isDisabled": false,
-                                                                "widgetName": "IconButton3",
-                                                                "version": 1,
-                                                                "animateLoading": true,
-                                                                "type": "ICON_BUTTON_WIDGET",
-                                                                "hideCard": false,
-                                                                "displayName": "Icon Button",
-                                                                "key": "sw7bdh33vm",
-                                                                "iconSVG": "/static/media/icon.1a0c634a.svg",
-                                                                "widgetId": "do1i4exffm",
-                                                                "renderMode": "CANVAS",
-                                                                "isLoading": false,
-                                                                "parentColumnSpace": 8.1826171875,
-                                                                "parentRowSpace": 10,
-                                                                "leftColumn": 60,
-                                                                "rightColumn": 64,
-                                                                "topRow": 16,
-                                                                "bottomRow": 21,
-                                                                "parentId": "lzfnfil2re",
-                                                                "dynamicBindingPathList": [],
-                                                                "dynamicTriggerPathList": [
-                                                                    {
-                                                                        "key": "onClick"
-                                                                    }
-                                                                ],
-                                                                "onClick": "{{saveVector.run(() => getKnowlegeFiles.run(), () => {})}}",
-                                                                "dynamicPropertyPathList": [
-                                                                    {
-                                                                        "key": "onClick"
-                                                                    }
-                                                                ]
-                                                            },
-                                                            {
-                                                                "isVisible": true,
                                                                 "widgetName": "Divider6",
                                                                 "orientation": "horizontal",
                                                                 "capType": "nc",
@@ -13546,6 +13520,61 @@
                                                                 "parentId": "lzfnfil2re",
                                                                 "dynamicBindingPathList": [],
                                                                 "dynamicTriggerPathList": []
+                                                            },
+                                                            {
+                                                                "isVisible": true,
+                                                                "animateLoading": true,
+                                                                "text": "",
+                                                                "buttonColor": "#3268a8",
+                                                                "buttonVariant": "TERTIARY",
+                                                                "placement": "CENTER",
+                                                                "widgetName": "Button14",
+                                                                "isDisabled": "{{check_pinecone.data.settings.percentage !== '100' }}",
+                                                                "isDefaultClickDisabled": true,
+                                                                "recaptchaType": "V3",
+                                                                "version": 1,
+                                                                "classStyle": "",
+                                                                "type": "BUTTON_WIDGET",
+                                                                "hideCard": false,
+                                                                "displayName": "Button",
+                                                                "key": "cdrki84nn2",
+                                                                "iconSVG": "/static/media/icon.cca02633.svg",
+                                                                "widgetId": "pbdcrc7ucr",
+                                                                "renderMode": "CANVAS",
+                                                                "isLoading": false,
+                                                                "parentColumnSpace": 12.896484375,
+                                                                "parentRowSpace": 10,
+                                                                "leftColumn": 60,
+                                                                "rightColumn": 64,
+                                                                "topRow": 17,
+                                                                "bottomRow": 21,
+                                                                "parentId": "lzfnfil2re",
+                                                                "tooltip": "{{check_pinecone.data.settings.percentage !== '100' ?'Fill in the data on the page \"Setup\"':'We will be fetching all the webpages and training the ChatGPT model on them.'}}",
+                                                                "dynamicBindingPathList": [
+                                                                    {
+                                                                        "key": "tooltip"
+                                                                    },
+                                                                    {
+                                                                        "key": "isDisabled"
+                                                                    }
+                                                                ],
+                                                                "dynamicTriggerPathList": [
+                                                                    {
+                                                                        "key": "onClick"
+                                                                    }
+                                                                ],
+                                                                "dynamicPropertyPathList": [
+                                                                    {
+                                                                        "key": "isDisabled"
+                                                                    },
+                                                                    {
+                                                                        "key": "onClick"
+                                                                    }
+                                                                ],
+                                                                "borderRadius": "ROUNDED",
+                                                                "iconName": "add-to-artifact",
+                                                                "iconAlign": "left",
+                                                                "onClick": "{{saveVector.run(() => getKnowlegeFiles.run(), () => {})}}"
                                                             }
                                                         ],
                                                         "minHeight": 630,
@@ -13557,7 +13586,7 @@
                                                         "leftColumn": 0,
                                                         "rightColumn": 752.125,
                                                         "topRow": 1,
-                                                        "bottomRow": 690,
+                                                        "bottomRow": 630,
                                                         "parentId": "mw49kdef9m",
                                                         "dynamicBindingPathList": [],
                                                         "dynamicTriggerPathList": []
@@ -14103,10 +14132,10 @@
                         "Table5",
                         "manualques",
                         "manualanswer",
-                        "IconButton3",
                         "Divider6",
                         "Text4Copy2",
                         "Text9",
+                        "Button14",
                         "Container5",
                         "Canvas29",
                         "Select1",
@@ -14141,6 +14170,17 @@
                                 "id": "6527f351ff0d1890fd5b921a",
                                 "confirmBeforeExecute": false,
                                 "name": "_getKnowlegeFiles",
+                                "pluginType": "API",
+                                "jsonPathKeys": [
+                                    "main.env.nodeUrl"
+                                ],
+                                "timeoutInMillisecond": 10000
+                            },
+                            {
+                                "_id": "65395c9c59328d8a63c5e7e3",
+                                "id": "65395c9c59328d8a63c5e7e3",
+                                "confirmBeforeExecute": false,
+                                "name": "check_pinecone",
                                 "pluginType": "API",
                                 "jsonPathKeys": [
                                     "main.env.nodeUrl"
@@ -14298,7 +14338,7 @@
                                                                                 "leftColumn": 0,
                                                                                 "rightColumn": 64,
                                                                                 "topRow": 4,
-                                                                                "bottomRow": 10,
+                                                                                "bottomRow": 11,
                                                                                 "parentId": "comrqkesi6",
                                                                                 "dynamicBindingPathList": [
                                                                                     {
@@ -14340,8 +14380,8 @@
                                                                                 "parentRowSpace": 10,
                                                                                 "leftColumn": 0,
                                                                                 "rightColumn": 64,
-                                                                                "topRow": 10,
-                                                                                "bottomRow": 17,
+                                                                                "topRow": 11,
+                                                                                "bottomRow": 18,
                                                                                 "parentId": "comrqkesi6",
                                                                                 "dynamicBindingPathList": [
                                                                                     {
@@ -14385,8 +14425,8 @@
                                                                                 "parentRowSpace": 10,
                                                                                 "leftColumn": 0,
                                                                                 "rightColumn": 64,
-                                                                                "topRow": 17,
-                                                                                "bottomRow": 24,
+                                                                                "topRow": 18,
+                                                                                "bottomRow": 25,
                                                                                 "parentId": "comrqkesi6",
                                                                                 "dynamicBindingPathList": [
                                                                                     {
@@ -14428,8 +14468,8 @@
                                                                                 "parentRowSpace": 10,
                                                                                 "leftColumn": 0,
                                                                                 "rightColumn": 64,
-                                                                                "topRow": 24,
-                                                                                "bottomRow": 31,
+                                                                                "topRow": 25,
+                                                                                "bottomRow": 32,
                                                                                 "parentId": "comrqkesi6",
                                                                                 "dynamicBindingPathList": [
                                                                                     {
@@ -15588,7 +15628,7 @@
                                                                             },
                                                                             {
                                                                                 "isVisible": true,
-                                                                                "text": "Pinecone vector data base \n<span style=\"font-size: 14px; color: #999; font-weight: normal;\">Configure bot's vector base Pinecone</span>",
+                                                                                "text": "Pinecone vector data base *\n<span style=\"font-size: 14px; color: #999; font-weight: normal;\">Configure bot's vector base Pinecone</span>",
                                                                                 "fontSize": "HEADING2",
                                                                                 "fontStyle": "BOLD",
                                                                                 "textAlign": "LEFT",
@@ -15766,7 +15806,7 @@
                                                                             },
                                                                             {
                                                                                 "isVisible": true,
-                                                                                "text": "ChatGPT Model Configuration \n<span style=\"font-size: 14px; color: #999; font-weight: normal;\">Manage which ChatGPT model to use </span>",
+                                                                                "text": "ChatGPT Model Configuration *\n<span style=\"font-size: 14px; color: #999; font-weight: normal;\">Manage which ChatGPT model to use </span>",
                                                                                 "fontSize": "HEADING2",
                                                                                 "fontStyle": "BOLD",
                                                                                 "textAlign": "LEFT",
