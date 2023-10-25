@@ -404,5 +404,102 @@
         "actionIds": [],
         "archivedActionIds": [],
         "archivedActions": []
+    },
+    {
+        "id": "6538f5ef59328d8a63c5e7e0",
+        "name": "JSObject1",
+        "pageId": "Users",
+        "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tmyFun1: () => {\n\t\t//write code here\n\t},\n\tmyFun2: async () => {\nstoreValue(\"tab\",\"Telegram\")\n\t}\n}",
+        "variables": [
+            {
+                "name": "myVar1",
+                "value": []
+            },
+            {
+                "name": "myVar2",
+                "value": {}
+            }
+        ],
+        "actions": [
+            {
+                "name": "myFun1",
+                "pageId": "Users",
+                "executeOnLoad": false,
+                "actionConfiguration": {
+                    "body": "() => {\n\t\t//write code here\n\t}",
+                    "isAsync": false,
+                    "timeoutInMillisecond": 10000,
+                    "jsArguments": [],
+                    "paginationType": "NONE",
+                    "encodeParamsToggle": true
+                },
+                "clientSideExecution": true,
+                "_id": "6538f5ef59328d8a63c5e7e1",
+                "id": "6538f5ef59328d8a63c5e7e1",
+                "collectionId": "6538f5ef59328d8a63c5e7e0",
+                "confirmBeforeExecute": false,
+                "applicationId": "jetsondashboard",
+                "datasource": {
+                    "isValid": true,
+                    "messages": [],
+                    "name": "UNUSED_DATASOURCE",
+                    "new": true,
+                    "pluginId": "",
+                    "userPermissions": []
+                },
+                "dynamicBindingPathList": [
+                    {
+                        "key": "body"
+                    }
+                ],
+                "fullyQualifiedName": "JSObject1.myFun1",
+                "isValid": true,
+                "jsonPathKeys": [
+                    "() => {\n\t\t//write code here\n\t}"
+                ],
+                "pluginType": "JS"
+            },
+            {
+                "name": "myFun2",
+                "pageId": "Users",
+                "executeOnLoad": true,
+                "actionConfiguration": {
+                    "body": "async () => {\nstoreValue(\"tab\",\"Telegram\")\n\t}",
+                    "isAsync": true,
+                    "timeoutInMillisecond": 10000,
+                    "jsArguments": [],
+                    "paginationType": "NONE",
+                    "encodeParamsToggle": true
+                },
+                "clientSideExecution": true,
+                "_id": "6538f5ef59328d8a63c5e7e2",
+                "id": "6538f5ef59328d8a63c5e7e2",
+                "collectionId": "6538f5ef59328d8a63c5e7e0",
+                "confirmBeforeExecute": false,
+                "applicationId": "jetsondashboard",
+                "datasource": {
+                    "isValid": true,
+                    "messages": [],
+                    "name": "UNUSED_DATASOURCE",
+                    "new": true,
+                    "pluginId": "",
+                    "userPermissions": []
+                },
+                "dynamicBindingPathList": [
+                    {
+                        "key": "body"
+                    }
+                ],
+                "fullyQualifiedName": "JSObject1.myFun2",
+                "isValid": true,
+                "jsonPathKeys": [
+                    "async () => {\n\t\t//use async-await or promises\n\t}"
+                ],
+                "pluginType": "JS"
+            }
+        ],
+        "applicationId": "jetsondashboard",
+        "pluginType": "JS",
+        "_id": "6538f5ef59328d8a63c5e7e0"
     }
 ]
