@@ -13603,11 +13603,11 @@
                                                             {
                                                                 "isVisible": true,
                                                                 "placeholderText": "Select option",
-                                                                "labelText": "CHOOSE BASE",
+                                                                "labelText": "CHOOSE KNOWLEDGE BASE",
                                                                 "labelPosition": "Left",
                                                                 "labelAlignment": "right",
                                                                 "labelWidth": "13",
-                                                                "options": "[\n  {\n    \"label\": \"default\",\n    \"value\": \"default\"\n  },\n  {\n    \"label\": \"Green\",\n    \"value\": \"GREEN\"\n  },\n  {\n    \"label\": \"Red\",\n    \"value\": \"RED\"\n  }\n]",
+                                                                "options": "[\n  {\n    \"label\": \"default\",\n    \"value\": \"default\"\n  }\n]",
                                                                 "serverSideFiltering": false,
                                                                 "widgetName": "Select1",
                                                                 "defaultOptionValue": "default",
@@ -13626,7 +13626,7 @@
                                                                 "isLoading": false,
                                                                 "parentColumnSpace": 6.935546875,
                                                                 "parentRowSpace": 10,
-                                                                "leftColumn": 21,
+                                                                "leftColumn": 23,
                                                                 "rightColumn": 61,
                                                                 "topRow": 0,
                                                                 "bottomRow": 4,
@@ -13643,7 +13643,7 @@
                                                                 "labelWidth": 5,
                                                                 "widgetName": "Input1",
                                                                 "version": 2,
-                                                                "defaultText": "BASE:  {{getIDbase.data[0].name}}",
+                                                                "defaultText": "KNOWLEDGE BASE:  {{getIDbase.data[0].name}}",
                                                                 "iconAlign": "left",
                                                                 "autoFocus": false,
                                                                 "labelStyle": "",
@@ -13665,7 +13665,7 @@
                                                                 "parentColumnSpace": 6.935546875,
                                                                 "parentRowSpace": 10,
                                                                 "leftColumn": 0,
-                                                                "rightColumn": 21,
+                                                                "rightColumn": 23,
                                                                 "topRow": 0,
                                                                 "bottomRow": 4,
                                                                 "parentId": "z6rqbb5eq4",
@@ -13683,7 +13683,7 @@
                                                                 "boxShadow": "NONE",
                                                                 "buttonColor": "#3268a8",
                                                                 "buttonVariant": "TERTIARY",
-                                                                "isDisabled": false,
+                                                                "isDisabled": true,
                                                                 "widgetName": "IconButton3Copy",
                                                                 "version": 1,
                                                                 "animateLoading": true,
@@ -19070,7 +19070,7 @@
                                                                                 ],
                                                                                 "dynamicTriggerPathList": [],
                                                                                 "backgroundColor": "",
-                                                                                "classStyle": "{{getCredentialsMeta.data.meta_token ==\"\" && getCredentialsMeta.data.response_phoneId == \"\" ? \"done\" :\"\"}}"
+                                                                                "classStyle": "{{getCredentialsMeta.data.meta_token ==\"\" && getCredentialsMeta.data.response_pageId == \"\" ? \"done\" :\"\"}}"
                                                                             }
                                                                         ],
                                                                         "minHeight": 400,
@@ -19242,7 +19242,7 @@
                                                                                 ],
                                                                                 "dynamicTriggerPathList": [],
                                                                                 "backgroundColor": "",
-                                                                                "classStyle": "{{getCredentialsMeta.data.meta_token ==\"\" && getCredentialsMeta.data.response_phoneId == \"\" ? \"done\" :\"\"}}"
+                                                                                "classStyle": "{{getCredentialsMeta.data.meta_token ==\"\" && getCredentialsMeta.data.response_pageId == \"\" ? \"done\" :\"\"}}"
                                                                             }
                                                                         ],
                                                                         "minHeight": 400,
@@ -21345,7 +21345,7 @@
                                                                             },
                                                                             {
                                                                                 "isVisible": true,
-                                                                                "text": "<a style=\"color:#231F20\">Select the type of bot and its configuration</a> ({{getAnalytics.data.settings.filledFields}} from {{getAnalytics.data.settings.totalFields}} )",
+                                                                                "text": "<a style=\"color:#231F20\">Select the type of bot and its configuration</a> ({{getAnalytics.data.settings.filledFields}} of {{getAnalytics.data.settings.totalFields}} )",
                                                                                 "fontSize": "HEADING3",
                                                                                 "fontStyle": "BOLD",
                                                                                 "textAlign": "LEFT",
@@ -21486,7 +21486,7 @@
                                                                             },
                                                                             {
                                                                                 "isVisible": true,
-                                                                                "text": "<a style=\"color:#231F20\">Fill in the main settings for your Bot</a> ({{getAnalytics.data.bots.filledFields}} from {{getAnalytics.data.bots.totalFields}} )",
+                                                                                "text": "<a style=\"color:#231F20\">Fill in the main settings of your Bot</a> ({{getAnalytics.data.bots.filledFields}} of {{getAnalytics.data.bots.totalFields}} )",
                                                                                 "fontSize": "HEADING3",
                                                                                 "fontStyle": "BOLD",
                                                                                 "textAlign": "LEFT",
