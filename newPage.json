@@ -19436,7 +19436,7 @@
                                                                                 "borderRadius": "ROUNDED",
                                                                                 "iconName": "saved",
                                                                                 "iconAlign": "left",
-                                                                                "onClick": "{{saveCredentialsWhatsApp.run(() => getCredentialsWhatsApp.run(()=> showAlert(saveCredentialsTelegram.data.payload, 'success')), () => {})}}",
+                                                                                "onClick": "{{saveCredentialsWhatsApp.run(() => getenvsbots.run(()=> showAlert(saveCredentialsTelegram.data.payload, 'success')), () => {})}}",
                                                                                 "dynamicPropertyPathList": [
                                                                                     {
                                                                                         "key": "onClick"
@@ -19739,7 +19739,7 @@
                                                                                         "key": "onClick"
                                                                                     }
                                                                                 ],
-                                                                                "onClick": "{{saveCredentialsTelegram.run(() => getCredentialsTelegram.run(()=> showAlert(saveCredentialsTelegram.data.payload, 'success')), () => {})}}",
+                                                                                "onClick": "{{saveCredentialsTelegram.run(() => getenvsbots.run(()=> showAlert(saveCredentialsTelegram.data.payload, 'success')), () => {})}}",
                                                                                 "dynamicPropertyPathList": [
                                                                                     {
                                                                                         "key": "onClick"
@@ -19962,7 +19962,7 @@
                                                                                 "borderRadius": "ROUNDED",
                                                                                 "iconName": "saved",
                                                                                 "iconAlign": "left",
-                                                                                "onClick": "{{saveCredentialsMetaMS.run(() => getCredentialsMeta.run(()=> showAlert(saveCredentialsMetaMS.data.payload, 'success')), () => {})}}",
+                                                                                "onClick": "{{saveCredentialsMetaMS.run(() => getenvsbots.run(()=> showAlert(saveCredentialsMetaMS.data.payload, 'success')), () => {})}}",
                                                                                 "dynamicPropertyPathList": [
                                                                                     {
                                                                                         "key": "onClick"
@@ -20264,7 +20264,7 @@
                                                                                 "iconName": "saved",
                                                                                 "iconAlign": "left",
                                                                                 "boxShadowColor": "",
-                                                                                "onClick": "{{saveCredentialsMetaInstagram.run(() => getCredentialsMeta.run(()=> showAlert(saveCredentialsMetaInstagram.data.payload, 'success')), () => {})}}",
+                                                                                "onClick": "{{saveCredentialsMetaInstagram.run(() => getenvsbots.run(()=> showAlert(saveCredentialsMetaInstagram.data.payload, 'success')), () => {})}}",
                                                                                 "dynamicPropertyPathList": [
                                                                                     {
                                                                                         "key": "onClick"
