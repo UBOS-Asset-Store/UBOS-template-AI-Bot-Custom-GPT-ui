@@ -18693,7 +18693,7 @@
                                                                                     }
                                                                                 ],
                                                                                 "dynamicTriggerPathList": [],
-                                                                                "classStyle": "{{getCredentialsTelegram.data.bot_name ==\"\" && getCredentialsTelegram.data.bot_token == \"\" ? \"done\" :\"\"}}",
+                                                                                "classStyle": "{{getenvsbots.data.telegram.BOT_NAME ==\"\" && getenvsbots.data.telegram.BOT_TOKEN == \"\" ? \"done\" :\"\"}}",
                                                                                 "backgroundColor": "",
                                                                                 "borderWidth": ""
                                                                             },
@@ -18911,7 +18911,7 @@
                                                                                 ],
                                                                                 "dynamicTriggerPathList": [],
                                                                                 "backgroundColor": "",
-                                                                                "classStyle": "{{getCredentialsWhatsApp.data.whatsApp_phoneId ==\"\" && getCredentialsWhatsApp.data.whatsApp_token == \"\" ? \"done\" :\"\"}}"
+                                                                                "classStyle": "{{getenvsbots.data.whatsApp.WHATSAPP_PHONEID==\"\" && getenvsbots.data.whatsApp.WHATSAPP_TOKEN == \"\" ? \"done\" :\"\"}}"
                                                                             }
                                                                         ],
                                                                         "minHeight": 400,
@@ -19083,7 +19083,7 @@
                                                                                 ],
                                                                                 "dynamicTriggerPathList": [],
                                                                                 "backgroundColor": "",
-                                                                                "classStyle": "{{getCredentialsMeta.data.meta_token ==\"\" && getCredentialsMeta.data.response_pageId == \"\" ? \"done\" :\"\"}}"
+                                                                                "classStyle": "{{getenvsbots.data.meta.META_PAGEID==\"\" && getenvsbots.data.meta.META_TOKEN== \"\" ? \"done\" :\"\"}}"
                                                                             }
                                                                         ],
                                                                         "minHeight": 400,
@@ -19255,7 +19255,7 @@
                                                                                 ],
                                                                                 "dynamicTriggerPathList": [],
                                                                                 "backgroundColor": "",
-                                                                                "classStyle": "{{getCredentialsMeta.data.meta_token ==\"\" && getCredentialsMeta.data.response_pageId == \"\" ? \"done\" :\"\"}}"
+                                                                                "classStyle": "{{getenvsbots.data.meta.META_TOKEN==\"\" && getenvsbots.data.meta.META_PAGEID== \"\" ? \"done\" :\"\"}}"
                                                                             }
                                                                         ],
                                                                         "minHeight": 400,
@@ -19624,7 +19624,7 @@
                                                                                 "labelWidth": 5,
                                                                                 "widgetName": "telegram_token",
                                                                                 "version": 2,
-                                                                                "defaultText": "{{getCredentialsTelegram.data.bot_token}}",
+                                                                                "defaultText": "{{getenvsbots.data.telegram.BOT_TOKEN}}",
                                                                                 "iconAlign": "left",
                                                                                 "autoFocus": false,
                                                                                 "labelStyle": "",
@@ -19667,7 +19667,7 @@
                                                                                 "labelWidth": 5,
                                                                                 "widgetName": "telegram_name",
                                                                                 "version": 2,
-                                                                                "defaultText": "{{getCredentialsTelegram.data.bot_name}}",
+                                                                                "defaultText": "{{getenvsbots.data.telegram.BOT_NAME}}",
                                                                                 "iconAlign": "left",
                                                                                 "autoFocus": false,
                                                                                 "labelStyle": "",
@@ -19849,7 +19849,7 @@
                                                                                 "labelWidth": 5,
                                                                                 "widgetName": "ms_id",
                                                                                 "version": 2,
-                                                                                "defaultText": "{{getCredentialsMeta.data.response_phoneId}}",
+                                                                                "defaultText": "{{getenvsbots.data.meta.META_PAGEID}}",
                                                                                 "iconAlign": "left",
                                                                                 "autoFocus": false,
                                                                                 "labelStyle": "",
@@ -19891,7 +19891,7 @@
                                                                                 "labelWidth": 5,
                                                                                 "widgetName": "ms_token",
                                                                                 "version": 2,
-                                                                                "defaultText": "{{getCredentialsMeta.data.meta_token}}",
+                                                                                "defaultText": "{{getenvsbots.data.meta.META_TOKEN}}",
                                                                                 "iconAlign": "left",
                                                                                 "autoFocus": false,
                                                                                 "labelStyle": "",
@@ -20150,7 +20150,7 @@
                                                                                 "labelWidth": 5,
                                                                                 "widgetName": "insta_id",
                                                                                 "version": 2,
-                                                                                "defaultText": "{{getCredentialsMeta.data.response_phoneId}}",
+                                                                                "defaultText": "{{getenvsbots.data.meta.META_PAGEID}}",
                                                                                 "iconAlign": "left",
                                                                                 "autoFocus": false,
                                                                                 "labelStyle": "",
@@ -20192,7 +20192,7 @@
                                                                                 "labelWidth": 5,
                                                                                 "widgetName": "insta_token",
                                                                                 "version": 2,
-                                                                                "defaultText": "{{getCredentialsMeta.data.meta_token}}",
+                                                                                "defaultText": "{{getenvsbots.data.meta.META_TOKEN}}",
                                                                                 "iconAlign": "left",
                                                                                 "autoFocus": false,
                                                                                 "labelStyle": "",
@@ -20563,32 +20563,10 @@
                     "layoutOnLoadActions": [
                         [
                             {
-                                "_id": "65368adb59328d8a63c5e7d2",
-                                "id": "65368adb59328d8a63c5e7d2",
+                                "_id": "653a7e20d431c9ff2df3dc90",
+                                "id": "653a7e20d431c9ff2df3dc90",
                                 "confirmBeforeExecute": false,
-                                "name": "getCredentialsWhatsApp",
-                                "pluginType": "API",
-                                "jsonPathKeys": [
-                                    "main.env.nodeUrl"
-                                ],
-                                "timeoutInMillisecond": 10000
-                            },
-                            {
-                                "_id": "65368a0559328d8a63c5e7d1",
-                                "id": "65368a0559328d8a63c5e7d1",
-                                "confirmBeforeExecute": false,
-                                "name": "getCredentialsTelegram",
-                                "pluginType": "API",
-                                "jsonPathKeys": [
-                                    "main.env.nodeUrl"
-                                ],
-                                "timeoutInMillisecond": 10000
-                            },
-                            {
-                                "_id": "653690ca59328d8a63c5e7d5",
-                                "id": "653690ca59328d8a63c5e7d5",
-                                "confirmBeforeExecute": false,
-                                "name": "getCredentialsMeta",
+                                "name": "getenvsbots",
                                 "pluginType": "API",
                                 "jsonPathKeys": [
                                     "main.env.nodeUrl"
