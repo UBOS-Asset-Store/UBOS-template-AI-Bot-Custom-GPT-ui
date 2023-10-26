@@ -5034,7 +5034,7 @@
                                                                 "buttonVariant": "PRIMARY",
                                                                 "placement": "CENTER",
                                                                 "widgetName": "Button1",
-                                                                "isDisabled": false,
+                                                                "isDisabled": "{{ makeSetting.responseMeta.statusCode==='200' && !makeSetting.data.error}}",
                                                                 "isDefaultClickDisabled": true,
                                                                 "recaptchaType": "V3",
                                                                 "version": 1,
@@ -5054,7 +5054,11 @@
                                                                 "topRow": 15,
                                                                 "bottomRow": 21,
                                                                 "parentId": "ux8gda7g29",
-                                                                "dynamicBindingPathList": [],
+                                                                "dynamicBindingPathList": [
+                                                                    {
+                                                                        "key": "isDisabled"
+                                                                    }
+                                                                ],
                                                                 "dynamicTriggerPathList": [
                                                                     {
                                                                         "key": "onClick"
@@ -5065,6 +5069,9 @@
                                                                 "dynamicPropertyPathList": [
                                                                     {
                                                                         "key": "onClick"
+                                                                    },
+                                                                    {
+                                                                        "key": "isDisabled"
                                                                     }
                                                                 ]
                                                             },
