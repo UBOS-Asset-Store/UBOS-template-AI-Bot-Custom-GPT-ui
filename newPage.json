@@ -14321,7 +14321,7 @@
                                                                                 "labelWidth": 5,
                                                                                 "widgetName": "pineconeapi",
                                                                                 "version": 2,
-                                                                                "defaultText": "{{getCredentialsPinecone.data.pipecone_api? getCredentialsPinecone.data.pipecone_api:\"\"}}",
+                                                                                "defaultText": "{{getenv.data.pinecone.PIPECONE_API? getenv.data.pinecone.PIPECONE_API:\"\"}}",
                                                                                 "iconAlign": "left",
                                                                                 "autoFocus": false,
                                                                                 "labelStyle": "BOLD",
@@ -14364,7 +14364,7 @@
                                                                                 "labelWidth": 5,
                                                                                 "widgetName": "env",
                                                                                 "version": 2,
-                                                                                "defaultText": "{{getCredentialsPinecone.data.pipecone_env ?getCredentialsPinecone.data.pipecone_env :\"\"}}",
+                                                                                "defaultText": "{{getenv.data.pinecone.PIPECONE_ENV?getenv.data.pinecone.PIPECONE_ENV :\"\"}}",
                                                                                 "iconAlign": "left",
                                                                                 "autoFocus": false,
                                                                                 "labelStyle": "BOLD",
@@ -14409,7 +14409,7 @@
                                                                                 "labelWidth": 5,
                                                                                 "widgetName": "indexx",
                                                                                 "version": 2,
-                                                                                "defaultText": "{{getCredentialsPinecone.data.pipecone_index?getCredentialsPinecone.data.pipecone_index:\"\"}}",
+                                                                                "defaultText": "{{getenv.data.pinecone.PIPECONE_INDEX?getenv.data.pinecone.PIPECONE_INDEX:\"\"}}",
                                                                                 "iconAlign": "left",
                                                                                 "autoFocus": false,
                                                                                 "labelStyle": "BOLD",
@@ -14452,7 +14452,7 @@
                                                                                 "labelWidth": 5,
                                                                                 "widgetName": "Input_pineconeUrl",
                                                                                 "version": 2,
-                                                                                "defaultText": "{{getCredentialsPinecone.data.pipecone_url?getCredentialsPinecone.data.pipecone_url:\"\"}}",
+                                                                                "defaultText": "{{getenv.data.pinecone.PIPECONE_URL?getenv.data.pinecone.PIPECONE_URL:\"\"}}",
                                                                                 "iconAlign": "left",
                                                                                 "autoFocus": false,
                                                                                 "labelStyle": "BOLD",
@@ -14632,7 +14632,7 @@
                                                                                 "labelWidth": 5,
                                                                                 "widgetName": "prompt_custom",
                                                                                 "version": 2,
-                                                                                "defaultText": "{{getCredentialsPrompts.data.prompt_custom}}",
+                                                                                "defaultText": "{{getenv.data.prompts.PROMPT_CUSTOM}}",
                                                                                 "iconAlign": "left",
                                                                                 "autoFocus": false,
                                                                                 "labelStyle": "BOLD",
@@ -14677,7 +14677,7 @@
                                                                                 "options": "[\n  {\n    \"label\": \"Assistant\",\n    \"value\": \"Assistant\"\n  },\n  {\n    \"label\": \"Sales consultant\",\n    \"value\": \"Sales consultant\"\n  },\n  {\n    \"label\": \"Technical support\",\n    \"value\": \"Technical support\"\n  }\n]",
                                                                                 "serverSideFiltering": false,
                                                                                 "widgetName": "answer_as",
-                                                                                "defaultOptionValue": "{{getCredentialsPrompts.data.answer_as}}",
+                                                                                "defaultOptionValue": "{{getenv.data.prompts.ANSWER_AS}}",
                                                                                 "version": 1,
                                                                                 "isFilterable": true,
                                                                                 "isRequired": false,
@@ -14717,7 +14717,7 @@
                                                                                 "options": "[\n  {\n    \"label\": \"Formal\",\n    \"value\": \"Formal\"\n  },\n  {\n    \"label\": \"Informal\",\n    \"value\": \"Informal\"\n  }\n]",
                                                                                 "serverSideFiltering": false,
                                                                                 "widgetName": "tone",
-                                                                                "defaultOptionValue": "{{getCredentialsPrompts.data.tone}}",
+                                                                                "defaultOptionValue": "{{getenv.data.prompts.TONE}}",
                                                                                 "version": 1,
                                                                                 "isFilterable": true,
                                                                                 "isRequired": false,
@@ -14757,7 +14757,7 @@
                                                                                 "options": "[\n  {\n    \"label\": \"Portuguese\",\n    \"value\": \"Portuguese\"\n  },\n  {\n    \"label\": \"English\",\n    \"value\": \"English\"\n  },\n  {\n    \"label\": \"Ukrainian\",\n    \"value\": \"Ukrainian\"\n  }\n]",
                                                                                 "serverSideFiltering": false,
                                                                                 "widgetName": "language",
-                                                                                "defaultOptionValue": "{{getCredentialsPrompts.data.language}}",
+                                                                                "defaultOptionValue": "{{getenv.data.prompts.LANGUAGE}}",
                                                                                 "version": 1,
                                                                                 "isFilterable": true,
                                                                                 "isRequired": false,
@@ -14797,7 +14797,7 @@
                                                                                 "options": "[\n  {\n    \"label\": \"Small\",\n    \"value\": \"Small\"\n  },\n  {\n    \"label\": \"Large\",\n    \"value\": \"Large\"\n  },\n  {\n    \"label\": \"Medium\",\n    \"value\": \"Medium\"\n  }\n]",
                                                                                 "serverSideFiltering": false,
                                                                                 "widgetName": "answer_length",
-                                                                                "defaultOptionValue": "{{getCredentialsPrompts.data.answer_length}}",
+                                                                                "defaultOptionValue": "{{getenv.data.prompts.ANSWER_LENGTH}}",
                                                                                 "version": 1,
                                                                                 "isFilterable": true,
                                                                                 "isRequired": false,
@@ -14968,7 +14968,7 @@
                                                                                 "labelWidth": 5,
                                                                                 "widgetName": "welcome",
                                                                                 "version": 2,
-                                                                                "defaultText": "{{getCredentialsMsg.data.welcome}}",
+                                                                                "defaultText": "{{getenv.data.messages.WELCOME}}",
                                                                                 "iconAlign": "left",
                                                                                 "autoFocus": false,
                                                                                 "labelStyle": "BOLD",
@@ -15010,7 +15010,7 @@
                                                                                 "labelWidth": 5,
                                                                                 "widgetName": "unable",
                                                                                 "version": 2,
-                                                                                "defaultText": "{{getCredentialsMsg.data.unable}}",
+                                                                                "defaultText": "{{getenv.data.messages.UNABLE}}",
                                                                                 "iconAlign": "left",
                                                                                 "autoFocus": false,
                                                                                 "labelStyle": "BOLD",
@@ -15052,7 +15052,7 @@
                                                                                 "labelWidth": 5,
                                                                                 "widgetName": "respond",
                                                                                 "version": 2,
-                                                                                "defaultText": "{{getCredentialsMsg.data.respond}}",
+                                                                                "defaultText": "{{getenv.data.messages.RESPOND}}",
                                                                                 "iconAlign": "left",
                                                                                 "autoFocus": false,
                                                                                 "labelStyle": "BOLD",
@@ -15228,7 +15228,7 @@
                                                                                 "labelWidth": 5,
                                                                                 "widgetName": "openai",
                                                                                 "version": 2,
-                                                                                "defaultText": "{{getCredentialsOpenAI.data.openai_api ?getCredentialsOpenAI.data.openai_api :\"\"}}",
+                                                                                "defaultText": "{{getenv.data.openai.OPENAI_API ?getenv.data.openai.OPENAI_API :\"\"}}",
                                                                                 "iconAlign": "left",
                                                                                 "autoFocus": false,
                                                                                 "labelStyle": "BOLD",
@@ -15314,7 +15314,7 @@
                                                                                 "options": "[\n  {\n    \"label\": \"gpt-3.5-turbo-0613\",\n    \"value\": \"gpt-3.5-turbo-0613\"\n  },\n\t  {\n    \"label\": \"gpt-3.5-turbo-16k\",\n    \"value\": \"gpt-3.5-turbo-16k\"\n  },\n  {\n    \"label\": \"gpt-4\",\n    \"value\": \"gpt-4\"\n  },\n\t {\n    \"label\": \"gpt-4-32k\",\n    \"value\": \"gpt-4-32k\"\n  }\n]",
                                                                                 "serverSideFiltering": false,
                                                                                 "widgetName": "modelopenai",
-                                                                                "defaultOptionValue": "{{getCredentialsOpenAI.data.openai_api_model?getCredentialsOpenAI.data.openai_api_model:\"\"}}",
+                                                                                "defaultOptionValue": "{{getenv.data.openai.OPENAI_MODEL?getenv.data.openai.OPENAI_MODEL:\"\"}}",
                                                                                 "version": 1,
                                                                                 "isFilterable": true,
                                                                                 "isRequired": false,
@@ -15631,7 +15631,7 @@
                                                                                     }
                                                                                 ],
                                                                                 "dynamicTriggerPathList": [],
-                                                                                "classStyle": "{{getCredentialsPinecone.data.pipecone_api==\"\" &&getCredentialsPinecone.data.pipecone_env == \"\" &&getCredentialsPinecone.data.pipecone_index== \"\" &&getCredentialsPinecone.data.pipecone_url== \"\"? \"done\" :\"\"}}"
+                                                                                "classStyle": "{{getenv.data.pinecone.PIPECONE_API==\"\" &&getenv.data.pinecone.PIPECONE_ENV== \"\" &&getenv.data.pinecone.PIPECONE_INDEX== \"\" &&getenv.data.pinecone.PIPECONE_URL== \"\"? \"done\" :\"\"}}"
                                                                             },
                                                                             {
                                                                                 "isVisible": true,
@@ -15886,7 +15886,7 @@
                                                                                     }
                                                                                 ],
                                                                                 "dynamicTriggerPathList": [],
-                                                                                "classStyle": "{{getCredentialsOpenAI.data.openai_api ==\"\" &&getCredentialsOpenAI.data.openai_api_model == \"\" ? \"done\" :\"\"}}"
+                                                                                "classStyle": "{{getenv.data.openai.OPENAI_API ==\"\" &&getenv.data.openai.OPENAI_MODEL == \"\" ? \"done\" :\"\"}}"
                                                                             }
                                                                         ],
                                                                         "minHeight": 400,
@@ -16213,7 +16213,7 @@
                                                                                     }
                                                                                 ],
                                                                                 "dynamicTriggerPathList": [],
-                                                                                "classStyle": "{{getCredentialsPrompts.data.answer_as==\"\" &&getCredentialsPrompts.data.answer_length == \"\" &&getCredentialsPrompts.data.language== \"\" &&getCredentialsPrompts.data.tone== \"\" &&getCredentialsPrompts.data.prompt_custom== \"\"? \"done\" :\"\"}}"
+                                                                                "classStyle": "{{getenv.data.prompts.ANSWER_AS==\"\" &&getenv.data.prompts.ANSWER_LENGTH == \"\" &&getenv.data.prompts.LANGUAGE== \"\" &&getenv.data.prompts.TONE== \"\" &&getenv.data.prompts.PROMPT_CUSTOM== \"\"? \"done\" :\"\"}}"
                                                                             }
                                                                         ],
                                                                         "minHeight": 400,
@@ -16540,7 +16540,7 @@
                                                                                     }
                                                                                 ],
                                                                                 "dynamicTriggerPathList": [],
-                                                                                "classStyle": "{{getCredentialsMsg.data.respond ==\"\" &&getCredentialsMsg.data.unable == \"\" &&getCredentialsMsg.data.welcome == \"\" ? \"done\" :\"\"}}"
+                                                                                "classStyle": "{{getenv.data.messages.WELCOME ==\"\" &&getenv.data.messages.UNABLE == \"\" &&getenv.data.messages.RESPOND == \"\" ? \"done\" :\"\"}}"
                                                                             }
                                                                         ],
                                                                         "minHeight": 400,
@@ -16888,7 +16888,19 @@
                     "deleted": false,
                     "policies": [],
                     "layoutOnLoadActions": [
-                        []
+                        [
+                            {
+                                "_id": "653a73add431c9ff2df3dc8f",
+                                "id": "653a73add431c9ff2df3dc8f",
+                                "confirmBeforeExecute": false,
+                                "name": "getenv",
+                                "pluginType": "API",
+                                "jsonPathKeys": [
+                                    "main.env.nodeUrl"
+                                ],
+                                "timeoutInMillisecond": 10000
+                            }
+                        ]
                     ],
                     "layoutOnCloseActions": [
                         []

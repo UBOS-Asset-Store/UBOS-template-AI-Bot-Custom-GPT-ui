@@ -8063,147 +8063,6 @@
         ]
     },
     {
-        "_id": "6533b6e059328d8a63c5e7ca",
-        "applicationId": "jetsondashboard",
-        "organizationId": "Org",
-        "pluginType": "API",
-        "pluginId": "API",
-        "Action": {
-            "name": "getCredentialsPinecone",
-            "datasource": {
-                "name": "DEFAULT_REST_DATASOURCE",
-                "datasourceConfiguration": {
-                    "url": "{{main.env.nodeUrl}}/getCredentialsPinecone"
-                },
-                "invalids": [],
-                "isValid": true,
-                "pluginId": "API",
-                "messages": []
-            },
-            "executeOnLoad": true,
-            "pageId": "Setup",
-            "actionConfiguration": {
-                "timeoutInMillisecond": "10000",
-                "encodeParamsToggle": true,
-                "httpMethod": "GET",
-                "headers": [],
-                "queryParameters": [],
-                "bodyFormData": [],
-                "formData": {
-                    "apiContentType": "none"
-                },
-                "pluginSpecifiedTemplates": [
-                    {
-                        "value": true
-                    }
-                ],
-                "path": ""
-            },
-            "dynamicBindingPathList": [
-                {
-                    "key": "datasourceUrl"
-                }
-            ],
-            "isValid": true,
-            "invalids": [],
-            "jsonPathKeys": [
-                "main.env.nodeUrl"
-            ],
-            "userSetOnLoad": false,
-            "confirmBeforeExecute": false
-        },
-        "createdAt": "2023-10-21T11:32:48.623Z",
-        "updatedAt": "2023-10-23T13:47:13.815Z",
-        "deleted": false,
-        "policies": [
-            {
-                "permission": "read:actions",
-                "groups": [],
-                "users": []
-            },
-            {
-                "permission": "manage:actions",
-                "groups": [],
-                "users": []
-            },
-            {
-                "permission": "execute:actions",
-                "groups": [],
-                "users": []
-            }
-        ]
-    },
-    {
-        "_id": "6533bca759328d8a63c5e7cb",
-        "applicationId": "jetsondashboard",
-        "organizationId": "Org",
-        "pluginType": "API",
-        "pluginId": "API",
-        "Action": {
-            "name": "getCredentialsOpenAI",
-            "datasource": {
-                "name": "DEFAULT_REST_DATASOURCE",
-                "datasourceConfiguration": {
-                    "url": "{{main.env.nodeUrl}}/getCredentialsOpenAI"
-                },
-                "invalids": [],
-                "isValid": true,
-                "pluginId": "API",
-                "messages": []
-            },
-            "executeOnLoad": true,
-            "pageId": "Setup",
-            "actionConfiguration": {
-                "timeoutInMillisecond": 10000,
-                "encodeParamsToggle": true,
-                "httpMethod": "GET",
-                "headers": [],
-                "queryParameters": [],
-                "bodyFormData": [],
-                "formData": {
-                    "apiContentType": "none"
-                },
-                "pluginSpecifiedTemplates": [
-                    {
-                        "value": true
-                    }
-                ]
-            },
-            "dynamicBindingPathList": [
-                {
-                    "key": "datasourceUrl"
-                }
-            ],
-            "isValid": true,
-            "invalids": [],
-            "jsonPathKeys": [
-                "main.env.nodeUrl"
-            ],
-            "userSetOnLoad": false,
-            "confirmBeforeExecute": false
-        },
-        "createdAt": "2023-10-21T11:57:27.253Z",
-        "updatedAt": "2023-10-23T13:47:36.141Z",
-        "deleted": false,
-        "policies": [
-            {
-                "permission": "read:actions",
-                "groups": [],
-                "users": []
-            },
-            {
-                "permission": "manage:actions",
-                "groups": [],
-                "users": []
-            },
-            {
-                "permission": "execute:actions",
-                "groups": [],
-                "users": []
-            }
-        ]
-    },
-    {
         "_id": "6536525859328d8a63c5e7cc",
         "applicationId": "jetsondashboard",
         "organizationId": "Org",
@@ -8350,146 +8209,6 @@
         },
         "createdAt": "2023-10-23T11:00:45.062Z",
         "updatedAt": "2023-10-23T12:20:24.843Z",
-        "deleted": false,
-        "policies": [
-            {
-                "permission": "read:actions",
-                "groups": [],
-                "users": []
-            },
-            {
-                "permission": "manage:actions",
-                "groups": [],
-                "users": []
-            },
-            {
-                "permission": "execute:actions",
-                "groups": [],
-                "users": []
-            }
-        ]
-    },
-    {
-        "_id": "6536659159328d8a63c5e7ce",
-        "applicationId": "jetsondashboard",
-        "organizationId": "Org",
-        "pluginType": "API",
-        "pluginId": "API",
-        "Action": {
-            "name": "getCredentialsPrompts",
-            "datasource": {
-                "name": "DEFAULT_REST_DATASOURCE",
-                "datasourceConfiguration": {
-                    "url": "{{main.env.nodeUrl}}/getCredentialsPrompts"
-                },
-                "invalids": [],
-                "isValid": true,
-                "pluginId": "API",
-                "messages": []
-            },
-            "executeOnLoad": true,
-            "pageId": "Setup",
-            "actionConfiguration": {
-                "timeoutInMillisecond": 10000,
-                "encodeParamsToggle": true,
-                "httpMethod": "GET",
-                "headers": [],
-                "queryParameters": [],
-                "bodyFormData": [],
-                "formData": {
-                    "apiContentType": "none"
-                },
-                "pluginSpecifiedTemplates": [
-                    {
-                        "value": true
-                    }
-                ]
-            },
-            "dynamicBindingPathList": [
-                {
-                    "key": "datasourceUrl"
-                }
-            ],
-            "isValid": true,
-            "invalids": [],
-            "jsonPathKeys": [
-                "main.env.nodeUrl"
-            ],
-            "userSetOnLoad": false,
-            "confirmBeforeExecute": false
-        },
-        "createdAt": "2023-10-23T12:22:41.184Z",
-        "updatedAt": "2023-10-23T13:48:30.505Z",
-        "deleted": false,
-        "policies": [
-            {
-                "permission": "read:actions",
-                "groups": [],
-                "users": []
-            },
-            {
-                "permission": "manage:actions",
-                "groups": [],
-                "users": []
-            },
-            {
-                "permission": "execute:actions",
-                "groups": [],
-                "users": []
-            }
-        ]
-    },
-    {
-        "_id": "65366d5259328d8a63c5e7cf",
-        "applicationId": "jetsondashboard",
-        "organizationId": "Org",
-        "pluginType": "API",
-        "pluginId": "API",
-        "Action": {
-            "name": "getCredentialsMsg",
-            "datasource": {
-                "name": "DEFAULT_REST_DATASOURCE",
-                "datasourceConfiguration": {
-                    "url": "{{main.env.nodeUrl}}/getCredentialsMsg"
-                },
-                "invalids": [],
-                "isValid": true,
-                "pluginId": "API",
-                "messages": []
-            },
-            "executeOnLoad": false,
-            "pageId": "Setup",
-            "actionConfiguration": {
-                "timeoutInMillisecond": 10000,
-                "encodeParamsToggle": true,
-                "httpMethod": "GET",
-                "headers": [],
-                "queryParameters": [],
-                "bodyFormData": [],
-                "formData": {
-                    "apiContentType": "none"
-                },
-                "pluginSpecifiedTemplates": [
-                    {
-                        "value": true
-                    }
-                ]
-            },
-            "dynamicBindingPathList": [
-                {
-                    "key": "datasourceUrl"
-                }
-            ],
-            "isValid": true,
-            "invalids": [],
-            "jsonPathKeys": [
-                "main.env.nodeUrl"
-            ],
-            "userSetOnLoad": false,
-            "confirmBeforeExecute": false
-        },
-        "createdAt": "2023-10-23T12:55:46.255Z",
-        "updatedAt": "2023-10-23T13:49:41.391Z",
         "deleted": false,
         "policies": [
             {
@@ -9522,6 +9241,76 @@
         },
         "createdAt": "2023-10-25T18:21:16.418Z",
         "updatedAt": "2023-10-25T18:22:40.288Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ]
+    },
+    {
+        "_id": "653a73add431c9ff2df3dc8f",
+        "applicationId": "jetsondashboard",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "Action": {
+            "name": "getenv",
+            "datasource": {
+                "name": "DEFAULT_REST_DATASOURCE",
+                "datasourceConfiguration": {
+                    "url": "{{main.env.nodeUrl}}/getenvs"
+                },
+                "invalids": [],
+                "isValid": true,
+                "pluginId": "API",
+                "messages": []
+            },
+            "executeOnLoad": false,
+            "pageId": "Setup",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "GET",
+                "headers": [],
+                "queryParameters": [],
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ]
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "datasourceUrl"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "main.env.nodeUrl"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        },
+        "createdAt": "2023-10-26T14:11:57.177Z",
+        "updatedAt": "2023-10-26T14:34:17.934Z",
         "deleted": false,
         "policies": [
             {
