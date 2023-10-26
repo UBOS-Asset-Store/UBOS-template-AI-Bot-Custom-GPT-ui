@@ -9138,7 +9138,7 @@
                 "pluginId": "API",
                 "messages": []
             },
-            "executeOnLoad": true,
+            "executeOnLoad": false,
             "pageId": "Bots",
             "actionConfiguration": {
                 "timeoutInMillisecond": 10000,
@@ -9170,7 +9170,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-10-26T14:56:32.188Z",
-        "updatedAt": "2023-10-26T15:08:11.141Z",
+        "updatedAt": "2023-10-26T15:13:04.778Z",
         "deleted": false,
         "policies": [
             {
