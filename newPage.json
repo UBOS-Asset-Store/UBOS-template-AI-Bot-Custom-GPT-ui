@@ -19436,7 +19436,7 @@
                                                                                 "borderRadius": "ROUNDED",
                                                                                 "iconName": "saved",
                                                                                 "iconAlign": "left",
-                                                                                "onClick": "{{saveCredentialsWhatsApp.run(() => getenvsbots.run(()=> showAlert(saveCredentialsTelegram.data.payload, 'success')), () => {})}}",
+                                                                                "onClick": "{{saveCredentialsWhatsApp.run(() => getenvsbots.run(()=> showAlert(saveCredentialsWhatsApp.data.payload, 'success')), () => {})}}",
                                                                                 "dynamicPropertyPathList": [
                                                                                     {
                                                                                         "key": "onClick"
