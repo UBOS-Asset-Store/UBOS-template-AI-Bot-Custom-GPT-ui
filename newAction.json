@@ -6664,7 +6664,7 @@
                         "value": true
                     }
                 ],
-                "body": "{\n\t\"link\":{{JSON.stringify(link.text)}},\n\t\"name\": {{JSON.stringify(link.text)}},\n\t\"id\": \"{{getIDbase.data[0]._id}}\",\n\t\"type\": \"Link\"\n}",
+                "body": "{\n\t\"link\":{{JSON.stringify(link.text)}},\n\t\"name\": {{JSON.stringify(link.text)}},\n\t\"id\": {{JSON.stringify( _id.text)}},\n\t\"type\": \"Link\"\n}",
                 "path": ""
             },
             "dynamicBindingPathList": [
@@ -6680,14 +6680,14 @@
             "jsonPathKeys": [
                 "main.env.nodeUrl",
                 "JSON.stringify(link.text)",
-                "JSON.stringify(nameLink.text)",
-                "getIDbase.data[0]._id"
+                "getIDbase.data[0]._id",
+                "JSON.stringify( _id.text)"
             ],
             "userSetOnLoad": false,
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-06-26T07:44:29.057Z",
-        "updatedAt": "2023-10-13T23:53:59.994Z",
+        "updatedAt": "2023-10-31T21:48:52.962Z",
         "deleted": false,
         "policies": [
             {
@@ -7495,7 +7495,7 @@
                     }
                 ],
                 "queryParameters": [],
-                "body": "{\n\t\"link\": {{JSON.stringify(\"manual\")}},\n\t\"name\": {{JSON.stringify(\"manual\")}},\n\t\"id\": \"{{getIDbase.data[0]._id}}\",\n\t\"type\": \"Manual\",\n\t\"result\": {{JSON.stringify(manualanswer.text)}},\n\t\"question\": {{JSON.stringify(manualques.text)}}\n}",
+                "body": "{\n\t\"link\": {{JSON.stringify(\"manual\")}},\n\t\"name\": {{JSON.stringify(\"manual\")}},\n\t\"id\": {{JSON.stringify( _id.text)}},\n\t\"type\": \"Manual\",\n\t\"result\": {{JSON.stringify(manualanswer.text)}},\n\t\"question\": {{JSON.stringify(manualques.text)}}\n}",
                 "bodyFormData": [],
                 "formData": {
                     "apiContentType": "none"
@@ -7522,13 +7522,14 @@
                 "getIDbase.data[0]._id",
                 "JSON.stringify(manualanswer.text)",
                 "JSON.stringify(manualques.text)",
-                "main.env.nodeUrl,2023-09-04T13:29:20.709Z,2023-10-12T13:42:01.552Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl,2023-09-04T13:29:20.709Z,2023-10-12T20:16:09.604Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl,2023-09-04T13:29:20.709Z,2023-10-18T21:31:18.606Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl,2023-09-04T13:29:20.709Z,2023-10-18T21:48:24.426Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl"
+                "main.env.nodeUrl,2023-09-04T13:29:20.709Z,2023-10-18T21:31:18.606Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl,2023-09-04T13:29:20.709Z,2023-10-18T21:48:24.426Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl,2023-09-04T13:29:20.709Z,2023-10-31T11:17:57.204Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl,2023-09-04T13:29:20.709Z,2023-10-31T21:48:21.785Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl",
+                "JSON.stringify( _id.text)"
             ],
             "userSetOnLoad": false,
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-09-04T13:29:20.709Z",
-        "updatedAt": "2023-10-31T11:17:57.204Z",
+        "updatedAt": "2023-10-31T21:48:41.299Z",
         "deleted": false,
         "policies": [
             {

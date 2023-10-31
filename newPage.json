@@ -7995,7 +7995,7 @@
                         "snapColumns": 64,
                         "widgetId": "0",
                         "topRow": 0,
-                        "bottomRow": 890,
+                        "bottomRow": 950,
                         "parentRowSpace": 1,
                         "type": "CANVAS_WIDGET",
                         "detachFromLayout": true,
@@ -12206,6 +12206,41 @@
                                 "topRow": 8,
                                 "bottomRow": 32,
                                 "parentId": "0"
+                            },
+                            {
+                                "isVisible": false,
+                                "text": "{{getIDbase.data.filter(e=>e.select===true)[0]._id}}",
+                                "fontSize": "PARAGRAPH",
+                                "fontStyle": "BOLD",
+                                "textAlign": "LEFT",
+                                "textColor": "#231F20",
+                                "truncateButtonColor": "#FFC13D",
+                                "widgetName": "_id",
+                                "shouldTruncate": false,
+                                "overflow": "NONE",
+                                "version": 1,
+                                "animateLoading": true,
+                                "type": "TEXT_WIDGET",
+                                "hideCard": false,
+                                "displayName": "Text",
+                                "key": "ivbm9ekt39",
+                                "iconSVG": "/static/media/icon.97c59b52.svg",
+                                "widgetId": "20nhs0n9ic",
+                                "renderMode": "CANVAS",
+                                "isLoading": false,
+                                "parentColumnSpace": 9.59375,
+                                "parentRowSpace": 10,
+                                "leftColumn": 13,
+                                "rightColumn": 29,
+                                "topRow": 89,
+                                "bottomRow": 93,
+                                "parentId": "0",
+                                "dynamicBindingPathList": [
+                                    {
+                                        "key": "text"
+                                    }
+                                ],
+                                "dynamicTriggerPathList": []
                             }
                         ],
                         "snapRows": 60,
@@ -12301,7 +12336,8 @@
                         "FormButton1",
                         "name_knowledgebase",
                         "type_knowledgebase",
-                        "isSelectbase"
+                        "isSelectbase",
+                        "_id"
                     ],
                     "deleted": false,
                     "policies": [],
