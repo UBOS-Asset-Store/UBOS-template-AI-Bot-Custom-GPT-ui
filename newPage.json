@@ -11942,12 +11942,8 @@
                                                 "topRow": 1,
                                                 "bottomRow": 5,
                                                 "parentId": "xa1x3jfrhs",
-                                                "onClick": "{{createNewBase.run();getIDbase.run(); closeModal(\"Modal9\")}}",
-                                                "dynamicPropertyPathList": [
-                                                    {
-                                                        "key": "onClick"
-                                                    }
-                                                ],
+                                                "onClick": "{{closeModal('Modal9')}}",
+                                                "dynamicPropertyPathList": [],
                                                 "dynamicBindingPathList": [],
                                                 "dynamicTriggerPathList": [
                                                     {
