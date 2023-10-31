@@ -7444,7 +7444,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-08-08T19:50:47.061Z",
-        "updatedAt": "2023-10-11T13:55:15.166Z",
+        "updatedAt": "2023-10-31T12:39:49.591Z",
         "deleted": false,
         "policies": [
             {
@@ -7522,13 +7522,13 @@
                 "getIDbase.data[0]._id",
                 "JSON.stringify(manualanswer.text)",
                 "JSON.stringify(manualques.text)",
-                "main.env.nodeUrl,2023-09-04T13:29:20.709Z,2023-10-12T12:47:28.376Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl,2023-09-04T13:29:20.709Z,2023-10-12T13:42:01.552Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl,2023-09-04T13:29:20.709Z,2023-10-12T20:16:09.604Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl,2023-09-04T13:29:20.709Z,2023-10-18T21:31:18.606Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl"
+                "main.env.nodeUrl,2023-09-04T13:29:20.709Z,2023-10-12T13:42:01.552Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl,2023-09-04T13:29:20.709Z,2023-10-12T20:16:09.604Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl,2023-09-04T13:29:20.709Z,2023-10-18T21:31:18.606Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl,2023-09-04T13:29:20.709Z,2023-10-18T21:48:24.426Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl"
             ],
             "userSetOnLoad": false,
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-09-04T13:29:20.709Z",
-        "updatedAt": "2023-10-18T21:48:24.426Z",
+        "updatedAt": "2023-10-31T11:17:57.204Z",
         "deleted": false,
         "policies": [
             {
@@ -7682,7 +7682,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-10-11T19:42:54.215Z",
-        "updatedAt": "2023-10-12T20:16:28.765Z",
+        "updatedAt": "2023-10-31T12:24:32.297Z",
         "deleted": false,
         "policies": [
             {
@@ -8674,7 +8674,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-10-23T20:58:55.147Z",
-        "updatedAt": "2023-10-23T20:59:14.337Z",
+        "updatedAt": "2023-10-31T16:30:14.170Z",
         "deleted": false,
         "policies": [
             {
@@ -9030,7 +9030,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-10-25T18:21:16.418Z",
-        "updatedAt": "2023-10-25T18:22:40.288Z",
+        "updatedAt": "2023-10-31T16:30:22.246Z",
         "deleted": false,
         "policies": [
             {
@@ -9226,7 +9226,11 @@
                     }
                 ]
             },
-            "dynamicBindingPathList": [],
+            "dynamicBindingPathList": [
+                {
+                    "key": "datasourceUrl"
+                }
+            ],
             "isValid": true,
             "invalids": [],
             "jsonPathKeys": [
@@ -9236,7 +9240,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-10-31T09:19:10.704Z",
-        "updatedAt": "2023-10-31T09:23:16.504Z",
+        "updatedAt": "2023-10-31T13:46:03.222Z",
         "deleted": false,
         "policies": [
             {
@@ -9300,6 +9304,9 @@
             },
             "dynamicBindingPathList": [
                 {
+                    "key": "datasourceUrl"
+                },
+                {
                     "key": "body"
                 }
             ],
@@ -9313,7 +9320,160 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-10-31T09:21:04.509Z",
-        "updatedAt": "2023-10-31T09:25:53.813Z",
+        "updatedAt": "2023-10-31T16:30:04.171Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ]
+    },
+    {
+        "_id": "6540dc1ed431c9ff2df3dc95",
+        "applicationId": "jetsondashboard",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "Action": {
+            "name": "getLogo",
+            "datasource": {
+                "name": "DEFAULT_REST_DATASOURCE",
+                "datasourceConfiguration": {
+                    "url": "{{main.env.nodeUrl}}/get_logo"
+                },
+                "invalids": [],
+                "isValid": true,
+                "pluginId": "API",
+                "messages": []
+            },
+            "executeOnLoad": true,
+            "pageId": "Vectors",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "GET",
+                "headers": [],
+                "queryParameters": [],
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ]
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "datasourceUrl"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "main.env.nodeUrl"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        },
+        "createdAt": "2023-10-31T10:51:10.021Z",
+        "updatedAt": "2023-10-31T10:51:52.739Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ]
+    },
+    {
+        "_id": "6540e469d431c9ff2df3dc96",
+        "applicationId": "jetsondashboard",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "Action": {
+            "name": "createNewBase",
+            "datasource": {
+                "name": "DEFAULT_REST_DATASOURCE",
+                "datasourceConfiguration": {
+                    "url": "{{main.env.nodeUrl}}/createNewBase"
+                },
+                "invalids": [],
+                "isValid": true,
+                "pluginId": "API",
+                "messages": []
+            },
+            "executeOnLoad": false,
+            "pageId": "Training",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "POST",
+                "headers": [
+                    {
+                        "key": "content-type",
+                        "value": "application/json"
+                    }
+                ],
+                "queryParameters": [],
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ],
+                "body": "{\n    \"type\":{{JSON.stringify(type_knowledgebase.selectedOptionLabel)}},\n    \"name\": {{JSON.stringify(name_knowledgebase.text)}}\n}"
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "datasourceUrl"
+                },
+                {
+                    "key": "body"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "main.env.nodeUrl",
+                "JSON.stringify(isSelectbase.isSwitchedOn)",
+                "JSON.stringify(type_knowledgebase.selectedOptionLabel)",
+                "JSON.stringify(name_knowledgebase.text)",
+                "main.env.nodeUrl,2023-10-31T11:26:33.701Z,2023-10-31T12:25:31.970Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        },
+        "createdAt": "2023-10-31T11:26:33.701Z",
+        "updatedAt": "2023-10-31T12:25:37.140Z",
         "deleted": false,
         "policies": [
             {

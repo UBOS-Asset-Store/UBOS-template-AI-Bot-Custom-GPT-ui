@@ -5619,7 +5619,7 @@
                                                                         "children": [
                                                                             {
                                                                                 "isVisible": true,
-                                                                                "text": "We sent you a confirmation email to verify that the address {{main.URL.queryParams.email || \"\"}} is correct",
+                                                                                "text": "We've sent a confirmation email to verify the address {{main.URL.queryParams.email || \"\"}} is correct",
                                                                                 "fontSize": "HEADING1",
                                                                                 "fontStyle": "BOLD",
                                                                                 "textAlign": "CENTER",
@@ -9106,22 +9106,41 @@
                                                         "label": "Website",
                                                         "id": "tab1",
                                                         "widgetId": "ihc06jbcex",
-                                                        "isVisible": true,
-                                                        "index": 0
+                                                        "isVisible": "{{check_pinecone.data.settings.percentage == '100'}}",
+                                                        "index": 0,
+                                                        "isDuplicateLabel": false
                                                     },
                                                     "tab2": {
                                                         "label": "File ",
                                                         "id": "tab2",
                                                         "widgetId": "k2agajmtvu",
-                                                        "isVisible": true,
-                                                        "index": 1
+                                                        "isVisible": "{{check_pinecone.data.settings.percentage == '100'}}",
+                                                        "index": 1,
+                                                        "isDuplicateLabel": false
                                                     },
                                                     "tabzk5phhc34h": {
                                                         "id": "tabzk5phhc34h",
                                                         "index": 2,
                                                         "label": "FAQ",
                                                         "widgetId": "lzfnfil2re",
-                                                        "isVisible": true
+                                                        "isVisible": "{{check_pinecone.data.settings.percentage == '100'}}",
+                                                        "isDuplicateLabel": false
+                                                    },
+                                                    "tabwgdo1g4nzd": {
+                                                        "id": "tabwgdo1g4nzd",
+                                                        "index": 3,
+                                                        "label": "Insert text",
+                                                        "widgetId": "r8gv8x6gwm",
+                                                        "isVisible": "{{check_pinecone.data.settings.percentage == '100'}}",
+                                                        "isDuplicateLabel": false
+                                                    },
+                                                    "tabcux66dsi0m": {
+                                                        "id": "tabcux66dsi0m",
+                                                        "index": 4,
+                                                        "label": "Before getting started",
+                                                        "widgetId": "zvt9xv98if",
+                                                        "isVisible": "{{check_pinecone.data.settings.percentage !== '100'}}",
+                                                        "isDuplicateLabel": false
                                                     }
                                                 },
                                                 "shouldShowTabs": true,
@@ -9140,8 +9159,8 @@
                                                 "parentRowSpace": 10,
                                                 "leftColumn": 0,
                                                 "rightColumn": 64,
-                                                "topRow": 16,
-                                                "bottomRow": 78,
+                                                "topRow": 19,
+                                                "bottomRow": 81,
                                                 "parentId": "gjtqa9136u",
                                                 "children": [
                                                     {
@@ -9669,7 +9688,7 @@
                                                             },
                                                             {
                                                                 "isVisible": true,
-                                                                "label": "Website Link",
+                                                                "label": "Website URL",
                                                                 "labelPosition": "Top",
                                                                 "labelAlignment": "left",
                                                                 "labelWidth": "4",
@@ -9758,7 +9777,7 @@
                                                                         "key": "isDisabled"
                                                                     }
                                                                 ],
-                                                                "tooltip": "{{check_pinecone.data.settings.percentage !== '100' ?'Fill in the data on the page \"Setup\"':'We will be fetching all the webpages and training the ChatGPT model on them.'}}"
+                                                                "tooltip": "{{check_pinecone.data.settings.percentage !== '100' ?'Fill in the data on the page \"AI Setup\"':'We will be fetching all the webpages and training the ChatGPT model on them.'}}"
                                                             },
                                                             {
                                                                 "isVisible": true,
@@ -10410,13 +10429,10 @@
                                                                 "topRow": 8,
                                                                 "bottomRow": 15,
                                                                 "parentId": "k2agajmtvu",
-                                                                "uploadButtonText": "{{check_pinecone.data.settings.percentage !== '100' ?'Fill data on the page \"Setup\"':'upload'}}",
+                                                                "uploadButtonText": "upload",
                                                                 "dynamicBindingPathList": [
                                                                     {
                                                                         "key": "uploadUrl"
-                                                                    },
-                                                                    {
-                                                                        "key": "uploadButtonText"
                                                                     }
                                                                 ],
                                                                 "dynamicTriggerPathList": [
@@ -10434,7 +10450,7 @@
                                                             },
                                                             {
                                                                 "isVisible": true,
-                                                                "text": "\n\nAdd all the files on which you want to train your bot (.txt .pdf .doc)<a href=\"#\" style=\"text-decoration: none;\"> <span >&#9432;</span>\n    </a> \n\n\n",
+                                                                "text": "\n\nAdd all the files on which you want to train your bot (.txt .pdf .xlsx)<a href=\"#\" style=\"text-decoration: none;\"> <span >&#9432;</span>\n    </a> \n\n\n",
                                                                 "fontSize": "PARAGRAPH",
                                                                 "fontStyle": "BOLD",
                                                                 "textAlign": "LEFT",
@@ -11035,7 +11051,7 @@
                                                                 "topRow": 17,
                                                                 "bottomRow": 21,
                                                                 "parentId": "lzfnfil2re",
-                                                                "tooltip": "{{check_pinecone.data.settings.percentage !== '100' ?'Fill in the data on the page \"Setup\"':'We will be fetching all the webpages and training the ChatGPT model on them.'}}",
+                                                                "tooltip": "{{check_pinecone.data.settings.percentage !== '100' ?'Fill in the data on the page \"AI Setup\"':'We will be fetching all the webpages and training the ChatGPT model on them.'}}",
                                                                 "dynamicBindingPathList": [
                                                                     {
                                                                         "key": "tooltip"
@@ -11076,9 +11092,301 @@
                                                         "parentId": "mw49kdef9m",
                                                         "dynamicBindingPathList": [],
                                                         "dynamicTriggerPathList": []
+                                                    },
+                                                    {
+                                                        "isVisible": true,
+                                                        "widgetName": "Canvas30",
+                                                        "version": 1,
+                                                        "detachFromLayout": true,
+                                                        "type": "CANVAS_WIDGET",
+                                                        "hideCard": true,
+                                                        "displayName": "Canvas",
+                                                        "key": "1figh2b7ox",
+                                                        "tabId": "tabwgdo1g4nzd",
+                                                        "tabName": "Insert text",
+                                                        "containerStyle": "none",
+                                                        "canExtend": false,
+                                                        "children": [
+                                                            {
+                                                                "isVisible": true,
+                                                                "animateLoading": true,
+                                                                "text": "",
+                                                                "buttonColor": "#3268a8",
+                                                                "buttonVariant": "TERTIARY",
+                                                                "placement": "CENTER",
+                                                                "widgetName": "Button14Copy",
+                                                                "isDisabled": "{{check_pinecone.data.settings.percentage !== '100' }}",
+                                                                "isDefaultClickDisabled": true,
+                                                                "recaptchaType": "V3",
+                                                                "version": 1,
+                                                                "classStyle": "",
+                                                                "type": "BUTTON_WIDGET",
+                                                                "hideCard": false,
+                                                                "displayName": "Button",
+                                                                "key": "cdrki84nn2",
+                                                                "iconSVG": "/static/media/icon.cca02633.svg",
+                                                                "widgetId": "0gvpwrllkb",
+                                                                "renderMode": "CANVAS",
+                                                                "isLoading": false,
+                                                                "parentColumnSpace": 12.896484375,
+                                                                "parentRowSpace": 10,
+                                                                "leftColumn": 60,
+                                                                "rightColumn": 64,
+                                                                "topRow": 40,
+                                                                "bottomRow": 44,
+                                                                "parentId": "r8gv8x6gwm",
+                                                                "tooltip": "{{check_pinecone.data.settings.percentage !== '100' ?'Fill in the data on the page \"AI Setup\"':'We will be fetching all the webpages and training the ChatGPT model on them.'}}",
+                                                                "dynamicBindingPathList": [
+                                                                    {
+                                                                        "key": "tooltip"
+                                                                    },
+                                                                    {
+                                                                        "key": "isDisabled"
+                                                                    }
+                                                                ],
+                                                                "dynamicTriggerPathList": [
+                                                                    {
+                                                                        "key": "onClick"
+                                                                    }
+                                                                ],
+                                                                "dynamicPropertyPathList": [
+                                                                    {
+                                                                        "key": "isDisabled"
+                                                                    },
+                                                                    {
+                                                                        "key": "onClick"
+                                                                    }
+                                                                ],
+                                                                "borderRadius": "ROUNDED",
+                                                                "iconName": "add-to-artifact",
+                                                                "iconAlign": "left",
+                                                                "onClick": "{{saveVector.run(() => getKnowlegeFiles.run(), () => {})}}"
+                                                            },
+                                                            {
+                                                                "isVisible": true,
+                                                                "text": "Manually add text",
+                                                                "fontSize": "HEADING2",
+                                                                "fontStyle": "BOLD",
+                                                                "textAlign": "LEFT",
+                                                                "textColor": "#231F20",
+                                                                "truncateButtonColor": "#FFC13D",
+                                                                "widgetName": "Text11",
+                                                                "shouldTruncate": false,
+                                                                "overflow": "NONE",
+                                                                "version": 1,
+                                                                "animateLoading": true,
+                                                                "type": "TEXT_WIDGET",
+                                                                "hideCard": false,
+                                                                "displayName": "Text",
+                                                                "key": "5hkomt4oi1",
+                                                                "iconSVG": "/static/media/icon.97c59b52.svg",
+                                                                "widgetId": "9u78m6fqh8",
+                                                                "renderMode": "CANVAS",
+                                                                "isLoading": false,
+                                                                "parentColumnSpace": 7.76953125,
+                                                                "parentRowSpace": 10,
+                                                                "leftColumn": 0,
+                                                                "rightColumn": 37,
+                                                                "topRow": 0,
+                                                                "bottomRow": 4,
+                                                                "parentId": "r8gv8x6gwm",
+                                                                "dynamicBindingPathList": [],
+                                                                "dynamicTriggerPathList": [],
+                                                                "classStyle": "title"
+                                                            },
+                                                            {
+                                                                "isVisible": true,
+                                                                "text": "\nWrite or copy and paste text <a href=\"#\" style=\"text-decoration: none;\"> <span >&#9432;</span>\n    </a> \n ",
+                                                                "fontSize": "PARAGRAPH",
+                                                                "fontStyle": "BOLD",
+                                                                "textAlign": "LEFT",
+                                                                "textColor": "#999",
+                                                                "truncateButtonColor": "#FFC13D",
+                                                                "widgetName": "Text12",
+                                                                "shouldTruncate": false,
+                                                                "overflow": "NONE",
+                                                                "version": 1,
+                                                                "animateLoading": true,
+                                                                "type": "TEXT_WIDGET",
+                                                                "hideCard": false,
+                                                                "displayName": "Text",
+                                                                "key": "5hkomt4oi1",
+                                                                "iconSVG": "/static/media/icon.97c59b52.svg",
+                                                                "widgetId": "6i5zq0yw53",
+                                                                "renderMode": "CANVAS",
+                                                                "isLoading": false,
+                                                                "parentColumnSpace": 7.76953125,
+                                                                "parentRowSpace": 10,
+                                                                "leftColumn": 0,
+                                                                "rightColumn": 37,
+                                                                "topRow": 4,
+                                                                "bottomRow": 8,
+                                                                "parentId": "r8gv8x6gwm",
+                                                                "dynamicBindingPathList": [],
+                                                                "dynamicTriggerPathList": []
+                                                            },
+                                                            {
+                                                                "isVisible": true,
+                                                                "defaultText": "",
+                                                                "animateLoading": true,
+                                                                "isDisabled": false,
+                                                                "isRequired": false,
+                                                                "widgetName": "RichTextEditor1",
+                                                                "isDefaultClickDisabled": true,
+                                                                "inputType": "html",
+                                                                "labelText": "",
+                                                                "labelPosition": "Left",
+                                                                "labelAlignment": "left",
+                                                                "labelWidth": 5,
+                                                                "version": 1,
+                                                                "type": "RICH_TEXT_EDITOR_WIDGET",
+                                                                "hideCard": false,
+                                                                "displayName": "Rich Text Editor",
+                                                                "key": "98o3fzid6p",
+                                                                "iconSVG": "/static/media/icon.b35e139c.svg",
+                                                                "widgetId": "2sopdo66dz",
+                                                                "renderMode": "CANVAS",
+                                                                "isLoading": false,
+                                                                "parentColumnSpace": 10.9140625,
+                                                                "parentRowSpace": 10,
+                                                                "leftColumn": 0,
+                                                                "rightColumn": 59,
+                                                                "topRow": 8,
+                                                                "bottomRow": 44,
+                                                                "parentId": "r8gv8x6gwm",
+                                                                "dynamicBindingPathList": [],
+                                                                "dynamicTriggerPathList": []
+                                                            }
+                                                        ],
+                                                        "minHeight": 620,
+                                                        "widgetId": "r8gv8x6gwm",
+                                                        "renderMode": "CANVAS",
+                                                        "isLoading": false,
+                                                        "parentColumnSpace": 1,
+                                                        "parentRowSpace": 1,
+                                                        "leftColumn": 0,
+                                                        "rightColumn": 752.125,
+                                                        "topRow": 1,
+                                                        "bottomRow": 610,
+                                                        "parentId": "mw49kdef9m",
+                                                        "dynamicBindingPathList": [],
+                                                        "dynamicTriggerPathList": []
+                                                    },
+                                                    {
+                                                        "isVisible": true,
+                                                        "widgetName": "Canvas32",
+                                                        "version": 1,
+                                                        "detachFromLayout": true,
+                                                        "type": "CANVAS_WIDGET",
+                                                        "hideCard": true,
+                                                        "displayName": "Canvas",
+                                                        "key": "wwearmuvzs",
+                                                        "tabId": "tabcux66dsi0m",
+                                                        "tabName": "Before getting started",
+                                                        "containerStyle": "none",
+                                                        "canExtend": false,
+                                                        "children": [
+                                                            {
+                                                                "isVisible": true,
+                                                                "text": "Fill in the data on the page \"AI Setup\" ",
+                                                                "fontSize": "HEADING1",
+                                                                "fontStyle": "BOLD",
+                                                                "textAlign": "CENTER",
+                                                                "textColor": "#2E3D49",
+                                                                "truncateButtonColor": "#FFC13D",
+                                                                "widgetName": "Text13",
+                                                                "shouldTruncate": false,
+                                                                "overflow": "NONE",
+                                                                "version": 1,
+                                                                "animateLoading": true,
+                                                                "type": "TEXT_WIDGET",
+                                                                "hideCard": false,
+                                                                "displayName": "Text",
+                                                                "key": "hwchu279oy",
+                                                                "iconSVG": "/static/media/icon.97c59b52.svg",
+                                                                "widgetId": "rwhwzdbvxr",
+                                                                "renderMode": "CANVAS",
+                                                                "isLoading": false,
+                                                                "parentColumnSpace": 16.2734375,
+                                                                "parentRowSpace": 10,
+                                                                "leftColumn": 0,
+                                                                "rightColumn": 64,
+                                                                "topRow": 1,
+                                                                "bottomRow": 12,
+                                                                "parentId": "zvt9xv98if",
+                                                                "dynamicBindingPathList": [],
+                                                                "dynamicTriggerPathList": []
+                                                            },
+                                                            {
+                                                                "isVisible": true,
+                                                                "animateLoading": true,
+                                                                "text": "Go to AI Setup",
+                                                                "buttonColor": "#215484",
+                                                                "buttonVariant": "PRIMARY",
+                                                                "placement": "CENTER",
+                                                                "widgetName": "Button17",
+                                                                "isDisabled": false,
+                                                                "isDefaultClickDisabled": true,
+                                                                "recaptchaType": "V3",
+                                                                "version": 1,
+                                                                "classStyle": "",
+                                                                "type": "BUTTON_WIDGET",
+                                                                "hideCard": false,
+                                                                "displayName": "Button",
+                                                                "key": "fkdx1z3vkr",
+                                                                "iconSVG": "/static/media/icon.cca02633.svg",
+                                                                "widgetId": "xqnj3u5o1a",
+                                                                "renderMode": "CANVAS",
+                                                                "isLoading": false,
+                                                                "parentColumnSpace": 16.2734375,
+                                                                "parentRowSpace": 10,
+                                                                "leftColumn": 25,
+                                                                "rightColumn": 41,
+                                                                "topRow": 12,
+                                                                "bottomRow": 16,
+                                                                "parentId": "zvt9xv98if",
+                                                                "borderRadius": "ROUNDED",
+                                                                "dynamicBindingPathList": [],
+                                                                "dynamicTriggerPathList": [
+                                                                    {
+                                                                        "key": "onClick"
+                                                                    }
+                                                                ],
+                                                                "onClick": "{{navigateTo('AI Setup', {})}}"
+                                                            }
+                                                        ],
+                                                        "minHeight": 620,
+                                                        "widgetId": "zvt9xv98if",
+                                                        "renderMode": "CANVAS",
+                                                        "isLoading": false,
+                                                        "parentColumnSpace": 1,
+                                                        "parentRowSpace": 1,
+                                                        "leftColumn": 0,
+                                                        "rightColumn": 752.125,
+                                                        "topRow": 1,
+                                                        "bottomRow": 610,
+                                                        "parentId": "mw49kdef9m",
+                                                        "dynamicBindingPathList": [],
+                                                        "dynamicTriggerPathList": []
                                                     }
                                                 ],
-                                                "dynamicBindingPathList": [],
+                                                "dynamicBindingPathList": [
+                                                    {
+                                                        "key": "tabsObj.tabcux66dsi0m.isVisible"
+                                                    },
+                                                    {
+                                                        "key": "tabsObj.tab1.isVisible"
+                                                    },
+                                                    {
+                                                        "key": "tabsObj.tab2.isVisible"
+                                                    },
+                                                    {
+                                                        "key": "tabsObj.tabzk5phhc34h.isVisible"
+                                                    },
+                                                    {
+                                                        "key": "tabsObj.tabwgdo1g4nzd.isVisible"
+                                                    }
+                                                ],
                                                 "dynamicTriggerPathList": [
                                                     {
                                                         "key": "onTabSelected"
@@ -11088,6 +11396,21 @@
                                                 "dynamicPropertyPathList": [
                                                     {
                                                         "key": "onTabSelected"
+                                                    },
+                                                    {
+                                                        "key": "tabsObj.tabcux66dsi0m.isVisible"
+                                                    },
+                                                    {
+                                                        "key": "tabsObj.tab1.isVisible"
+                                                    },
+                                                    {
+                                                        "key": "tabsObj.tab2.isVisible"
+                                                    },
+                                                    {
+                                                        "key": "tabsObj.tabzk5phhc34h.isVisible"
+                                                    },
+                                                    {
+                                                        "key": "tabsObj.tabwgdo1g4nzd.isVisible"
                                                     }
                                                 ],
                                                 "classStyle": "tabs"
@@ -11119,13 +11442,13 @@
                                                                 "isVisible": true,
                                                                 "placeholderText": "Select option",
                                                                 "labelText": "CHOOSE KNOWLEDGE BASE",
-                                                                "labelPosition": "Left",
+                                                                "labelPosition": "Top",
                                                                 "labelAlignment": "right",
                                                                 "labelWidth": "13",
-                                                                "options": "[\n  {\n    \"label\": \"default\",\n    \"value\": \"default\"\n  }\n]",
+                                                                "options": "{{getIDbase.data.map(e=> {\n\treturn {\n\t\t \"label\": e.name,\n    \"value\": e._id\n}\n})}}",
                                                                 "serverSideFiltering": false,
                                                                 "widgetName": "Select1",
-                                                                "defaultOptionValue": "default",
+                                                                "defaultOptionValue": "",
                                                                 "version": 1,
                                                                 "isFilterable": true,
                                                                 "isRequired": false,
@@ -11141,12 +11464,16 @@
                                                                 "isLoading": false,
                                                                 "parentColumnSpace": 6.935546875,
                                                                 "parentRowSpace": 10,
-                                                                "leftColumn": 23,
+                                                                "leftColumn": 31,
                                                                 "rightColumn": 61,
                                                                 "topRow": 0,
-                                                                "bottomRow": 4,
+                                                                "bottomRow": 8,
                                                                 "parentId": "z6rqbb5eq4",
-                                                                "dynamicBindingPathList": [],
+                                                                "dynamicBindingPathList": [
+                                                                    {
+                                                                        "key": "options"
+                                                                    }
+                                                                ],
                                                                 "dynamicTriggerPathList": [],
                                                                 "classStyle": "select_input"
                                                             },
@@ -11158,7 +11485,7 @@
                                                                 "labelWidth": 5,
                                                                 "widgetName": "Input1",
                                                                 "version": 2,
-                                                                "defaultText": "KNOWLEDGE BASE:  {{getIDbase.data[0].name}}",
+                                                                "defaultText": "KNOWLEDGE BASE:{{getIDbase.data[0].name}}\nTYPE:{{getIDbase.data[0].type}}",
                                                                 "iconAlign": "left",
                                                                 "autoFocus": false,
                                                                 "labelStyle": "",
@@ -11180,9 +11507,9 @@
                                                                 "parentColumnSpace": 6.935546875,
                                                                 "parentRowSpace": 10,
                                                                 "leftColumn": 0,
-                                                                "rightColumn": 23,
+                                                                "rightColumn": 30,
                                                                 "topRow": 0,
-                                                                "bottomRow": 4,
+                                                                "bottomRow": 8,
                                                                 "parentId": "z6rqbb5eq4",
                                                                 "dynamicBindingPathList": [
                                                                     {
@@ -11198,7 +11525,7 @@
                                                                 "boxShadow": "NONE",
                                                                 "buttonColor": "#3268a8",
                                                                 "buttonVariant": "TERTIARY",
-                                                                "isDisabled": true,
+                                                                "isDisabled": false,
                                                                 "widgetName": "IconButton3Copy",
                                                                 "version": 1,
                                                                 "animateLoading": true,
@@ -11214,8 +11541,8 @@
                                                                 "parentRowSpace": 10,
                                                                 "leftColumn": 61,
                                                                 "rightColumn": 64,
-                                                                "topRow": 0,
-                                                                "bottomRow": 4,
+                                                                "topRow": 4,
+                                                                "bottomRow": 8,
                                                                 "parentId": "z6rqbb5eq4",
                                                                 "dynamicBindingPathList": [],
                                                                 "dynamicTriggerPathList": [
@@ -11223,12 +11550,8 @@
                                                                         "key": "onClick"
                                                                     }
                                                                 ],
-                                                                "onClick": "",
-                                                                "dynamicPropertyPathList": [
-                                                                    {
-                                                                        "key": "onClick"
-                                                                    }
-                                                                ]
+                                                                "onClick": "{{showModal('Modal9')}}",
+                                                                "dynamicPropertyPathList": []
                                                             }
                                                         ],
                                                         "minHeight": 400,
@@ -11260,7 +11583,7 @@
                                                 "leftColumn": 0,
                                                 "rightColumn": 64,
                                                 "topRow": 9,
-                                                "bottomRow": 15,
+                                                "bottomRow": 19,
                                                 "parentId": "gjtqa9136u",
                                                 "dynamicBindingPathList": [],
                                                 "dynamicTriggerPathList": []
@@ -11275,7 +11598,7 @@
                                         "leftColumn": 0,
                                         "rightColumn": 319.5,
                                         "topRow": 0,
-                                        "bottomRow": 800,
+                                        "bottomRow": 820,
                                         "parentId": "c79nhhvksf"
                                     }
                                 ],
@@ -11557,6 +11880,272 @@
                                 "topRow": 0,
                                 "bottomRow": 0,
                                 "parentId": "0"
+                            },
+                            {
+                                "width": 574,
+                                "height": 418,
+                                "canEscapeKeyClose": true,
+                                "animateLoading": true,
+                                "detachFromLayout": true,
+                                "canOutsideClickClose": true,
+                                "shouldScrollContents": true,
+                                "widgetName": "Modal9",
+                                "children": [
+                                    {
+                                        "isVisible": true,
+                                        "widgetName": "Canvas31",
+                                        "version": 1,
+                                        "detachFromLayout": true,
+                                        "type": "CANVAS_WIDGET",
+                                        "hideCard": true,
+                                        "displayName": "Canvas",
+                                        "key": "1figh2b7ox",
+                                        "canExtend": true,
+                                        "isDisabled": false,
+                                        "shouldScrollContents": false,
+                                        "children": [
+                                            {
+                                                "isVisible": true,
+                                                "iconName": "cross",
+                                                "borderRadius": "SHARP",
+                                                "boxShadow": "NONE",
+                                                "buttonColor": "#2E3D49",
+                                                "buttonVariant": "TERTIARY",
+                                                "isDisabled": false,
+                                                "widgetName": "IconButton3",
+                                                "version": 1,
+                                                "animateLoading": true,
+                                                "type": "ICON_BUTTON_WIDGET",
+                                                "hideCard": false,
+                                                "displayName": "Icon Button",
+                                                "key": "3k5n16t9h5",
+                                                "iconSVG": "/static/media/icon.1a0c634a.svg",
+                                                "iconSize": 24,
+                                                "widgetId": "mk8nwf9ohp",
+                                                "renderMode": "CANVAS",
+                                                "isLoading": false,
+                                                "leftColumn": 60,
+                                                "rightColumn": 64,
+                                                "topRow": 1,
+                                                "bottomRow": 5,
+                                                "parentId": "xa1x3jfrhs",
+                                                "onClick": "{{createNewBase.run();getIDbase.run(); closeModal(\"Modal9\")}}",
+                                                "dynamicPropertyPathList": [
+                                                    {
+                                                        "key": "onClick"
+                                                    }
+                                                ],
+                                                "dynamicBindingPathList": [],
+                                                "dynamicTriggerPathList": [
+                                                    {
+                                                        "key": "onClick"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "isVisible": true,
+                                                "text": "Сreate your own knowledge base",
+                                                "fontSize": "HEADING1",
+                                                "fontStyle": "BOLD",
+                                                "textAlign": "LEFT",
+                                                "textColor": "#231F20",
+                                                "truncateButtonColor": "#FFC13D",
+                                                "widgetName": "add_knowledgeBase",
+                                                "shouldTruncate": false,
+                                                "overflow": "NONE",
+                                                "version": 1,
+                                                "animateLoading": true,
+                                                "type": "TEXT_WIDGET",
+                                                "hideCard": false,
+                                                "displayName": "Text",
+                                                "key": "5hkomt4oi1",
+                                                "iconSVG": "/static/media/icon.97c59b52.svg",
+                                                "widgetId": "wofmehs93s",
+                                                "renderMode": "CANVAS",
+                                                "isLoading": false,
+                                                "leftColumn": 1,
+                                                "rightColumn": 60,
+                                                "topRow": 1,
+                                                "bottomRow": 5,
+                                                "parentId": "xa1x3jfrhs",
+                                                "dynamicBindingPathList": [],
+                                                "dynamicTriggerPathList": [],
+                                                "classStyle": "title"
+                                            },
+                                            {
+                                                "isVisible": true,
+                                                "animateLoading": true,
+                                                "text": "Save",
+                                                "buttonColor": "#3268a8",
+                                                "buttonVariant": "PRIMARY",
+                                                "placement": "CENTER",
+                                                "widgetName": "Button16",
+                                                "isDisabled": false,
+                                                "isDefaultClickDisabled": true,
+                                                "recaptchaType": "V3",
+                                                "version": 1,
+                                                "classStyle": "",
+                                                "type": "BUTTON_WIDGET",
+                                                "hideCard": false,
+                                                "displayName": "Button",
+                                                "key": "q6gtr7m81k",
+                                                "iconSVG": "/static/media/icon.cca02633.svg",
+                                                "buttonStyle": "PRIMARY_BUTTON",
+                                                "widgetId": "9mzznyr5b1",
+                                                "renderMode": "CANVAS",
+                                                "isLoading": false,
+                                                "leftColumn": 52,
+                                                "rightColumn": 64,
+                                                "topRow": 35,
+                                                "bottomRow": 39,
+                                                "parentId": "xa1x3jfrhs",
+                                                "dynamicBindingPathList": [],
+                                                "dynamicTriggerPathList": [
+                                                    {
+                                                        "key": "onClick"
+                                                    }
+                                                ],
+                                                "borderRadius": "ROUNDED",
+                                                "iconName": "add-to-artifact",
+                                                "iconAlign": "left",
+                                                "onClick": "{{createNewBase.run(()=> getIDbase.run(),closeModal('Modal9'))}}",
+                                                "dynamicPropertyPathList": [
+                                                    {
+                                                        "key": "onClick"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "isVisible": true,
+                                                "label": "NAME",
+                                                "labelPosition": "Top",
+                                                "labelAlignment": "left",
+                                                "labelWidth": 5,
+                                                "widgetName": "name_knowledgebase",
+                                                "version": 2,
+                                                "defaultText": "",
+                                                "iconAlign": "left",
+                                                "autoFocus": false,
+                                                "labelStyle": "",
+                                                "resetOnSubmit": true,
+                                                "isRequired": false,
+                                                "isDisabled": false,
+                                                "animateLoading": true,
+                                                "classStyle": "",
+                                                "inputType": "TEXT",
+                                                "buttonPosition": "right",
+                                                "type": "INPUT_WIDGET_V2",
+                                                "hideCard": false,
+                                                "displayName": "Input",
+                                                "key": "f9szsgxvbr",
+                                                "iconSVG": "/static/media/icon.9f505595.svg",
+                                                "widgetId": "hk2xll6jtn",
+                                                "renderMode": "CANVAS",
+                                                "isLoading": false,
+                                                "parentColumnSpace": 8.78125,
+                                                "parentRowSpace": 10,
+                                                "leftColumn": 1,
+                                                "rightColumn": 64,
+                                                "topRow": 8,
+                                                "bottomRow": 16,
+                                                "parentId": "xa1x3jfrhs",
+                                                "dynamicBindingPathList": [],
+                                                "dynamicTriggerPathList": [],
+                                                "placeholderText": "Write the name of your knowledge base"
+                                            },
+                                            {
+                                                "isVisible": true,
+                                                "placeholderText": "Select option",
+                                                "labelText": "TYPE DATA BASE",
+                                                "labelPosition": "Top",
+                                                "labelAlignment": "left",
+                                                "labelWidth": 5,
+                                                "options": "[\n  {\n    \"label\": \"PINECONE\",\n    \"value\": \"PINECONE\"\n  },\n  {\n    \"label\": \"CHROMA\",\n    \"value\": \"CHROMA\"\n  }\n\n]",
+                                                "serverSideFiltering": false,
+                                                "widgetName": "type_knowledgebase",
+                                                "defaultOptionValue": "CHROMA",
+                                                "version": 1,
+                                                "isFilterable": true,
+                                                "isRequired": false,
+                                                "isDisabled": false,
+                                                "animateLoading": true,
+                                                "type": "SELECT_WIDGET",
+                                                "hideCard": false,
+                                                "displayName": "Select",
+                                                "key": "2sbdhghzzk",
+                                                "iconSVG": "/static/media/icon.bd99caba.svg",
+                                                "widgetId": "sn2hxe3um3",
+                                                "renderMode": "CANVAS",
+                                                "isLoading": false,
+                                                "parentColumnSpace": 8.78125,
+                                                "parentRowSpace": 10,
+                                                "leftColumn": 1,
+                                                "rightColumn": 64,
+                                                "topRow": 18,
+                                                "bottomRow": 27,
+                                                "parentId": "xa1x3jfrhs",
+                                                "dynamicBindingPathList": [],
+                                                "dynamicTriggerPathList": [],
+                                                "classStyle": "select_input"
+                                            },
+                                            {
+                                                "isVisible": true,
+                                                "label": "Do you want to make this your main base?",
+                                                "defaultSwitchState": true,
+                                                "widgetName": "isSelectbase",
+                                                "alignWidget": "LEFT",
+                                                "version": 1,
+                                                "isDisabled": false,
+                                                "animateLoading": true,
+                                                "type": "SWITCH_WIDGET",
+                                                "hideCard": false,
+                                                "displayName": "Switch",
+                                                "key": "k1gnthh3cd",
+                                                "iconSVG": "/static/media/icon.a3115bc1.svg",
+                                                "widgetId": "ftr2of2zk7",
+                                                "renderMode": "CANVAS",
+                                                "isLoading": false,
+                                                "parentColumnSpace": 8.78125,
+                                                "parentRowSpace": 10,
+                                                "leftColumn": 1,
+                                                "rightColumn": 64,
+                                                "topRow": 29,
+                                                "bottomRow": 33,
+                                                "parentId": "xa1x3jfrhs",
+                                                "dynamicBindingPathList": [],
+                                                "dynamicTriggerPathList": []
+                                            }
+                                        ],
+                                        "minHeight": 418,
+                                        "widgetId": "xa1x3jfrhs",
+                                        "renderMode": "CANVAS",
+                                        "isLoading": false,
+                                        "parentColumnSpace": 1,
+                                        "parentRowSpace": 1,
+                                        "leftColumn": 0,
+                                        "rightColumn": 261.9375,
+                                        "topRow": 0,
+                                        "bottomRow": 410,
+                                        "parentId": "d39jsvu3os"
+                                    }
+                                ],
+                                "version": 2,
+                                "type": "MODAL_WIDGET",
+                                "hideCard": false,
+                                "displayName": "Modal",
+                                "key": "487fmr83qe",
+                                "iconSVG": "/static/media/icon.4975978e.svg",
+                                "isCanvas": true,
+                                "widgetId": "d39jsvu3os",
+                                "renderMode": "CANVAS",
+                                "isLoading": false,
+                                "parentColumnSpace": 10.9140625,
+                                "parentRowSpace": 10,
+                                "leftColumn": 19,
+                                "rightColumn": 43,
+                                "topRow": 8,
+                                "bottomRow": 32,
+                                "parentId": "0"
                             }
                         ],
                         "snapRows": 60,
@@ -11622,6 +12211,14 @@
                         "Text4Copy2",
                         "Text9",
                         "Button14",
+                        "Canvas30",
+                        "Button14Copy",
+                        "Text11",
+                        "Text12",
+                        "RichTextEditor1",
+                        "Canvas32",
+                        "Text13",
+                        "Button17",
                         "Container5",
                         "Canvas29",
                         "Select1",
@@ -11634,7 +12231,15 @@
                         "Button12",
                         "Button13",
                         "RadioGroup1",
-                        "anrichment_link"
+                        "anrichment_link",
+                        "Modal9",
+                        "Canvas31",
+                        "IconButton3",
+                        "add_knowledgeBase",
+                        "Button16",
+                        "name_knowledgebase",
+                        "type_knowledgebase",
+                        "isSelectbase"
                     ],
                     "deleted": false,
                     "policies": [],
@@ -13217,6 +13822,17 @@
                                 "jsonPathKeys": [
                                     "main.env.nodeUrl",
                                     "main.URL.queryParams.id"
+                                ],
+                                "timeoutInMillisecond": 10000
+                            },
+                            {
+                                "_id": "6540dc1ed431c9ff2df3dc95",
+                                "id": "6540dc1ed431c9ff2df3dc95",
+                                "confirmBeforeExecute": false,
+                                "name": "getLogo",
+                                "pluginType": "API",
+                                "jsonPathKeys": [
+                                    "main.env.nodeUrl"
                                 ],
                                 "timeoutInMillisecond": 10000
                             }
@@ -15632,8 +16248,8 @@
                                                 "parentRowSpace": 10,
                                                 "leftColumn": 0,
                                                 "rightColumn": 64,
-                                                "topRow": 15,
-                                                "bottomRow": 194,
+                                                "topRow": 12,
+                                                "bottomRow": 191,
                                                 "parentId": "zqhxiq1qo2",
                                                 "dynamicBindingPathList": [],
                                                 "dynamicTriggerPathList": [],
@@ -15718,8 +16334,8 @@
                                                                 "parentRowSpace": 10,
                                                                 "leftColumn": 0,
                                                                 "rightColumn": 5,
-                                                                "topRow": 2,
-                                                                "bottomRow": 7,
+                                                                "topRow": 0,
+                                                                "bottomRow": 6,
                                                                 "parentId": "d1078owmd0",
                                                                 "dynamicBindingPathList": [],
                                                                 "dynamicTriggerPathList": []
@@ -15734,7 +16350,7 @@
                                                                 "truncateButtonColor": "#FFC13D",
                                                                 "widgetName": "Text2",
                                                                 "shouldTruncate": false,
-                                                                "overflow": "SCROLL",
+                                                                "overflow": "NONE",
                                                                 "version": 1,
                                                                 "animateLoading": true,
                                                                 "type": "TEXT_WIDGET",
@@ -15750,7 +16366,7 @@
                                                                 "leftColumn": 5,
                                                                 "rightColumn": 64,
                                                                 "topRow": 0,
-                                                                "bottomRow": 12,
+                                                                "bottomRow": 6,
                                                                 "parentId": "d1078owmd0",
                                                                 "dynamicBindingPathList": [],
                                                                 "dynamicTriggerPathList": [],
@@ -15787,7 +16403,7 @@
                                                 "leftColumn": 0,
                                                 "rightColumn": 64,
                                                 "topRow": 4,
-                                                "bottomRow": 15,
+                                                "bottomRow": 12,
                                                 "parentId": "zqhxiq1qo2",
                                                 "dynamicBindingPathList": [],
                                                 "dynamicTriggerPathList": []
@@ -15802,7 +16418,7 @@
                                         "leftColumn": 0,
                                         "rightColumn": 256.5,
                                         "topRow": 0,
-                                        "bottomRow": 1950,
+                                        "bottomRow": 1930,
                                         "parentId": "4lhvyhy9ql"
                                     }
                                 ],
@@ -16001,7 +16617,7 @@
                                         "children": [
                                             {
                                                 "isVisible": true,
-                                                "text": "Configure your bot:",
+                                                "text": "Configure your bots:",
                                                 "fontSize": "HEADING2",
                                                 "fontStyle": "BOLD",
                                                 "textAlign": "LEFT",
@@ -16624,7 +17240,7 @@
                                                                         "children": [
                                                                             {
                                                                                 "isVisible": true,
-                                                                                "text": "Messenger\n<span style=\"font-size: 14px; color: #999; font-weight: normal;\">Manage integration with Messanger</span>",
+                                                                                "text": "Messenger\n<span style=\"font-size: 14px; color: #999; font-weight: normal;\">Manage integration with Messenger</span>",
                                                                                 "fontSize": "HEADING2",
                                                                                 "fontStyle": "BOLD",
                                                                                 "textAlign": "LEFT",
@@ -17229,7 +17845,7 @@
                                                                             },
                                                                             {
                                                                                 "isVisible": true,
-                                                                                "text": "\nGuide on how to set up a telegram bot <a href=\"#\" style=\"text-decoration: none;\"> <span >&#9432;</span>\n    </a> ",
+                                                                                "text": "\nGuide on how to set up a Telegram bot <a href=\"#\" style=\"text-decoration: none;\"> <span >&#9432;</span>\n    </a> ",
                                                                                 "fontSize": "PARAGRAPH",
                                                                                 "fontStyle": "",
                                                                                 "textAlign": "LEFT",
@@ -17450,7 +18066,7 @@
                                                                             },
                                                                             {
                                                                                 "isVisible": true,
-                                                                                "text": "\nGuide on how to set up a messenger bot <a href=\"#\" style=\"text-decoration: none;\"> <span >&#9432;</span>\n    </a> ",
+                                                                                "text": "\nGuide on how to set up a Messenger bot <a href=\"#\" style=\"text-decoration: none;\"> <span >&#9432;</span>\n    </a> ",
                                                                                 "fontSize": "PARAGRAPH",
                                                                                 "fontStyle": "",
                                                                                 "textAlign": "LEFT",
@@ -17752,7 +18368,7 @@
                                                                             },
                                                                             {
                                                                                 "isVisible": true,
-                                                                                "text": "\nGuide on how to set up a instagram bot <a href=\"#\" style=\"text-decoration: none;\"> <span >&#9432;</span>\n    </a> ",
+                                                                                "text": "\nGuide on how to set up a Instagram bot <a href=\"#\" style=\"text-decoration: none;\"> <span >&#9432;</span>\n    </a> ",
                                                                                 "fontSize": "PARAGRAPH",
                                                                                 "fontStyle": "",
                                                                                 "textAlign": "LEFT",
@@ -22477,7 +23093,7 @@
                                                     "image/jpeg",
                                                     ".png"
                                                 ],
-                                                "label": "Upload image",
+                                                "label": "Change main logo",
                                                 "maxNumFiles": 1,
                                                 "maxFileSize": "20",
                                                 "fileDataType": "Base64",
@@ -22497,12 +23113,12 @@
                                                 "isLoading": false,
                                                 "parentColumnSpace": 8.08203125,
                                                 "parentRowSpace": 10,
-                                                "leftColumn": 22,
-                                                "rightColumn": 38,
-                                                "topRow": 23,
-                                                "bottomRow": 27,
+                                                "leftColumn": 0,
+                                                "rightColumn": 14,
+                                                "topRow": 0,
+                                                "bottomRow": 6,
                                                 "parentId": "xl97112j3g",
-                                                "onFilesSelected": "{{upload_img.run(() => {\n  resetWidget(\"FilePicker1\", true);\n  getLogo.run();\n}, () => {})}}\n",
+                                                "onFilesSelected": "{{upload_img.run(() => {\nresetWidget(\"FilePicker1\", true); getLogo.run(()=> navigateTo('App settings', {},'NEW_WINDOW')); \n}, () => {})}}",
                                                 "dynamicPropertyPathList": [
                                                     {
                                                         "key": "onFilesSelected"
@@ -22515,38 +23131,6 @@
                                                     }
                                                 ],
                                                 "classStyle": "upload_img"
-                                            },
-                                            {
-                                                "isVisible": true,
-                                                "text": "Change main logo",
-                                                "fontSize": "PARAGRAPH",
-                                                "fontStyle": "BOLD",
-                                                "textAlign": "LEFT",
-                                                "textColor": "#231F20",
-                                                "truncateButtonColor": "#FFC13D",
-                                                "widgetName": "Text2",
-                                                "shouldTruncate": false,
-                                                "overflow": "NONE",
-                                                "version": 1,
-                                                "animateLoading": true,
-                                                "type": "TEXT_WIDGET",
-                                                "hideCard": false,
-                                                "displayName": "Text",
-                                                "key": "5hkomt4oi1",
-                                                "iconSVG": "/static/media/icon.97c59b52.svg",
-                                                "widgetId": "y5ru05pfrx",
-                                                "renderMode": "CANVAS",
-                                                "isLoading": false,
-                                                "parentColumnSpace": 8.08203125,
-                                                "parentRowSpace": 10,
-                                                "leftColumn": 0,
-                                                "rightColumn": 45,
-                                                "topRow": 0,
-                                                "bottomRow": 5,
-                                                "parentId": "xl97112j3g",
-                                                "dynamicBindingPathList": [],
-                                                "dynamicTriggerPathList": [],
-                                                "classStyle": "title"
                                             },
                                             {
                                                 "isVisible": true,
@@ -22572,8 +23156,8 @@
                                                 "parentRowSpace": 10,
                                                 "leftColumn": 0,
                                                 "rightColumn": 64,
-                                                "topRow": 5,
-                                                "bottomRow": 9,
+                                                "topRow": 6,
+                                                "bottomRow": 10,
                                                 "parentId": "xl97112j3g"
                                             },
                                             {
@@ -22599,9 +23183,9 @@
                                                 "parentColumnSpace": 8.08203125,
                                                 "parentRowSpace": 10,
                                                 "leftColumn": 0,
-                                                "rightColumn": 21,
+                                                "rightColumn": 64,
                                                 "topRow": 10,
-                                                "bottomRow": 27,
+                                                "bottomRow": 53,
                                                 "parentId": "xl97112j3g",
                                                 "dynamicBindingPathList": [
                                                     {
@@ -22620,7 +23204,7 @@
                                         "leftColumn": 0,
                                         "rightColumn": 230.25,
                                         "topRow": 0,
-                                        "bottomRow": 390,
+                                        "bottomRow": 550,
                                         "parentId": "dnukyxbcwa"
                                     }
                                 ],
@@ -22656,7 +23240,6 @@
                         "Container3",
                         "Canvas16",
                         "FilePicker1",
-                        "Text2",
                         "Divider1",
                         "Image1"
                     ],
