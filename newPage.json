@@ -21379,7 +21379,7 @@
                                                                                 "borderColor": "",
                                                                                 "borderWidth": "",
                                                                                 "classStyle": "{{getAnalytics.data.bots.percentage === \"100\" ?'text_cross' :\"\"}}",
-                                                                                "onClick": "{{navigateTo('Bots', {})}}"
+                                                                                "onClick": "{{navigateTo('Bot Setup', {})}}"
                                                                             }
                                                                         ],
                                                                         "minHeight": 400,
@@ -21519,7 +21519,7 @@
                                                                                 ],
                                                                                 "borderColor": "",
                                                                                 "borderWidth": "",
-                                                                                "onClick": "{{navigateTo('Setup', {})}}",
+                                                                                "onClick": "{{navigateTo('AI Setup', {})}}",
                                                                                 "classStyle": "{{getAnalytics.data.settings.percentage === \"100\" ?'text_cross' :\"\"}}"
                                                                             }
                                                                         ],
