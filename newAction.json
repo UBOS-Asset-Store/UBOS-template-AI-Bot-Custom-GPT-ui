@@ -6407,7 +6407,7 @@
                 "messages": []
             },
             "executeOnLoad": false,
-            "pageId": "Users",
+            "pageId": "User Chats",
             "actionConfiguration": {
                 "timeoutInMillisecond": 10000,
                 "encodeParamsToggle": true,
@@ -6559,7 +6559,7 @@
                 "messages": []
             },
             "executeOnLoad": false,
-            "pageId": "Setup",
+            "pageId": "AI Setup",
             "actionConfiguration": {
                 "timeoutInMillisecond": 10000,
                 "encodeParamsToggle": true,
@@ -7861,7 +7861,7 @@
         "name": "myFun3",
         "collectionId": "652d7479ff0d1890fd5b921c",
         "executeOnLoad": false,
-        "pageId": "Bots",
+        "pageId": "Bot Setup",
         "actionConfiguration": {
             "body": "(i,cl)=>{\n\tstoreValue(i,cl,false)\n}",
             "isAsync": true,
@@ -7902,7 +7902,7 @@
     },
     {
         "name": "myFun1",
-        "pageId": "Setup",
+        "pageId": "AI Setup",
         "executeOnLoad": false,
         "actionConfiguration": {
             "body": "() => {\n\t\t//write code here\n\t}",
@@ -7942,7 +7942,7 @@
         "name": "myFun4",
         "collectionId": "652ffc7cc002b90d189d7e2c",
         "executeOnLoad": false,
-        "pageId": "Setup",
+        "pageId": "AI Setup",
         "actionConfiguration": {
             "body": "(i,cl)=>{\n\tstoreValue(i,cl,false)\n}",
             "isAsync": true,
@@ -8000,7 +8000,7 @@
                 "messages": []
             },
             "executeOnLoad": false,
-            "pageId": "Setup",
+            "pageId": "AI Setup",
             "actionConfiguration": {
                 "timeoutInMillisecond": "20000",
                 "encodeParamsToggle": true,
@@ -8081,7 +8081,7 @@
                 "messages": []
             },
             "executeOnLoad": false,
-            "pageId": "Setup",
+            "pageId": "AI Setup",
             "actionConfiguration": {
                 "timeoutInMillisecond": 10000,
                 "encodeParamsToggle": true,
@@ -8163,7 +8163,7 @@
                 "messages": []
             },
             "executeOnLoad": false,
-            "pageId": "Setup",
+            "pageId": "AI Setup",
             "actionConfiguration": {
                 "timeoutInMillisecond": 10000,
                 "encodeParamsToggle": true,
@@ -8247,7 +8247,7 @@
                 "messages": []
             },
             "executeOnLoad": false,
-            "pageId": "Bots",
+            "pageId": "Bot Setup",
             "actionConfiguration": {
                 "timeoutInMillisecond": 10000,
                 "encodeParamsToggle": true,
@@ -8329,7 +8329,7 @@
                 "messages": []
             },
             "executeOnLoad": false,
-            "pageId": "Bots",
+            "pageId": "Bot Setup",
             "actionConfiguration": {
                 "timeoutInMillisecond": 10000,
                 "encodeParamsToggle": true,
@@ -8410,7 +8410,7 @@
                 "messages": []
             },
             "executeOnLoad": false,
-            "pageId": "Bots",
+            "pageId": "Bot Setup",
             "actionConfiguration": {
                 "timeoutInMillisecond": 10000,
                 "encodeParamsToggle": true,
@@ -8492,7 +8492,7 @@
                 "messages": []
             },
             "executeOnLoad": false,
-            "pageId": "Bots",
+            "pageId": "Bot Setup",
             "actionConfiguration": {
                 "timeoutInMillisecond": 10000,
                 "encodeParamsToggle": true,
@@ -8906,7 +8906,7 @@
     },
     {
         "name": "myFun1",
-        "pageId": "Users",
+        "pageId": "User Chats",
         "executeOnLoad": false,
         "actionConfiguration": {
             "body": "() => {\n\t\t//write code here\n\t}",
@@ -8944,7 +8944,7 @@
     },
     {
         "name": "myFun2",
-        "pageId": "Users",
+        "pageId": "User Chats",
         "executeOnLoad": true,
         "actionConfiguration": {
             "body": "async () => {\nstoreValue(\"tab\",\"Telegram\")\n\t}",
@@ -9069,7 +9069,7 @@
                 "messages": []
             },
             "executeOnLoad": false,
-            "pageId": "Setup",
+            "pageId": "AI Setup",
             "actionConfiguration": {
                 "timeoutInMillisecond": 10000,
                 "encodeParamsToggle": true,
@@ -9139,7 +9139,7 @@
                 "messages": []
             },
             "executeOnLoad": false,
-            "pageId": "Bots",
+            "pageId": "Bot Setup",
             "actionConfiguration": {
                 "timeoutInMillisecond": 10000,
                 "encodeParamsToggle": true,
@@ -9170,7 +9170,150 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-10-26T14:56:32.188Z",
-        "updatedAt": "2023-10-26T15:13:04.778Z",
+        "updatedAt": "2023-10-26T15:22:51.610Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ]
+    },
+    {
+        "_id": "6540c68ed431c9ff2df3dc93",
+        "applicationId": "jetsondashboard",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "Action": {
+            "name": "getLogo",
+            "datasource": {
+                "name": "DEFAULT_REST_DATASOURCE",
+                "datasourceConfiguration": {
+                    "url": "{{main.env.nodeUrl}}/get_logo"
+                },
+                "invalids": [],
+                "isValid": true,
+                "pluginId": "API",
+                "messages": []
+            },
+            "executeOnLoad": false,
+            "pageId": "App settings",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "GET",
+                "headers": [],
+                "queryParameters": [],
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ]
+            },
+            "dynamicBindingPathList": [],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "main.env.nodeUrl"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        },
+        "createdAt": "2023-10-31T09:19:10.704Z",
+        "updatedAt": "2023-10-31T09:23:16.504Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ]
+    },
+    {
+        "_id": "6540c700d431c9ff2df3dc94",
+        "applicationId": "jetsondashboard",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "Action": {
+            "name": "upload_img",
+            "datasource": {
+                "name": "DEFAULT_REST_DATASOURCE",
+                "datasourceConfiguration": {
+                    "url": "{{main.env.nodeUrl}}/icons"
+                },
+                "invalids": [],
+                "isValid": true,
+                "pluginId": "API",
+                "messages": []
+            },
+            "executeOnLoad": false,
+            "pageId": "App settings",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "POST",
+                "headers": [
+                    {
+                        "key": "content-type",
+                        "value": "application/json"
+                    }
+                ],
+                "queryParameters": [],
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ],
+                "body": "{\n\t\"img\": {{FilePicker1.files[0]}}\n}"
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "body"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "main.env.nodeUrl",
+                "FilePicker1.files[0]"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        },
+        "createdAt": "2023-10-31T09:21:04.509Z",
+        "updatedAt": "2023-10-31T09:25:53.813Z",
         "deleted": false,
         "policies": [
             {

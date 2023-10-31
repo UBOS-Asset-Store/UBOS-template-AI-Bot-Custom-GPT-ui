@@ -37,19 +37,7 @@
             "isDefault": false
         },
         {
-            "_id": "Users",
-            "isDefault": false
-        },
-        {
-            "_id": "Demo",
-            "isDefault": false
-        },
-        {
             "_id": "Training",
-            "isDefault": false
-        },
-        {
-            "_id": "Setup",
             "isDefault": false
         },
         {
@@ -57,11 +45,27 @@
             "isDefault": false
         },
         {
-            "_id": "Bots",
+            "_id": "AI Setup",
+            "isDefault": false
+        },
+        {
+            "_id": "Bot Setup",
+            "isDefault": false
+        },
+        {
+            "_id": "Demo",
+            "isDefault": false
+        },
+        {
+            "_id": "User Chats",
             "isDefault": false
         },
         {
             "_id": "Dashboard",
+            "isDefault": false
+        },
+        {
+            "_id": "App settings",
             "isDefault": false
         }
     ],

@@ -234,7 +234,7 @@
     {
         "id": "652d7479ff0d1890fd5b921c",
         "name": "JSObject1",
-        "pageId": "Bots",
+        "pageId": "Bot Setup",
         "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\n\n\nmyFun3:(i,cl)=>{\n\tstoreValue(i,cl,false)\n}\n}",
         "variables": [
             {
@@ -302,7 +302,7 @@
     {
         "id": "652ffc7cc002b90d189d7e2c",
         "name": "JSObject1",
-        "pageId": "Setup",
+        "pageId": "AI Setup",
         "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tmyFun1: () => {\n\t\t//write code here\n\t},\nmyFun4:(i,cl)=>{\n\tstoreValue(i,cl,false)\n}\n}",
         "variables": [
             {
@@ -408,7 +408,7 @@
     {
         "id": "6538f5ef59328d8a63c5e7e0",
         "name": "JSObject1",
-        "pageId": "Users",
+        "pageId": "User Chats",
         "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tmyFun1: () => {\n\t\t//write code here\n\t},\n\tmyFun2: async () => {\nstoreValue(\"tab\",\"Telegram\")\n\t}\n}",
         "variables": [
             {
