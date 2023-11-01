@@ -14131,17 +14131,6 @@
                                     "main.URL.queryParams.id"
                                 ],
                                 "timeoutInMillisecond": 10000
-                            },
-                            {
-                                "_id": "6540dc1ed431c9ff2df3dc95",
-                                "id": "6540dc1ed431c9ff2df3dc95",
-                                "confirmBeforeExecute": false,
-                                "name": "getLogo",
-                                "pluginType": "API",
-                                "jsonPathKeys": [
-                                    "main.env.nodeUrl"
-                                ],
-                                "timeoutInMillisecond": 10000
                             }
                         ]
                     ],
