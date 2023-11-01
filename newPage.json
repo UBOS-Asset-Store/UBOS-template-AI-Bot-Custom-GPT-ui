@@ -7909,7 +7909,7 @@
                                 "isLoading": false,
                                 "parentColumnSpace": 15.71875,
                                 "parentRowSpace": 10,
-                                "leftColumn": 8,
+                                "leftColumn": 7,
                                 "rightColumn": 64,
                                 "topRow": 7,
                                 "bottomRow": 127,
@@ -7995,7 +7995,7 @@
                         "snapColumns": 64,
                         "widgetId": "0",
                         "topRow": 0,
-                        "bottomRow": 950,
+                        "bottomRow": 1470,
                         "parentRowSpace": 1,
                         "type": "CANVAS_WIDGET",
                         "detachFromLayout": true,
@@ -8004,6 +8004,76 @@
                         "parentColumnSpace": 1,
                         "leftColumn": 0,
                         "children": [
+                            {
+                                "isVisible": true,
+                                "text": "{{getIDbase.data.filter(e=>e.select===true)[0].name}}",
+                                "fontSize": "PARAGRAPH",
+                                "fontStyle": "BOLD",
+                                "textAlign": "LEFT",
+                                "textColor": "#231F20",
+                                "truncateButtonColor": "#FFC13D",
+                                "widgetName": "namebase",
+                                "shouldTruncate": false,
+                                "overflow": "NONE",
+                                "version": 1,
+                                "animateLoading": true,
+                                "type": "TEXT_WIDGET",
+                                "hideCard": false,
+                                "displayName": "Text",
+                                "key": "ivbm9ekt39",
+                                "iconSVG": "/static/media/icon.97c59b52.svg",
+                                "widgetId": "gy8fk618m1",
+                                "renderMode": "CANVAS",
+                                "isLoading": false,
+                                "parentColumnSpace": 9.59375,
+                                "parentRowSpace": 10,
+                                "leftColumn": 22,
+                                "rightColumn": 38,
+                                "topRow": 141,
+                                "bottomRow": 145,
+                                "parentId": "0",
+                                "dynamicBindingPathList": [
+                                    {
+                                        "key": "text"
+                                    }
+                                ],
+                                "dynamicTriggerPathList": []
+                            },
+                            {
+                                "isVisible": true,
+                                "text": "{{getIDbase.data.filter(e=>e.select===true)[0].type}}",
+                                "fontSize": "PARAGRAPH",
+                                "fontStyle": "BOLD",
+                                "textAlign": "LEFT",
+                                "textColor": "#231F20",
+                                "truncateButtonColor": "#FFC13D",
+                                "widgetName": "type",
+                                "shouldTruncate": false,
+                                "overflow": "NONE",
+                                "version": 1,
+                                "animateLoading": true,
+                                "type": "TEXT_WIDGET",
+                                "hideCard": false,
+                                "displayName": "Text",
+                                "key": "ivbm9ekt39",
+                                "iconSVG": "/static/media/icon.97c59b52.svg",
+                                "widgetId": "742i5hoeu4",
+                                "renderMode": "CANVAS",
+                                "isLoading": false,
+                                "parentColumnSpace": 9.59375,
+                                "parentRowSpace": 10,
+                                "leftColumn": 22,
+                                "rightColumn": 38,
+                                "topRow": 136,
+                                "bottomRow": 140,
+                                "parentId": "0",
+                                "dynamicBindingPathList": [
+                                    {
+                                        "key": "text"
+                                    }
+                                ],
+                                "dynamicTriggerPathList": []
+                            },
                             {
                                 "width": 524,
                                 "height": 312,
@@ -9106,7 +9176,7 @@
                                                         "label": "Website",
                                                         "id": "tab1",
                                                         "widgetId": "ihc06jbcex",
-                                                        "isVisible": "{{check_pinecone.data.settings.percentage == '100'}}",
+                                                        "isVisible": "{{check_pinecone.data.openai.filledFields ===2}}",
                                                         "index": 0,
                                                         "isDuplicateLabel": false
                                                     },
@@ -9114,7 +9184,7 @@
                                                         "label": "File ",
                                                         "id": "tab2",
                                                         "widgetId": "k2agajmtvu",
-                                                        "isVisible": "{{check_pinecone.data.settings.percentage == '100'}}",
+                                                        "isVisible": "{{check_pinecone.data.openai.filledFields ===2}}",
                                                         "index": 1,
                                                         "isDuplicateLabel": false
                                                     },
@@ -9123,7 +9193,7 @@
                                                         "index": 2,
                                                         "label": "FAQ",
                                                         "widgetId": "lzfnfil2re",
-                                                        "isVisible": "{{check_pinecone.data.settings.percentage == '100'}}",
+                                                        "isVisible": "{{check_pinecone.data.openai.filledFields ===2}}",
                                                         "isDuplicateLabel": false
                                                     },
                                                     "tabwgdo1g4nzd": {
@@ -9131,7 +9201,7 @@
                                                         "index": 3,
                                                         "label": "Insert text",
                                                         "widgetId": "r8gv8x6gwm",
-                                                        "isVisible": "{{check_pinecone.data.settings.percentage == '100'}}",
+                                                        "isVisible": "{{check_pinecone.data.openai.filledFields ===2}}",
                                                         "isDuplicateLabel": false
                                                     },
                                                     "tabcux66dsi0m": {
@@ -9139,7 +9209,7 @@
                                                         "index": 4,
                                                         "label": "Before getting started",
                                                         "widgetId": "zvt9xv98if",
-                                                        "isVisible": "{{check_pinecone.data.settings.percentage !== '100'}}",
+                                                        "isVisible": "{{check_pinecone.data.openai.filledFields !==2}}",
                                                         "isDuplicateLabel": false
                                                     }
                                                 },
@@ -9730,11 +9800,11 @@
                                                                 "isVisible": true,
                                                                 "animateLoading": true,
                                                                 "text": "Train Bot",
-                                                                "buttonColor": "#008080 ",
+                                                                "buttonColor": "#3268a8",
                                                                 "buttonVariant": "SECONDARY",
                                                                 "placement": "CENTER",
                                                                 "widgetName": "Button3",
-                                                                "isDisabled": "{{check_pinecone.data.settings.percentage !== '100'}}",
+                                                                "isDisabled": "",
                                                                 "isDefaultClickDisabled": true,
                                                                 "recaptchaType": "V3",
                                                                 "version": 1,
@@ -9754,14 +9824,7 @@
                                                                 "topRow": 11,
                                                                 "bottomRow": 16,
                                                                 "parentId": "ihc06jbcex",
-                                                                "dynamicBindingPathList": [
-                                                                    {
-                                                                        "key": "isDisabled"
-                                                                    },
-                                                                    {
-                                                                        "key": "tooltip"
-                                                                    }
-                                                                ],
+                                                                "dynamicBindingPathList": [],
                                                                 "dynamicTriggerPathList": [
                                                                     {
                                                                         "key": "onClick"
@@ -9777,7 +9840,7 @@
                                                                         "key": "isDisabled"
                                                                     }
                                                                 ],
-                                                                "tooltip": "{{check_pinecone.data.settings.percentage !== '100' ?'Fill in the data on the page \"AI Setup\"':'We will be fetching all the webpages and training the ChatGPT model on them.'}}"
+                                                                "tooltip": "We will be fetching all  data and training the ChatGPT model on them."
                                                             },
                                                             {
                                                                 "isVisible": true,
@@ -10141,7 +10204,7 @@
                                                                         "labelColor": "#FFFFFF",
                                                                         "iconName": "eye-open",
                                                                         "buttonLabel": "{{Table2.sanitizedTableData.map((currentRow) => ( 'Edit vectors'))}}",
-                                                                        "onClick": "{{navigateTo('Vectors',{'id': currentRow._id},'SAME_WINDOW')}}",
+                                                                        "onClick": "{{navigateTo('Vectors',{'id': currentRow._id,\n\t\"typeBase\": type.text,\n\t\"typeName\":namebase.text},)}}",
                                                                         "buttonVariant": "TERTIARY",
                                                                         "borderRadius": "CIRCLE"
                                                                     },
@@ -10404,7 +10467,7 @@
                                                                 "valueRes": null,
                                                                 "classStyle": "",
                                                                 "textStyle": "HEADING",
-                                                                "uploadUrl": "{{main.env.nodeUrl}}/updateObjectsBase?id={{getIDbase.data[0]._id}}",
+                                                                "uploadUrl": "{{main.env.nodeUrl}}/updateObjectsBase?id={{_id.text}}&typeBase={{JSON.stringify(type.text)}}&nameBase={{JSON.stringify(namebase.text)}}",
                                                                 "validType": "",
                                                                 "textAlign": "CENTER",
                                                                 "response": null,
@@ -10613,7 +10676,7 @@
                                                                         "labelColor": "#FFFFFF",
                                                                         "iconName": "eye-open",
                                                                         "buttonLabel": "{{Table5.sanitizedTableData.map((currentRow) => ( 'Edit'))}}",
-                                                                        "onClick": "{{navigateTo('Vectors',{'id': getKnowlegeFiles.data.sortdata.Manual[0]._id},'SAME_WINDOW')}}",
+                                                                        "onClick": "{{navigateTo('Vectors',{\"id\": getKnowlegeFiles.data.sortdata.Manual[0]._id,\t\"typeBase\": type.text,\n\t\"typeName\":namebase.text})}}",
                                                                         "horizontalAlignment": "LEFT",
                                                                         "borderRadius": "CIRCLE",
                                                                         "buttonVariant": "TERTIARY"
@@ -11031,7 +11094,7 @@
                                                                 "buttonVariant": "TERTIARY",
                                                                 "placement": "CENTER",
                                                                 "widgetName": "Button14",
-                                                                "isDisabled": "{{check_pinecone.data.settings.percentage !== '100' }}",
+                                                                "isDisabled": "",
                                                                 "isDefaultClickDisabled": true,
                                                                 "recaptchaType": "V3",
                                                                 "version": 1,
@@ -11051,15 +11114,8 @@
                                                                 "topRow": 17,
                                                                 "bottomRow": 21,
                                                                 "parentId": "lzfnfil2re",
-                                                                "tooltip": "{{check_pinecone.data.settings.percentage !== '100' ?'Fill in the data on the page \"AI Setup\"':'We will be fetching all  data and training the ChatGPT model on them.'}}",
-                                                                "dynamicBindingPathList": [
-                                                                    {
-                                                                        "key": "tooltip"
-                                                                    },
-                                                                    {
-                                                                        "key": "isDisabled"
-                                                                    }
-                                                                ],
+                                                                "tooltip": "We will be fetching all  data and training the ChatGPT model on them.",
+                                                                "dynamicBindingPathList": [],
                                                                 "dynamicTriggerPathList": [
                                                                     {
                                                                         "key": "onClick"
@@ -11115,7 +11171,7 @@
                                                                 "buttonVariant": "SECONDARY",
                                                                 "placement": "CENTER",
                                                                 "widgetName": "Button14Copy",
-                                                                "isDisabled": "{{check_pinecone.data.settings.percentage !== '100' }}",
+                                                                "isDisabled": "",
                                                                 "isDefaultClickDisabled": true,
                                                                 "recaptchaType": "V3",
                                                                 "version": 1,
@@ -11135,15 +11191,8 @@
                                                                 "topRow": 3,
                                                                 "bottomRow": 7,
                                                                 "parentId": "r8gv8x6gwm",
-                                                                "tooltip": "{{check_pinecone.data.settings.percentage !== '100' ?'Fill in the data on the page \"AI Setup\"':'We will be fetching all  data and training the ChatGPT model on them.'}}",
-                                                                "dynamicBindingPathList": [
-                                                                    {
-                                                                        "key": "tooltip"
-                                                                    },
-                                                                    {
-                                                                        "key": "isDisabled"
-                                                                    }
-                                                                ],
+                                                                "tooltip": "We will be fetching all  data and training the ChatGPT model on them.",
+                                                                "dynamicBindingPathList": [],
                                                                 "dynamicTriggerPathList": [
                                                                     {
                                                                         "key": "onClick"
@@ -11288,7 +11337,7 @@
                                                         "children": [
                                                             {
                                                                 "isVisible": true,
-                                                                "text": "Fill in the data on the page \"AI Setup\" ",
+                                                                "text": "Fill in the 'ChatGPT API Configuration'  on the page \"AI Setup\" ",
                                                                 "fontSize": "HEADING1",
                                                                 "fontStyle": "BOLD",
                                                                 "textAlign": "CENTER",
@@ -11483,7 +11532,7 @@
                                                                     }
                                                                 ],
                                                                 "classStyle": "select_input",
-                                                                "onOptionChange": "{{changeMainbase.run();getIDbase.run();getKnowlegeFiles.run()}}",
+                                                                "onOptionChange": "{{changeMainbase.run(() => (getIDbase.run(),getKnowlegeFiles.run()), () => {})}}",
                                                                 "dynamicPropertyPathList": [
                                                                     {
                                                                         "key": "onOptionChange"
@@ -11628,9 +11677,9 @@
                                 "isLoading": false,
                                 "parentColumnSpace": 13.3125,
                                 "parentRowSpace": 10,
-                                "leftColumn": 8,
+                                "leftColumn": 7,
                                 "rightColumn": 64,
-                                "topRow": 9,
+                                "topRow": 7,
                                 "bottomRow": 87,
                                 "parentId": "0",
                                 "dynamicBindingPathList": [],
@@ -12001,47 +12050,6 @@
                                                         "children": [
                                                             {
                                                                 "isVisible": true,
-                                                                "widgetName": "FormButton1",
-                                                                "text": "Save",
-                                                                "isDefaultClickDisabled": true,
-                                                                "recaptchaType": "V3",
-                                                                "version": 1,
-                                                                "animateLoading": true,
-                                                                "type": "FORM_BUTTON_WIDGET",
-                                                                "hideCard": true,
-                                                                "displayName": "FormButton",
-                                                                "key": "55uiqgppoe",
-                                                                "iconSVG": "/static/media/icon.cca02633.svg",
-                                                                "buttonVariant": "PRIMARY",
-                                                                "buttonColor": "#3268a8",
-                                                                "disabledWhenInvalid": true,
-                                                                "resetFormOnClick": true,
-                                                                "widgetId": "cgo2pd8u3t",
-                                                                "renderMode": "CANVAS",
-                                                                "isLoading": false,
-                                                                "leftColumn": 53,
-                                                                "rightColumn": 64,
-                                                                "topRow": 27,
-                                                                "bottomRow": 31,
-                                                                "parentId": "uonrdwcwbe",
-                                                                "onClick": "{{createNewBase.run();getIDbase.run(); getKnowlegeFiles.run(); closeModal(\"Modal9\")}}",
-                                                                "dynamicPropertyPathList": [
-                                                                    {
-                                                                        "key": "onClick"
-                                                                    }
-                                                                ],
-                                                                "dynamicBindingPathList": [],
-                                                                "dynamicTriggerPathList": [
-                                                                    {
-                                                                        "key": "onClick"
-                                                                    }
-                                                                ],
-                                                                "iconName": "add-to-artifact",
-                                                                "iconAlign": "left",
-                                                                "borderRadius": "ROUNDED"
-                                                            },
-                                                            {
-                                                                "isVisible": true,
                                                                 "label": "NAME",
                                                                 "labelPosition": "Top",
                                                                 "labelAlignment": "left",
@@ -12070,7 +12078,7 @@
                                                                 "parentColumnSpace": 8.78125,
                                                                 "parentRowSpace": 10,
                                                                 "leftColumn": 0,
-                                                                "rightColumn": 63,
+                                                                "rightColumn": 64,
                                                                 "topRow": 0,
                                                                 "bottomRow": 8,
                                                                 "parentId": "uonrdwcwbe",
@@ -12085,10 +12093,10 @@
                                                                 "labelPosition": "Top",
                                                                 "labelAlignment": "left",
                                                                 "labelWidth": 5,
-                                                                "options": "[\n  {\n    \"label\": \"PINECONE\",\n    \"value\": \"PINECONE\"\n  },\n  {\n    \"label\": \"CHROMA\",\n    \"value\": \"CHROMA\"\n  }\n\n]",
+                                                                "options": "[\n  {\n    \"label\": \"pinecone\",\n    \"value\": \"pinecone\"\n  },\n  {\n    \"label\": \"chroma\",\n    \"value\": \"chroma\"\n  }\n\n]",
                                                                 "serverSideFiltering": false,
                                                                 "widgetName": "type_knowledgebase",
-                                                                "defaultOptionValue": "CHROMA",
+                                                                "defaultOptionValue": "chroma",
                                                                 "version": 1,
                                                                 "isFilterable": true,
                                                                 "isRequired": true,
@@ -12104,14 +12112,20 @@
                                                                 "isLoading": false,
                                                                 "parentColumnSpace": 8.78125,
                                                                 "parentRowSpace": 10,
-                                                                "leftColumn": 1,
+                                                                "leftColumn": 0,
                                                                 "rightColumn": 64,
                                                                 "topRow": 10,
                                                                 "bottomRow": 19,
                                                                 "parentId": "uonrdwcwbe",
                                                                 "dynamicBindingPathList": [],
-                                                                "dynamicTriggerPathList": [],
-                                                                "classStyle": "select_input"
+                                                                "dynamicTriggerPathList": [
+                                                                    {
+                                                                        "key": "onOptionChange"
+                                                                    }
+                                                                ],
+                                                                "classStyle": "select_input",
+                                                                "onOptionChange": "{{check_pinecone.run()}}",
+                                                                "dynamicPropertyPathList": []
                                                             },
                                                             {
                                                                 "isVisible": true,
@@ -12139,6 +12153,61 @@
                                                                 "parentId": "uonrdwcwbe",
                                                                 "dynamicBindingPathList": [],
                                                                 "dynamicTriggerPathList": []
+                                                            },
+                                                            {
+                                                                "isVisible": true,
+                                                                "animateLoading": true,
+                                                                "text": "Save",
+                                                                "buttonColor": "#3268a8",
+                                                                "buttonVariant": "PRIMARY",
+                                                                "placement": "CENTER",
+                                                                "widgetName": "Button18",
+                                                                "isDisabled": "{{check_pinecone.data.settings.filledFields !==6&& type_knowledgebase.selectedOptionValue ==='pinecone' ? true:false}}",
+                                                                "isDefaultClickDisabled": true,
+                                                                "recaptchaType": "V3",
+                                                                "version": 1,
+                                                                "classStyle": "",
+                                                                "type": "BUTTON_WIDGET",
+                                                                "hideCard": false,
+                                                                "displayName": "Button",
+                                                                "key": "cgpxq1qavn",
+                                                                "iconSVG": "/static/media/icon.cca02633.svg",
+                                                                "widgetId": "afn3g025ry",
+                                                                "renderMode": "CANVAS",
+                                                                "isLoading": false,
+                                                                "parentColumnSpace": 8.33154296875,
+                                                                "parentRowSpace": 10,
+                                                                "leftColumn": 49,
+                                                                "rightColumn": 64,
+                                                                "topRow": 27,
+                                                                "bottomRow": 31,
+                                                                "parentId": "uonrdwcwbe",
+                                                                "dynamicPropertyPathList": [
+                                                                    {
+                                                                        "key": "isDisabled"
+                                                                    },
+                                                                    {
+                                                                        "key": "onClick"
+                                                                    }
+                                                                ],
+                                                                "dynamicBindingPathList": [
+                                                                    {
+                                                                        "key": "isDisabled"
+                                                                    },
+                                                                    {
+                                                                        "key": "tooltip"
+                                                                    }
+                                                                ],
+                                                                "dynamicTriggerPathList": [
+                                                                    {
+                                                                        "key": "onClick"
+                                                                    }
+                                                                ],
+                                                                "tooltip": "{{check_pinecone.data.settings.filledFields !==6 && type_knowledgebase.selectedOptionValue==='pinecone'? `Fill in the 'Pinecone Configuration'  on the page 'AI Setup'` :\"\"}}",
+                                                                "onClick": "{{createNewBase.run();getIDbase.run(); getKnowlegeFiles.run(); closeModal(\"Modal9\")}}",
+                                                                "borderRadius": "ROUNDED",
+                                                                "iconName": "add-to-artifact",
+                                                                "iconAlign": "left"
                                                             }
                                                         ],
                                                         "minHeight": 400,
@@ -12150,7 +12219,7 @@
                                                         "leftColumn": 0,
                                                         "rightColumn": 210.75,
                                                         "topRow": 0,
-                                                        "bottomRow": 390,
+                                                        "bottomRow": 420,
                                                         "parentId": "yg1xc5fpdj"
                                                     }
                                                 ],
@@ -12226,10 +12295,10 @@
                                 "isLoading": false,
                                 "parentColumnSpace": 9.59375,
                                 "parentRowSpace": 10,
-                                "leftColumn": 13,
-                                "rightColumn": 29,
-                                "topRow": 89,
-                                "bottomRow": 93,
+                                "leftColumn": 22,
+                                "rightColumn": 38,
+                                "topRow": 131,
+                                "bottomRow": 135,
                                 "parentId": "0",
                                 "dynamicBindingPathList": [
                                     {
@@ -12246,6 +12315,8 @@
                     },
                     "widgetNames": [
                         "MainContainer",
+                        "namebase",
+                        "type",
                         "Modal8",
                         "Canvas24CopyCopy1",
                         "IconButton2CopyCopy1",
@@ -12329,10 +12400,10 @@
                         "add_knowledgeBase",
                         "Form1",
                         "Canvas33",
-                        "FormButton1",
                         "name_knowledgebase",
                         "type_knowledgebase",
                         "isSelectbase",
+                        "Button18",
                         "_id"
                     ],
                     "deleted": false,
@@ -12413,7 +12484,7 @@
                         "snapColumns": 64,
                         "widgetId": "0",
                         "topRow": 0,
-                        "bottomRow": 790,
+                        "bottomRow": 840,
                         "parentRowSpace": 1,
                         "type": "CANVAS_WIDGET",
                         "detachFromLayout": true,
@@ -12422,6 +12493,41 @@
                         "parentColumnSpace": 1,
                         "leftColumn": 0,
                         "children": [
+                            {
+                                "isVisible": false,
+                                "text": "{{getIDbase.data.filter(e=>e.select===true)[0].type}}",
+                                "fontSize": "PARAGRAPH",
+                                "fontStyle": "BOLD",
+                                "textAlign": "LEFT",
+                                "textColor": "#231F20",
+                                "truncateButtonColor": "#FFC13D",
+                                "widgetName": "type",
+                                "shouldTruncate": false,
+                                "overflow": "NONE",
+                                "version": 1,
+                                "animateLoading": true,
+                                "type": "TEXT_WIDGET",
+                                "hideCard": false,
+                                "displayName": "Text",
+                                "key": "ivbm9ekt39",
+                                "iconSVG": "/static/media/icon.97c59b52.svg",
+                                "widgetId": "ve7s9zz4ya",
+                                "renderMode": "CANVAS",
+                                "isLoading": false,
+                                "parentColumnSpace": 9.59375,
+                                "parentRowSpace": 10,
+                                "leftColumn": 13,
+                                "rightColumn": 29,
+                                "topRow": 78,
+                                "bottomRow": 82,
+                                "parentId": "0",
+                                "dynamicBindingPathList": [
+                                    {
+                                        "key": "text"
+                                    }
+                                ],
+                                "dynamicTriggerPathList": []
+                            },
                             {
                                 "width": 538,
                                 "height": 412,
@@ -13276,7 +13382,7 @@
                                                                 },
                                                                 "enhancements": true,
                                                                 "gridGap": 0,
-                                                                "listData": "{{getVectors.data.matches.map(e=>{\nreturn [\n\t\t{_id:e.id,\n\t\tquestion: e.metadata.question,\n\t\tresult: e.metadata.result,\n\t\turl:e.metadata.url}\n\t]\n})}} ",
+                                                                "listData": "{{main.URL.queryParams.typeBase !==\"chroma\" ? getVectors.data.matches.map(e=>{\nreturn [\n\t\t{_id:e.id,\n\t\tquestion: e.metadata.question,\n\t\tresult: e.metadata.result,\n\t\turl:e.metadata.url }\n\t]\n}) :getVectors.data.metadatas[0].map(e=>{\nreturn [\n\t\t{_id:e.id,\n\t\tquestion: e.question,\n\t\tresult: e.result,\n\t\turl:e.url }\n\t]\n})\n}} ",
                                                                 "widgetName": "List1",
                                                                 "children": [
                                                                     {
@@ -13930,6 +14036,7 @@
                     },
                     "widgetNames": [
                         "MainContainer",
+                        "type",
                         "Modal1",
                         "Canvas19",
                         "IconButton3",
@@ -14117,7 +14224,7 @@
                                                                                 "labelWidth": 5,
                                                                                 "widgetName": "pineconeapi",
                                                                                 "version": 2,
-                                                                                "defaultText": "{{getenv.data.pinecone.PIPECONE_API? getenv.data.pinecone.PIPECONE_API:\"\"}}",
+                                                                                "defaultText": "{{getenv.data.pinecone.PINECONE_API? getenv.data.pinecone.PINECONE_API:\"\"}}",
                                                                                 "iconAlign": "left",
                                                                                 "autoFocus": false,
                                                                                 "labelStyle": "BOLD",
@@ -14160,7 +14267,7 @@
                                                                                 "labelWidth": 5,
                                                                                 "widgetName": "env",
                                                                                 "version": 2,
-                                                                                "defaultText": "{{getenv.data.pinecone.PIPECONE_ENV?getenv.data.pinecone.PIPECONE_ENV :\"\"}}",
+                                                                                "defaultText": "{{getenv.data.pinecone.PINECONE_ENV?getenv.data.pinecone.PINECONE_ENV :\"\"}}",
                                                                                 "iconAlign": "left",
                                                                                 "autoFocus": false,
                                                                                 "labelStyle": "BOLD",
@@ -14205,7 +14312,7 @@
                                                                                 "labelWidth": 5,
                                                                                 "widgetName": "indexx",
                                                                                 "version": 2,
-                                                                                "defaultText": "{{getenv.data.pinecone.PIPECONE_INDEX?getenv.data.pinecone.PIPECONE_INDEX:\"\"}}",
+                                                                                "defaultText": "{{getenv.data.pinecone.PINECONE_INDEX?getenv.data.pinecone.PINECONE_INDEX:\"\"}}",
                                                                                 "iconAlign": "left",
                                                                                 "autoFocus": false,
                                                                                 "labelStyle": "BOLD",
@@ -14248,7 +14355,7 @@
                                                                                 "labelWidth": 5,
                                                                                 "widgetName": "Input_pineconeUrl",
                                                                                 "version": 2,
-                                                                                "defaultText": "{{getenv.data.pinecone.PIPECONE_URL?getenv.data.pinecone.PIPECONE_URL:\"\"}}",
+                                                                                "defaultText": "{{getenv.data.pinecone.PINECONE_URL?getenv.data.pinecone.PINECONE_URL:\"\"}}",
                                                                                 "iconAlign": "left",
                                                                                 "autoFocus": false,
                                                                                 "labelStyle": "BOLD",
@@ -15427,7 +15534,7 @@
                                                                                     }
                                                                                 ],
                                                                                 "dynamicTriggerPathList": [],
-                                                                                "classStyle": "{{getenv.data.pinecone.PIPECONE_API==\"\" &&getenv.data.pinecone.PIPECONE_ENV== \"\" &&getenv.data.pinecone.PIPECONE_INDEX== \"\" &&getenv.data.pinecone.PIPECONE_URL== \"\"? \"done\" :\"\"}}"
+                                                                                "classStyle": "{{getenv.data.pinecone.PINECONE_API==\"\" &&getenv.data.pinecone.PINECONE_ENV== \"\" &&getenv.data.pinecone.PINECONE_INDEX== \"\" &&getenv.data.pinecone.PINECONE_URL== \"\"? \"done\" :\"\"}}"
                                                                             },
                                                                             {
                                                                                 "isVisible": true,
@@ -16589,7 +16696,7 @@
                                 "isLoading": false,
                                 "parentColumnSpace": 10.6875,
                                 "parentRowSpace": 10,
-                                "leftColumn": 8,
+                                "leftColumn": 7,
                                 "rightColumn": 64,
                                 "topRow": 7,
                                 "bottomRow": 158,
@@ -18733,7 +18840,7 @@
                                 "isLoading": false,
                                 "parentColumnSpace": 14.59375,
                                 "parentRowSpace": 10,
-                                "leftColumn": 8,
+                                "leftColumn": 7,
                                 "rightColumn": 64,
                                 "topRow": 7,
                                 "bottomRow": 187,
@@ -18863,7 +18970,7 @@
                         "snapColumns": 64,
                         "widgetId": "0",
                         "topRow": 0,
-                        "bottomRow": 950,
+                        "bottomRow": 920,
                         "parentRowSpace": 1,
                         "type": "CANVAS_WIDGET",
                         "detachFromLayout": true,
@@ -19616,7 +19723,7 @@
                                 "isLoading": false,
                                 "parentColumnSpace": 13.3125,
                                 "parentRowSpace": 10,
-                                "leftColumn": 8,
+                                "leftColumn": 7,
                                 "rightColumn": 64,
                                 "topRow": 7,
                                 "bottomRow": 52,
@@ -21384,7 +21491,7 @@
                         "snapColumns": 64,
                         "widgetId": "0",
                         "topRow": 0,
-                        "bottomRow": 780,
+                        "bottomRow": 750,
                         "parentRowSpace": 1,
                         "type": "CANVAS_WIDGET",
                         "detachFromLayout": true,
@@ -23038,7 +23145,7 @@
                                 "isLoading": false,
                                 "parentColumnSpace": 10.6875,
                                 "parentRowSpace": 10,
-                                "leftColumn": 8,
+                                "leftColumn": 7,
                                 "rightColumn": 64,
                                 "topRow": 7,
                                 "bottomRow": 72,
@@ -23375,7 +23482,7 @@
                                 "isLoading": false,
                                 "parentColumnSpace": 9.59375,
                                 "parentRowSpace": 10,
-                                "leftColumn": 8,
+                                "leftColumn": 7,
                                 "rightColumn": 64,
                                 "topRow": 7,
                                 "bottomRow": 72,

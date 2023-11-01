@@ -6580,7 +6580,7 @@
                         "value": true
                     }
                 ],
-                "body": "{\n\t\"pipecone_api\": {{JSON.stringify(pineconeapi.text)}},\n\t\"pipecone_env\": {{JSON.stringify(env.text)}},\n\t\"pipecone_index\": {{JSON.stringify(indexx.text)}},\n\t\"pipecone_url\": {{JSON.stringify(Input_pineconeUrl.text)}}\n\n}\n"
+                "body": "{\n\t\"pinecone_api\": {{JSON.stringify(pineconeapi.text)}},\n\t\"pinecone_env\": {{JSON.stringify(env.text)}},\n\t\"pinecone_index\": {{JSON.stringify(indexx.text)}},\n\t\"pinecone_url\": {{JSON.stringify(Input_pineconeUrl.text)}}\n\n}\n"
             },
             "dynamicBindingPathList": [
                 {
@@ -6597,14 +6597,13 @@
                 "JSON.stringify(pineconeapi.text)",
                 "JSON.stringify(env.text)",
                 "JSON.stringify(indexx.text)",
-                "JSON.stringify(Input_pineconeUrl.text",
                 "JSON.stringify(Input_pineconeUrl.text)"
             ],
             "userSetOnLoad": false,
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-06-23T15:04:52.846Z",
-        "updatedAt": "2023-10-20T11:04:32.365Z",
+        "updatedAt": "2023-10-31T23:55:30.228Z",
         "deleted": false,
         "policies": [
             {
@@ -6664,7 +6663,7 @@
                         "value": true
                     }
                 ],
-                "body": "{\n\t\"link\":{{JSON.stringify(link.text)}},\n\t\"name\": {{JSON.stringify(link.text)}},\n\t\"id\": {{JSON.stringify( _id.text)}},\n\t\"type\": \"Link\"\n}",
+                "body": "{\n\t\"link\":{{JSON.stringify(link.text)}},\n\t\"name\": {{JSON.stringify(link.text)}},\n\t\"id\": {{JSON.stringify( _id.text)}},\n\t\"type\": \"Link\",\n\t\"typeBase\":{{JSON.stringify(type.text)}},\n\t\"nameBase\":{{JSON.stringify(namebase.text)}}\n}",
                 "path": ""
             },
             "dynamicBindingPathList": [
@@ -6680,14 +6679,15 @@
             "jsonPathKeys": [
                 "main.env.nodeUrl",
                 "JSON.stringify(link.text)",
-                "getIDbase.data[0]._id",
-                "JSON.stringify( _id.text)"
+                "JSON.stringify( _id.text)",
+                "JSON.stringify(type.text)",
+                "JSON.stringify(namebase.text)"
             ],
             "userSetOnLoad": false,
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-06-26T07:44:29.057Z",
-        "updatedAt": "2023-10-31T21:48:52.962Z",
+        "updatedAt": "2023-11-01T09:38:02.565Z",
         "deleted": false,
         "policies": [
             {
@@ -6902,6 +6902,14 @@
                     {
                         "key": "id",
                         "value": "{{main.URL.queryParams.id}}"
+                    },
+                    {
+                        "key": "typeBase",
+                        "value": "{{main.URL.queryParams.typeBase}}"
+                    },
+                    {
+                        "key": "typeName",
+                        "value": "{{main.URL.queryParams.typeName}}"
                     }
                 ],
                 "bodyFormData": [],
@@ -6921,19 +6929,27 @@
                 },
                 {
                     "key": "queryParameters[0].value"
+                },
+                {
+                    "key": "queryParameters[1].value"
+                },
+                {
+                    "key": "queryParameters[2].value"
                 }
             ],
             "isValid": true,
             "invalids": [],
             "jsonPathKeys": [
                 "main.env.nodeUrl",
-                "main.URL.queryParams.id"
+                "main.URL.queryParams.id",
+                "main.URL.queryParams.typeBase",
+                "main.URL.queryParams.typeName"
             ],
             "userSetOnLoad": false,
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-06-29T11:11:20.546Z",
-        "updatedAt": "2023-10-19T08:58:44.486Z",
+        "updatedAt": "2023-11-01T12:07:28.872Z",
         "deleted": false,
         "policies": [
             {
@@ -6993,7 +7009,7 @@
                         "value": true
                     }
                 ],
-                "body": "{\n\"question\": {{JSON.stringify(Input1.text)}},\n\"result\":{{JSON.stringify(Input2.text)}},\n\"url\": {{JSON.stringify(List1.selectedItem[0].url)}},\n\"_id \": \"{{main.URL.queryParams.id}}\",\n\"id\":\"{{List1.selectedItem[0]._id}}\"\n}"
+                "body": "{\n\"question\": {{JSON.stringify(Input1.text)}},\n\"result\":{{JSON.stringify(Input2.text)}},\n\"url\": {{JSON.stringify(List1.selectedItem[0].url)}},\n\"_id \": \"{{main.URL.queryParams.id}}\",\n\"id\":\"{{List1.selectedItem[0]._id}}\",\n\"typeBase\":{{JSON.stringify(main.URL.queryParams.typeBase)}},\n\"nameBase\":{{JSON.stringify(main.URL.queryParams.typeName)}}\n}"
             },
             "dynamicBindingPathList": [
                 {
@@ -7011,13 +7027,15 @@
                 "JSON.stringify(Input2.text)",
                 "JSON.stringify(List1.selectedItem[0].url)",
                 "main.URL.queryParams.id",
-                "List1.selectedItem[0]._id"
+                "List1.selectedItem[0]._id",
+                "JSON.stringify(main.URL.queryParams.typeBase)",
+                "JSON.stringify(main.URL.queryParams.typeName)"
             ],
             "userSetOnLoad": false,
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-06-29T11:38:38.762Z",
-        "updatedAt": "2023-07-12T12:58:30.083Z",
+        "updatedAt": "2023-11-01T12:01:07.209Z",
         "deleted": false,
         "policies": [
             {
@@ -7071,6 +7089,14 @@
                     {
                         "value": "{{List1.selectedItem[0]._id}}",
                         "key": "id"
+                    },
+                    {
+                        "key": "typeBase",
+                        "value": "{{main.URL.queryParams.typeBase}}"
+                    },
+                    {
+                        "key": "nameBase",
+                        "value": "{{main.URL.queryParams.typeName}}"
                     }
                 ],
                 "body": "",
@@ -7091,19 +7117,27 @@
                 },
                 {
                     "key": "queryParameters[0].value"
+                },
+                {
+                    "key": "queryParameters[1].value"
+                },
+                {
+                    "key": "queryParameters[2].value"
                 }
             ],
             "isValid": true,
             "invalids": [],
             "jsonPathKeys": [
                 "main.env.nodeUrl",
-                "List1.selectedItem[0]._id"
+                "List1.selectedItem[0]._id",
+                "main.URL.queryParams.typeBase",
+                "main.URL.queryParams.typeName"
             ],
             "userSetOnLoad": false,
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-06-29T11:49:37.661Z",
-        "updatedAt": "2023-10-19T08:55:21.864Z",
+        "updatedAt": "2023-11-01T12:01:17.046Z",
         "deleted": false,
         "policies": [
             {
@@ -7157,6 +7191,14 @@
                     {
                         "key": "id",
                         "value": "{{main.store.idToDeleteOb}}"
+                    },
+                    {
+                        "key": "type",
+                        "value": "{{type.text}}"
+                    },
+                    {
+                        "key": "name",
+                        "value": "{{namebase.text}}"
                     }
                 ],
                 "body": "",
@@ -7176,19 +7218,28 @@
                 },
                 {
                     "key": "queryParameters[0].value"
+                },
+                {
+                    "key": "queryParameters[1].value"
+                },
+                {
+                    "key": "queryParameters[2].value"
                 }
             ],
             "isValid": true,
             "invalids": [],
             "jsonPathKeys": [
                 "main.env.nodeUrl",
-                "main.store.idToDeleteOb"
+                "main.store.idToDeleteOb",
+                "type.text",
+                "na.text",
+                "namebase.text"
             ],
             "userSetOnLoad": false,
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-07-02T19:19:14.150Z",
-        "updatedAt": "2023-10-18T19:47:05.004Z",
+        "updatedAt": "2023-10-31T23:39:28.736Z",
         "deleted": false,
         "policies": [
             {
@@ -7495,7 +7546,7 @@
                     }
                 ],
                 "queryParameters": [],
-                "body": "{\n\t\"link\": {{JSON.stringify(\"manual\")}},\n\t\"name\": {{JSON.stringify(\"manual\")}},\n\t\"id\": {{JSON.stringify( _id.text)}},\n\t\"type\": \"Manual\",\n\t\"result\": {{JSON.stringify(manualanswer.text)}},\n\t\"question\": {{JSON.stringify(manualques.text)}}\n}",
+                "body": "{\n\t\"link\": {{JSON.stringify(\"manual\")}},\n\t\"name\": {{JSON.stringify(\"manual\")}},\n\t\"id\": {{JSON.stringify( _id.text)}},\n\t\"type\": \"Manual\",\n\t\"typeBase\":{{JSON.stringify(type.text)}},\n\t\"result\": {{JSON.stringify(manualanswer.text)}},\n\t\"question\": {{JSON.stringify(manualques.text)}},\n\t\"nameBase\":{{JSON.stringify(namebase.text)}}\n}",
                 "bodyFormData": [],
                 "formData": {
                     "apiContentType": "none"
@@ -7519,17 +7570,18 @@
             "jsonPathKeys": [
                 "main.env.nodeUrl",
                 "JSON.stringify(\"manual\")",
-                "getIDbase.data[0]._id",
+                "JSON.stringify( _id.text)",
+                "JSON.stringify(type.text)",
                 "JSON.stringify(manualanswer.text)",
                 "JSON.stringify(manualques.text)",
-                "main.env.nodeUrl,2023-09-04T13:29:20.709Z,2023-10-18T21:31:18.606Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl,2023-09-04T13:29:20.709Z,2023-10-18T21:48:24.426Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl,2023-09-04T13:29:20.709Z,2023-10-31T11:17:57.204Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl,2023-09-04T13:29:20.709Z,2023-10-31T21:48:21.785Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl",
-                "JSON.stringify( _id.text)"
+                "JSON.stringify(namebase.text)",
+                "main.env.nodeUrl,JSON.stringify(namebase.text),2023-09-04T13:29:20.709Z,2023-11-01T00:36:11.787Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl,2023-09-04T13:29:20.709Z,2023-11-01T10:00:19.436Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl,2023-09-04T13:29:20.709Z,2023-11-01T10:00:53.596Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl,2023-09-04T13:29:20.709Z,2023-11-01T10:03:10.588Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl"
             ],
             "userSetOnLoad": false,
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-09-04T13:29:20.709Z",
-        "updatedAt": "2023-10-31T21:48:41.299Z",
+        "updatedAt": "2023-11-01T10:21:25.968Z",
         "deleted": false,
         "policies": [
             {
@@ -7683,7 +7735,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-10-11T19:42:54.215Z",
-        "updatedAt": "2023-10-31T12:24:32.297Z",
+        "updatedAt": "2023-11-01T08:58:22.847Z",
         "deleted": false,
         "policies": [
             {
@@ -7753,7 +7805,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-10-12T13:23:29.623Z",
-        "updatedAt": "2023-10-23T21:03:35.186Z",
+        "updatedAt": "2023-11-01T11:06:45.870Z",
         "deleted": false,
         "policies": [
             {
@@ -7807,6 +7859,14 @@
                     {
                         "key": "id",
                         "value": "{{Table5.selectedRow.id}}"
+                    },
+                    {
+                        "key": "type",
+                        "value": "{{type.text}}"
+                    },
+                    {
+                        "key": "name",
+                        "value": "{{namebase.text}}"
                     }
                 ],
                 "bodyFormData": [],
@@ -7826,19 +7886,27 @@
                 },
                 {
                     "key": "queryParameters[0].value"
+                },
+                {
+                    "key": "queryParameters[1].value"
+                },
+                {
+                    "key": "queryParameters[2].value"
                 }
             ],
             "isValid": true,
             "invalids": [],
             "jsonPathKeys": [
                 "main.env.nodeUrl",
-                "Table5.selectedRow.id"
+                "Table5.selectedRow.id",
+                "type.text",
+                "namebase.text"
             ],
             "userSetOnLoad": false,
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-10-14T19:01:01.037Z",
-        "updatedAt": "2023-10-14T19:27:02.617Z",
+        "updatedAt": "2023-11-01T00:31:30.471Z",
         "deleted": false,
         "policies": [
             {
@@ -9031,7 +9099,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-10-25T18:21:16.418Z",
-        "updatedAt": "2023-10-31T16:30:22.246Z",
+        "updatedAt": "2023-11-01T09:28:33.178Z",
         "deleted": false,
         "policies": [
             {
@@ -9468,13 +9536,13 @@
                 "JSON.stringify(type_knowledgebase.selectedOptionLabel)",
                 "JSON.stringify(name_knowledgebase.text)",
                 "JSON.stringify(isSelectbase.isSwitchedOn)",
-                "main.env.nodeUrl,2023-10-31T11:26:33.701Z,2023-10-31T21:34:15.525Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl"
+                "main.env.nodeUrl,2023-10-31T11:26:33.701Z,2023-10-31T21:34:17.339Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl"
             ],
             "userSetOnLoad": false,
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-10-31T11:26:33.701Z",
-        "updatedAt": "2023-10-31T21:34:17.339Z",
+        "updatedAt": "2023-11-01T00:53:47.904Z",
         "deleted": false,
         "policies": [
             {
@@ -9551,7 +9619,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-10-31T21:38:45.412Z",
-        "updatedAt": "2023-10-31T21:39:18.717Z",
+        "updatedAt": "2023-11-01T08:59:13.080Z",
         "deleted": false,
         "policies": [
             {
