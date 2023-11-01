@@ -6853,7 +6853,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-06-27T08:30:14.056Z",
-        "updatedAt": "2023-10-12T20:16:18.343Z",
+        "updatedAt": "2023-11-01T13:22:20.219Z",
         "deleted": false,
         "policies": [
             {
@@ -7546,7 +7546,7 @@
                     }
                 ],
                 "queryParameters": [],
-                "body": "{\n\t\"link\": {{JSON.stringify(\"manual\")}},\n\t\"name\": {{JSON.stringify(\"manual\")}},\n\t\"id\": {{JSON.stringify( _id.text)}},\n\t\"type\": \"Manual\",\n\t\"typeBase\":{{JSON.stringify(type.text)}},\n\t\"result\": {{JSON.stringify(manualanswer.text)}},\n\t\"question\": {{JSON.stringify(manualques.text)}},\n\t\"nameBase\":{{JSON.stringify(namebase.text)}}\n}",
+                "body": "{\n\t\"link\": {{JSON.stringify(\"text\")}},\n\t\"name\": {{JSON.stringify(\"myText\")}},\n\t\"id\": {{JSON.stringify( _id.text)}},\n\t\"type\": \"Text\",\n\t\"typeBase\":{{JSON.stringify(type.text)}},\n\t\"text\":{{JSON.stringify(RichTextEditor1.text)}},\n\t\"nameBase\":{{JSON.stringify(namebase.text)}}\n}",
                 "bodyFormData": [],
                 "formData": {
                     "apiContentType": "none"
@@ -7569,19 +7569,20 @@
             "invalids": [],
             "jsonPathKeys": [
                 "main.env.nodeUrl",
-                "JSON.stringify(\"manual\")",
+                "JSON.stringify(\"text\")",
+                "JSON.stringify(\"myText\")",
                 "JSON.stringify( _id.text)",
                 "JSON.stringify(type.text)",
-                "JSON.stringify(manualanswer.text)",
-                "JSON.stringify(manualques.text)",
+                "JSON.stringify(RichTextEditor1.)",
                 "JSON.stringify(namebase.text)",
-                "main.env.nodeUrl,JSON.stringify(namebase.text),2023-09-04T13:29:20.709Z,2023-11-01T00:36:11.787Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl,2023-09-04T13:29:20.709Z,2023-11-01T10:00:19.436Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl,2023-09-04T13:29:20.709Z,2023-11-01T10:00:53.596Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl,2023-09-04T13:29:20.709Z,2023-11-01T10:03:10.588Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl"
+                "main.env.nodeUrl,JSON.stringify(\"text\"),JSON.stringify(\"myText\"),JSON.stringify(),2023-09-04T13:29:20.709Z,2023-11-01T13:24:02.988Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl,JSON.stringify(Ri),2023-09-04T13:29:20.709Z,2023-11-01T13:24:05.461Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl,JSON.stringify(RichTextEditor1),2023-09-04T13:29:20.709Z,2023-11-01T13:24:06.868Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl,JSON.stringify(RichTextEditor1.),2023-09-04T13:29:20.709Z,2023-11-01T13:24:07.848Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl",
+                "JSON.stringify(RichTextEditor1.text)"
             ],
             "userSetOnLoad": false,
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-09-04T13:29:20.709Z",
-        "updatedAt": "2023-11-01T10:21:25.968Z",
+        "updatedAt": "2023-11-01T13:24:09.127Z",
         "deleted": false,
         "policies": [
             {
@@ -9620,6 +9621,92 @@
         },
         "createdAt": "2023-10-31T21:38:45.412Z",
         "updatedAt": "2023-11-01T08:59:13.080Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ]
+    },
+    {
+        "_id": "654250c1d431c9ff2df3dc9a",
+        "applicationId": "jetsondashboard",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "Action": {
+            "name": "savetext",
+            "datasource": {
+                "name": "DEFAULT_REST_DATASOURCE",
+                "datasourceConfiguration": {
+                    "url": "{{main.env.nodeUrl}}/updateObjectsBase"
+                },
+                "invalids": [],
+                "isValid": true,
+                "pluginId": "API",
+                "messages": []
+            },
+            "executeOnLoad": false,
+            "pageId": "Training",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "POST",
+                "headers": [
+                    {
+                        "key": "content-type",
+                        "value": "application/json"
+                    }
+                ],
+                "queryParameters": [],
+                "body": "{\n\t\"link\": {{JSON.stringify(\"text\")}},\n\t\"name\": {{JSON.stringify(\"myText\")}},\n\t\"id\": {{JSON.stringify( _id.text)}},\n\t\"type\": \"Text\",\n\t\"typeBase\":{{JSON.stringify(type.text)}},\n\t\"text\":{{JSON.stringify(RichTextEditor1.text)}},\n\t\"nameBase\":{{JSON.stringify(namebase.text)}}\n}",
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ]
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "datasourceUrl"
+                },
+                {
+                    "key": "body"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "main.env.nodeUrl",
+                "JSON.stringify(\"text\")",
+                "JSON.stringify(\"myText\")",
+                "JSON.stringify( _id.text)",
+                "JSON.stringify(type.text)",
+                "JSON.stringify(RichTextEditor1.)",
+                "JSON.stringify(namebase.text)",
+                "JSON.stringify(RichTextEditor1.text)"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        },
+        "createdAt": "2023-11-01T13:21:05.761Z",
+        "updatedAt": "2023-11-01T13:27:27.510Z",
         "deleted": false,
         "policies": [
             {
