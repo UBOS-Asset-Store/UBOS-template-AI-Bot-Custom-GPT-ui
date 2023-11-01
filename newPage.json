@@ -14846,6 +14846,45 @@
                                                                                 "dynamicBindingPathList": [],
                                                                                 "dynamicTriggerPathList": [],
                                                                                 "classStyle": " "
+                                                                            },
+                                                                            {
+                                                                                "isVisible": true,
+                                                                                "placeholderText": "Select option",
+                                                                                "labelText": "Knowledge base",
+                                                                                "labelPosition": "Top",
+                                                                                "labelAlignment": "left",
+                                                                                "labelWidth": 5,
+                                                                                "options": "{{getAllBase.data.map(e=>{\nreturn{\n\t \"label\": e.name +\" \"+ e.type,\n    \"value\": e._id\n}})}}",
+                                                                                "serverSideFiltering": false,
+                                                                                "widgetName": "knowledge_base",
+                                                                                "defaultOptionValue": "6542590054c09f100000002a",
+                                                                                "version": 1,
+                                                                                "isFilterable": true,
+                                                                                "isRequired": false,
+                                                                                "isDisabled": false,
+                                                                                "animateLoading": true,
+                                                                                "type": "SELECT_WIDGET",
+                                                                                "hideCard": false,
+                                                                                "displayName": "Select",
+                                                                                "key": "878zooydps",
+                                                                                "iconSVG": "/static/media/icon.bd99caba.svg",
+                                                                                "widgetId": "wdoii1l4ll",
+                                                                                "renderMode": "CANVAS",
+                                                                                "isLoading": false,
+                                                                                "parentColumnSpace": 6.758056640625,
+                                                                                "parentRowSpace": 10,
+                                                                                "leftColumn": 25,
+                                                                                "rightColumn": 44,
+                                                                                "topRow": 14,
+                                                                                "bottomRow": 21,
+                                                                                "parentId": "0au237itvf",
+                                                                                "dynamicBindingPathList": [
+                                                                                    {
+                                                                                        "key": "options"
+                                                                                    }
+                                                                                ],
+                                                                                "dynamicTriggerPathList": [],
+                                                                                "labelStyle": "BOLD"
                                                                             }
                                                                         ],
                                                                         "minHeight": 400,
@@ -16780,6 +16819,7 @@
                         "answer_length",
                         "Button5",
                         "Text15",
+                        "knowledge_base",
                         "Container8",
                         "Canvas25",
                         "welcome",
@@ -16843,6 +16883,17 @@
                                 "id": "653a73add431c9ff2df3dc8f",
                                 "confirmBeforeExecute": false,
                                 "name": "getenv",
+                                "pluginType": "API",
+                                "jsonPathKeys": [
+                                    "main.env.nodeUrl"
+                                ],
+                                "timeoutInMillisecond": 10000
+                            },
+                            {
+                                "_id": "6542aa13d431c9ff2df3dc9c",
+                                "id": "6542aa13d431c9ff2df3dc9c",
+                                "confirmBeforeExecute": false,
+                                "name": "getAllBase",
                                 "pluginType": "API",
                                 "jsonPathKeys": [
                                     "main.env.nodeUrl"
@@ -21818,7 +21869,7 @@
                                                                         "children": [
                                                                             {
                                                                                 "isVisible": true,
-                                                                                "text": "{{getKnowlegeDatas.data.totalFiles !== 0 ?`<span style=\"display: inline-block; width: 30px; height: 30px; text-align: center; line-height: 30px; border-radius: 50%;border-width: 1px; border-color:#231F20;background: #F65A1A\">&#33;</span>`: `<span style=\"display: inline-block; width: 30px; height: 30px; text-align: center; line-height: 30px; border-radius: 50%;border-width: 1px; border-color:#231F20;background:#5FA362;\">&#x2713</span>` }}",
+                                                                                "text": "{{getKnowlegeDatas.data.totalFiles  === \"0\"?`<span style=\"display: inline-block; width: 30px; height: 30px; text-align: center; line-height: 30px; border-radius: 50%;border-width: 1px; border-color:#231F20;background: #F65A1A\">&#33;</span>`: `<span style=\"display: inline-block; width: 30px; height: 30px; text-align: center; line-height: 30px; border-radius: 50%;border-width: 1px; border-color:#231F20;background:#5FA362;\">&#x2713</span>` }}",
                                                                                 "fontSize": "PARAGRAPH",
                                                                                 "fontStyle": "BOLD",
                                                                                 "textAlign": "LEFT",
