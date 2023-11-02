@@ -8162,7 +8162,7 @@
                     }
                 ],
                 "queryParameters": [],
-                "body": "{\"welcome\":{{JSON.stringify(welcome.text)}},\n\"unable\":{{JSON.stringify(unable.text)}},\n \"respond\":{{JSON.stringify(respond.text)}}\n}",
+                "body": "{\"welcome\":{{JSON.stringify(welcome.text)}},\n\"unable\":{{JSON.stringify(unable.text)}}\n}",
                 "bodyFormData": [],
                 "formData": {
                     "apiContentType": "none"
@@ -8186,14 +8186,13 @@
             "jsonPathKeys": [
                 "main.env.nodeUrl",
                 "JSON.stringify(welcome.text)",
-                "JSON.stringify(unable.text)",
-                "JSON.stringify(respond.text)"
+                "JSON.stringify(unable.text)"
             ],
             "userSetOnLoad": false,
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-10-23T11:00:40.737Z",
-        "updatedAt": "2023-10-23T20:26:26.431Z",
+        "updatedAt": "2023-11-02T17:25:23.458Z",
         "deleted": false,
         "policies": [
             {
@@ -8273,14 +8272,13 @@
                 "JSON.stringify(language.selectedOptionLabel)",
                 "JSON.stringify(prompt_custom.text)",
                 "JSON.stringify(knowledge_base.selectedOptionLabel)",
-                "JSON.stringify(knowledge_base.)",
                 "JSON.stringify(knowledge_base.selectedOptionValue)"
             ],
             "userSetOnLoad": false,
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-10-23T11:00:45.062Z",
-        "updatedAt": "2023-11-02T11:48:31.066Z",
+        "updatedAt": "2023-11-02T17:34:58.981Z",
         "deleted": false,
         "policies": [
             {
@@ -9172,7 +9170,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-10-26T14:11:57.177Z",
-        "updatedAt": "2023-11-02T11:51:34.280Z",
+        "updatedAt": "2023-11-02T17:23:09.578Z",
         "deleted": false,
         "policies": [
             {
