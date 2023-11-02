@@ -23447,7 +23447,7 @@
                                                 "topRow": 0,
                                                 "bottomRow": 6,
                                                 "parentId": "xl97112j3g",
-                                                "onFilesSelected": "{{upload_img.run(() => {\nresetWidget(\"FilePicker1\", true); getLogo.run(()=> navigateTo('App settings', {},'NEW_WINDOW')); \n}, () => {})}}",
+                                                "onFilesSelected": "{{upload_img.run(() => {\nresetWidget(\"FilePicker1\", true); getlogos.run(()=> navigateTo('App settings', {},'NEW_WINDOW')); \n}, () => {})}}",
                                                 "dynamicPropertyPathList": [
                                                     {
                                                         "key": "onFilesSelected"
@@ -23497,7 +23497,7 @@
                                                 "enableRotation": false,
                                                 "enableDownload": false,
                                                 "objectFit": "contain",
-                                                "image": "{{getLogo.data}}",
+                                                "image": "{{getlogos.data}}",
                                                 "widgetName": "Image1",
                                                 "version": 1,
                                                 "animateLoading": true,
@@ -23575,7 +23575,19 @@
                     "deleted": false,
                     "policies": [],
                     "layoutOnLoadActions": [
-                        []
+                        [
+                            {
+                                "_id": "6543a07ed431c9ff2df3dc9e",
+                                "id": "6543a07ed431c9ff2df3dc9e",
+                                "confirmBeforeExecute": false,
+                                "name": "getlogos",
+                                "pluginType": "API",
+                                "jsonPathKeys": [
+                                    "main.env.nodeUrl"
+                                ],
+                                "timeoutInMillisecond": 10000
+                            }
+                        ]
                     ],
                     "layoutOnCloseActions": [
                         []
