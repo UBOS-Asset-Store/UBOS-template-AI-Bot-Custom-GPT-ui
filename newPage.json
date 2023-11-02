@@ -15293,7 +15293,7 @@
                                                                                 "labelPosition": "Top",
                                                                                 "labelAlignment": "left",
                                                                                 "labelWidth": 5,
-                                                                                "options": "[\n  {\n    \"label\": \"gpt-3.5-turbo-0613\",\n    \"value\": \"gpt-3.5-turbo-0613\"\n  },\n\t  {\n    \"label\": \"gpt-3.5-turbo-16k\",\n    \"value\": \"gpt-3.5-turbo-16k\"\n  },\n  {\n    \"label\": \"gpt-4\",\n    \"value\": \"gpt-4\"\n  },\n\t {\n    \"label\": \"gpt-4-32k\",\n    \"value\": \"gpt-4-32k\"\n  }\n]",
+                                                                                "options": "[\n  {\n    \"label\": \"gpt-3.5-turbo\",\n    \"value\": \"gpt-3.5-turbo\"\n  },\n\t  {\n    \"label\": \"gpt-3.5-turbo-16k\",\n    \"value\": \"gpt-3.5-turbo-16k\"\n  },\n  {\n    \"label\": \"gpt-4\",\n    \"value\": \"gpt-4\"\n  },\n\t {\n    \"label\": \"gpt-4-32k\",\n    \"value\": \"gpt-4-32k\"\n  }\n]",
                                                                                 "serverSideFiltering": false,
                                                                                 "widgetName": "modelopenai",
                                                                                 "defaultOptionValue": "{{getenv.data.openai.OPENAI_MODEL?getenv.data.openai.OPENAI_MODEL:\"\"}}",
