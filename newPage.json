@@ -23575,19 +23575,7 @@
                     "deleted": false,
                     "policies": [],
                     "layoutOnLoadActions": [
-                        [
-                            {
-                                "_id": "6540c68ed431c9ff2df3dc93",
-                                "id": "6540c68ed431c9ff2df3dc93",
-                                "confirmBeforeExecute": false,
-                                "name": "getLogo",
-                                "pluginType": "API",
-                                "jsonPathKeys": [
-                                    "main.env.nodeUrl"
-                                ],
-                                "timeoutInMillisecond": 10000
-                            }
-                        ]
+                        []
                     ],
                     "layoutOnCloseActions": [
                         []
