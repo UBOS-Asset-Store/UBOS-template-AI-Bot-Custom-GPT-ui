@@ -14853,7 +14853,7 @@
                                                                                 "options": "{{getAllBase.data.map(e=>{\nreturn{\n\t \"label\": e.name +\" \"+ e.type,\n    \"value\": e._id\n}})}}",
                                                                                 "serverSideFiltering": false,
                                                                                 "widgetName": "knowledge_base",
-                                                                                "defaultOptionValue": "{{getenv.data.prompts.ID ? getenv.data.prompts.ID: `6542590054c09f100000002a`}} ",
+                                                                                "defaultOptionValue": "{{getenv.data.prompts.ID ? getenv.data.prompts.ID: getAllBase.data[0]}} ",
                                                                                 "version": 1,
                                                                                 "isFilterable": true,
                                                                                 "isRequired": false,
