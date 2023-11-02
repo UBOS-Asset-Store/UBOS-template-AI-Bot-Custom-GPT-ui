@@ -8244,7 +8244,7 @@
                     }
                 ],
                 "queryParameters": [],
-                "body": "{\n\t\"answer_length\":{{JSON.stringify(answer_length.selectedOptionLabel)}},\n\t\"answer_as\":{{JSON.stringify(answer_as.selectedOptionLabel)}},\n\t\"tone\":{{JSON.stringify(tone.selectedOptionLabel)}},\n\t\"language\":{{JSON.stringify(language.selectedOptionLabel)}},\n\t\"prompt_custom\":{{JSON.stringify(prompt_custom.text)}},\n\t\"knowledge_base\":{{JSON.stringify(knowledge_base.selectedOptionLabel)}}\n}",
+                "body": "{\n\t\"answer_length\":{{JSON.stringify(answer_length.selectedOptionLabel)}},\n\t\"answer_as\":{{JSON.stringify(answer_as.selectedOptionLabel)}},\n\t\"tone\":{{JSON.stringify(tone.selectedOptionLabel)}},\n\t\"language\":{{JSON.stringify(language.selectedOptionLabel)}},\n\t\"prompt_custom\":{{JSON.stringify(prompt_custom.text)}},\n\t\"knowledge_base\":{{JSON.stringify(knowledge_base.selectedOptionLabel)}},\n\t\"id_base\":{{JSON.stringify(knowledge_base.selectedOptionValue)}}\n}",
                 "bodyFormData": [],
                 "formData": {
                     "apiContentType": "none"
@@ -8272,13 +8272,15 @@
                 "JSON.stringify(tone.selectedOptionLabel)",
                 "JSON.stringify(language.selectedOptionLabel)",
                 "JSON.stringify(prompt_custom.text)",
-                "JSON.stringify(knowledge_base.selectedOptionLabel)"
+                "JSON.stringify(knowledge_base.selectedOptionLabel)",
+                "JSON.stringify(knowledge_base.)",
+                "JSON.stringify(knowledge_base.selectedOptionValue)"
             ],
             "userSetOnLoad": false,
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-10-23T11:00:45.062Z",
-        "updatedAt": "2023-11-01T19:51:24.929Z",
+        "updatedAt": "2023-11-02T11:48:31.066Z",
         "deleted": false,
         "policies": [
             {
@@ -9170,7 +9172,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-10-26T14:11:57.177Z",
-        "updatedAt": "2023-10-26T14:34:17.934Z",
+        "updatedAt": "2023-11-02T11:51:34.280Z",
         "deleted": false,
         "policies": [
             {
