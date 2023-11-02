@@ -35,7 +35,7 @@
                         "snapColumns": 64,
                         "widgetId": "0",
                         "topRow": 0,
-                        "bottomRow": 1540,
+                        "bottomRow": 920,
                         "parentRowSpace": 1,
                         "type": "CANVAS_WIDGET",
                         "detachFromLayout": true,
@@ -856,7 +856,7 @@
                                 "isLoading": false,
                                 "parentColumnSpace": 19.046875,
                                 "parentRowSpace": 10,
-                                "leftColumn": 8,
+                                "leftColumn": 7,
                                 "rightColumn": 64,
                                 "topRow": 7,
                                 "bottomRow": 72,
@@ -3673,7 +3673,7 @@
                                 "isLoading": false,
                                 "parentColumnSpace": 19.046875,
                                 "parentRowSpace": 10,
-                                "leftColumn": 8,
+                                "leftColumn": 7,
                                 "rightColumn": 64,
                                 "topRow": 7,
                                 "bottomRow": 136,
@@ -6563,7 +6563,7 @@
                                 "isLoading": false,
                                 "parentColumnSpace": 19.046875,
                                 "parentRowSpace": 10,
-                                "leftColumn": 8,
+                                "leftColumn": 7,
                                 "rightColumn": 64,
                                 "topRow": 7,
                                 "bottomRow": 72,
@@ -20010,19 +20010,16 @@
                                                                         "key": "primaryColumns.type.computedValue"
                                                                     },
                                                                     {
-                                                                        "key": "primaryColumns.requestText.computedValue"
+                                                                        "key": "primaryColumns.first_name.computedValue"
                                                                     },
                                                                     {
-                                                                        "key": "primaryColumns.startDate.computedValue"
+                                                                        "key": "primaryColumns.last_name.computedValue"
                                                                     },
                                                                     {
-                                                                        "key": "primaryColumns.answer.computedValue"
+                                                                        "key": "primaryColumns.username.computedValue"
                                                                     },
                                                                     {
-                                                                        "key": "primaryColumns.endDate.computedValue"
-                                                                    },
-                                                                    {
-                                                                        "key": "primaryColumns.user_name.computedValue"
+                                                                        "key": "primaryColumns.language_code.computedValue"
                                                                     }
                                                                 ],
                                                                 "primaryColumns": {
@@ -20115,27 +20112,10 @@
                                                                         "label": "type",
                                                                         "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.type))}}"
                                                                     },
-                                                                    "requestText": {
-                                                                        "index": 1,
-                                                                        "width": 150,
-                                                                        "id": "requestText",
-                                                                        "horizontalAlignment": "LEFT",
-                                                                        "verticalAlignment": "CENTER",
-                                                                        "columnType": "text",
-                                                                        "textSize": "PARAGRAPH",
-                                                                        "enableFilter": true,
-                                                                        "enableSort": true,
-                                                                        "isVisible": true,
-                                                                        "isDisabled": false,
-                                                                        "isCellVisible": true,
-                                                                        "isDerived": false,
-                                                                        "label": "requestText",
-                                                                        "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.requestText))}}"
-                                                                    },
-                                                                    "startDate": {
+                                                                    "first_name": {
                                                                         "index": 2,
                                                                         "width": 150,
-                                                                        "id": "startDate",
+                                                                        "id": "first_name",
                                                                         "horizontalAlignment": "LEFT",
                                                                         "verticalAlignment": "CENTER",
                                                                         "columnType": "text",
@@ -20146,13 +20126,30 @@
                                                                         "isDisabled": false,
                                                                         "isCellVisible": true,
                                                                         "isDerived": false,
-                                                                        "label": "startDate",
-                                                                        "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.startDate))}}"
+                                                                        "label": "first_name",
+                                                                        "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.first_name))}}"
                                                                     },
-                                                                    "answer": {
+                                                                    "last_name": {
+                                                                        "index": 3,
+                                                                        "width": 150,
+                                                                        "id": "last_name",
+                                                                        "horizontalAlignment": "LEFT",
+                                                                        "verticalAlignment": "CENTER",
+                                                                        "columnType": "text",
+                                                                        "textSize": "PARAGRAPH",
+                                                                        "enableFilter": true,
+                                                                        "enableSort": true,
+                                                                        "isVisible": true,
+                                                                        "isDisabled": false,
+                                                                        "isCellVisible": true,
+                                                                        "isDerived": false,
+                                                                        "label": "last_name",
+                                                                        "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.last_name))}}"
+                                                                    },
+                                                                    "username": {
                                                                         "index": 4,
                                                                         "width": 150,
-                                                                        "id": "answer",
+                                                                        "id": "username",
                                                                         "horizontalAlignment": "LEFT",
                                                                         "verticalAlignment": "CENTER",
                                                                         "columnType": "text",
@@ -20163,13 +20160,13 @@
                                                                         "isDisabled": false,
                                                                         "isCellVisible": true,
                                                                         "isDerived": false,
-                                                                        "label": "answer",
-                                                                        "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.answer))}}"
+                                                                        "label": "username",
+                                                                        "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.username))}}"
                                                                     },
-                                                                    "endDate": {
-                                                                        "index": 5,
+                                                                    "language_code": {
+                                                                        "index": 6,
                                                                         "width": 150,
-                                                                        "id": "endDate",
+                                                                        "id": "language_code",
                                                                         "horizontalAlignment": "LEFT",
                                                                         "verticalAlignment": "CENTER",
                                                                         "columnType": "text",
@@ -20180,25 +20177,8 @@
                                                                         "isDisabled": false,
                                                                         "isCellVisible": true,
                                                                         "isDerived": false,
-                                                                        "label": "endDate",
-                                                                        "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.endDate))}}"
-                                                                    },
-                                                                    "user_name": {
-                                                                        "index": 7,
-                                                                        "width": 150,
-                                                                        "id": "user_name",
-                                                                        "horizontalAlignment": "LEFT",
-                                                                        "verticalAlignment": "CENTER",
-                                                                        "columnType": "text",
-                                                                        "textSize": "PARAGRAPH",
-                                                                        "enableFilter": true,
-                                                                        "enableSort": true,
-                                                                        "isVisible": true,
-                                                                        "isDisabled": false,
-                                                                        "isCellVisible": true,
-                                                                        "isDerived": false,
-                                                                        "label": "user_name",
-                                                                        "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.user_name))}}"
+                                                                        "label": "language_code",
+                                                                        "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.language_code))}}"
                                                                     }
                                                                 },
                                                                 "derivedColumns": {
@@ -20233,14 +20213,13 @@
                                                                 },
                                                                 "columnOrder": [
                                                                     "_id",
-                                                                    "requestText",
-                                                                    "startDate",
-                                                                    "type",
-                                                                    "answer",
-                                                                    "endDate",
-                                                                    "chat_id",
-                                                                    "user_name",
                                                                     "deleted",
+                                                                    "first_name",
+                                                                    "last_name",
+                                                                    "username",
+                                                                    "chat_id",
+                                                                    "language_code",
+                                                                    "type",
                                                                     "customColumn1"
                                                                 ],
                                                                 "enableClientSideSearch": true,
