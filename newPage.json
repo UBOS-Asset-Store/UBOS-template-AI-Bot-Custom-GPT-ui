@@ -21142,7 +21142,7 @@
                                                                             },
                                                                             {
                                                                                 "isVisible": true,
-                                                                                "text": "<a style=\"color:#231F20\"> Create your own knowledge collection and choose the type of database</a>  ({{getAnalytics.data.base.totalFields}} )",
+                                                                                "text": "<a style=\"color:#231F20\"> Create your own knowledge collection and choose the type of database</a>  ({{getAnalytics.data.base.totalFields}})",
                                                                                 "fontSize": "HEADING3",
                                                                                 "fontStyle": "BOLD",
                                                                                 "textAlign": "LEFT",
@@ -21185,7 +21185,7 @@
                                                                                 "borderColor": "",
                                                                                 "borderWidth": "",
                                                                                 "onClick": "{{navigateTo('Training', {})}}",
-                                                                                "classStyle": "{{getAnalytics.data.base.totalFields !== 0 || getAnalytics.data.base.totalFields !== '0'?'text_cross' :\"\"}}"
+                                                                                "classStyle": "{{getAnalytics.data.base.totalFields !== 0 ? 'text_cross' :\"\"}}"
                                                                             }
                                                                         ],
                                                                         "minHeight": 400,
