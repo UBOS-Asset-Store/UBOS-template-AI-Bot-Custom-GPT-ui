@@ -14765,7 +14765,7 @@
                                                                                 ],
                                                                                 "iconName": "saved",
                                                                                 "iconAlign": "left",
-                                                                                "onClick": "{{saveCredentialsOpenAi.run(() => showAlert(saveCredentialsOpenAi.data,'info'), () => showAlert(saveCredentialsOpenAi.data,'info'))}}",
+                                                                                "onClick": "{{saveCredentialsOpenAi.run(() => (getenv.run(),showAlert(saveCredentialsOpenAi.data,'info')), () => showAlert(saveCredentialsOpenAi.data,'info'))}}",
                                                                                 "dynamicPropertyPathList": [
                                                                                     {
                                                                                         "key": "onClick"
