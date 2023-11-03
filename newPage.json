@@ -18802,96 +18802,39 @@
                                         "children": [
                                             {
                                                 "isVisible": true,
-                                                "backgroundColor": "#FFFFFF",
-                                                "widgetName": "RowContainer1",
-                                                "containerStyle": "card",
-                                                "borderColor": "transparent",
-                                                "borderWidth": "0",
-                                                "borderRadius": "0",
-                                                "rowHeight": 10,
-                                                "isFullHeight": false,
-                                                "boxShadow": "NONE",
-                                                "animateLoading": true,
-                                                "removePadding": true,
-                                                "showBlur": false,
-                                                "children": [
-                                                    {
-                                                        "isVisible": true,
-                                                        "widgetName": "RowLayoutCanvas1",
-                                                        "version": 1,
-                                                        "detachFromLayout": true,
-                                                        "type": "ROW_CANVAS_WIDGET",
-                                                        "hideCard": true,
-                                                        "displayName": "RowLayoutCanvas",
-                                                        "key": "hoacw4iw1r",
-                                                        "containerStyle": "none",
-                                                        "canExtend": false,
-                                                        "children": [
-                                                            {
-                                                                "isVisible": true,
-                                                                "widgetName": "Chat1",
-                                                                "requestInterval": "2000",
-                                                                "lastMessage": 0,
-                                                                "onClick": "",
-                                                                "chatData": [],
-                                                                "version": 1,
-                                                                "type": "CHAT_WIDGET",
-                                                                "hideCard": false,
-                                                                "displayName": "Chat",
-                                                                "key": "39ipqpjign",
-                                                                "iconSVG": "/static/media/icon.30f5197c.svg",
-                                                                "isCanvas": false,
-                                                                "widgetId": "m12pi5b8an",
-                                                                "renderMode": "CANVAS",
-                                                                "isLoading": false,
-                                                                "parentColumnSpace": 15.336669921875,
-                                                                "parentRowSpace": 10,
-                                                                "leftColumn": 0,
-                                                                "rightColumn": 64,
-                                                                "topRow": 0,
-                                                                "bottomRow": 67,
-                                                                "parentId": "pmurq8fddx",
-                                                                "postChatDataUrl": "{{main.env.nodeUrl}}/demo",
-                                                                "dynamicBindingPathList": [
-                                                                    {
-                                                                        "key": "postChatDataUrl"
-                                                                    },
-                                                                    {
-                                                                        "key": "getChatDataUrl"
-                                                                    }
-                                                                ],
-                                                                "dynamicTriggerPathList": [],
-                                                                "getChatDataUrl": "{{main.env.nodeUrl}}/demo?id={{new Date()}}&number={{Chat1.lastMessage}}"
-                                                            }
-                                                        ],
-                                                        "widgetId": "pmurq8fddx",
-                                                        "renderMode": "CANVAS",
-                                                        "isLoading": false,
-                                                        "leftColumn": 0,
-                                                        "rightColumn": null,
-                                                        "topRow": 0,
-                                                        "bottomRow": 690,
-                                                        "parentId": "ien90xawur"
-                                                    }
-                                                ],
+                                                "widgetName": "Chat1",
+                                                "requestInterval": "2000",
+                                                "lastMessage": 0,
+                                                "onClick": "",
+                                                "chatData": [],
                                                 "version": 1,
-                                                "classStyle": "",
-                                                "type": "ROWCONTAINER_WIDGET",
+                                                "type": "CHAT_WIDGET",
                                                 "hideCard": false,
-                                                "displayName": "Row Container",
-                                                "key": "vw5u2n7sf5",
-                                                "iconSVG": "/static/media/icon.5c440258.svg",
-                                                "isCanvas": true,
-                                                "widgetId": "ien90xawur",
+                                                "displayName": "Chat",
+                                                "key": "39ipqpjign",
+                                                "iconSVG": "/static/media/icon.30f5197c.svg",
+                                                "isCanvas": false,
+                                                "widgetId": "m12pi5b8an",
                                                 "renderMode": "CANVAS",
                                                 "isLoading": false,
-                                                "parentColumnSpace": 11.751953125,
+                                                "parentColumnSpace": 15.336669921875,
                                                 "parentRowSpace": 10,
                                                 "leftColumn": 0,
                                                 "rightColumn": 64,
                                                 "topRow": 0,
-                                                "bottomRow": 70,
-                                                "parentId": "5o0doljsub"
+                                                "bottomRow": 63,
+                                                "parentId": "5o0doljsub",
+                                                "postChatDataUrl": "{{main.env.nodeUrl}}/demo",
+                                                "dynamicBindingPathList": [
+                                                    {
+                                                        "key": "postChatDataUrl"
+                                                    },
+                                                    {
+                                                        "key": "getChatDataUrl"
+                                                    }
+                                                ],
+                                                "dynamicTriggerPathList": [],
+                                                "getChatDataUrl": "{{main.env.nodeUrl}}/demo?id={{new Date()}}&number={{Chat1.lastMessage}}"
                                             }
                                         ],
                                         "widgetId": "5o0doljsub",
@@ -18900,7 +18843,7 @@
                                         "leftColumn": 0,
                                         "rightColumn": null,
                                         "topRow": 0,
-                                        "bottomRow": 720,
+                                        "bottomRow": 650,
                                         "parentId": "0pbi1c0irz"
                                     }
                                 ],
@@ -18920,7 +18863,7 @@
                                 "leftColumn": 7,
                                 "rightColumn": 64,
                                 "topRow": 7,
-                                "bottomRow": 83,
+                                "bottomRow": 77,
                                 "parentId": "0",
                                 "dynamicBindingPathList": [],
                                 "dynamicTriggerPathList": [],
@@ -18936,8 +18879,6 @@
                         "MainContainer",
                         "GridLayout1",
                         "GridLayoutCanvas1",
-                        "RowContainer1",
-                        "RowLayoutCanvas1",
                         "Chat1"
                     ],
                     "deleted": false,
