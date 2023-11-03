@@ -7411,7 +7411,8 @@
                                                         "key": "getChatDataUrl"
                                                     }
                                                 ],
-                                                "postChatDataUrl": ""
+                                                "postChatDataUrl": "",
+                                                "sendMessageDisabled": true
                                             }
                                         ],
                                         "minHeight": 400,
