@@ -10430,6 +10430,9 @@
                                                                 "dynamicPropertyPathList": [
                                                                     {
                                                                         "key": "primaryColumns.customColumn2.onClick"
+                                                                    },
+                                                                    {
+                                                                        "key": "primaryColumns.customColumn1.onClick"
                                                                     }
                                                                 ]
                                                             },
@@ -12782,9 +12785,6 @@
                                                                     },
                                                                     {
                                                                         "key": "primaryColumns.result.computedValue"
-                                                                    },
-                                                                    {
-                                                                        "key": "primaryColumns.url.computedValue"
                                                                     }
                                                                 ],
                                                                 "primaryColumns": {
@@ -12838,23 +12838,6 @@
                                                                         "isDerived": false,
                                                                         "label": "result",
                                                                         "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.result))}}"
-                                                                    },
-                                                                    "url": {
-                                                                        "index": 3,
-                                                                        "width": 150,
-                                                                        "id": "url",
-                                                                        "horizontalAlignment": "LEFT",
-                                                                        "verticalAlignment": "CENTER",
-                                                                        "columnType": "text",
-                                                                        "textSize": "PARAGRAPH",
-                                                                        "enableFilter": true,
-                                                                        "enableSort": true,
-                                                                        "isVisible": true,
-                                                                        "isDisabled": false,
-                                                                        "isCellVisible": true,
-                                                                        "isDerived": false,
-                                                                        "label": "url",
-                                                                        "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.url))}}"
                                                                     },
                                                                     "customColumn1": {
                                                                         "index": 4,
@@ -12943,7 +12926,7 @@
                                                                         "buttonVariant": "TERTIARY"
                                                                     }
                                                                 },
-                                                                "tableData": "{{main.URL.queryParams.typeBase !==\"chroma\" ? getVectors.data.matches.map(e=>{\nreturn {_id:e.id,\n\t\tquestion: e.metadata.question,\n\t\tresult: e.metadata.result,\n\t\turl:e.metadata.url }\n\t\n}) :getVectors.data.metadatas[0].map(e=>{\nreturn {_id:e.id,\n\t\tquestion: e.question,\n\t\tresult: e.result,\n\t\turl:e.url }\n\t\n})\n}} ",
+                                                                "tableData": "{{main.URL.queryParams.typeBase !==\"chroma\" ? getVectors.data.matches.map(e=>{\nreturn {_id:e?.id,\n\t\tquestion: e?.metadata?.question,\n\t\tresult: e?.metadata?.result,\n\t\turl:e?.metadata?.url }\n\t\n}) :getVectors.data.metadatas[0].map(e=>{\nreturn {_id:e?.id,\n\t\tquestion: e?.question,\n\t\tresult: e?.result,\n\t\turl:e?.url }\n\t\n})\n}} ",
                                                                 "columnSizeMap": {
                                                                     "task": 245,
                                                                     "step": 62,
@@ -12955,12 +12938,11 @@
                                                                     "customColumn2": 70
                                                                 },
                                                                 "columnOrder": [
+                                                                    "_id",
                                                                     "question",
                                                                     "result",
-                                                                    "url",
-                                                                    "customColumn2",
                                                                     "customColumn1",
-                                                                    "_id"
+                                                                    "customColumn2"
                                                                 ],
                                                                 "enableClientSideSearch": true,
                                                                 "isVisibleSearch": true,
