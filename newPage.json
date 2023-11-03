@@ -18566,14 +18566,51 @@
                                                         "key": "hoacw4iw1r",
                                                         "containerStyle": "none",
                                                         "canExtend": false,
-                                                        "children": [],
+                                                        "children": [
+                                                            {
+                                                                "isVisible": true,
+                                                                "widgetName": "Chat1",
+                                                                "requestInterval": "2000",
+                                                                "lastMessage": 0,
+                                                                "onClick": "",
+                                                                "chatData": [],
+                                                                "version": 1,
+                                                                "type": "CHAT_WIDGET",
+                                                                "hideCard": false,
+                                                                "displayName": "Chat",
+                                                                "key": "39ipqpjign",
+                                                                "iconSVG": "/static/media/icon.30f5197c.svg",
+                                                                "isCanvas": false,
+                                                                "widgetId": "m12pi5b8an",
+                                                                "renderMode": "CANVAS",
+                                                                "isLoading": false,
+                                                                "parentColumnSpace": 15.336669921875,
+                                                                "parentRowSpace": 10,
+                                                                "leftColumn": 0,
+                                                                "rightColumn": 64,
+                                                                "topRow": 0,
+                                                                "bottomRow": 67,
+                                                                "parentId": "pmurq8fddx",
+                                                                "postChatDataUrl": "{{main.env.nodeUrl}}/demo",
+                                                                "dynamicBindingPathList": [
+                                                                    {
+                                                                        "key": "postChatDataUrl"
+                                                                    },
+                                                                    {
+                                                                        "key": "getChatDataUrl"
+                                                                    }
+                                                                ],
+                                                                "dynamicTriggerPathList": [],
+                                                                "getChatDataUrl": "{{main.env.nodeUrl}}/demo?id={{new Date()}}&number={{Chat1.lastMessage}}"
+                                                            }
+                                                        ],
                                                         "widgetId": "pmurq8fddx",
                                                         "renderMode": "CANVAS",
                                                         "isLoading": false,
                                                         "leftColumn": 0,
                                                         "rightColumn": null,
                                                         "topRow": 0,
-                                                        "bottomRow": 530,
+                                                        "bottomRow": 690,
                                                         "parentId": "ien90xawur"
                                                     }
                                                 ],
@@ -18639,7 +18676,8 @@
                         "GridLayout1",
                         "GridLayoutCanvas1",
                         "RowContainer1",
-                        "RowLayoutCanvas1"
+                        "RowLayoutCanvas1",
+                        "Chat1"
                     ],
                     "deleted": false,
                     "policies": [],
