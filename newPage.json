@@ -7465,28 +7465,7 @@
                     "deleted": false,
                     "policies": [],
                     "layoutOnLoadActions": [
-                        [
-                            {
-                                "_id": "6475a4ab0e227c6e58567d08",
-                                "id": "6475a4ab0e227c6e58567d08",
-                                "confirmBeforeExecute": false,
-                                "name": "Api1",
-                                "pluginType": "API",
-                                "jsonPathKeys": [],
-                                "timeoutInMillisecond": 10000
-                            },
-                            {
-                                "_id": "6544bfc5619abb88808ba69b",
-                                "id": "6544bfc5619abb88808ba69b",
-                                "confirmBeforeExecute": false,
-                                "name": "getChatLength",
-                                "pluginType": "API",
-                                "jsonPathKeys": [
-                                    "main.env.nodeUrl"
-                                ],
-                                "timeoutInMillisecond": 10000
-                            }
-                        ]
+                        []
                     ],
                     "layoutOnCloseActions": [
                         []
