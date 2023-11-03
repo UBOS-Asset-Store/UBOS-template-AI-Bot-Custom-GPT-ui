@@ -7300,7 +7300,7 @@
                         "snapColumns": 64,
                         "widgetId": "0",
                         "topRow": 0,
-                        "bottomRow": 1740,
+                        "bottomRow": 1000,
                         "parentRowSpace": 1,
                         "type": "CANVAS_WIDGET",
                         "detachFromLayout": true,
@@ -7377,519 +7377,41 @@
                                             },
                                             {
                                                 "isVisible": true,
-                                                "text": "Chat {{getChat.data[0].user_name}}",
-                                                "fontSize": "HEADING1",
-                                                "fontStyle": "BOLD",
-                                                "textAlign": "LEFT",
-                                                "textColor": "#FFFFFF",
-                                                "truncateButtonColor": "#FFC13D",
-                                                "widgetName": "Text9",
-                                                "shouldTruncate": false,
-                                                "overflow": "NONE",
+                                                "widgetName": "Chat1",
+                                                "requestInterval": "200000",
+                                                "lastMessage": 0,
+                                                "onClick": "",
+                                                "chatData": [],
                                                 "version": 1,
-                                                "animateLoading": true,
-                                                "type": "TEXT_WIDGET",
+                                                "type": "CHAT_WIDGET",
                                                 "hideCard": false,
-                                                "displayName": "Text",
-                                                "key": "y8l24qq7mh",
-                                                "iconSVG": "/static/media/icon.97c59b52.svg",
-                                                "widgetId": "30squpzaq1",
+                                                "displayName": "Chat",
+                                                "key": "kvn8udkb99",
+                                                "iconSVG": "/static/media/icon.30f5197c.svg",
+                                                "isCanvas": false,
+                                                "widgetId": "0mp62zayy3",
                                                 "renderMode": "CANVAS",
                                                 "isLoading": false,
-                                                "parentColumnSpace": 15.7451171875,
+                                                "parentColumnSpace": 15.649169921875,
                                                 "parentRowSpace": 10,
                                                 "leftColumn": 0,
-                                                "rightColumn": 64,
+                                                "rightColumn": 62,
                                                 "topRow": 5,
-                                                "bottomRow": 9,
+                                                "bottomRow": 75,
                                                 "parentId": "4tc4ytey90",
+                                                "getChatDataUrl": "{{main.env.nodeUrl}}/getChatHIstory?id={{main.URL.queryParams.id}}&number={{Chat1.lastMessage}}\n",
                                                 "dynamicBindingPathList": [
                                                     {
-                                                        "key": "text"
-                                                    }
-                                                ],
-                                                "dynamicTriggerPathList": []
-                                            },
-                                            {
-                                                "isVisible": true,
-                                                "backgroundColor": "#FFFFFF",
-                                                "itemBackgroundColor": "#FFFFFF",
-                                                "animateLoading": true,
-                                                "gridType": "vertical",
-                                                "template": {
-                                                    "Text6": {
-                                                        "isVisible": true,
-                                                        "text": "{{List1.listData.map((currentItem, currentIndex) => {\n              return (function(){\n                return  '<small style=\"font-weight:400\">' + moment(currentItem.startDate).format('LLL') + ' </small> </br><small style=\"font-weight:400\">From: ' + currentItem.user_name + '</small></br> ' + currentItem.requestText;\n              })();\n            })}}",
-                                                        "fontSize": "{{List1.listData.map((currentItem, currentIndex) => {\n              return (function(){\n                return  'HEADING3';\n              })();\n            })}}",
-                                                        "fontStyle": "",
-                                                        "textAlign": "{{List1.listData.map((currentItem, currentIndex) => {\n              return (function(){\n                return  'RIGHT';\n              })();\n            })}}",
-                                                        "textColor": "#231F20",
-                                                        "truncateButtonColor": "#FFC13D",
-                                                        "widgetName": "Text6",
-                                                        "shouldTruncate": false,
-                                                        "overflow": "{{List1.listData.map((currentItem, currentIndex) => {\n              return (function(){\n                return  'SCROLL';\n              })();\n            })}}",
-                                                        "version": 1,
-                                                        "animateLoading": true,
-                                                        "type": "TEXT_WIDGET",
-                                                        "hideCard": false,
-                                                        "displayName": "Text",
-                                                        "key": "8qf48rjs54",
-                                                        "iconSVG": "/static/media/icon.97c59b52.svg",
-                                                        "textStyle": "HEADING",
-                                                        "dynamicBindingPathList": [
-                                                            {
-                                                                "key": "text"
-                                                            }
-                                                        ],
-                                                        "dynamicTriggerPathList": [],
-                                                        "widgetId": "xm3ldrs70b",
-                                                        "renderMode": "CANVAS",
-                                                        "isLoading": false,
-                                                        "leftColumn": 16,
-                                                        "rightColumn": 28,
-                                                        "topRow": 0,
-                                                        "bottomRow": 4,
-                                                        "parentId": "q5k5n5zchw",
-                                                        "backgroundColor": "{{List1.listData.map((currentItem, currentIndex) => {\n              return (function(){\n                return  '#';\n              })();\n            })}}"
-                                                    },
-                                                    "Text4": {
-                                                        "text": "{{List1.listData.map((currentItem, currentIndex) => {\n              return (function(){\n                return  '<small style=\"font-weight:400\">' + moment(currentItem.startDate).format('LLL') + ' </small> </br><small style=\"font-weight:400\">From: bot</small></br>' + currentItem.answer;\n              })();\n            })}}",
-                                                        "fontSize": "{{List1.listData.map((currentItem, currentIndex) => {\n              return (function(){\n                return  'HEADING3';\n              })();\n            })}}",
-                                                        "fontStyle": "",
-                                                        "backgroundColor": "",
-                                                        "textColor": "{{List1.listData.map((currentItem, currentIndex) => {\n              return (function(){\n                return  '#231F20';\n              })();\n            })}}"
-                                                    },
-                                                    "Container5": {
-                                                        "borderColor": "{{List1.listData.map((currentItem, currentIndex) => {\n              return (function(){\n                return  '#f1f3f4';\n              })();\n            })}}",
-                                                        "borderWidth": "{{List1.listData.map((currentItem, currentIndex) => {\n              return (function(){\n                return  '2';\n              })();\n            })}}",
-                                                        "borderRadius": "{{List1.listData.map((currentItem, currentIndex) => {\n              return (function(){\n                return  '3';\n              })();\n            })}}"
-                                                    },
-                                                    "Container7": {
-                                                        "borderRadius": "{{List1.listData.map((currentItem, currentIndex) => {\n              return (function(){\n                return  '20';\n              })();\n            })}}",
-                                                        "backgroundColor": "{{List1.listData.map((currentItem, currentIndex) => {\n              return (function(){\n                return  '#F6F7F8';\n              })();\n            })}}"
-                                                    },
-                                                    "Container8": {
-                                                        "backgroundColor": "{{List1.listData.map((currentItem, currentIndex) => {\n              return (function(){\n                return  '#F6F7F8';\n              })();\n            })}}",
-                                                        "borderRadius": "{{List1.listData.map((currentItem, currentIndex) => {\n              return (function(){\n                return  '20';\n              })();\n            })}}"
-                                                    }
-                                                },
-                                                "enhancements": true,
-                                                "gridGap": "0",
-                                                "listData": "{{getChat.data}}",
-                                                "widgetName": "List1",
-                                                "children": [
-                                                    {
-                                                        "isVisible": true,
-                                                        "widgetName": "Canvas17",
-                                                        "version": 1,
-                                                        "detachFromLayout": true,
-                                                        "type": "CANVAS_WIDGET",
-                                                        "hideCard": true,
-                                                        "displayName": "Canvas",
-                                                        "key": "fzjolapulp",
-                                                        "containerStyle": "none",
-                                                        "canExtend": false,
-                                                        "dropDisabled": true,
-                                                        "openParentPropertyPane": true,
-                                                        "noPad": true,
-                                                        "children": [
-                                                            {
-                                                                "isVisible": true,
-                                                                "backgroundColor": "white",
-                                                                "widgetName": "Container5",
-                                                                "containerStyle": "card",
-                                                                "borderColor": "#f1f3f4",
-                                                                "borderWidth": "2",
-                                                                "borderRadius": "3",
-                                                                "boxShadow": "NONE",
-                                                                "animateLoading": true,
-                                                                "children": [
-                                                                    {
-                                                                        "isVisible": true,
-                                                                        "widgetName": "Canvas18",
-                                                                        "version": 1,
-                                                                        "detachFromLayout": true,
-                                                                        "type": "CANVAS_WIDGET",
-                                                                        "hideCard": true,
-                                                                        "displayName": "Canvas",
-                                                                        "key": "fzjolapulp",
-                                                                        "containerStyle": "none",
-                                                                        "canExtend": false,
-                                                                        "children": [
-                                                                            {
-                                                                                "isVisible": true,
-                                                                                "backgroundColor": "#F6F7F8",
-                                                                                "widgetName": "Container7",
-                                                                                "containerStyle": "card",
-                                                                                "borderColor": "transparent",
-                                                                                "borderWidth": "0",
-                                                                                "borderRadius": "20",
-                                                                                "boxShadow": "NONE",
-                                                                                "animateLoading": true,
-                                                                                "children": [
-                                                                                    {
-                                                                                        "isVisible": true,
-                                                                                        "widgetName": "Canvas20",
-                                                                                        "version": 1,
-                                                                                        "detachFromLayout": true,
-                                                                                        "type": "CANVAS_WIDGET",
-                                                                                        "hideCard": true,
-                                                                                        "displayName": "Canvas",
-                                                                                        "key": "oat6loe0bm",
-                                                                                        "containerStyle": "none",
-                                                                                        "canExtend": false,
-                                                                                        "children": [
-                                                                                            {
-                                                                                                "isVisible": true,
-                                                                                                "text": "<small style=\"font-weight:400\">{{moment(currentItem.startDate).format('LLL')}} </small> </br><small style=\"font-weight:400\">From: {{currentItem.user_name}}</small></br> {{currentItem.requestText}}",
-                                                                                                "fontSize": "HEADING3",
-                                                                                                "fontStyle": "",
-                                                                                                "textAlign": "RIGHT",
-                                                                                                "textColor": "#231F20",
-                                                                                                "truncateButtonColor": "#FFC13D",
-                                                                                                "widgetName": "Text6",
-                                                                                                "shouldTruncate": false,
-                                                                                                "overflow": "SCROLL",
-                                                                                                "version": 1,
-                                                                                                "animateLoading": true,
-                                                                                                "type": "TEXT_WIDGET",
-                                                                                                "hideCard": false,
-                                                                                                "displayName": "Text",
-                                                                                                "key": "8qf48rjs54",
-                                                                                                "iconSVG": "/static/media/icon.97c59b52.svg",
-                                                                                                "textStyle": "HEADING",
-                                                                                                "dynamicBindingPathList": [
-                                                                                                    {
-                                                                                                        "key": "text"
-                                                                                                    }
-                                                                                                ],
-                                                                                                "dynamicTriggerPathList": [],
-                                                                                                "widgetId": "xm3ldrs70b",
-                                                                                                "renderMode": "CANVAS",
-                                                                                                "isLoading": false,
-                                                                                                "leftColumn": 1,
-                                                                                                "rightColumn": 64,
-                                                                                                "topRow": 0,
-                                                                                                "bottomRow": 7,
-                                                                                                "parentId": "v2m7z2gq9h",
-                                                                                                "logBlackList": {
-                                                                                                    "isVisible": true,
-                                                                                                    "text": true,
-                                                                                                    "fontSize": true,
-                                                                                                    "fontStyle": true,
-                                                                                                    "textAlign": true,
-                                                                                                    "textColor": true,
-                                                                                                    "truncateButtonColor": true,
-                                                                                                    "widgetName": true,
-                                                                                                    "shouldTruncate": true,
-                                                                                                    "overflow": true,
-                                                                                                    "version": true,
-                                                                                                    "animateLoading": true,
-                                                                                                    "type": true,
-                                                                                                    "hideCard": true,
-                                                                                                    "displayName": true,
-                                                                                                    "key": true,
-                                                                                                    "iconSVG": true,
-                                                                                                    "isCanvas": true,
-                                                                                                    "textStyle": true,
-                                                                                                    "dynamicBindingPathList": true,
-                                                                                                    "dynamicTriggerPathList": true,
-                                                                                                    "minHeight": true,
-                                                                                                    "widgetId": true,
-                                                                                                    "renderMode": true,
-                                                                                                    "isLoading": true,
-                                                                                                    "parentColumnSpace": true,
-                                                                                                    "parentRowSpace": true,
-                                                                                                    "leftColumn": true,
-                                                                                                    "rightColumn": true,
-                                                                                                    "topRow": true,
-                                                                                                    "bottomRow": true,
-                                                                                                    "parentId": true
-                                                                                                },
-                                                                                                "backgroundColor": "#"
-                                                                                            }
-                                                                                        ],
-                                                                                        "minHeight": 400,
-                                                                                        "widgetId": "v2m7z2gq9h",
-                                                                                        "renderMode": "CANVAS",
-                                                                                        "isLoading": false,
-                                                                                        "parentColumnSpace": 1,
-                                                                                        "parentRowSpace": 1,
-                                                                                        "leftColumn": 0,
-                                                                                        "rightColumn": 319.5,
-                                                                                        "topRow": 0,
-                                                                                        "bottomRow": 390,
-                                                                                        "parentId": "kswiimv09u"
-                                                                                    }
-                                                                                ],
-                                                                                "version": 1,
-                                                                                "classStyle": "",
-                                                                                "type": "CONTAINER_WIDGET",
-                                                                                "hideCard": false,
-                                                                                "displayName": "Container",
-                                                                                "key": "covocnhs6r",
-                                                                                "iconSVG": "/static/media/icon.1977dca3.svg",
-                                                                                "isCanvas": true,
-                                                                                "widgetId": "kswiimv09u",
-                                                                                "renderMode": "CANVAS",
-                                                                                "isLoading": false,
-                                                                                "parentColumnSpace": 13.3125,
-                                                                                "parentRowSpace": 10,
-                                                                                "leftColumn": 26,
-                                                                                "rightColumn": 64,
-                                                                                "topRow": 0,
-                                                                                "bottomRow": 8,
-                                                                                "parentId": "q5k5n5zchw",
-                                                                                "dynamicBindingPathList": [],
-                                                                                "dynamicTriggerPathList": []
-                                                                            },
-                                                                            {
-                                                                                "isVisible": true,
-                                                                                "backgroundColor": "#F6F7F8",
-                                                                                "widgetName": "Container8",
-                                                                                "containerStyle": "card",
-                                                                                "borderColor": "transparent",
-                                                                                "borderWidth": "0",
-                                                                                "borderRadius": "20",
-                                                                                "boxShadow": "NONE",
-                                                                                "animateLoading": true,
-                                                                                "children": [
-                                                                                    {
-                                                                                        "isVisible": true,
-                                                                                        "widgetName": "Canvas21",
-                                                                                        "version": 1,
-                                                                                        "detachFromLayout": true,
-                                                                                        "type": "CANVAS_WIDGET",
-                                                                                        "hideCard": true,
-                                                                                        "displayName": "Canvas",
-                                                                                        "key": "oat6loe0bm",
-                                                                                        "containerStyle": "none",
-                                                                                        "canExtend": false,
-                                                                                        "children": [
-                                                                                            {
-                                                                                                "isVisible": true,
-                                                                                                "text": "<small style=\"font-weight:400\">{{moment(currentItem.startDate).format('LLL')}} </small> </br><small style=\"font-weight:400\">From: bot</small></br>{{currentItem.answer}}",
-                                                                                                "fontSize": "HEADING3",
-                                                                                                "fontStyle": "",
-                                                                                                "textAlign": "LEFT",
-                                                                                                "textColor": "#231F20",
-                                                                                                "truncateButtonColor": "#FFC13D",
-                                                                                                "widgetName": "Text4",
-                                                                                                "shouldTruncate": false,
-                                                                                                "overflow": "SCROLL",
-                                                                                                "version": 1,
-                                                                                                "animateLoading": true,
-                                                                                                "type": "TEXT_WIDGET",
-                                                                                                "hideCard": false,
-                                                                                                "displayName": "Text",
-                                                                                                "key": "8qf48rjs54",
-                                                                                                "iconSVG": "/static/media/icon.97c59b52.svg",
-                                                                                                "widgetId": "yg265nxq1t",
-                                                                                                "renderMode": "CANVAS",
-                                                                                                "isLoading": false,
-                                                                                                "parentColumnSpace": 18.60595703125,
-                                                                                                "parentRowSpace": 10,
-                                                                                                "leftColumn": 0,
-                                                                                                "rightColumn": 64,
-                                                                                                "topRow": 0,
-                                                                                                "bottomRow": 12,
-                                                                                                "parentId": "h392yu139c",
-                                                                                                "logBlackList": {
-                                                                                                    "isVisible": true,
-                                                                                                    "text": true,
-                                                                                                    "fontSize": true,
-                                                                                                    "fontStyle": true,
-                                                                                                    "textAlign": true,
-                                                                                                    "textColor": true,
-                                                                                                    "truncateButtonColor": true,
-                                                                                                    "widgetName": true,
-                                                                                                    "shouldTruncate": true,
-                                                                                                    "overflow": true,
-                                                                                                    "version": true,
-                                                                                                    "animateLoading": true,
-                                                                                                    "type": true,
-                                                                                                    "hideCard": true,
-                                                                                                    "displayName": true,
-                                                                                                    "key": true,
-                                                                                                    "iconSVG": true,
-                                                                                                    "isCanvas": true,
-                                                                                                    "minHeight": true,
-                                                                                                    "widgetId": true,
-                                                                                                    "renderMode": true,
-                                                                                                    "isLoading": true,
-                                                                                                    "parentColumnSpace": true,
-                                                                                                    "parentRowSpace": true,
-                                                                                                    "leftColumn": true,
-                                                                                                    "rightColumn": true,
-                                                                                                    "topRow": true,
-                                                                                                    "bottomRow": true,
-                                                                                                    "parentId": true
-                                                                                                },
-                                                                                                "dynamicBindingPathList": [
-                                                                                                    {
-                                                                                                        "key": "text"
-                                                                                                    }
-                                                                                                ],
-                                                                                                "dynamicTriggerPathList": [],
-                                                                                                "backgroundColor": ""
-                                                                                            }
-                                                                                        ],
-                                                                                        "minHeight": 400,
-                                                                                        "widgetId": "h392yu139c",
-                                                                                        "renderMode": "CANVAS",
-                                                                                        "isLoading": false,
-                                                                                        "parentColumnSpace": 1,
-                                                                                        "parentRowSpace": 1,
-                                                                                        "leftColumn": 0,
-                                                                                        "rightColumn": 319.5,
-                                                                                        "topRow": 0,
-                                                                                        "bottomRow": 390,
-                                                                                        "parentId": "v9xvk7xd3g"
-                                                                                    }
-                                                                                ],
-                                                                                "version": 1,
-                                                                                "classStyle": "",
-                                                                                "type": "CONTAINER_WIDGET",
-                                                                                "hideCard": false,
-                                                                                "displayName": "Container",
-                                                                                "key": "covocnhs6r",
-                                                                                "iconSVG": "/static/media/icon.1977dca3.svg",
-                                                                                "isCanvas": true,
-                                                                                "widgetId": "v9xvk7xd3g",
-                                                                                "renderMode": "CANVAS",
-                                                                                "isLoading": false,
-                                                                                "parentColumnSpace": 13.3125,
-                                                                                "parentRowSpace": 10,
-                                                                                "leftColumn": 0,
-                                                                                "rightColumn": 39,
-                                                                                "topRow": 8,
-                                                                                "bottomRow": 22,
-                                                                                "parentId": "q5k5n5zchw",
-                                                                                "dynamicBindingPathList": [],
-                                                                                "dynamicTriggerPathList": []
-                                                                            }
-                                                                        ],
-                                                                        "minHeight": null,
-                                                                        "widgetId": "q5k5n5zchw",
-                                                                        "renderMode": "CANVAS",
-                                                                        "isLoading": false,
-                                                                        "parentColumnSpace": 1,
-                                                                        "parentRowSpace": 1,
-                                                                        "leftColumn": 0,
-                                                                        "rightColumn": null,
-                                                                        "topRow": 0,
-                                                                        "bottomRow": 240,
-                                                                        "parentId": "110mjjkk7d"
-                                                                    }
-                                                                ],
-                                                                "version": 1,
-                                                                "classStyle": "",
-                                                                "type": "CONTAINER_WIDGET",
-                                                                "hideCard": false,
-                                                                "displayName": "Container",
-                                                                "key": "58crq22bwe",
-                                                                "iconSVG": "/static/media/icon.1977dca3.svg",
-                                                                "isCanvas": true,
-                                                                "dragDisabled": true,
-                                                                "isDeletable": false,
-                                                                "disallowCopy": true,
-                                                                "disablePropertyPane": true,
-                                                                "openParentPropertyPane": true,
-                                                                "widgetId": "110mjjkk7d",
-                                                                "renderMode": "CANVAS",
-                                                                "isLoading": false,
-                                                                "leftColumn": 0,
-                                                                "rightColumn": 64,
-                                                                "topRow": 0,
-                                                                "bottomRow": 25,
-                                                                "parentId": "p5hu854vne",
-                                                                "dynamicBindingPathList": [],
-                                                                "dynamicTriggerPathList": []
-                                                            }
-                                                        ],
-                                                        "minHeight": 400,
-                                                        "widgetId": "p5hu854vne",
-                                                        "renderMode": "CANVAS",
-                                                        "isLoading": false,
-                                                        "parentColumnSpace": 1,
-                                                        "parentRowSpace": 1,
-                                                        "leftColumn": 0,
-                                                        "rightColumn": 464.54296875,
-                                                        "topRow": 0,
-                                                        "bottomRow": 390,
-                                                        "parentId": "ax2evcaj07"
-                                                    }
-                                                ],
-                                                "type": "LIST_WIDGET",
-                                                "hideCard": false,
-                                                "displayName": "List",
-                                                "key": "asu0pvvbnn",
-                                                "iconSVG": "/static/media/icon.9925ee17.svg",
-                                                "isCanvas": true,
-                                                "widgetId": "ax2evcaj07",
-                                                "renderMode": "CANVAS",
-                                                "isLoading": false,
-                                                "parentColumnSpace": 19.35595703125,
-                                                "parentRowSpace": 10,
-                                                "leftColumn": 0,
-                                                "rightColumn": 64,
-                                                "topRow": 10,
-                                                "bottomRow": 68,
-                                                "parentId": "4tc4ytey90",
-                                                "dynamicBindingPathList": [
-                                                    {
-                                                        "key": "template.Text6.text"
-                                                    },
-                                                    {
-                                                        "key": "listData"
-                                                    },
-                                                    {
-                                                        "key": "template.Text6.fontSize"
-                                                    },
-                                                    {
-                                                        "key": "template.Text4.text"
-                                                    },
-                                                    {
-                                                        "key": "template.Text4.fontSize"
-                                                    },
-                                                    {
-                                                        "key": "template.Text6.textAlign"
-                                                    },
-                                                    {
-                                                        "key": "template.Text6.overflow"
-                                                    },
-                                                    {
-                                                        "key": "template.Container5.borderColor"
-                                                    },
-                                                    {
-                                                        "key": "template.Container5.borderWidth"
-                                                    },
-                                                    {
-                                                        "key": "template.Container5.borderRadius"
-                                                    },
-                                                    {
-                                                        "key": "template.Text4.textColor"
-                                                    },
-                                                    {
-                                                        "key": "template.Text6.backgroundColor"
-                                                    },
-                                                    {
-                                                        "key": "template.Container7.borderRadius"
-                                                    },
-                                                    {
-                                                        "key": "template.Container7.backgroundColor"
-                                                    },
-                                                    {
-                                                        "key": "template.Container8.backgroundColor"
-                                                    },
-                                                    {
-                                                        "key": "template.Container8.borderRadius"
+                                                        "key": "getChatDataUrl"
                                                     }
                                                 ],
                                                 "dynamicTriggerPathList": [],
-                                                "privateWidgets": {
-                                                    "Text6": true
-                                                }
+                                                "dynamicPropertyPathList": [
+                                                    {
+                                                        "key": "getChatDataUrl"
+                                                    }
+                                                ],
+                                                "postChatDataUrl": ""
                                             }
                                         ],
                                         "minHeight": 400,
@@ -7901,7 +7423,7 @@
                                         "leftColumn": 0,
                                         "rightColumn": 377.25,
                                         "topRow": 0,
-                                        "bottomRow": 700,
+                                        "bottomRow": 770,
                                         "parentId": "e615lsq2fm"
                                     }
                                 ],
@@ -7921,7 +7443,7 @@
                                 "leftColumn": 7,
                                 "rightColumn": 64,
                                 "topRow": 7,
-                                "bottomRow": 127,
+                                "bottomRow": 85,
                                 "parentId": "0",
                                 "dynamicBindingPathList": [],
                                 "dynamicTriggerPathList": [],
@@ -7938,17 +7460,7 @@
                         "Container6",
                         "Canvas19",
                         "Button1",
-                        "Text9",
-                        "List1",
-                        "Canvas17",
-                        "Container5",
-                        "Canvas18",
-                        "Container7",
-                        "Canvas20",
-                        "Text6",
-                        "Container8",
-                        "Canvas21",
-                        "Text4"
+                        "Chat1"
                     ],
                     "deleted": false,
                     "policies": [],
@@ -7961,6 +7473,17 @@
                                 "name": "Api1",
                                 "pluginType": "API",
                                 "jsonPathKeys": [],
+                                "timeoutInMillisecond": 10000
+                            },
+                            {
+                                "_id": "6544bfc5619abb88808ba69b",
+                                "id": "6544bfc5619abb88808ba69b",
+                                "confirmBeforeExecute": false,
+                                "name": "getChatLength",
+                                "pluginType": "API",
+                                "jsonPathKeys": [
+                                    "main.env.nodeUrl"
+                                ],
                                 "timeoutInMillisecond": 10000
                             }
                         ]
@@ -19838,7 +19361,7 @@
                         "snapColumns": 64,
                         "widgetId": "0",
                         "topRow": 0,
-                        "bottomRow": 970,
+                        "bottomRow": 1000,
                         "parentRowSpace": 1,
                         "type": "CANVAS_WIDGET",
                         "detachFromLayout": true,
