@@ -7050,16 +7050,15 @@
             "invalids": [],
             "jsonPathKeys": [
                 "main.env.nodeUrl",
-                "Table1.selectedRow.",
+                "Table1.selectedRow._id",
                 "main.URL.queryParams.typeBase",
-                "main.URL.queryParams.typeName",
-                "Table1.selectedRow._id"
+                "main.URL.queryParams.typeName"
             ],
             "userSetOnLoad": false,
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-06-29T11:49:37.661Z",
-        "updatedAt": "2023-11-03T11:56:18.929Z",
+        "updatedAt": "2023-11-03T16:49:44.108Z",
         "deleted": false,
         "policies": [
             {
@@ -7758,7 +7757,7 @@
             "datasource": {
                 "name": "DEFAULT_REST_DATASOURCE",
                 "datasourceConfiguration": {
-                    "url": "{{main.env.nodeUrl}}/deleteVector"
+                    "url": "{{main.env.nodeUrl}}/deleteVector?id={{Table5.selectedRow.id}}&typeBase={{type.text}}&nameBase={{namebase.text}}"
                 },
                 "invalids": [],
                 "isValid": true,
@@ -7777,20 +7776,7 @@
                         "value": "text/plain"
                     }
                 ],
-                "queryParameters": [
-                    {
-                        "key": "id",
-                        "value": "{{Table5.selectedRow.id}}"
-                    },
-                    {
-                        "key": "type",
-                        "value": "{{type.text}}"
-                    },
-                    {
-                        "key": "name",
-                        "value": "{{namebase.text}}"
-                    }
-                ],
+                "queryParameters": [],
                 "bodyFormData": [],
                 "formData": {
                     "apiContentType": "none"
@@ -7800,12 +7786,10 @@
                         "value": true
                     }
                 ],
-                "body": ""
+                "body": "",
+                "path": ""
             },
             "dynamicBindingPathList": [
-                {
-                    "key": "datasourceUrl"
-                },
                 {
                     "key": "queryParameters[0].value"
                 },
@@ -7814,6 +7798,9 @@
                 },
                 {
                     "key": "queryParameters[2].value"
+                },
+                {
+                    "key": "datasourceUrl"
                 }
             ],
             "isValid": true,
@@ -7828,7 +7815,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-10-14T19:01:01.037Z",
-        "updatedAt": "2023-11-01T00:31:30.471Z",
+        "updatedAt": "2023-11-03T16:51:24.643Z",
         "deleted": false,
         "policies": [
             {

@@ -8470,7 +8470,7 @@
                                                             },
                                                             {
                                                                 "isVisible": true,
-                                                                "text": "Total files: <span class=\"training_span\">{{getKnowlegeFiles.data.sortdata.Files.length + getKnowlegeFiles.data.sortdata.FAQ.length}}</span>",
+                                                                "text": "Total files: <span class=\"training_span\">{{getKnowlegeFiles?.data?.sortdata?.Files?.length + getKnowlegeFiles?.data?.sortdata?.FAQ.length ?getKnowlegeFiles?.data?.sortdata?.Files?.length + getKnowlegeFiles?.data?.sortdata?.FAQ.length :0}}</span>",
                                                                 "fontSize": "HEADING2",
                                                                 "fontStyle": "BOLD",
                                                                 "textAlign": "LEFT",
@@ -8508,7 +8508,7 @@
                                                             },
                                                             {
                                                                 "isVisible": true,
-                                                                "text": "Total links: <span class=\"training_span\">{{getKnowlegeFiles.data.sortdata.Link.length}}</span> ",
+                                                                "text": "Total links: <span class=\"training_span\">{{getKnowlegeFiles?.data?.sortdata?.Link?.length ? getKnowlegeFiles?.data?.sortdata?.Link?.length : 0}}</span> ",
                                                                 "fontSize": "HEADING2",
                                                                 "fontStyle": "BOLD",
                                                                 "textAlign": "LEFT",
@@ -8608,7 +8608,7 @@
                                                             },
                                                             {
                                                                 "isVisible": true,
-                                                                "text": "Total characters : <span class=\"training_span\">{{getKnowlegeFiles.data.total}} </span>  ",
+                                                                "text": "Total characters : <span class=\"training_span\">{{getKnowlegeFiles?.data?.total ? getKnowlegeFiles?.data?.total:0}} </span>  ",
                                                                 "fontSize": "HEADING2",
                                                                 "fontStyle": "BOLD",
                                                                 "textAlign": "LEFT",
@@ -12785,6 +12785,9 @@
                                                                     },
                                                                     {
                                                                         "key": "primaryColumns.result.computedValue"
+                                                                    },
+                                                                    {
+                                                                        "key": "primaryColumns.url.computedValue"
                                                                     }
                                                                 ],
                                                                 "primaryColumns": {
@@ -12880,6 +12883,23 @@
                                                                         "iconName": "edit",
                                                                         "onClick": "{{showModal('Modal1')}}",
                                                                         "buttonVariant": "TERTIARY"
+                                                                    },
+                                                                    "url": {
+                                                                        "index": 3,
+                                                                        "width": 150,
+                                                                        "id": "url",
+                                                                        "horizontalAlignment": "LEFT",
+                                                                        "verticalAlignment": "CENTER",
+                                                                        "columnType": "text",
+                                                                        "textSize": "PARAGRAPH",
+                                                                        "enableFilter": true,
+                                                                        "enableSort": true,
+                                                                        "isVisible": true,
+                                                                        "isDisabled": false,
+                                                                        "isCellVisible": true,
+                                                                        "isDerived": false,
+                                                                        "label": "url",
+                                                                        "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.url))}}"
                                                                     }
                                                                 },
                                                                 "derivedColumns": {
@@ -12941,6 +12961,7 @@
                                                                     "_id",
                                                                     "question",
                                                                     "result",
+                                                                    "url",
                                                                     "customColumn1",
                                                                     "customColumn2"
                                                                 ],
@@ -18902,7 +18923,8 @@
                                 "bottomRow": 83,
                                 "parentId": "0",
                                 "dynamicBindingPathList": [],
-                                "dynamicTriggerPathList": []
+                                "dynamicTriggerPathList": [],
+                                "shouldScrollContents": false
                             }
                         ],
                         "snapRows": 92,
