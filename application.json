@@ -6,7 +6,7 @@
     "isPublic": true,
     "isShowPlatformTag": true,
     "createdAt": "2023-03-02T13:50:57.853Z",
-    "updatedAt": "2023-11-03T12:23:46.681Z",
+    "updatedAt": "2023-11-03T20:08:28.892Z",
     "deleted": false,
     "pages": [
         {
@@ -3268,85 +3268,6 @@
                 }
             },
             {
-                "label": "POST |  | /saveCredentialsPinecone",
-                "value": {
-                    "url": "/saveCredentialsPinecone",
-                    "method": "post",
-                    "datasource": {
-                        "datasourceConfiguration": {
-                            "orgId": "652fe5afec075a11000001a8",
-                            "url": "https://aibotnr-652fe5afec075a11000001a8.ubos.tech",
-                            "product_price": null,
-                            "cpu": null,
-                            "ram": null,
-                            "subscription_plan": "64fad7b7049bf100119b7ba3",
-                            "plan_id": "64fad7b7049bf100119b7ba3",
-                            "subscription_id": null,
-                            "serviceId": "aibotnr-ubos-whm4t-aibotnr"
-                        },
-                        "id": "653a654b0103101100000182",
-                        "invalids": [],
-                        "isValid": true,
-                        "name": "aibotnr",
-                        "new": false,
-                        "type": "api",
-                        "organizationId": "Org",
-                        "pluginId": "API",
-                        "userPermissions": [
-                            "read:service",
-                            "manage:service"
-                        ],
-                        "settings_data": {
-                            "gitName": "",
-                            "projectName": "aibotnr",
-                            "systemType": "latest",
-                            "gitUrl": "",
-                            "gitPassword": "",
-                            "urlNodeRed": "https://aibotnr-652fe5afec075a11000001a8.ubos.tech",
-                            "serviceId": "aibotnr-ubos-whm4t-aibotnr",
-                            "applicationId": "652fe5afec075a11000001a9",
-                            "env": [
-                                {
-                                    "name": "nodered",
-                                    "value": "https://aibotnr-652fe5afec075a11000001a8.ubos.tech"
-                                },
-                                {
-                                    "name": "AIBOTDB-MONGO-HOST-NAME",
-                                    "value": "aibotmongo-ubos-whm4t-aibotmongo.ubos-whm4t"
-                                },
-                                {
-                                    "name": "AIBOTDB-MONGO-DB-NAME",
-                                    "value": "aibotmongo"
-                                },
-                                {
-                                    "name": "AIBOTDB-MONGO-USER-NAME",
-                                    "value": "ubos9749"
-                                },
-                                {
-                                    "name": "AIBOTDB-MONGO-PASSWORD",
-                                    "value": "mdLCQJPx"
-                                },
-                                {
-                                    "name": "uiUrl",
-                                    "value": "https://aibotnr-652fe5afec075a11000001a8.ubos.tech"
-                                },
-                                {
-                                    "name": "VECTORDB-CHROMA-HOST-NAME",
-                                    "value": "http://chromaaibot-ubos-whm4t-chromadb:8000"
-                                },
-                                {
-                                    "name": "openaiKey",
-                                    "value": "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"
-                                }
-                            ],
-                            "status": "ready",
-                            "favicon": "",
-                            "title": ""
-                        }
-                    }
-                }
-            },
-            {
                 "label": "POST |  | /saveCredentialsOpenAI",
                 "value": {
                     "url": "/saveCredentialsOpenAI",
@@ -3746,6 +3667,85 @@
                 "value": {
                     "url": "/getenvsbots",
                     "method": "get",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "orgId": "652fe5afec075a11000001a8",
+                            "url": "https://aibotnr-652fe5afec075a11000001a8.ubos.tech",
+                            "product_price": null,
+                            "cpu": null,
+                            "ram": null,
+                            "subscription_plan": "64fad7b7049bf100119b7ba3",
+                            "plan_id": "64fad7b7049bf100119b7ba3",
+                            "subscription_id": null,
+                            "serviceId": "aibotnr-ubos-whm4t-aibotnr"
+                        },
+                        "id": "653a654b0103101100000182",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "aibotnr",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "aibotnr",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://aibotnr-652fe5afec075a11000001a8.ubos.tech",
+                            "serviceId": "aibotnr-ubos-whm4t-aibotnr",
+                            "applicationId": "652fe5afec075a11000001a9",
+                            "env": [
+                                {
+                                    "name": "nodered",
+                                    "value": "https://aibotnr-652fe5afec075a11000001a8.ubos.tech"
+                                },
+                                {
+                                    "name": "AIBOTDB-MONGO-HOST-NAME",
+                                    "value": "aibotmongo-ubos-whm4t-aibotmongo.ubos-whm4t"
+                                },
+                                {
+                                    "name": "AIBOTDB-MONGO-DB-NAME",
+                                    "value": "aibotmongo"
+                                },
+                                {
+                                    "name": "AIBOTDB-MONGO-USER-NAME",
+                                    "value": "ubos9749"
+                                },
+                                {
+                                    "name": "AIBOTDB-MONGO-PASSWORD",
+                                    "value": "mdLCQJPx"
+                                },
+                                {
+                                    "name": "uiUrl",
+                                    "value": "https://aibotnr-652fe5afec075a11000001a8.ubos.tech"
+                                },
+                                {
+                                    "name": "VECTORDB-CHROMA-HOST-NAME",
+                                    "value": "http://chromaaibot-ubos-whm4t-chromadb:8000"
+                                },
+                                {
+                                    "name": "openaiKey",
+                                    "value": "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"
+                                }
+                            ],
+                            "status": "ready",
+                            "favicon": "",
+                            "title": ""
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST |  | /saveCredentialsPinecone",
+                "value": {
+                    "url": "/saveCredentialsPinecone",
+                    "method": "post",
                     "datasource": {
                         "datasourceConfiguration": {
                             "orgId": "652fe5afec075a11000001a8",
@@ -4615,85 +4615,6 @@
                 "value": {
                     "url": "/saveUserMessage",
                     "method": "post",
-                    "datasource": {
-                        "datasourceConfiguration": {
-                            "orgId": "652fe5afec075a11000001a8",
-                            "url": "https://aibotnr-652fe5afec075a11000001a8.ubos.tech",
-                            "product_price": null,
-                            "cpu": null,
-                            "ram": null,
-                            "subscription_plan": "64fad7b7049bf100119b7ba3",
-                            "plan_id": "64fad7b7049bf100119b7ba3",
-                            "subscription_id": null,
-                            "serviceId": "aibotnr-ubos-whm4t-aibotnr"
-                        },
-                        "id": "653a654b0103101100000182",
-                        "invalids": [],
-                        "isValid": true,
-                        "name": "aibotnr",
-                        "new": false,
-                        "type": "api",
-                        "organizationId": "Org",
-                        "pluginId": "API",
-                        "userPermissions": [
-                            "read:service",
-                            "manage:service"
-                        ],
-                        "settings_data": {
-                            "gitName": "",
-                            "projectName": "aibotnr",
-                            "systemType": "latest",
-                            "gitUrl": "",
-                            "gitPassword": "",
-                            "urlNodeRed": "https://aibotnr-652fe5afec075a11000001a8.ubos.tech",
-                            "serviceId": "aibotnr-ubos-whm4t-aibotnr",
-                            "applicationId": "652fe5afec075a11000001a9",
-                            "env": [
-                                {
-                                    "name": "nodered",
-                                    "value": "https://aibotnr-652fe5afec075a11000001a8.ubos.tech"
-                                },
-                                {
-                                    "name": "AIBOTDB-MONGO-HOST-NAME",
-                                    "value": "aibotmongo-ubos-whm4t-aibotmongo.ubos-whm4t"
-                                },
-                                {
-                                    "name": "AIBOTDB-MONGO-DB-NAME",
-                                    "value": "aibotmongo"
-                                },
-                                {
-                                    "name": "AIBOTDB-MONGO-USER-NAME",
-                                    "value": "ubos9749"
-                                },
-                                {
-                                    "name": "AIBOTDB-MONGO-PASSWORD",
-                                    "value": "mdLCQJPx"
-                                },
-                                {
-                                    "name": "uiUrl",
-                                    "value": "https://aibotnr-652fe5afec075a11000001a8.ubos.tech"
-                                },
-                                {
-                                    "name": "VECTORDB-CHROMA-HOST-NAME",
-                                    "value": "http://chromaaibot-ubos-whm4t-chromadb:8000"
-                                },
-                                {
-                                    "name": "openaiKey",
-                                    "value": "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"
-                                }
-                            ],
-                            "status": "ready",
-                            "favicon": "",
-                            "title": ""
-                        }
-                    }
-                }
-            },
-            {
-                "label": "GET |  | /getChatHIstory3",
-                "value": {
-                    "url": "/getChatHIstory3",
-                    "method": "get",
                     "datasource": {
                         "datasourceConfiguration": {
                             "orgId": "652fe5afec075a11000001a8",
@@ -6273,6 +6194,164 @@
                 "label": "GET |  | /getKnowlegeObjects",
                 "value": {
                     "url": "/getKnowlegeObjects",
+                    "method": "get",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "orgId": "652fe5afec075a11000001a8",
+                            "url": "https://aibotnr-652fe5afec075a11000001a8.ubos.tech",
+                            "product_price": null,
+                            "cpu": null,
+                            "ram": null,
+                            "subscription_plan": "64fad7b7049bf100119b7ba3",
+                            "plan_id": "64fad7b7049bf100119b7ba3",
+                            "subscription_id": null,
+                            "serviceId": "aibotnr-ubos-whm4t-aibotnr"
+                        },
+                        "id": "653a654b0103101100000182",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "aibotnr",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "aibotnr",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://aibotnr-652fe5afec075a11000001a8.ubos.tech",
+                            "serviceId": "aibotnr-ubos-whm4t-aibotnr",
+                            "applicationId": "652fe5afec075a11000001a9",
+                            "env": [
+                                {
+                                    "name": "nodered",
+                                    "value": "https://aibotnr-652fe5afec075a11000001a8.ubos.tech"
+                                },
+                                {
+                                    "name": "AIBOTDB-MONGO-HOST-NAME",
+                                    "value": "aibotmongo-ubos-whm4t-aibotmongo.ubos-whm4t"
+                                },
+                                {
+                                    "name": "AIBOTDB-MONGO-DB-NAME",
+                                    "value": "aibotmongo"
+                                },
+                                {
+                                    "name": "AIBOTDB-MONGO-USER-NAME",
+                                    "value": "ubos9749"
+                                },
+                                {
+                                    "name": "AIBOTDB-MONGO-PASSWORD",
+                                    "value": "mdLCQJPx"
+                                },
+                                {
+                                    "name": "uiUrl",
+                                    "value": "https://aibotnr-652fe5afec075a11000001a8.ubos.tech"
+                                },
+                                {
+                                    "name": "VECTORDB-CHROMA-HOST-NAME",
+                                    "value": "http://chromaaibot-ubos-whm4t-chromadb:8000"
+                                },
+                                {
+                                    "name": "openaiKey",
+                                    "value": "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"
+                                }
+                            ],
+                            "status": "ready",
+                            "favicon": "",
+                            "title": ""
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST |  | /demo",
+                "value": {
+                    "url": "/demo",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "orgId": "652fe5afec075a11000001a8",
+                            "url": "https://aibotnr-652fe5afec075a11000001a8.ubos.tech",
+                            "product_price": null,
+                            "cpu": null,
+                            "ram": null,
+                            "subscription_plan": "64fad7b7049bf100119b7ba3",
+                            "plan_id": "64fad7b7049bf100119b7ba3",
+                            "subscription_id": null,
+                            "serviceId": "aibotnr-ubos-whm4t-aibotnr"
+                        },
+                        "id": "653a654b0103101100000182",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "aibotnr",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "aibotnr",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://aibotnr-652fe5afec075a11000001a8.ubos.tech",
+                            "serviceId": "aibotnr-ubos-whm4t-aibotnr",
+                            "applicationId": "652fe5afec075a11000001a9",
+                            "env": [
+                                {
+                                    "name": "nodered",
+                                    "value": "https://aibotnr-652fe5afec075a11000001a8.ubos.tech"
+                                },
+                                {
+                                    "name": "AIBOTDB-MONGO-HOST-NAME",
+                                    "value": "aibotmongo-ubos-whm4t-aibotmongo.ubos-whm4t"
+                                },
+                                {
+                                    "name": "AIBOTDB-MONGO-DB-NAME",
+                                    "value": "aibotmongo"
+                                },
+                                {
+                                    "name": "AIBOTDB-MONGO-USER-NAME",
+                                    "value": "ubos9749"
+                                },
+                                {
+                                    "name": "AIBOTDB-MONGO-PASSWORD",
+                                    "value": "mdLCQJPx"
+                                },
+                                {
+                                    "name": "uiUrl",
+                                    "value": "https://aibotnr-652fe5afec075a11000001a8.ubos.tech"
+                                },
+                                {
+                                    "name": "VECTORDB-CHROMA-HOST-NAME",
+                                    "value": "http://chromaaibot-ubos-whm4t-chromadb:8000"
+                                },
+                                {
+                                    "name": "openaiKey",
+                                    "value": "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"
+                                }
+                            ],
+                            "status": "ready",
+                            "favicon": "",
+                            "title": ""
+                        }
+                    }
+                }
+            },
+            {
+                "label": "GET |  | /demo",
+                "value": {
+                    "url": "/demo",
                     "method": "get",
                     "datasource": {
                         "datasourceConfiguration": {

@@ -7757,7 +7757,7 @@
             "datasource": {
                 "name": "DEFAULT_REST_DATASOURCE",
                 "datasourceConfiguration": {
-                    "url": "{{main.env.nodeUrl}}/deleteVector?id={{Table5.selectedRow.id}}&typeBase={{type.text}}&nameBase={{namebase.text}}"
+                    "url": "{{main.env.nodeUrl}}/deleteVector"
                 },
                 "invalids": [],
                 "isValid": true,
@@ -7776,7 +7776,20 @@
                         "value": "text/plain"
                     }
                 ],
-                "queryParameters": [],
+                "queryParameters": [
+                    {
+                        "key": "id",
+                        "value": "{{Table5.selectedRow.id}}"
+                    },
+                    {
+                        "key": "typeBase",
+                        "value": "{{type?.text}}"
+                    },
+                    {
+                        "key": "nameBase",
+                        "value": "{{namebase?.text}}"
+                    }
+                ],
                 "bodyFormData": [],
                 "formData": {
                     "apiContentType": "none"
@@ -7791,6 +7804,9 @@
             },
             "dynamicBindingPathList": [
                 {
+                    "key": "datasourceUrl"
+                },
+                {
                     "key": "queryParameters[0].value"
                 },
                 {
@@ -7798,24 +7814,21 @@
                 },
                 {
                     "key": "queryParameters[2].value"
-                },
-                {
-                    "key": "datasourceUrl"
                 }
             ],
             "isValid": true,
             "invalids": [],
             "jsonPathKeys": [
                 "main.env.nodeUrl",
+                "namebase?.text",
                 "Table5.selectedRow.id",
-                "type.text",
-                "namebase.text"
+                "type?.text"
             ],
             "userSetOnLoad": false,
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-10-14T19:01:01.037Z",
-        "updatedAt": "2023-11-03T16:51:24.643Z",
+        "updatedAt": "2023-11-03T17:09:38.665Z",
         "deleted": false,
         "policies": [
             {
@@ -9306,13 +9319,13 @@
                 "JSON.stringify(type_knowledgebase.selectedOptionLabel)",
                 "JSON.stringify(name_knowledgebase.text)",
                 "JSON.stringify(isSelectbase.isSwitchedOn)",
-                "main.env.nodeUrl,2023-10-31T11:26:33.701Z,2023-10-31T21:34:17.339Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl"
+                "main.env.nodeUrl,2023-10-31T11:26:33.701Z,2023-11-01T00:53:47.904Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl"
             ],
             "userSetOnLoad": false,
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-10-31T11:26:33.701Z",
-        "updatedAt": "2023-11-01T00:53:47.904Z",
+        "updatedAt": "2023-11-03T17:05:13.312Z",
         "deleted": false,
         "policies": [
             {
