@@ -6929,7 +6929,7 @@
                         "value": true
                     }
                 ],
-                "body": "{\n\"question\": {{JSON.stringify(Input1.text)}},\n\"result\":{{JSON.stringify(Input2.text)}},\n\"url\": {{JSON.stringify(List1.selectedItem[0].url)}},\n\"_id \": \"{{main.URL.queryParams.id}}\",\n\"id\":\"{{List1.selectedItem[0]._id}}\",\n\"typeBase\":{{JSON.stringify(main.URL.queryParams.typeBase)}},\n\"nameBase\":{{JSON.stringify(main.URL.queryParams.typeName)}}\n}"
+                "body": "{\n\"question\": {{JSON.stringify(Input1.text)}},\n\"result\":{{JSON.stringify(Input2.text)}},\n\"url\": {{JSON.stringify(Table1.selectedRow.url)}},\n\"_id \": \"{{main.URL.queryParams.id}}\",\n\"id\":\"{{Table1.selectedRow._id}}\",\n\"typeBase\":{{JSON.stringify(main.URL.queryParams.typeBase)}},\n\"nameBase\":{{JSON.stringify(main.URL.queryParams.typeName)}}\n}"
             },
             "dynamicBindingPathList": [
                 {
@@ -6945,17 +6945,18 @@
                 "main.env.nodeUrl",
                 "JSON.stringify(Input1.text)",
                 "JSON.stringify(Input2.text)",
-                "JSON.stringify(List1.selectedItem[0].url)",
+                "JSON.stringify(Table1.selectedRow.url))",
                 "main.URL.queryParams.id",
-                "List1.selectedItem[0]._id",
+                "Table1.selectedRow._id",
                 "JSON.stringify(main.URL.queryParams.typeBase)",
-                "JSON.stringify(main.URL.queryParams.typeName)"
+                "JSON.stringify(main.URL.queryParams.typeName)",
+                "JSON.stringify(Table1.selectedRow.url)"
             ],
             "userSetOnLoad": false,
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-06-29T11:38:38.762Z",
-        "updatedAt": "2023-11-01T12:01:07.209Z",
+        "updatedAt": "2023-11-03T11:58:16.311Z",
         "deleted": false,
         "policies": [
             {
@@ -7007,7 +7008,7 @@
                 ],
                 "queryParameters": [
                     {
-                        "value": "{{List1.selectedItem[0]._id}}",
+                        "value": "{{Table1.selectedRow._id}}",
                         "key": "id"
                     },
                     {
@@ -7049,15 +7050,16 @@
             "invalids": [],
             "jsonPathKeys": [
                 "main.env.nodeUrl",
-                "List1.selectedItem[0]._id",
+                "Table1.selectedRow.",
                 "main.URL.queryParams.typeBase",
-                "main.URL.queryParams.typeName"
+                "main.URL.queryParams.typeName",
+                "Table1.selectedRow._id"
             ],
             "userSetOnLoad": false,
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-06-29T11:49:37.661Z",
-        "updatedAt": "2023-11-01T12:01:17.046Z",
+        "updatedAt": "2023-11-03T11:56:18.929Z",
         "deleted": false,
         "policies": [
             {
