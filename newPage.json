@@ -11108,7 +11108,7 @@
                                                                 "labelWidth": 5,
                                                                 "widgetName": "Input1",
                                                                 "version": 2,
-                                                                "defaultText": "KNOWLEDGE BASE: {{getIDbase.data.filter(e=>e.select===true)[0].name}}\nTYPE: {{getIDbase.data.filter(e=>e.select===true)[0].type}}",
+                                                                "defaultText": "KNOWLEDGE BASE: {{getIDbase?.data.length>0 ?getIDbase.data.filter(e=>e.select===true)[0]?.name :\"\"}}\nTYPE: {{getIDbase?.data.length>0 ?getIDbase.data.filter(e=>e.select===true)[0]?.type:\"\"}}",
                                                                 "iconAlign": "left",
                                                                 "autoFocus": false,
                                                                 "labelStyle": "",
