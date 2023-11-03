@@ -5141,7 +5141,7 @@
                                                             },
                                                             {
                                                                 "isVisible": "{{makeSetting.responseMeta.statusCode==='200'}}",
-                                                                "text": "{{makeSetting.data.error === false ? `<span style='font-size:20px'>Congratulations!</span>\n\nHere are your <span style='color:red'> log in credentials</span> for the application. Please make sure to save them securely, as they will be displayed only <span style='color:red'> onces</span>.` :  `<span style='font-size:20px'>Apologies for the inconvenience. It seems that an error has occurred. Kindly attempt your action again in 1 minute. We appreciate your patience.</span>`}}\n",
+                                                                "text": "{{makeSetting.data.error === false ? `<span style='font-size:20px'>Congratulations!</span>\n\nHere are your <span style='color:red'> login credentials</span> for the application. Please ensure you save them securely, as they will be displayed only<span style='color:red'> once</span>.` :  `<span style='font-size:20px'>Apologies for the inconvenience. It seems that an error has occurred. Kindly attempt your action again in 1 minute. We appreciate your patience.</span>`}}\n",
                                                                 "fontSize": "PARAGRAPH",
                                                                 "fontStyle": "BOLD",
                                                                 "textAlign": "CENTER",
@@ -5185,7 +5185,8 @@
                                                                         "key": "isVisible"
                                                                     }
                                                                 ],
-                                                                "onClick": ""
+                                                                "onClick": "",
+                                                                "classStyle": ""
                                                             },
                                                             {
                                                                 "isVisible": "{{ makeSetting.responseMeta.statusCode==='200' && !makeSetting.data.error}}",
