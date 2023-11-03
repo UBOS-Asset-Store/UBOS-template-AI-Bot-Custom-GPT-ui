@@ -9060,7 +9060,7 @@
                 "pluginId": "API",
                 "messages": []
             },
-            "executeOnLoad": false,
+            "executeOnLoad": true,
             "pageId": "AI Setup",
             "actionConfiguration": {
                 "timeoutInMillisecond": 10000,
@@ -9092,7 +9092,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-10-26T14:11:57.177Z",
-        "updatedAt": "2023-11-02T17:23:09.578Z",
+        "updatedAt": "2023-11-03T18:03:09.338Z",
         "deleted": false,
         "policies": [
             {
