@@ -11148,7 +11148,7 @@
                                                                 "boxShadow": "NONE",
                                                                 "buttonColor": "#3268a8",
                                                                 "buttonVariant": "TERTIARY",
-                                                                "isDisabled": false,
+                                                                "isDisabled": "{{check_pinecone.data.openai.filledFields ===2}}",
                                                                 "widgetName": "IconButton3Copy",
                                                                 "version": 1,
                                                                 "animateLoading": true,
@@ -11167,14 +11167,22 @@
                                                                 "topRow": 4,
                                                                 "bottomRow": 8,
                                                                 "parentId": "z6rqbb5eq4",
-                                                                "dynamicBindingPathList": [],
+                                                                "dynamicBindingPathList": [
+                                                                    {
+                                                                        "key": "isDisabled"
+                                                                    }
+                                                                ],
                                                                 "dynamicTriggerPathList": [
                                                                     {
                                                                         "key": "onClick"
                                                                     }
                                                                 ],
                                                                 "onClick": "{{showModal('Modal9')}}",
-                                                                "dynamicPropertyPathList": []
+                                                                "dynamicPropertyPathList": [
+                                                                    {
+                                                                        "key": "isDisabled"
+                                                                    }
+                                                                ]
                                                             }
                                                         ],
                                                         "minHeight": 400,
