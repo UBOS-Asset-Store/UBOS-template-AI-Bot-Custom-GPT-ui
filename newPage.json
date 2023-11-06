@@ -11148,7 +11148,7 @@
                                                                 "boxShadow": "NONE",
                                                                 "buttonColor": "#3268a8",
                                                                 "buttonVariant": "TERTIARY",
-                                                                "isDisabled": "{{check_pinecone.data.openai.filledFields ===2}}",
+                                                                "isDisabled": "{{check_pinecone.data.openai.filledFields !==2}}",
                                                                 "widgetName": "IconButton3Copy",
                                                                 "version": 1,
                                                                 "animateLoading": true,
@@ -14857,7 +14857,7 @@
                                                                             },
                                                                             {
                                                                                 "isVisible": true,
-                                                                                "text": "ChatGPT API Configuration *\n<span style=\"font-size: 14px; color: #999; font-weight: normal;\"> </span>",
+                                                                                "text": "\nChatGPT API Configuration *\n<span style=\"font-size: 14px; color: #999; font-weight: normal;\"> </span>",
                                                                                 "fontSize": "HEADING2",
                                                                                 "fontStyle": "BOLD",
                                                                                 "textAlign": "LEFT",
