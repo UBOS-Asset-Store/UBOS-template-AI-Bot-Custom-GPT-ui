@@ -15594,7 +15594,7 @@
                                                                                     }
                                                                                 ],
                                                                                 "dynamicTriggerPathList": [],
-                                                                                "classStyle": "{{getenv.data.messages.WELCOME ==\"\" &&getenv.data.messages.UNABLE == \"\" &&getenv.data.messages.RESPOND == \"\" ? \"done\" :\"\"}}"
+                                                                                "classStyle": "{{getenv.data.messages.WELCOME ==\"\" ||getenv.data.messages.UNABLE == \"\"  ? \"done\" :\"\"}}"
                                                                             }
                                                                         ],
                                                                         "minHeight": 400,
