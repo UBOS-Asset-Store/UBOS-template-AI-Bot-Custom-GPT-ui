@@ -9480,15 +9480,14 @@
                 "JSON.stringify(\"myText\")",
                 "JSON.stringify( _id.text)",
                 "JSON.stringify(type.text)",
-                "JSON.stringify(RichTextEditor1.)",
-                "JSON.stringify(namebase.text)",
-                "JSON.stringify(RichTextEditor1.text)"
+                "JSON.stringify(RichTextEditor1.text)",
+                "JSON.stringify(namebase.text)"
             ],
             "userSetOnLoad": false,
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-11-01T13:21:05.761Z",
-        "updatedAt": "2023-11-01T13:27:27.510Z",
+        "updatedAt": "2023-11-06T14:02:20.669Z",
         "deleted": false,
         "policies": [
             {
